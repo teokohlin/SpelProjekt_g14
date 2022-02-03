@@ -5,14 +5,14 @@ using UnityEngine.Events;
 
 public class Player : MonoBehaviour
 {
-    [SerializeField] //för att lättare kunna se i unity
+    [SerializeField] //fÃ¶r att lÃ¤ttare kunna se i unity
     private int woodAmount = 0;
     [SerializeField]
     private int stoneAmount = 0;
     [SerializeField]
     private int foodAmount = 0;
 
-    //Hade eventuellt kunnat göra en klass för resources, wood, stone, food (vet knappt hur man gör)
+    //Hade eventuellt kunnat gÃ¶ra en klass fÃ¶r resources, wood, stone, food (vet knappt hur man gÃ¶r)
 
     public UnityAction<int> woodUpdate;
     public UnityAction<int> stoneUpdate;
