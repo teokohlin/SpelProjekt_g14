@@ -30,23 +30,6 @@ CapsuleCollider:
   m_Height: 4
   m_Direction: 1
   m_Center: {x: 0, y: 2, z: 0}
---- !u!114 &2080680310
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 118928173955323312}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29271764919f3e74a9daf5c76497ef0b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
-  turnSmoothing: 0.06
-  sprintFOV: 100
-  sprintButton: Sprint
-  raySubtractModification: 0
 --- !u!114 &2080680308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -75,6 +58,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e94557a412a2f349a689cf01e20e181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &2080680310
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 118928173955323312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29271764919f3e74a9daf5c76497ef0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 0}
+  turnSmoothing: 0.06
+  sprintFOV: 100
+  sprintButton: Sprint
+  raySubtractModification: 0
 --- !u!114 &196267974852508290
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -93,7 +93,7 @@ MonoBehaviour:
     m_Bits: 512
   chopPoint: {fileID: 4149390475833718179}
   chopBoxSize: {x: 0.5, y: 4, z: 1.75}
-  chopRate: 1
+  chopRate: 1.5
 --- !u!114 &7769166167510990368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -211,7 +211,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e895ee11ce5619248a576cade4915df5, type: 3}
       propertyPath: m_Name
-      value: Player_johan
+      value: Player with Tools
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: e895ee11ce5619248a576cade4915df5, type: 3}
       propertyPath: m_TagString
