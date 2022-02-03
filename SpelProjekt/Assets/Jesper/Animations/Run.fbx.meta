@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 92ce5bfa350dfe9499901b4a6234b663
+guid: 95cec549f23cba24cbf052f879193d57
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
@@ -334,23 +334,23 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Main_character(Clone)
+    - name: Locomotion_test_model(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: polySurface2
-      parentName: Main_character(Clone)
+      parentName: Locomotion_test_model(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Cylinder.017
-      parentName: Main_character(Clone)
+      parentName: Locomotion_test_model(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Root_joint
-      parentName: Main_character(Clone)
+      parentName: Locomotion_test_model(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0, y: -0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -391,12 +391,12 @@ ModelImporter:
       scale: {x: 1, y: 1, z: 1}
     - name: L_shoulder_joint
       parentName: L_collar_joint
-      position: {x: -0.51462036, y: 1.4210854e-16, z: 0}
+      position: {x: -0.51462036, y: 0, z: -1.7763568e-17}
       rotation: {x: -0, y: -0, z: -0.17988299, w: 0.983688}
       scale: {x: 1, y: 1, z: 1}
     - name: L_elbow_joint
       parentName: L_shoulder_joint
-      position: {x: -0.5095672, y: 3.3695267e-16, z: 0}
+      position: {x: -0.5095672, y: 0, z: 1.9721522e-33}
       rotation: {x: -0, y: -0, z: 0.009911462, w: 0.99995095}
       scale: {x: 0.99999994, y: 0.99999994, z: 1}
     - name: L_wrist_joint
@@ -436,23 +436,23 @@ ModelImporter:
       scale: {x: 1.0000001, y: 0.99999994, z: 1}
     - name: R_shoulder_joint
       parentName: R_collar_joint
-      position: {x: 0.51461977, y: -0.0000026593125, z: -3.9626844e-14}
-      rotation: {x: -0, y: -8.881783e-16, z: -0.1798829, w: 0.9836881}
+      position: {x: 0.51461977, y: -0.0000026593125, z: -3.9635724e-14}
+      rotation: {x: -0, y: -1.4432897e-15, z: -0.1798829, w: 0.9836881}
       scale: {x: 0.99999994, y: 1.0000011, z: 1.0000017}
     - name: R_elbow_joint
       parentName: R_shoulder_joint
       position: {x: 0.5095638, y: 0.000003533293, z: -0.0000000026871265}
-      rotation: {x: 3.8559955e-16, y: 4.0905847e-16, z: 0.00991146, w: 0.9999509}
+      rotation: {x: 2.9116162e-16, y: 9.560779e-16, z: 0.00991146, w: 0.9999509}
       scale: {x: 1, y: 1.0000005, z: 1.000001}
     - name: R_wrist_joint
       parentName: R_elbow_joint
       position: {x: 0.59223896, y: 0.0000011471942, z: -0.0000000029589224}
-      rotation: {x: 5.0036036e-16, y: -3.769243e-16, z: -0.027590428, w: 0.9996193}
+      rotation: {x: -5.259713e-16, y: 3.4720593e-16, z: -0.027590428, w: 0.9996193}
       scale: {x: 1, y: 1, z: 1.0000002}
     - name: R_hand_joint
       parentName: R_wrist_joint
       position: {x: 0.2379114, y: -0.00000040797215, z: -0.0000000013710776}
-      rotation: {x: 4.4779715e-16, y: 1.03839926e-16, z: 0.015300757, w: 0.999883}
+      rotation: {x: 3.713357e-16, y: 4.1444134e-16, z: 0.015300757, w: 0.999883}
       scale: {x: 1, y: 1.0000005, z: 1.0000002}
     - name: L_Hip_joint
       parentName: Pelvis_joint
@@ -496,7 +496,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 89945d1f57bd59d459cb6d1d553a66e5, type: 3}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: e895ee11ce5619248a576cade4915df5, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1

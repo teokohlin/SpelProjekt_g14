@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 7c6d58231171ccd40b9f9c3d9ed48f7c
+guid: dc402662783270b4b9178d6a92fd0b0e
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable:
   - first:
-      74: -3100369314251171874
-    second: Idle
+      74: 7176209919637214875
+    second: Action
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -17,7 +17,7 @@ ModelImporter:
     bakeSimulation: 0
     resampleCurves: 1
     optimizeGameObjects: 0
-    motionNodeName: Root_joint
+    motionNodeName: 
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
@@ -35,25 +35,25 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
-      takeName: Idle
+      name: Action
+      takeName: Action
       internalID: 0
-      firstFrame: 1
-      lastFrame: 5
+      firstFrame: 35
+      lastFrame: 45
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
       loop: 0
       hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 1
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 1
       keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
+      keepOriginalPositionXZ: 1
       heightFromFeet: 0
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
@@ -97,7 +97,7 @@ ModelImporter:
       - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_collar_joint/L_shoulder_joint/L_elbow_joint/L_wrist_joint
         weight: 1
       - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_collar_joint/L_shoulder_joint/L_elbow_joint/L_wrist_joint/L_hand_joint
-        weight: 0
+        weight: 1
       - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/Neck_joint
         weight: 1
       - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/Neck_joint/Head_joint
@@ -105,7 +105,7 @@ ModelImporter:
       - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/Neck_joint/Head_joint/Head_joint2
         weight: 1
       - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/Neck_joint/Head_joint/Head_joint2/Chin_joint
-        weight: 0
+        weight: 1
       - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_collar_joint
         weight: 1
       - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_collar_joint/R_shoulder_joint
@@ -115,10 +115,10 @@ ModelImporter:
       - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_collar_joint/R_shoulder_joint/R_elbow_joint/R_wrist_joint
         weight: 1
       - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_collar_joint/R_shoulder_joint/R_elbow_joint/R_wrist_joint/R_hand_joint
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0.9
+      additiveReferencePoseFrame: 34.8
     isReadable: 0
   meshes:
     lODScreenPercentages: []
