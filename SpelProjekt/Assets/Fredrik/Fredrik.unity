@@ -316,9 +316,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4260b29a71806a4db7209ffcafcc8d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
+  target: {fileID: 479781887}
   smoothSpeed: 10
   offset: {x: 0, y: 8, z: -8}
+--- !u!4 &479781887 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3466638904479650148, guid: 1dba0437ee747f747a9017eb72e8eaa8, type: 3}
+  m_PrefabInstance: {fileID: 1741168064}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &553985651
 GameObject:
   m_ObjectHideFlags: 0
