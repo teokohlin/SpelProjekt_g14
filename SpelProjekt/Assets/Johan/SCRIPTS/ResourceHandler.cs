@@ -12,14 +12,24 @@ public class ResourceHandler : MonoBehaviour
     public Text foodText;
     void Start()
     {
-        
+        player.woodUpdate += WoodTextUpdate;
+        player.stoneUpdate += StoneTextUpdate;
+        player.foodUpdate += FoodTextUpdate;
     }
 
-    // Update is called once per frame
-    void Update()
+
+
+    void WoodTextUpdate(int amount)
     {
-        
+        woodText.text = amount.ToString();
     }
-
+    void StoneTextUpdate(int amount)
+    {
+        stoneText.text = amount.ToString();
+    }
+    void FoodTextUpdate(int amount)
+    {
+        foodText.text = amount.ToString();
+    }
 
 }
