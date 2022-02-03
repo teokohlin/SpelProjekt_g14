@@ -8,16 +8,16 @@ public class PlayerController : MonoBehaviour
     public Camera cam;
     public LayerMask choppableLayers;
     public Transform chopPoint;
-    public Vector3 chopBoxSize = new Vector3(.5f,4,1.75f); //trodde man skulle behöva dela på 2.       .5, 4, 1.75f är min idé bara. går ändra
-
+    public Vector3 chopBoxSize = new Vector3(.5f,4,1.75f); //trodde man skulle behÃ¶va dela pÃ¥ 2.       .5, 4, 1.75f Ã¤r min idÃ© bara. gÃ¥r Ã¤ndra
+    private ToolSwitch toolScript;
     public float chopRate = 1f;
     float nextChopTime = 0f;
 
-
+    
 
     void Start()
     {
-
+         toolScript = gameObject.GetComponent<ToolSwitch>();
     }
 
     // Update is called once per frame
@@ -35,7 +35,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-        ////////allt detta kommer kanske användas till interactables tänker jag, typ dörrar osv vid höger/vänsterklick
+        ////////allt detta kommer kanske anvÃ¤ndas till interactables tÃ¤nker jag, typ dÃ¶rrar osv vid hÃ¶ger/vÃ¤nsterklick
 
         //Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         //RaycastHit hit;
@@ -73,8 +73,11 @@ public class PlayerController : MonoBehaviour
         {
             //Play hugg ANimation
             Collider closestChoppable = GetClosestEnemyCollider(transform.position, hitChoppables);
-
-            closestChoppable.GetComponent<Choppable>().LoseHealth(1); //just nu gör vi bara 1 skada :)
+            //if closestChopable == tree && currentTool == 0
+            if (closestChoppable.CompareTag("Tree") && toolScript.currentTool == 0)
+            {
+                closestChoppable.GetComponent<Choppable>().LoseHealth(1); //just nu gÃ¶r vi bara 1 skada :)
+            }
         }
 
 
@@ -106,7 +109,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    //private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben
+    //private void OnDrawGizmos() //visar bara rÃ¤tt om man stÃ¥r helt rakt som man gÃ¶r i bÃ¶rjan, den vrids inte med gubben
     //{
     //    Gizmos.color = Color.red;
 
