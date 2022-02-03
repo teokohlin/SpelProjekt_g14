@@ -283,6 +283,95 @@ MonoBehaviour:
   target: {fileID: 1717147606}
   smoothSpeed: 7
   offset: {x: 0, y: 12, z: -12}
+--- !u!1001 &584891132
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4732193251421947767, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_Name
+      value: AudioZoneSettings
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293946794168350667, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: tagName
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293946794168350667, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: destroyAfterUse
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293946794168350667, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: events.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293946794168350667, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: events.Array.data[0].action
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293946794168350667, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: events.Array.data[0].eventName
+      value: musicMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 17.084
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 17.084
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 17.084
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.4953947
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.0027676
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd81b66457846a4449d7711bad77d458, type: 3}
 --- !u!1 &640245637
 GameObject:
   m_ObjectHideFlags: 0
@@ -658,8 +747,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 0
-  OverrideMinDistance: -1
-  OverrideMaxDistance: -1
+  OverrideMinDistance: 0
+  OverrideMaxDistance: 0
 --- !u!4 &877404637
 Transform:
   m_ObjectHideFlags: 0
@@ -1134,6 +1223,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -165360748715267685, guid: 316352e7a9986e64d8bdd5fffda1d593, type: 3}
+      propertyPath: eventEmitters.musicMain
+      value: 
+      objectReference: {fileID: 1944076148}
     - target: {fileID: 5697063612209721320, guid: 316352e7a9986e64d8bdd5fffda1d593, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -1232,7 +1325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CollisionTag: 
-  Event: event:/Music/InsideMusic/InsideMusic
+  Event: event:/Teeeheheeest
   PlayEvent: 0
   StopEvent: 0
   AllowFadeout: 1
