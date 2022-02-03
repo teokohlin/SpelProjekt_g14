@@ -24,7 +24,7 @@ public class Pickup : MonoBehaviour
     }
     void Update()
     {
-        //gˆra sÂ att den kanske guppar lite, ist‰llet fˆr att de spawnar pÂ varandra och flyger iv‰g med rigidbodys
+        //g√∂ra s√• att den kanske guppar lite, ist√§llet f√∂r att de spawnar p√• varandra och flyger iv√§g med rigidbodys
         //med andra ord, kan ta bort rigidbody
 
         ///////////////////////////////////DETTA UNDER
@@ -33,7 +33,7 @@ public class Pickup : MonoBehaviour
 
         //transform.position = startPosition + Vector3.up * bobbingAnimationPhase;
 
-        ///////////////////////////////////DETTA ÷VER
+        ///////////////////////////////////DETTA √ñVER
     }
 
     private void OnTriggerEnter(Collider other)
@@ -45,13 +45,13 @@ public class Pickup : MonoBehaviour
             switch (dropType)
             {
                 case dType.wood:
-                    p.AddWood(pickupAmount); //1 sÂl‰nge
+                    p.AddWood(pickupAmount); //1 s√•l√§nge
                     break;
                 case dType.stone:
-                    p.AddStone(pickupAmount); //1 sÂl‰nge
+                    p.AddStone(pickupAmount); //1 s√•l√§nge
                     break;
                 case dType.food:
-                    p.AddFood(pickupAmount); //1 sÂl‰nge, hade kanske kunnat gˆra att det e mer
+                    p.AddFood(pickupAmount); //1 s√•l√§nge, hade kanske kunnat g√∂ra att det e mer
                     break;
                 default:
                     break;
