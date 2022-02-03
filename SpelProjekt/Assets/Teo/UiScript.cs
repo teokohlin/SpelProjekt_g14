@@ -8,41 +8,55 @@ public class UiScript : MonoBehaviour
     [SerializeField] 
     private RectTransform border;
 
-    private float xvalue = -237;
-    private Vector3 currentposition;
+    [SerializeField]
+    private RectTransform axe;
+
+    [SerializeField] 
+    private RectTransform hoe;
+
+    [SerializeField] 
+    private RectTransform pickaxe;
+
+    [SerializeField] 
+    private RectTransform scythe;
+
+    [SerializeField] 
+    private RectTransform watercan;
+
     void Update()
     {
-        currentposition = new Vector3(xvalue, -478.5f, 0);
-        border.localPosition = currentposition;
-
-        Debug.Log(currentposition);
-
+        Vector3 axePos = axe.anchoredPosition;
+        Vector3 hoePos = hoe.anchoredPosition;
+        Vector3 pickaxePos = pickaxe.anchoredPosition;
+        Vector3 scythePos = scythe.anchoredPosition;
+        Vector3 watercanPos = watercan.anchoredPosition;
+        
         // 1: posx -237 2: posx  -111 3: posx 12 4: posx 135 5: posx 258
         
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
             //Debug.Log("Pressed 1");
-            xvalue = -237;
+            border.anchoredPosition = axePos;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             //Debug.Log("Pressed 2");
-            xvalue = -111;
+            border.anchoredPosition = hoePos;
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             //Debug.Log("Pressed 3");
-            xvalue = 12;
+            border.anchoredPosition = pickaxePos;
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             //Debug.Log("Pressed 4");
-            xvalue = 135;
+            border.anchoredPosition = scythePos;
         }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
             //Debug.Log("Pressed 5");
-            xvalue = 258;
+            border.anchoredPosition = watercanPos;
         }
         
         
