@@ -16,6 +16,11 @@ public class CameraFollow : MonoBehaviour
         //transform.LookAt(target); //vrider lite mot target, cool effekt
 
         //transform.position = target.position + offset;
+
+
+        var relativePos = transform.position - target.position;
+
+
     }
 
 }
