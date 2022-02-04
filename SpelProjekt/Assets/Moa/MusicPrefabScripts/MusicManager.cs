@@ -13,7 +13,12 @@ public class MusicManager : MonoBehaviour
         public StudioEventEmitter musicMenu;
     }
     public Emitters eventEmitters;
- 
+
+    [EventRef]
+    public string gameOverStinger;
+    [EventRef]
+    public string progressionStinger;
+
     // Start is called before the first frame update
     void Start()
     {
