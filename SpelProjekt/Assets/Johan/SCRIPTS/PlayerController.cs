@@ -78,6 +78,11 @@ public class PlayerController : MonoBehaviour
             {
                 closestChoppable.GetComponent<Choppable>().LoseHealth(1); //just nu gör vi bara 1 skada :)
             }
+            else if (closestChoppable.CompareTag("Stone") && toolScript.currentTool == 2)
+            {
+                closestChoppable.GetComponent<Choppable>().LoseHealth(1); //just nu gör vi bara 1 skada :)
+
+            }
         }
 
 

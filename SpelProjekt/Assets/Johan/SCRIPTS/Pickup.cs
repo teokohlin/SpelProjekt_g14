@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {
-    public float verticalBobFrequency = 1f;
-    public float bobbingAmount = 1f;
+    //public float verticalBobFrequency = 1f;
+    //public float bobbingAmount = 1f;
 
     Vector3 startPosition;
 
