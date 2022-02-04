@@ -21,7 +21,7 @@ public class AudioManager : MonoBehaviour
     public string playerHurt;
 
 
-    //ljud
+    //Ljud Monster
     [Header("The Monsters")]
 
     [EventRef]
@@ -37,13 +37,20 @@ public class AudioManager : MonoBehaviour
     [EventRef]
     public string MonsterF;
 
+    //Materiella ljud
+    [EventRef]
+    public string doorSwitch;
+
+
+    [Header("UI")]
+    [FMODUnity.EventRef]
+    public string menuClick;
+    [FMODUnity.EventRef]
+    public string menuStartGame;
 
 
 
-
-
-
-
+ 
 
     // Start is called before the first frame update
     void Start()
@@ -56,4 +63,17 @@ public class AudioManager : MonoBehaviour
     {
         
     }
+
+
+
+
+
+
+    public void PlayDoorSwitch(GameObject switchObject)
+    {
+        RuntimeManager.PlayOneShotAttached(doorSwitch, switchObject);
+        Debug.Log("Played DoorSwitch");
+    }
+
+
 }

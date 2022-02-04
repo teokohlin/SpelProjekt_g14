@@ -18,6 +18,10 @@ public class MusicManager : MonoBehaviour
     public string gameOverStinger;
     [EventRef]
     public string progressionStinger;
+    [EventRef]
+    public string menuStartGame;
+    [EventRef]
+    public string timeOfDayParam;
 
     // Start is called before the first frame update
     void Start()
@@ -66,6 +70,23 @@ public class MusicManager : MonoBehaviour
     }
     public void SetParameter(string eventName)
     {
+
+    }
+    public void PlayMenuStart()
+    {
+        RuntimeManager.PlayOneShot(menuStartGame);
+    }
+
+    public void PlayProgression()
+    {
+        if (progressionStinger == "")
+            return;
+        RuntimeManager.PlayOneShot(progressionStinger);
+    }
+
+    public void MusicTimeOfDay(float timeOfDay)
+    {
+        RuntimeManager.StudioSystem.setParameterByName(timeOfDayParam, timeOfDay);
     }
 
 
