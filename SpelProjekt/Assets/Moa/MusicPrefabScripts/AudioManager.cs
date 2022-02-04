@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using FMODUnity;
 using FMOD.Studio;
+using UnityEngine.Tilemaps;
 
 public class AudioManager : MonoBehaviour
 {
@@ -48,9 +49,13 @@ public class AudioManager : MonoBehaviour
     [FMODUnity.EventRef]
     public string menuStartGame;
 
+    [Space(10)]
+    [HideInInspector]
+    public TileBase surface01;
+    [HideInInspector]
+    public TileBase surface02;
 
 
- 
 
     // Start is called before the first frame update
     void Start()
@@ -65,9 +70,38 @@ public class AudioManager : MonoBehaviour
     }
 
 
+    public void PlayFootstep(TileBase tileBase)
+    {
+        if (playerFootsteps == "")
+        {
+            Debug.LogWarning("Fmod event not found: playerFootsteps");
+            return;
+        }
 
+        FMOD.Studio.EventInstance footstepInstance;
 
-
+        if (tileBase == surface01)
+        {
+            footstepInstance = RuntimeManager.CreateInstance(playerFootsteps);
+            footstepInstance.setParameterByName("Surface", 0.0f);
+            footstepInstance.start();
+            //Debug.Log("Played Footstep - surface: 01");
+        }
+        else if (tileBase == surface02)
+        {
+            footstepInstance = RuntimeManager.CreateInstance(playerFootsteps);
+            footstepInstance.setParameterByName("Surface", 1.0f);
+            footstepInstance.start();
+            //Debug.Log("Played Footstep - surface: 02");
+        }
+        else
+        {
+            footstepInstance = RuntimeManager.CreateInstance(playerFootsteps);
+            footstepInstance.setParameterByName("Surface", 0.0f);
+            footstepInstance.start();
+            //Debug.Log("Played Footstep - surface: Other");
+        }
+    }
 
     public void PlayDoorSwitch(GameObject switchObject)
     {
