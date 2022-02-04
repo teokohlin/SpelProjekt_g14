@@ -11,13 +11,19 @@ public class Player : MonoBehaviour
     private int stoneAmount = 0;
     [SerializeField]
     private int foodAmount = 0;
+    [SerializeField]
+    private int energy = 5;
+    [SerializeField]
+    public int maxEnergy = 5;
+
+    float percentage;
 
     //Hade eventuellt kunnat göra en klass för resources, wood, stone, food (vet knappt hur man gör)
 
     public UnityAction<int> woodUpdate;
     public UnityAction<int> stoneUpdate;
     public UnityAction<int> foodUpdate;
-
+    public UnityAction<float> energyPercentageUpdate;
 
 
     public void AddWood(int amount)
@@ -34,5 +40,37 @@ public class Player : MonoBehaviour
     {
         foodAmount += amount;
         foodUpdate?.Invoke(foodAmount);
+    }
+    public void UseEnergy(int amount)
+    {
+        energy -= amount;
+        
+        //percentage = energy / maxEnergy;
+        //Debug.Log(percentage);
+        energyPercentageUpdate?.Invoke(Percentage(energy, maxEnergy));
+    }
+
+    //--------------------------------------------------
+
+    public void RefillEnergy()
+    {
+        energy = maxEnergy;
+        //percentage = energy / maxEnergy;
+        //Debug.Log(percentage);
+        //energyPercentageUpdate?.Invoke(percentage);
+        energyPercentageUpdate?.Invoke(Percentage(energy, maxEnergy));
+
+    }
+
+
+
+
+    private float Percentage(float a, float b)
+    {
+        return a / b;
+    }
+    public int ReturnEnergy()
+    {
+        return energy;
     }
 }

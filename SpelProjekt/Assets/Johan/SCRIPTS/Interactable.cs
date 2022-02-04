@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Interactable : MonoBehaviour
 {
-    public float radius = 2.0f;
     
-   // public 
+    public virtual void InteractWith(PlayerController pc)
+    {
+
+    }
 
 }

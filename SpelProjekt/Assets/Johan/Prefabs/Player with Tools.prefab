@@ -91,9 +91,14 @@ MonoBehaviour:
   choppableLayers:
     serializedVersion: 2
     m_Bits: 512
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 1024
   chopPoint: {fileID: 4149390475833718179}
   chopBoxSize: {x: 0.5, y: 4, z: 1.75}
   chopRate: 1.5
+  maxDistanceForInteractions: 5
+  player: {fileID: 0}
 --- !u!114 &7769166167510990368
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -107,6 +112,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTool: 0
+  seed: 0
   tools:
   - {fileID: 8794405286973648801}
   - {fileID: 8794405288491724724}
@@ -128,6 +134,8 @@ MonoBehaviour:
   woodAmount: 0
   stoneAmount: 0
   foodAmount: 0
+  energy: 5
+  maxEnergy: 5
 --- !u!1 &1786811690428456207
 GameObject:
   m_ObjectHideFlags: 0
@@ -209,6 +217,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7950906662158510695, guid: e895ee11ce5619248a576cade4915df5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: a6dc465dd4383324d881cda8ad01a7a9, type: 2}
     - target: {fileID: 919132149155446097, guid: e895ee11ce5619248a576cade4915df5, type: 3}
       propertyPath: m_Name
       value: Player with Tools
@@ -217,6 +229,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3592506131919666903, guid: e895ee11ce5619248a576cade4915df5, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 4bc6b7cefebb5c54abfab222b67e6454, type: 2}
     - target: {fileID: 5866666021909216657, guid: e895ee11ce5619248a576cade4915df5, type: 3}
       propertyPath: m_Controller
       value: 

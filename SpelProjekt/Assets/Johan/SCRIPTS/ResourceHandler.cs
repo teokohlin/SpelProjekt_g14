@@ -10,11 +10,14 @@ public class ResourceHandler : MonoBehaviour
     public Text woodText;
     public Text stoneText;
     public Text foodText;
+    [Space]
+    public Image foreground;
     void Start()
     {
         player.woodUpdate += WoodTextUpdate;
         player.stoneUpdate += StoneTextUpdate;
         player.foodUpdate += FoodTextUpdate;
+        player.energyPercentageUpdate += EnergyImageUpdate;
     }
 
 
@@ -29,6 +32,10 @@ public class ResourceHandler : MonoBehaviour
     void FoodTextUpdate(int amount)
     {
         foodText.text = amount.ToString();
+    }
+    void EnergyImageUpdate(float percentage)
+    {
+        foreground.fillAmount = percentage;
     }
 
 

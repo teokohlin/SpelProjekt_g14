@@ -7,27 +7,57 @@ public class PlayerController : MonoBehaviour
 
     public Camera cam;
     public LayerMask choppableLayers;
+    public LayerMask interactableLayer;
     public Transform chopPoint;
     public Vector3 chopBoxSize = new Vector3(.5f,4,1.75f); //trodde man skulle behöva dela på 2.       .5, 4, 1.75f är min idé bara. går ändra
     private ToolSwitch toolScript;
     public float chopRate = 1f;
+    public float maxDistanceForInteractions = 5f;
+
     float nextChopTime = 0f;
+    [HideInInspector]
+    public Player player;
 
     
 
     void Start()
     {
          toolScript = gameObject.GetComponent<ToolSwitch>();
+         player = GetComponent<Player>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Time.time >= nextChopTime)
+
+        //VÄNSTERKLICK
+
+        //Har spelaren energi och har tiden sedan senaste "slaget" gått
+        if (Time.time >= nextChopTime && player.ReturnEnergy() > 0)
         {
+
+            //vänsterklick
             if (Input.GetMouseButtonDown(0))
             {
-                ChopTowardsMouse();
+
+                //vilket tool vi håller
+                switch (toolScript.currentTool)
+                {
+                    case 0://YXA
+                        ChopTowardsMouse("Tree");
+                        break;
+                    case 1: //PLOG
+                        break;
+                    case 2: //PICKAXE
+                        ChopTowardsMouse("Stone");
+                        break;
+                    case 3: //HOE
+                        break;
+                    case 4: //VATTENKANNA
+                        break;
+                    default:
+                        break;
+                }
 
                 nextChopTime = Time.time + 1f / chopRate;
             }
@@ -35,29 +65,42 @@ public class PlayerController : MonoBehaviour
 
 
 
-        ////////allt detta kommer kanske användas till interactables tänker jag, typ dörrar osv vid höger/vänsterklick
+        //HÖGERKLICK
 
-        //Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        //RaycastHit hit;
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
 
-        //if (Physics.Raycast(ray,out hit, 100))
-        //{
-        //    Interactable interactable = hit.collider.GetComponent<Interactable>();
-        //    if (interactable != null)
-        //    {
+        if (Physics.Raycast(ray, out hit, 100, interactableLayer))
+        {
+            Interactable interactable = hit.collider.GetComponent<Interactable>();
+            if (interactable != null)
+            {
+                //Muspekare blir "interactable" symbol, typ hand med finger
 
-        //    }
-        //}
+                if (Input.GetMouseButtonDown(1))
+                {
+                    if (Vector3.Distance(transform.position, interactable.gameObject.transform.position) <= maxDistanceForInteractions)
+                    {
+                        interactable.InteractWith(this); //släng med "playercontrollern" som referens
+                    }
+                }
+
+            }
+            else
+            {
+                //muspekare blir vanlig
+            }
+        }
 
 
     }
 
-    private void ChopTowardsMouse()
+    private void ChopTowardsMouse(string resourceTag) //"Tree" , "Stone"
     {
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
-        if (Physics.Raycast(ray, out hit, 100))
+        if (Physics.Raycast(ray, out hit, 100, choppableLayers))
         {
             Vector3 targetPostition = new Vector3(hit.point.x,
                                                    this.transform.position.y,
@@ -74,6 +117,7 @@ public class PlayerController : MonoBehaviour
             //Play hugg ANimation
             Collider closestChoppable = GetClosestEnemyCollider(transform.position, hitChoppables);
             //if closestChopable == tree && currentTool == 0
+            /*
             if (closestChoppable.CompareTag("Tree") && toolScript.currentTool == 0)
             {
                 closestChoppable.GetComponent<Choppable>().LoseHealth(1); //just nu gör vi bara 1 skada :)
@@ -82,6 +126,12 @@ public class PlayerController : MonoBehaviour
             {
                 closestChoppable.GetComponent<Choppable>().LoseHealth(1); //just nu gör vi bara 1 skada :)
 
+            } */
+
+            if (closestChoppable.CompareTag(resourceTag))
+            {
+                closestChoppable.GetComponent<Choppable>().LoseHealth(1);
+                player.UseEnergy(1);
             }
         }
 
