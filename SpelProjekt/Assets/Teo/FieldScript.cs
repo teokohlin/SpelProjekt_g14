@@ -29,14 +29,16 @@ public class FieldScript : MonoBehaviour
             timer += Time.fixedDeltaTime;
             
         }
-        if (timer > 3)
+        if (timer > 20)
         {
             ChangeFarmstate();
+            timer = 0;
         }
         if (farmzone && NeededTool())
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
+                p.UseEnergy(1);
                 ChangeFarmstate();
             }
         }
@@ -60,6 +62,7 @@ public class FieldScript : MonoBehaviour
         fieldState++;
         if (fieldState > 4)
         {
+            p.AddFood(10);
             fieldState = 0;
         }
 
