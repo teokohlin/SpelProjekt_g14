@@ -23,6 +23,9 @@ public class UiScript : MonoBehaviour
     [SerializeField] 
     private RectTransform watercan;
 
+    [SerializeField] 
+    private RectTransform seeds;
+
     void Update()
     {
         Vector3 axePos = axe.anchoredPosition;
@@ -30,6 +33,7 @@ public class UiScript : MonoBehaviour
         Vector3 pickaxePos = pickaxe.anchoredPosition;
         Vector3 scythePos = scythe.anchoredPosition;
         Vector3 watercanPos = watercan.anchoredPosition;
+        Vector3 seedsPos = seeds.anchoredPosition;
         
         // 1: posx -237 2: posx  -111 3: posx 12 4: posx 135 5: posx 258
         
@@ -58,7 +62,10 @@ public class UiScript : MonoBehaviour
             //Debug.Log("Pressed 5");
             border.anchoredPosition = watercanPos;
         }
-        
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            border.anchoredPosition = seedsPos;
+        }
         
     }
 }

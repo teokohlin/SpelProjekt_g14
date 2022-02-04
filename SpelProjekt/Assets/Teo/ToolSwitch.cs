@@ -5,6 +5,7 @@ using UnityEngine;
 public class ToolSwitch : MonoBehaviour
 {
     public int currentTool;
+    public bool seed;
     [SerializeField] private Transform[] tools;
     void Start()
     {
@@ -34,10 +35,20 @@ public class ToolSwitch : MonoBehaviour
         {
             changeTool(4);
         }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            seed = true;
+            for (int i = 0; i < tools.Length; i++)
+            {
+                tools[i].gameObject.SetActive(false);
+            }
+        }
+        
     }
 
     public void changeTool(int num)
     {
+        seed = false;
         currentTool = num;
         for (int i = 0; i < tools.Length; i++)
         {
