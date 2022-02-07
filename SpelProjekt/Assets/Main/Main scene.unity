@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -356,6 +356,10 @@ PrefabInstance:
     - target: {fileID: 1951138401434625069, guid: e317a27b57052dd4baf1967db67f7179, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6408876260263310376, guid: e317a27b57052dd4baf1967db67f7179, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e317a27b57052dd4baf1967db67f7179, type: 3}
@@ -3257,12 +3261,20 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -7511558181221131132, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 527ea402213f7394691f4651512f2883, type: 2}
     - target: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
       propertyPath: m_Name
       value: BunnyMonster_lp
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
@@ -3554,11 +3566,40 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6307532369581678554, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+--- !u!114 &1741979791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741979789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "Hej hej, jag \xE4r en kenin"
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "Hej jag \xE4r en menniska"
 --- !u!4 &1741979792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
   m_PrefabInstance: {fileID: 1656472551}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1741979793
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741979789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbbcc5d003b57364cab76232cf88dbc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1744477381 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 60d0bfaf5ef531840829c95226f8a3d1, type: 3}
