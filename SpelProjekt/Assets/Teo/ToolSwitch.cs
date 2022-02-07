@@ -29,19 +29,19 @@ public class ToolSwitch : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
-            changeTool(3);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            changeTool(4);
-        }
-        if (Input.GetKeyDown(KeyCode.Alpha6))
-        {
             seed = true;
             for (int i = 0; i < tools.Length; i++)
             {
                 tools[i].gameObject.SetActive(false);
             }
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            changeTool(3);
+        }
+        if (Input.GetKeyDown(KeyCode.Alpha6))
+        {
+            changeTool(4);
         }
         
     }

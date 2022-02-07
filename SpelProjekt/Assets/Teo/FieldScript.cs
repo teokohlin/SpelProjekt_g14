@@ -72,7 +72,7 @@ public class FieldScript : MonoBehaviour
 
     private bool NeededTool()
     {
-        if (fieldState == 0 && Tool.currentTool == 1)
+        if (fieldState == 0 && Tool.currentTool == 2)
         {
             return true;
         }
@@ -80,11 +80,11 @@ public class FieldScript : MonoBehaviour
         {
             return true;
         }
-        if (fieldState == 2 && Tool.currentTool == 4)
+        if (fieldState == 2 && Tool.currentTool == 3)
         {
             return true;
         }
-        if (fieldState == 4 && Tool.currentTool == 3)
+        if (fieldState == 4 && Tool.currentTool == 4)
         {
             return true;
         }

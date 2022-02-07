@@ -45,17 +45,17 @@ public class UiScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
             //Debug.Log("Pressed 2");
-            border.anchoredPosition = hoePos;
+            border.anchoredPosition = pickaxePos;
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
             //Debug.Log("Pressed 3");
-            border.anchoredPosition = pickaxePos;
+            border.anchoredPosition = hoePos;
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             //Debug.Log("Pressed 4");
-            border.anchoredPosition = scythePos;
+            border.anchoredPosition = seedsPos;
         }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
@@ -64,7 +64,7 @@ public class UiScript : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
-            border.anchoredPosition = seedsPos;
+            border.anchoredPosition = scythePos;
         }
         
     }

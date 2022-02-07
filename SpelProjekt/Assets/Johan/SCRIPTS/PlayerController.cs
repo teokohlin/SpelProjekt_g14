@@ -53,9 +53,9 @@ public class PlayerController : MonoBehaviour
                     case 0://YXA
                         ChopTowardsMouse("Tree");
                         break;
-                    case 1: //PLOG
+                    case 2: //PLOG
                         break;
-                    case 2: //PICKAXE
+                    case 1: //PICKAXE
                         ChopTowardsMouse("Stone");
                         break;
                     case 3: //HOE
