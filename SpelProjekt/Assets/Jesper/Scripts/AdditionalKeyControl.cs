@@ -44,10 +44,10 @@ public class AdditionalKeyControl : MonoBehaviour
             myAnimator.SetBool("Jump", true);
         }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            myAnimator.SetTrigger("Attack");
-        }
+        //if (Input.GetMouseButtonDown(0))
+        //{
+        //    myAnimator.SetTrigger("Attack");
+        //}
 
         if (Input.GetMouseButtonDown(1))
         {
@@ -75,4 +75,11 @@ public class AdditionalKeyControl : MonoBehaviour
             myAnimator.SetBool("Strafing", false);
         }
     }
+
+    public void SetAttack()
+    {
+        myAnimator.SetTrigger("Attack");
+
+    }
+
 }

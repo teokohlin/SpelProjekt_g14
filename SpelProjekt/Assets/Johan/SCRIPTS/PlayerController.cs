@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public Player player;
 
     private bool inDialogue = false;
+    public AdditionalKeyControl akc;
 
     
 
@@ -123,12 +124,16 @@ public class PlayerController : MonoBehaviour
 
         }
 
+        akc.SetAttack(); //hugg animation
+
         Collider[] hitChoppables = Physics.OverlapBox(chopPoint.position, chopBoxSize, chopPoint.rotation, choppableLayers);
 
 
         if (hitChoppables.Length >= 1)
         {
-            //Play hugg ANimation
+            //Play hugg ANimation //
+
+
             Collider closestChoppable = GetClosestEnemyCollider(transform.position, hitChoppables);
             //if closestChopable == tree && currentTool == 0
             /*

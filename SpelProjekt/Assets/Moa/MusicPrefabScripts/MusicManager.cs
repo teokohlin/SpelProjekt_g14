@@ -57,7 +57,7 @@ public class MusicManager : MonoBehaviour
     }
     public void StopMusic(string eventName)
     {
-        switch (eventName)
+        switch (eventName) 
         {
             case "musicMain":
                 eventEmitters.musicMain.Stop();

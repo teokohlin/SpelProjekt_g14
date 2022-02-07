@@ -1212,7 +1212,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1762848059}
   smoothSpeed: 7
-  offset: {x: 0, y: 12, z: -12}
+  offset: {x: 0, y: 15, z: -15}
 --- !u!1001 &637989308
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3836,6 +3836,10 @@ PrefabInstance:
       propertyPath: playerCamera
       value: 
       objectReference: {fileID: 637704060}
+    - target: {fileID: 2080680310, guid: 1df722ecc0a1e6841bc3816909362590, type: 3}
+      propertyPath: turnSmoothing
+      value: 0.06
+      objectReference: {fileID: 0}
     - target: {fileID: 118928173955323312, guid: 1df722ecc0a1e6841bc3816909362590, type: 3}
       propertyPath: m_Name
       value: Player with Tools
