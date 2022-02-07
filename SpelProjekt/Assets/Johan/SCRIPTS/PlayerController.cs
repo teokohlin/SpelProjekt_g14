@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public Player player;
 
+    private bool inDialogue = false;
+
     
 
     void Start()
@@ -30,9 +32,14 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
+        if (inDialogue) //Avaktiverar också för när man är i dialog
+        {
+            return;
+        }
+
         //VÄNSTERKLICK
 
-        //Har spelaren energi och har tiden sedan senaste "slaget" gått
+        //Har spelaren energi och har tiden sedan senaste "slaget" gått. 
         if (Time.time >= nextChopTime)
         {
 
@@ -170,6 +177,11 @@ public class PlayerController : MonoBehaviour
         return bestCollider;
     }
 
+
+    public void SetInDialogue(bool inDial)
+    {
+        inDialogue = inDial;
+    }
 
     //private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben
     //{

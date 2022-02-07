@@ -11,5 +11,6 @@ public class Door_Interactable : Interactable
 
         //refill energy
         pc.player.RefillEnergy();
+        GetComponent<DialogueTrigger>().TriggerDialogue();
     }
 }

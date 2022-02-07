@@ -2,19 +2,22 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class ResourceHandler : MonoBehaviour
 {
     public Player player;
 
-    public Text woodText;
-    public Text stoneText;
-    public Text foodText;
+    public TextMeshProUGUI woodText;
+    public TextMeshProUGUI stoneText;
+    public TextMeshProUGUI foodText;
     [Space]
     public Image energyForeground;
     public Image energyBackground;
     public Sprite flashSprite;
     private Sprite bgOriginalSprite;
+
+    bool eIconIsFlashing = false;
     void Start()
     {
         player.woodUpdate += WoodTextUpdate;
@@ -46,23 +49,26 @@ public class ResourceHandler : MonoBehaviour
 
     void EnergyIconFlash()
     {
-        StartCoroutine(ExampleCoroutine());
-        Debug.Log("d");
+        if (eIconIsFlashing) //för att förhindra att den "spamblinkar"
+        {
+            return;
+        }
+        StartCoroutine(FlashCoroutine());
     }
 
 
 
-    IEnumerator ExampleCoroutine()
+    IEnumerator FlashCoroutine()
     {
-        //Print the time of when the function is first called.
-        Debug.Log("Started Coroutine at timestamp : " + Time.time);
+
+        eIconIsFlashing = true;
+
+        //Debug.Log("Started Coroutine at timestamp : " + Time.time);
         energyBackground.sprite = flashSprite;
 
-        //yield on a new YieldInstruction that waits for 1 seconds.
+        //yield on a new YieldInstruction that waits for .3f seconds.
         yield return new WaitForSeconds(.3f);
 
-        //After we have waited 5 seconds print the time again.
-        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
         energyBackground.sprite = bgOriginalSprite;
 
 
@@ -74,9 +80,11 @@ public class ResourceHandler : MonoBehaviour
         //yield on a new YieldInstruction that waits for 1 seconds.
         yield return new WaitForSeconds(.3f);
 
-        //After we have waited 5 seconds print the time again.
-        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
         energyBackground.sprite = bgOriginalSprite;
+        //Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+        yield return new WaitForSeconds(.3f);
+
+        eIconIsFlashing = false;
 
     }
 
