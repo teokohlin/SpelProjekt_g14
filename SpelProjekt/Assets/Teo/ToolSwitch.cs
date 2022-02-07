@@ -6,29 +6,33 @@ public class ToolSwitch : MonoBehaviour
 {
     public int currentTool;
     public bool seed;
+    public int index;
     [SerializeField] private Transform[] tools;
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            changeTool(0);
+            ChangeTool(0);
+            index = 0;
         }
         if (Input.GetKeyDown(KeyCode.Alpha2))
         {
-            changeTool(1);
+            ChangeTool(1);
+            index = 1;
         }
         if (Input.GetKeyDown(KeyCode.Alpha3))
         {
-            changeTool(2);
+            ChangeTool(2);            
+            index = 2;
         }
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
+            index = 3;
             seed = true;
             for (int i = 0; i < tools.Length; i++)
             {
@@ -37,16 +41,18 @@ public class ToolSwitch : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Alpha5))
         {
-            changeTool(3);
+            ChangeTool(3);
+            index = 4;
         }
         if (Input.GetKeyDown(KeyCode.Alpha6))
         {
-            changeTool(4);
+            index = 5;
+            ChangeTool(4);
         }
         
     }
 
-    public void changeTool(int num)
+    public void ChangeTool(int num)
     {
         seed = false;
         currentTool = num;
