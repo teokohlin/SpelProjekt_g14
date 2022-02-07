@@ -88,6 +88,8 @@ MonoBehaviour:
   dialogueText: {fileID: 3057280785851592494}
   dialogueCharacterImage: {fileID: 7657920648482823572}
   animator: {fileID: 6738662242014669630}
+  timeBetweenLetters: 0.01
+  hotbarCanvasUI: {fileID: 5248882300780099057}
 --- !u!1001 &4469512234040700416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -95,6 +97,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6013640355920696224}
     m_Modifications:
+    - target: {fileID: 8561662947369622513, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8561662947369622514, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -192,6 +198,11 @@ PrefabInstance:
 --- !u!224 &5248882300780099058 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8561662947369622514, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
+  m_PrefabInstance: {fileID: 4469512234040700416}
+  m_PrefabAsset: {fileID: 0}
+--- !u!223 &5248882300780099057 stripped
+Canvas:
+  m_CorrespondingSourceObject: {fileID: 8561662947369622513, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
   m_PrefabInstance: {fileID: 4469512234040700416}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &6831274698180646427

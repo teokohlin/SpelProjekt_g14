@@ -14,7 +14,8 @@ public class DialogueManager : MonoBehaviour
     private PlayerController playerC;
     [Space]
     public float timeBetweenLetters = 0.01f;
-
+    [Space]
+    public Canvas hotbarCanvasUI;
 
     void Start()
     {
@@ -33,6 +34,7 @@ public class DialogueManager : MonoBehaviour
     public void StartDialogue(Dialogue[] dialoguez)
     {
         playerC.SetInDialogue(true);
+        hotbarCanvasUI.enabled = false;
         animator.SetBool("IsOpen", true);
 
         dialogues.Clear();
@@ -76,6 +78,7 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         playerC.SetInDialogue(false);
+        hotbarCanvasUI.enabled = true;
         animator.SetBool("IsOpen", false);
     }
 
