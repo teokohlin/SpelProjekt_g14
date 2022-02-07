@@ -24,6 +24,7 @@ public class Player : MonoBehaviour
     public UnityAction<int> stoneUpdate;
     public UnityAction<int> foodUpdate;
     public UnityAction<float> energyPercentageUpdate;
+    public UnityAction noEnergyActivated;
 
 
     public void AddWood(int amount)
@@ -44,7 +45,10 @@ public class Player : MonoBehaviour
     public void UseEnergy(int amount)
     {
         energy -= amount;
-        
+        if (energy <= 0)
+        {
+            noEnergyActivated?.Invoke();
+        }
         //percentage = energy / maxEnergy;
         //Debug.Log(percentage);
         energyPercentageUpdate?.Invoke(Percentage(energy, maxEnergy));

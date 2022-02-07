@@ -11,13 +11,19 @@ public class ResourceHandler : MonoBehaviour
     public Text stoneText;
     public Text foodText;
     [Space]
-    public Image foreground;
+    public Image energyForeground;
+    public Image energyBackground;
+    public Sprite flashSprite;
+    private Sprite bgOriginalSprite;
     void Start()
     {
         player.woodUpdate += WoodTextUpdate;
         player.stoneUpdate += StoneTextUpdate;
         player.foodUpdate += FoodTextUpdate;
         player.energyPercentageUpdate += EnergyImageUpdate;
+        player.noEnergyActivated += EnergyIconFlash;
+
+        bgOriginalSprite = energyBackground.sprite;
     }
 
 
@@ -35,8 +41,43 @@ public class ResourceHandler : MonoBehaviour
     }
     void EnergyImageUpdate(float percentage)
     {
-        foreground.fillAmount = percentage;
+        energyForeground.fillAmount = percentage;
     }
 
+    void EnergyIconFlash()
+    {
+        StartCoroutine(ExampleCoroutine());
+        Debug.Log("d");
+    }
+
+
+
+    IEnumerator ExampleCoroutine()
+    {
+        //Print the time of when the function is first called.
+        Debug.Log("Started Coroutine at timestamp : " + Time.time);
+        energyBackground.sprite = flashSprite;
+
+        //yield on a new YieldInstruction that waits for 1 seconds.
+        yield return new WaitForSeconds(.3f);
+
+        //After we have waited 5 seconds print the time again.
+        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+        energyBackground.sprite = bgOriginalSprite;
+
+
+        yield return new WaitForSeconds(.3f);
+
+
+        energyBackground.sprite = flashSprite;
+
+        //yield on a new YieldInstruction that waits for 1 seconds.
+        yield return new WaitForSeconds(.3f);
+
+        //After we have waited 5 seconds print the time again.
+        Debug.Log("Finished Coroutine at timestamp : " + Time.time);
+        energyBackground.sprite = bgOriginalSprite;
+
+    }
 
 }

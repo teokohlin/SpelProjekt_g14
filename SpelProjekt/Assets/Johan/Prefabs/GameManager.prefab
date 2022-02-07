@@ -49,7 +49,10 @@ MonoBehaviour:
   woodText: {fileID: 6013640355650420017}
   stoneText: {fileID: 6013640356404804561}
   foodText: {fileID: 6013640356006632332}
-  foreground: {fileID: 3639790011574805300}
+  energyForeground: {fileID: 3639790011574805300}
+  energyBackground: {fileID: 4772132943070063415}
+  flashColor: {r: 1, g: 0, b: 0, a: 1}
+  flashSprite: {fileID: 21300000, guid: e165d2e0718a0264aa11ee536bc6291b, type: 3}
 --- !u!1001 &4469512234040700416
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -258,6 +261,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 4288027929675335368, guid: 07b27c01e7494b04689f5ea29391f66f, type: 3}
   m_PrefabInstance: {fileID: 7563404852630593418}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &4772132943070063415 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3084008090272691389, guid: 07b27c01e7494b04689f5ea29391f66f, type: 3}
+  m_PrefabInstance: {fileID: 7563404852630593418}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &3639790011574805300 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6518323977158229182, guid: 07b27c01e7494b04689f5ea29391f66f, type: 3}

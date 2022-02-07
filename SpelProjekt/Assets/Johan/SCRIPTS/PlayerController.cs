@@ -33,12 +33,19 @@ public class PlayerController : MonoBehaviour
         //VÄNSTERKLICK
 
         //Har spelaren energi och har tiden sedan senaste "slaget" gått
-        if (Time.time >= nextChopTime && player.ReturnEnergy() > 0)
+        if (Time.time >= nextChopTime)
         {
+
+
 
             //vänsterklick
             if (Input.GetMouseButtonDown(0))
             {
+                if (player.ReturnEnergy() < 1)
+                {
+                    player.noEnergyActivated?.Invoke();
+                    return;
+                }
 
                 //vilket tool vi håller
                 switch (toolScript.currentTool)
