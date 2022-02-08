@@ -9,7 +9,7 @@ BoxCollider:
   m_GameObject: {fileID: 2328802824922367037}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 50.302143, y: 2.9354515, z: 40.20381}
   m_Center: {x: 0, y: 0.15759414, z: 0.0000009536743}
@@ -22,7 +22,7 @@ BoxCollider:
   m_GameObject: {fileID: 2328802825046884055}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 62.559685, y: 11.087216, z: 58.104904}
   m_Center: {x: 0, y: -0.0000004768372, z: 0.0000019073489}
@@ -35,7 +35,7 @@ BoxCollider:
   m_GameObject: {fileID: 2328802825046991169}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 27.390911, y: 1.4943702, z: 26.629915}
   m_Center: {x: 0.3983224, y: 0.24718481, z: -3.121417}
@@ -48,7 +48,7 @@ BoxCollider:
   m_GameObject: {fileID: 2328802825364510689}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 41.695686, y: 2.0999022, z: 33.2052}
   m_Center: {x: 0, y: 0.32994094, z: 0.0000038146973}
@@ -61,7 +61,7 @@ BoxCollider:
   m_GameObject: {fileID: 2328802825485704663}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 43.252075, y: 2.9426758, z: 40.25564}
   m_Center: {x: 0, y: 0.30846584, z: 0.0000047683716}
@@ -110,11 +110,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3211339235869635483}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 60.907234, y: 12.420181, z: 62.534393}
-  m_Center: {x: 15.394027, y: 36.567093, z: 32.245655}
+  m_Size: {x: 42.4, y: 2.9354515, z: 40.20381}
+  m_Center: {x: 15.8, y: 32.6, z: 32.77}
 --- !u!114 &3211339235869635486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -128,14 +128,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   growthTime: 20
-  fieldState: 0
   fields:
   - {fileID: 2328802824922367037}
   - {fileID: 2328802825485704663}
   - {fileID: 2328802825046991169}
   - {fileID: 2328802825364510689}
   - {fileID: 2328802825046884055}
-  Tool: {fileID: 0}
   p: {fileID: 0}
 --- !u!1001 &3211339235240585904
 PrefabInstance:

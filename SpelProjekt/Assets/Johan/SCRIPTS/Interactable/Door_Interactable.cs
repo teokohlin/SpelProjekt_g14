@@ -8,6 +8,7 @@ public class Door_Interactable : Interactable
     //public string targetSceneName;
     public Vector3 targetPosition = Vector3.one;
     public Transform spawnpoint;
+    public Transform camera;
     private void Start()
     {
         //gm = FindObjectOfType<GameManager>();
@@ -23,5 +24,6 @@ public class Door_Interactable : Interactable
         //gm.ChangeScene(targetSceneName, targetPosition);
 
         pc.gameObject.transform.position = spawnpoint.position;
+        camera.position = spawnpoint.position + camera.GetComponent<CameraFollow>().offset;
     }
 }
