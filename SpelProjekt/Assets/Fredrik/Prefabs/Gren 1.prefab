@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &600903836810630455
+--- !u!1 &7011111306124119095
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,47 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 224342666823077773}
-  - component: {fileID: 3797341401880657960}
-  - component: {fileID: 1393348049449514210}
-  - component: {fileID: 330943149917848347}
-  - component: {fileID: 330943149917848346}
+  - component: {fileID: 7640260263021680269}
+  - component: {fileID: 6748771241349323048}
+  - component: {fileID: 8812564694585798114}
+  - component: {fileID: 7893984721293847211}
+  - component: {fileID: 7893984721293847204}
   m_Layer: 9
-  m_Name: Rock_2
-  m_TagString: Stone
+  m_Name: Gren 1
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &224342666823077773
+--- !u!4 &7640260263021680269
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600903836810630455}
+  m_GameObject: {fileID: 7011111306124119095}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 38.6, y: 3.1186626, z: -41.1}
+  m_LocalPosition: {x: -9.71, y: 1.046917, z: -6.64}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3797341401880657960
+--- !u!33 &6748771241349323048
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600903836810630455}
-  m_Mesh: {fileID: -2735251984287490357, guid: 974f2a461c8443b41852b523dabdf8eb, type: 3}
---- !u!23 &1393348049449514210
+  m_GameObject: {fileID: 7011111306124119095}
+  m_Mesh: {fileID: -832606143848720121, guid: c73e0c9f644716e458aaff0b44997417, type: 3}
+--- !u!23 &8812564694585798114
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600903836810630455}
+  m_GameObject: {fileID: 7011111306124119095}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -61,7 +61,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 8368722655750445499, guid: 974f2a461c8443b41852b523dabdf8eb, type: 3}
+  - {fileID: 2100000, guid: 1c5b30351f4b7c14793d447335815477, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -83,31 +83,31 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &330943149917848347
+--- !u!65 &7893984721293847211
 BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600903836810630455}
+  m_GameObject: {fileID: 7011111306124119095}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 6.74489, y: 8.810883, z: 7.9035993}
-  m_Center: {x: 0.45486653, y: 1.7867786, z: -0.12617803}
---- !u!114 &330943149917848346
+  m_Size: {x: 2.2586524, y: 1.0443939, z: 4.6357746}
+  m_Center: {x: 0.47144786, y: -0.024720028, z: 0.4118222}
+--- !u!114 &7893984721293847204
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 600903836810630455}
+  m_GameObject: {fileID: 7011111306124119095}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b07986a824c8dd14ab669e9791923bc3, type: 3}
+  m_Script: {fileID: 11500000, guid: 79f8e2e9143480a42bd42f7be5e87dab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 5
-  dropAmount: 10
-  dropPrefab: {fileID: 6408380310064208783, guid: 4680b11f78f842f42b4f63593db97574, type: 3}
+  health: 1
+  dropAmount: 2
+  dropPrefab: {fileID: 2186391562121327181, guid: 0886e380e5b70b04283d8e2e711e312f, type: 3}
