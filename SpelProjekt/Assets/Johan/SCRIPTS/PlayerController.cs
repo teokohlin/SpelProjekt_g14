@@ -75,15 +75,19 @@ public class PlayerController : MonoBehaviour
                     case 2: //PLOG
                         FarmTowardsMouse(0); //0 = ej plogad
                         break;
-                    case 3: //HOE
+                    case 3: //FRÖN
+                        FarmTowardsMouse(1); //1 = plogad
                         break;
-                    case 4: //FRÖN
+                    case 4: //VATTENKANNA
+                        FarmTowardsMouse(2); //2 = sådd
                         break;
-                    case 5: //VATTENKANNA
+                    case 5: //LIE
+                        FarmTowardsMouse(4); //4 = växt
                         break;
                     default:
                         break;
                 }
+                akc.SetAttack();
 
                 nextChopTime = Time.time + 1f / chopRate;
             }
@@ -135,32 +139,38 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        akc.SetAttack(); //hugg animation
+        //akc.SetAttack(); ///////////hugg animation, gör detta mer specifikt för var grej
+
+        
+        //ANIMATION      //ska funka som "attack" gjorde, en funktion som kallar en "trigger" i animationskontrollen
+        //KANSKE KAN HA DETTA I SWITCHEN I UPDATE ISTÄLLET
+        switch (resourceTag)
+        {
+            case "Tree" :
+                //akc. ChopTree();
+                break;
+            case "Stone" :
+                //akc. PickStone();
+                break;
+            default:
+                break;
+        }
 
         Collider[] hitChoppables = Physics.OverlapBox(chopPoint.position, chopBoxSize, chopPoint.rotation, choppableLayers);
 
 
         if (hitChoppables.Length >= 1)
         {
-            //Play hugg ANimation //
+            //Play hugg ANimation //animation här om den bara ska spelas om man träffar något(vad som)
 
 
             Collider closestChoppable = GetClosestEnemyCollider(transform.position, hitChoppables);
-            //if closestChopable == tree && currentTool == 0
-            /*
-            if (closestChoppable.CompareTag("Tree") && toolScript.currentTool == 0)
-            {
-                closestChoppable.GetComponent<Choppable>().LoseHealth(1); //just nu gör vi bara 1 skada :)
-            }
-            else if (closestChoppable.CompareTag("Stone") && toolScript.currentTool == 2)
-            {
-                closestChoppable.GetComponent<Choppable>().LoseHealth(1); //just nu gör vi bara 1 skada :)
-
-            } */
 
             if (closestChoppable.CompareTag(resourceTag))
             {
-                closestChoppable.GetComponent<Choppable>().LoseHealth(1);
+                //play animation här om det bara ska spelas när man slår på rätt sak
+                
+                closestChoppable.GetComponent<Choppable>().LoseHealth(1); //redskapet gör bara 1 skada just nu
                 player.UseEnergy(1);
             }
         }
@@ -187,6 +197,51 @@ public class PlayerController : MonoBehaviour
             this.transform.LookAt(targetPostition);
 
         }  
+        
+        
+        Collider[] hitChoppables = Physics.OverlapBox(chopPoint.position, chopBoxSize, chopPoint.rotation, choppableLayers);
+
+
+
+        if (hitChoppables.Length < 1)
+        {
+            return;
+        }
+
+        //ANIMATIONS       //ska funka som "attack" gjorde, en funktion som kallar en "trigger" i animationskontrollen
+        //KANSKE KAN HA DETTA I SWITCHEN I UPDATE ISTÄLLET
+
+        switch (neededFarmIndex)
+        {
+            case 0: //Plog
+                //akc. PlowField();
+                break;
+            case 1: //Frön
+                //akc. SeedField();
+                break;
+            case 2: //Vattenkanna
+                //akc. WaterField();
+                break;
+            case 3: //Lie
+                //akc. HoeField();
+                break;
+            default:
+                break;
+        }
+        
+        Collider closestChoppable = GetClosestEnemyCollider(transform.position, hitChoppables);
+
+
+        if (closestChoppable.CompareTag("Field"))
+        {
+            FieldScript fieldScript = closestChoppable.GetComponent<FieldScript>();
+            if (fieldScript.ReturnFieldState() == neededFarmIndex)
+            {
+                fieldScript.ChangeFarmstate();
+                player.UseEnergy(1);
+            }
+
+        }
     }
     
     
@@ -221,14 +276,15 @@ public class PlayerController : MonoBehaviour
         as3.LockMovement(inDialogue);
     }
 
-    //private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben
-    //{
-    //    Gizmos.color = Color.red;
+    /*
+    private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben
+    {
+        Gizmos.color = Color.red;
 
-    //    Gizmos.DrawWireCube(chopPoint.position, chopBoxSize);
+        Gizmos.DrawWireCube(chopPoint.position, chopBoxSize);
 
-    //}
-
+    }
+    */
 
 
 }

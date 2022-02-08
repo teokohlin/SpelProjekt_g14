@@ -20,6 +20,8 @@ public class ResourceHandler : MonoBehaviour
     bool eIconIsFlashing = false;
     void Start()
     {
+        player = FindObjectOfType<Player>();
+        
         player.woodUpdate += WoodTextUpdate;
         player.stoneUpdate += StoneTextUpdate;
         player.foodUpdate += FoodTextUpdate;
@@ -49,7 +51,7 @@ public class ResourceHandler : MonoBehaviour
 
     void EnergyIconFlash()
     {
-        if (eIconIsFlashing) //för att förhindra att den "spamblinkar"
+        if (eIconIsFlashing) //fÃ¶r att fÃ¶rhindra att den "spamblinkar"
         {
             return;
         }
