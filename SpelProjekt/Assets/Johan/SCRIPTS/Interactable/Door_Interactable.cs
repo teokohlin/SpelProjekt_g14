@@ -10,7 +10,7 @@ public class Door_Interactable : Interactable
     public Transform spawnpoint;
     private void Start()
     {
-        gm = FindObjectOfType<GameManager>();
+        //gm = FindObjectOfType<GameManager>();
     }
     public override void InteractWith(PlayerController pc)
     {
