@@ -6,6 +6,7 @@ public class Door_Interactable : Interactable
 {
     private GameManager gm;
     public string targetSceneName;
+    public Vector3 targetPosition = Vector3.one;
     private void Start()
     {
         gm = FindObjectOfType<GameManager>();
@@ -18,6 +19,6 @@ public class Door_Interactable : Interactable
         //pc.player.RefillEnergy();
         //GetComponent<DialogueTrigger>().TriggerDialogue();
 
-        gm.ChangeScene(targetSceneName, Vector3.one);
+        gm.ChangeScene(targetSceneName, targetPosition);
     }
 }
