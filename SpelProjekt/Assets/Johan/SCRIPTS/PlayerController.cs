@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Cinemachine.Examples;
+
 
 public class PlayerController : MonoBehaviour
 {
@@ -8,25 +10,31 @@ public class PlayerController : MonoBehaviour
     public Camera cam;
     public LayerMask choppableLayers;
     public LayerMask interactableLayer;
+    [Space]
     public Transform chopPoint;
     public Vector3 chopBoxSize = new Vector3(.5f,4,1.75f); //trodde man skulle behöva dela på 2.       .5, 4, 1.75f är min idé bara. går ändra
-    private ToolSwitch toolScript;
     public float chopRate = 1f;
+    [Space]
     public float maxDistanceForInteractions = 5f;
+
+    private ToolSwitch toolScript;
+
 
     float nextChopTime = 0f;
     [HideInInspector]
     public Player player;
 
     private bool inDialogue = false;
-    public AdditionalKeyControl akc;
-
+    private AdditionalKeyControl akc;
+    private AS3CharacterMovement as3; //Behövde *using Cinemachine.Examples;
     
 
     void Start()
     {
          toolScript = gameObject.GetComponent<ToolSwitch>();
          player = GetComponent<Player>();
+         akc = GetComponent<AdditionalKeyControl>();
+         as3 = GetComponent<AS3CharacterMovement>();
     }
 
     // Update is called once per frame
@@ -186,6 +194,8 @@ public class PlayerController : MonoBehaviour
     public void SetInDialogue(bool inDial)
     {
         inDialogue = inDial;
+
+        as3.LockMovement(inDialogue);
     }
 
     //private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben

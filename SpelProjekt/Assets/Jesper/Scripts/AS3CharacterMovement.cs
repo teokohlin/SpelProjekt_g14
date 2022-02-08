@@ -22,6 +22,8 @@ namespace Cinemachine.Examples
     private Camera mainCamera;
     private float velocity;
 
+    private bool lockMovement;
+
 	// Use this for initialization
 	void Start ()
 	{
@@ -32,8 +34,17 @@ namespace Cinemachine.Examples
 	// Update is called once per frame
 	void FixedUpdate ()
 	{
-	    input.x = Input.GetAxis("Horizontal");
-	    input.y = Input.GetAxis("Vertical");
+
+        if (lockMovement)
+        {
+            input = Vector2.zero;
+        }
+        else
+        {
+            input.x = Input.GetAxis("Horizontal");
+	        input.y = Input.GetAxis("Vertical");
+        }
+
 
 		// set speed to both vertical and horizontal inputs
         if (useCharacterForward) 
@@ -96,6 +107,11 @@ namespace Cinemachine.Examples
             var right = transform.TransformDirection(Vector3.right);
             targetDirection = input.x * right + Mathf.Abs(input.y) * forward;
         }
+    }
+
+    public void LockMovement(bool lm)
+    {
+        lockMovement = lm;
     }
 }
 
