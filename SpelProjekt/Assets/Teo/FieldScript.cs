@@ -111,4 +111,9 @@ public class FieldScript : MonoBehaviour
             }
         }
     }
+
+    public int ReturnFieldState()
+    {
+        return fieldState;
+    }
 }

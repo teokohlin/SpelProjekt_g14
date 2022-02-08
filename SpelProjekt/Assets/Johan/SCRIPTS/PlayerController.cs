@@ -69,14 +69,17 @@ public class PlayerController : MonoBehaviour
                     case 0://YXA
                         ChopTowardsMouse("Tree");
                         break;
-                    case 2: //PLOG
-                        break;
                     case 1: //PICKAXE
                         ChopTowardsMouse("Stone");
                         break;
+                    case 2: //PLOG
+                        FarmTowardsMouse(0); //0 = ej plogad
+                        break;
                     case 3: //HOE
                         break;
-                    case 4: //VATTENKANNA
+                    case 4: //FRÖN
+                        break;
+                    case 5: //VATTENKANNA
                         break;
                     default:
                         break;
@@ -170,6 +173,26 @@ public class PlayerController : MonoBehaviour
 
 
     }
+
+    private void FarmTowardsMouse(int neededFarmIndex)
+    {
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100, choppableLayers))
+        {
+            Vector3 targetPostition = new Vector3(hit.point.x,
+                this.transform.position.y,
+                hit.point.z);
+            this.transform.LookAt(targetPostition);
+
+        }  
+    }
+    
+    
+    
+    
+    
 
     Collider GetClosestEnemyCollider(Vector3 playerPosition, Collider[] choppableColliders)
     {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class Door_Interactable : Interactable
 {
     private GameManager gm;
-    public string targetSceneName;
+    //public string targetSceneName;
     public Vector3 targetPosition = Vector3.one;
     private void Start()
     {
@@ -19,6 +19,8 @@ public class Door_Interactable : Interactable
         //pc.player.RefillEnergy();
         //GetComponent<DialogueTrigger>().TriggerDialogue();
 
-        gm.ChangeScene(targetSceneName, targetPosition);
+        //gm.ChangeScene(targetSceneName, targetPosition);
+
+        pc.gameObject.transform.position = targetPosition;
     }
 }
