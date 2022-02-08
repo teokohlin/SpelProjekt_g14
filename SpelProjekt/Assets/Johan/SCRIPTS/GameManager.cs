@@ -7,11 +7,13 @@ public class GameManager : MonoBehaviour
 {
     public GameObject player = null;
 
-    [Tooltip("Spelare, kamera, gamemanager framförallt. Kanske musik")]
+    [Tooltip("Spelare, kamera, gamemanager framfï¿½rallt. Kanske musik")]
     public GameObject[] dontDestroyOnLoadObjects = null;
     void Start()
     {
 
+        player = GameObject.FindGameObjectWithTag("Player");
+        
         foreach  (GameObject g in dontDestroyOnLoadObjects)
         {
             DontDestroyOnLoad(g);

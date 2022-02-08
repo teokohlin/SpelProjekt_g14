@@ -50,7 +50,7 @@ public class AdditionalKeyControl : MonoBehaviour
         //}
 
         /*
-        if (Input.GetMouseButtonDown(1)) ///////////Ingen j‰vla strafing
+        if (Input.GetMouseButtonDown(1)) ///////////Ingen j√§vla strafing
         {
             myAnimator.SetBool("Strafing", true);
  	
@@ -89,5 +89,6 @@ public class AdditionalKeyControl : MonoBehaviour
         myAnimator.SetTrigger("Attack");
 
     }
+    
 
 }

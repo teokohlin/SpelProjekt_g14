@@ -7,20 +7,20 @@ public class FieldScript : MonoBehaviour
 {
     [SerializeField] 
     private float growthTime = 20;
-    [SerializeField] 
-    private int fieldState; //0 = ej plogad 1 = plogad 2 = sådd 3 = växt
+    //[SerializeField] 
+    private int fieldState; //0 = ej plogad 1 = plogad 2 = sådd 3= vattnat 4 = växt
     [SerializeField] 
     private GameObject[] fields;
-    [SerializeField] 
-    private ToolSwitch Tool;
+    //[SerializeField] 
+    //private ToolSwitch Tool;
     [SerializeField] 
     private Player p;
 
-    private bool farmzone;
-    private float timer;
+    //private bool farmzone;
+    private float timer = 0f;
     void Start()
     {
-        
+        p = FindObjectOfType<Player>();
     }
 
     // Update is called once per frame
@@ -28,7 +28,7 @@ public class FieldScript : MonoBehaviour
     {
         if (fieldState == 3)
         {
-            timer += Time.fixedDeltaTime;
+            timer += Time.deltaTime; //måste vara deltaTime i vanlig update
             
         }
         if (timer > growthTime)
@@ -36,6 +36,7 @@ public class FieldScript : MonoBehaviour
             ChangeFarmstate();
             timer = 0;
         }
+        /*
         if (farmzone && NeededTool())
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -43,9 +44,10 @@ public class FieldScript : MonoBehaviour
                 p.UseEnergy(1);
                 ChangeFarmstate();
             }
-        }
+        } */
     }
 
+    /*
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -58,7 +60,7 @@ public class FieldScript : MonoBehaviour
     {
         farmzone = false;
     }
-
+    */
     public void ChangeFarmstate()
     {
         fieldState++;
@@ -72,6 +74,7 @@ public class FieldScript : MonoBehaviour
         ChangeFieldObject();
     }
 
+    /*
     private bool NeededTool()
     {
         if (fieldState == 0 && Tool.currentTool == 2)
@@ -95,7 +98,7 @@ public class FieldScript : MonoBehaviour
             return false;
         }
     }
-
+    */
     private void ChangeFieldObject()
     {
         
@@ -110,5 +113,10 @@ public class FieldScript : MonoBehaviour
                 fields[i].gameObject.SetActive(false);
             }
         }
+    }
+
+    public int ReturnFieldState()
+    {
+        return fieldState;
     }
 }

@@ -5,11 +5,12 @@ using UnityEngine;
 public class Door_Interactable : Interactable
 {
     private GameManager gm;
-    public string targetSceneName;
+    //public string targetSceneName;
     public Vector3 targetPosition = Vector3.one;
+    public Transform spawnpoint;
     private void Start()
     {
-        gm = FindObjectOfType<GameManager>();
+        //gm = FindObjectOfType<GameManager>();
     }
     public override void InteractWith(PlayerController pc)
     {
@@ -19,6 +20,8 @@ public class Door_Interactable : Interactable
         //pc.player.RefillEnergy();
         //GetComponent<DialogueTrigger>().TriggerDialogue();
 
-        gm.ChangeScene(targetSceneName, targetPosition);
+        //gm.ChangeScene(targetSceneName, targetPosition);
+
+        pc.gameObject.transform.position = spawnpoint.position;
     }
 }

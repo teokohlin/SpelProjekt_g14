@@ -1,12 +1,14 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-//inte riktigt bestämt mig om man behöver ha skript som ärver av "choppable"
-//eller om man bara ska göra den generell
+//inte riktigt bestÃ¤mt mig om man behÃ¶ver ha skript som Ã¤rver av "choppable"
+//eller om man bara ska gÃ¶ra den generell
 
 public class Tree : Choppable
 {
+
 
     public override void Die() 
     {
