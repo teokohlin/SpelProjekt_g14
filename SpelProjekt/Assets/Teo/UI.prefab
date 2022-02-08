@@ -1048,7 +1048,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
@@ -1198,6 +1198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdb01736ce1b0c846957ce3b47066df2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  borderWidth: 210
   infoText: {fileID: 1929488960333472721}
   titelText: {fileID: 7405519238315544945}
   infoWindow: {fileID: 1929488961674313568}

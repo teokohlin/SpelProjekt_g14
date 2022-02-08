@@ -6,6 +6,8 @@ using UnityEngine;
 public class FieldScript : MonoBehaviour
 {
     [SerializeField] 
+    private float growthTime = 20;
+    [SerializeField] 
     private int fieldState; //0 = ej plogad 1 = plogad 2 = sådd 3 = växt
     [SerializeField] 
     private GameObject[] fields;
@@ -29,7 +31,7 @@ public class FieldScript : MonoBehaviour
             timer += Time.fixedDeltaTime;
             
         }
-        if (timer > 20)
+        if (timer > growthTime)
         {
             ChangeFarmstate();
             timer = 0;

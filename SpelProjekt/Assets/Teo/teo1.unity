@@ -174,7 +174,6 @@ MonoBehaviour:
   chopRate: 1
   maxDistanceForInteractions: 5
   player: {fileID: 0}
-  akc: {fileID: 0}
 --- !u!114 &83274564
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -205,7 +204,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 499806083433765192, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2648132311679258976, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_RootOrder
