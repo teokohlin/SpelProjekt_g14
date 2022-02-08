@@ -43,7 +43,7 @@ GameObject:
   - component: {fileID: 224392305052226372}
   - component: {fileID: 224392305052226373}
   m_Layer: 9
-  m_Name: Fir_tree_somwhat_better
+  m_Name: Tree_Choppable
   m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -93,6 +93,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  Particle_effect: {fileID: 3753539516221383832, guid: 2969e379e0a10794887019ffa97af1de, type: 3}
   dropAmount: 5
   dropPrefab: {fileID: 2186391562121327181, guid: 0886e380e5b70b04283d8e2e711e312f, type: 3}
 --- !u!1 &1548061555643534277

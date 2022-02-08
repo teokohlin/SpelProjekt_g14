@@ -5,6 +5,7 @@ using UnityEngine;
 public class Choppable : MonoBehaviour
 {
     public int health = 1;
+    public ParticleSystem Particle_effect;
 
     //[HideInInspector]
     private bool dead = false; //kan inte använda static bool, då blir den true för ALLA //private eller protected spelar nog ingen roll
@@ -14,6 +15,8 @@ public class Choppable : MonoBehaviour
 
     public virtual void LoseHealth(int damage)
     {
+
+        Particle_effect.Play();
 
         health -= damage;
         if (health <= 0)
