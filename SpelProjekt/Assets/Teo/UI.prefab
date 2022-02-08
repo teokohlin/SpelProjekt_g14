@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 8849977721086686770}
   - component: {fileID: 3697553593324337304}
   - component: {fileID: 7336067356691502921}
+  - component: {fileID: 2464608112236371165}
   m_Layer: 0
   m_Name: seeds
   m_TagString: Untagged
@@ -344,6 +345,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2464608112236371165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 753454447809882197}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d05e051af417b4a99f9e3ebabcb943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoToShow: Can be planted if the field is plowed.
+  titelToShow: Wheat seeds
+  toolIndex: 3
 --- !u!1 &1785054278140436828
 GameObject:
   m_ObjectHideFlags: 0
@@ -891,6 +907,7 @@ GameObject:
   - component: {fileID: 8561662946646152852}
   - component: {fileID: 8561662946646152854}
   - component: {fileID: 8561662946646152853}
+  - component: {fileID: 3729334742899634391}
   m_Layer: 5
   m_Name: watercan
   m_TagString: Untagged
@@ -956,6 +973,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &3729334742899634391
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8561662946646152851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d05e051af417b4a99f9e3ebabcb943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoToShow: The years have taken its toll on this item. Fill water in the can by
+    a lake or by the well. Water the seeds daily to make them grow.
+  titelToShow: The rusty watering can
+  toolIndex: 4
 --- !u!1 &8561662947155308252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1044,6 +1077,7 @@ GameObject:
   - component: {fileID: 8561662947369622512}
   - component: {fileID: 8561662947369622527}
   - component: {fileID: 8561662947369622515}
+  - component: {fileID: 7120179769334143371}
   m_Layer: 5
   m_Name: UI
   m_TagString: Untagged
@@ -1152,6 +1186,30 @@ MonoBehaviour:
   scythe: {fileID: 8561662947834504565}
   watercan: {fileID: 8561662946646152852}
   seeds: {fileID: 8849977721086686770}
+--- !u!114 &7120179769334143371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8561662947369622526}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdb01736ce1b0c846957ce3b47066df2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoText: {fileID: 1929488960333472721}
+  titelText: {fileID: 7405519238315544945}
+  infoWindow: {fileID: 1929488961674313568}
+  itemImage: {fileID: 1929488960543735465}
+  border: {fileID: 1798631860258347671}
+  itemSprites:
+  - {fileID: 21300000, guid: fe5d1fa242fd43c449977f7e2e4c58c8, type: 3}
+  - {fileID: 21300000, guid: 8a8db3f8e409e934fa46eed03e0b7b0a, type: 3}
+  - {fileID: 21300000, guid: d0e4888370b08f74eb9b1ea6524615e0, type: 3}
+  - {fileID: 21300000, guid: ea2839a506d18204088f4ff1ad574aef, type: 3}
+  - {fileID: 21300000, guid: 4a7947e019f3afc4eb2326f9709b1077, type: 3}
+  - {fileID: 21300000, guid: 48ba1a50d1bf0864eb6705709b51e359, type: 3}
 --- !u!1 &8561662947412239147
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,6 +1296,7 @@ GameObject:
   - component: {fileID: 8561662947524611868}
   - component: {fileID: 8561662947524611870}
   - component: {fileID: 8561662947524611869}
+  - component: {fileID: 2587535605403096112}
   m_Layer: 5
   m_Name: pickaxe
   m_TagString: Untagged
@@ -1303,6 +1362,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &2587535605403096112
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8561662947524611867}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d05e051af417b4a99f9e3ebabcb943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoToShow: "This beauty was given to me from my now deceased neighbor. He was
+    a stonemason so I know that the pickaxe will do it\u2019s thing. Use this item
+    to hack stone from boulders and other materials from the mine."
+  titelToShow: The trusty pickaxe
+  toolIndex: 1
 --- !u!1 &8561662947629622860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,6 +1390,7 @@ GameObject:
   - component: {fileID: 8561662947629622861}
   - component: {fileID: 8561662947629622863}
   - component: {fileID: 8561662947629622862}
+  - component: {fileID: 682849294524521784}
   m_Layer: 5
   m_Name: axe
   m_TagString: Untagged
@@ -1379,6 +1456,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &682849294524521784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8561662947629622860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d05e051af417b4a99f9e3ebabcb943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoToShow: This axe was made by my father around the time I was born. Sturdy and
+    helpful when it comes to chopping down trees.
+  titelToShow: "Father\u2019s axe"
+  toolIndex: 0
 --- !u!1 &8561662947735280199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1390,6 +1483,7 @@ GameObject:
   - component: {fileID: 8561662947735280184}
   - component: {fileID: 8561662947735280186}
   - component: {fileID: 8561662947735280185}
+  - component: {fileID: 5103069246064408730}
   m_Layer: 5
   m_Name: hoe
   m_TagString: Untagged
@@ -1455,6 +1549,23 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5103069246064408730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8561662947735280199}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d05e051af417b4a99f9e3ebabcb943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoToShow: I remember helping my mother with the garden when I was a little boy.
+    On the handle I can still see where she used to have her grip. Use the garden
+    hoe to plow the fields.
+  titelToShow: "Mother\u2019s garden hoe"
+  toolIndex: 2
 --- !u!1 &8561662947834504564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1466,6 +1577,7 @@ GameObject:
   - component: {fileID: 8561662947834504565}
   - component: {fileID: 8561662947834504567}
   - component: {fileID: 8561662947834504566}
+  - component: {fileID: 7204601733416429878}
   m_Layer: 5
   m_Name: scythe
   m_TagString: Untagged
@@ -1531,6 +1643,22 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &7204601733416429878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8561662947834504564}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5d05e051af417b4a99f9e3ebabcb943, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  infoToShow: Thanks to some luck and an iron will, I myself succeeded to make this
+    fabulous masterpiece. Use the scythe to harvest the crops.
+  titelToShow: The homemade scythe
+  toolIndex: 5
 --- !u!1 &8561662948043280428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1671,3 +1799,47 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
   m_PrefabInstance: {fileID: 3680779365889369896}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7405519238315544945 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6183848928122959449, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
+  m_PrefabInstance: {fileID: 3680779365889369896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1929488960333472721 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3013518003432752377, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
+  m_PrefabInstance: {fileID: 3680779365889369896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1929488960543735465 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3013518003641997697, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
+  m_PrefabInstance: {fileID: 3680779365889369896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1798631860258347671 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3162309177855606207, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
+  m_PrefabInstance: {fileID: 3680779365889369896}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

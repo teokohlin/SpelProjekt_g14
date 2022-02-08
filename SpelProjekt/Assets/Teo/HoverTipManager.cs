@@ -8,11 +8,15 @@ using UnityEngine.UI;
 
 public class HoverTipManager : MonoBehaviour
 {
+    [SerializeField]
+    private int borderWidth = 210;
     public TextMeshProUGUI infoText;
+    public TextMeshProUGUI titelText;
     public RectTransform infoWindow;
     public Image itemImage;
+    public Image border;
     public Sprite[] itemSprites;
-    public static Action<string, Vector2, int> OnMouseHover;
+    public static Action<string, string, Vector2, int> OnMouseHover;
     public static Action OnMouseLoseFocus;
     
     private void OnEnable()
@@ -42,26 +46,31 @@ public class HoverTipManager : MonoBehaviour
         }
     }
 
-    private void ShowInfo(string info, Vector2 mousePos, int index)
+    private void ShowInfo(string info, string titel, Vector2 mousePos, int index)
     {
         
         infoText.text = info;
+        titelText.text = titel;
         
-        infoWindow.sizeDelta = new Vector2(infoText.preferredWidth > 200 ? 200 :itemImage.preferredWidth > 200 ? 200: infoText.preferredWidth,
-            infoText.preferredHeight + itemImage.preferredHeight / 2);
+        infoWindow.sizeDelta = new Vector2(infoText.preferredWidth > borderWidth ? borderWidth : itemImage.preferredWidth > borderWidth ? borderWidth: 
+            titelText.preferredWidth > borderWidth ? borderWidth : infoText.preferredWidth,
+            infoText.preferredHeight + titelText.preferredHeight + itemImage.preferredHeight / 2);
         
         infoWindow.gameObject.SetActive(true);
         
-        infoWindow.transform.position = new Vector2(mousePos.x, mousePos.y + infoWindow.sizeDelta.y / 3);
+        infoWindow.transform.position = new Vector2(mousePos.x, mousePos.y + infoWindow.sizeDelta.y / 2);
         
         ChangeSprite(index);
         itemImage.gameObject.SetActive(true);
+        border.gameObject.SetActive(true);
     }
     
     private void HideInfo()
     {
         infoText.text = default;
+        titelText.text = default;
         infoWindow.gameObject.SetActive(false);
         itemImage.gameObject.SetActive(false);
+        border.gameObject.SetActive(false);
     }
 }

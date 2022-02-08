@@ -6,6 +6,7 @@ using UnityEngine.EventSystems;
 public class HoverTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     public string infoToShow;
+    public string titelToShow;
     public int toolIndex;
     private float timer = 0.5f;
     
@@ -23,7 +24,7 @@ public class HoverTip : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     private void ShowDesciption()
     {
-        HoverTipManager.OnMouseHover(infoToShow, Input.mousePosition, toolIndex);
+        HoverTipManager.OnMouseHover(infoToShow, titelToShow, Input.mousePosition, toolIndex);
     }
 
     private IEnumerator StartTimer()
