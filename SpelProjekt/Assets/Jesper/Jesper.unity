@@ -316,7 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29271764919f3e74a9daf5c76497ef0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerCamera: {fileID: 0}
+  playerCamera: {fileID: 399122927}
   turnSmoothing: 0.06
   sprintFOV: 100
   sprintButton: Sprint
@@ -378,7 +378,7 @@ CapsuleCollider:
   m_Radius: 2.22
   m_Height: 5.27
   m_Direction: 1
-  m_Center: {x: 0, y: 2.38, z: 0}
+  m_Center: {x: 0, y: 2.59, z: 0}
 --- !u!114 &1189196455
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4638f5c4bf7fed642ad84efab1299f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cam: {fileID: 0}
+  cam: {fileID: 399122926}
   choppableLayers:
     serializedVersion: 2
     m_Bits: 0
