@@ -30,6 +30,7 @@ GameObject:
   - component: {fileID: 6013640355920696224}
   - component: {fileID: 6013640355920696227}
   - component: {fileID: 2091457873048817429}
+  - component: {fileID: 612186234588881033}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -90,6 +91,20 @@ MonoBehaviour:
   animator: {fileID: 6738662242014669630}
   timeBetweenLetters: 0.01
   hotbarCanvasUI: {fileID: 5248882300780099057}
+--- !u!114 &612186234588881033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6013640355920696226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 759c9950a91a9754fb963fb87b3ff595, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dontDestroyOnLoadObjects:
+  - {fileID: 6013640355920696226}
 --- !u!1001 &4469512234040700416
 PrefabInstance:
   m_ObjectHideFlags: 0

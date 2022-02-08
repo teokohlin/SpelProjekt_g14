@@ -49,7 +49,8 @@ public class AdditionalKeyControl : MonoBehaviour
         //    myAnimator.SetTrigger("Attack");
         //}
 
-        if (Input.GetMouseButtonDown(1))
+        /*
+        if (Input.GetMouseButtonDown(1)) ///////////Ingen jävla strafing
         {
             myAnimator.SetBool("Strafing", true);
  	
@@ -57,6 +58,7 @@ public class AdditionalKeyControl : MonoBehaviour
         
 	    myScriptLocomotion.enabled = false;
         }
+        */
 
         // When the key/button is released the variable becomes false.
 
@@ -65,6 +67,7 @@ public class AdditionalKeyControl : MonoBehaviour
             myAnimator.SetBool("Jump", false);
         }
 
+        /*
         if (Input.GetMouseButtonUp(1))
         {
 
@@ -74,7 +77,12 @@ public class AdditionalKeyControl : MonoBehaviour
 
             myAnimator.SetBool("Strafing", false);
         }
+
+        */
+
+
     }
+        
 
     public void SetAttack()
     {

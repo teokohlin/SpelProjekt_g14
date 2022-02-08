@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3162,6 +3162,11 @@ Transform:
   m_Father: {fileID: 1885233806}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1102752920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 118928173955323312, guid: 1df722ecc0a1e6841bc3816909362590, type: 3}
+  m_PrefabInstance: {fileID: 1885277203}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1103852039
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3816,7 +3821,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 7769166167510990368, guid: 1df722ecc0a1e6841bc3816909362590, type: 3}
   m_PrefabInstance: {fileID: 1885277203}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1102752920}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 00950c2dad807b840949f90ff7b5a3e3, type: 3}
@@ -4735,6 +4740,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 612186234588881033, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1102752920}
+    - target: {fileID: 612186234588881033, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: dontDestroyOnLoadObjects.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 612186234588881033, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: dontDestroyOnLoadObjects.Array.data[1]
+      value: 
+      objectReference: {fileID: 1102752920}
+    - target: {fileID: 612186234588881033, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: dontDestroyOnLoadObjects.Array.data[2]
+      value: 
+      objectReference: {fileID: 637704057}
     - target: {fileID: 5651422786953087894, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -418
@@ -5050,7 +5071,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 9064098741415231429, guid: 1df722ecc0a1e6841bc3816909362590, type: 3}
   m_PrefabInstance: {fileID: 1885277203}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1102752920}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e7c6c23a9c8c3b439c3779aae08d2ec, type: 3}
@@ -5537,6 +5558,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0585d3cfcd06e0648bfc8450b5329d18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  targetSceneName: House
 --- !u!65 &1976916091
 BoxCollider:
   m_ObjectHideFlags: 0
