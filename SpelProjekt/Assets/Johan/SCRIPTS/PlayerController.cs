@@ -170,6 +170,7 @@ public class PlayerController : MonoBehaviour
                 break;
         }
 
+        //CHOPBOX
         Collider[] hitChoppables = Physics.OverlapBox(chopPoint.position, chopBoxSize, chopPoint.rotation, choppableLayers);
 
 
@@ -212,7 +213,7 @@ public class PlayerController : MonoBehaviour
 
         }  
         
-        
+        //FARMBOX
         Collider[] hitChoppables = Physics.OverlapBox(chopPoint.position, chopBoxSize, chopPoint.rotation, choppableLayers);
 
 
@@ -290,15 +291,15 @@ public class PlayerController : MonoBehaviour
         as3.LockMovement(inDialogue);
     }
 
-    /*
-    private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben
-    {
-        Gizmos.color = Color.red;
+    
+    //private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben
+    //{
+    //    Gizmos.color = Color.red;
 
-        Gizmos.DrawWireCube(chopPoint.position, chopBoxSize);
+    //    Gizmos.DrawWireCube(chopPoint.position, chopBoxSize);
 
-    }
-    */
+    //}
+ 
 
 
 }
