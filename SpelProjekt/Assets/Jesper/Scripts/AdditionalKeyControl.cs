@@ -84,9 +84,9 @@ public class AdditionalKeyControl : MonoBehaviour
     }
         
 
-    public void SetAttack()
+    public void SetAnimationTrigger(string animationTrigger)
     {
-        myAnimator.SetTrigger("Attack");
+        myAnimator.SetTrigger(animationTrigger);
 
     }
     

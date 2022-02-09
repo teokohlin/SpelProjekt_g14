@@ -266,7 +266,7 @@ MonoBehaviour:
   dialogueCharacterImage: {fileID: 7657920648482823572}
   animator: {fileID: 6738662242014669630}
   timeBetweenLetters: 0.01
-  hotbarCanvasUI: {fileID: 0}
+  hotbarCanvasUI: {fileID: 5248882300780099070}
 --- !u!114 &612186234588881033
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -402,6 +402,11 @@ PrefabInstance:
     - {fileID: 8561662947369622512, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
     - {fileID: 8561662947369622513, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
+--- !u!1 &5248882300780099070 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8561662947369622526, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
+  m_PrefabInstance: {fileID: 4469512234040700416}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &5248882300780099058 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8561662947369622514, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
