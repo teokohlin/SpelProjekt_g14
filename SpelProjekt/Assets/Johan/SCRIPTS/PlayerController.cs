@@ -35,6 +35,8 @@ public class PlayerController : MonoBehaviour
     public string seedsUseTriggername;
     public string watercanUseTriggername;
     public string scytheUseTriggername;
+    [Space]
+    public float timeTilDamage = .6f;
 
     //public BlackScreenManager blackscreen;
     void Start()
@@ -72,32 +74,36 @@ public class PlayerController : MonoBehaviour
                     return;
                 }
 
+                StopAllCoroutines();
+
                 //vilket tool vi håller
                 switch (toolScript.currentTool)
                 {
                     case 0://YXA
                         akc.SetAnimationTrigger(treeChopTriggername);
-                        ChopTowardsMouse("Tree");
+                        //ChopTowardsMouse("Tree");
+                        StartCoroutine(ChopTowardsMouse("Tree"));
                         break;
                     case 1: //PICKAXE
                         akc.SetAnimationTrigger(stonePickTriggername);
-                        ChopTowardsMouse("Stone");
+                        //ChopTowardsMouse("Stone");
+                        StartCoroutine(ChopTowardsMouse("Stone"));
                         break;
                     case 2: //PLOG
                         akc.SetAnimationTrigger(hoeUseTriggername);
-                        FarmTowardsMouse(0); //0 = ej plogad
+                        StartCoroutine(FarmTowardsMouse(0));
                         break;
                     case 3: //FRÖN
                         akc.SetAnimationTrigger(seedsUseTriggername);
-                        FarmTowardsMouse(1); //1 = plogad
+                        StartCoroutine(FarmTowardsMouse(1));
                         break;
                     case 4: //VATTENKANNA
                         akc.SetAnimationTrigger(watercanUseTriggername);
-                        FarmTowardsMouse(2); //2 = sådd
+                        StartCoroutine(FarmTowardsMouse(2));
                         break;
                     case 5: //LIE
                         akc.SetAnimationTrigger(scytheUseTriggername);
-                        FarmTowardsMouse(4); //4 = växt
+                        StartCoroutine(FarmTowardsMouse(4));
                         break;
                     default:
                         break;
@@ -140,9 +146,12 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void ChopTowardsMouse(string resourceTag) //"Tree" , "Stone"
+
+
+    IEnumerator ChopTowardsMouse(string resourceTag)
     {
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+
+         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, 100, choppableLayers))
@@ -159,17 +168,17 @@ public class PlayerController : MonoBehaviour
         
         //ANIMATION      //ska funka som "attack" gjorde, en funktion som kallar en "trigger" i animationskontrollen
         //KANSKE KAN HA DETTA I SWITCHEN I UPDATE ISTÄLLET
-        switch (resourceTag)
-        {
-            case "Tree" :
-                //akc. ChopTree();
-                break;
-            case "Stone" :
-                //akc. PickStone();
-                break;
-            default:
-                break;
-        }
+        //switch (resourceTag)
+        //{
+        //    case "Tree" :
+        //        //akc. ChopTree();
+        //        break;
+        //    case "Stone" :
+        //        //akc. PickStone();
+        //        break;
+        //    default:
+        //        break;
+        //}
 
         //CHOPBOX
         Collider[] hitChoppables = Physics.OverlapBox(chopPoint.position, chopBoxSize, chopPoint.rotation, choppableLayers);
@@ -185,24 +194,16 @@ public class PlayerController : MonoBehaviour
             if (closestChoppable.CompareTag(resourceTag))
             {
                 //play animation här om det bara ska spelas när man slår på rätt sak
-                
-                closestChoppable.GetComponent<Choppable>().LoseHealth(1); //redskapet gör bara 1 skada just nu
                 player.UseEnergy(1);
+                yield return new WaitForSeconds(timeTilDamage);
+                closestChoppable.GetComponent<Choppable>().LoseHealth(1); //redskapet gör bara 1 skada just nu
             }
         }
-
-
-
-
-
-
-
-
     }
 
-    private void FarmTowardsMouse(int neededFarmIndex)
+    IEnumerator FarmTowardsMouse(int neededFarmIndex)
     {
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+          Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, 100, choppableLayers))
@@ -221,29 +222,29 @@ public class PlayerController : MonoBehaviour
 
         if (hitChoppables.Length < 1)
         {
-            return;
+            yield break; //return; i en vanlig funktion
         }
 
         //ANIMATIONS       //ska funka som "attack" gjorde, en funktion som kallar en "trigger" i animationskontrollen
         //KANSKE KAN HA DETTA I SWITCHEN I UPDATE ISTÄLLET
 
-        switch (neededFarmIndex)
-        {
-            case 0: //Plog
-                //akc. PlowField();
-                break;
-            case 1: //Frön
-                //akc. SeedField();
-                break;
-            case 2: //Vattenkanna
-                //akc. WaterField();
-                break;
-            case 3: //Lie
-                //akc. HoeField();
-                break;
-            default:
-                break;
-        }
+        //switch (neededFarmIndex)
+        //{
+        //    case 0: //Plog
+        //        //akc. PlowField();
+        //        break;
+        //    case 1: //Frön
+        //        //akc. SeedField();
+        //        break;
+        //    case 2: //Vattenkanna
+        //        //akc. WaterField();
+        //        break;
+        //    case 3: //Lie
+        //        //akc. HoeField();
+        //        break;
+        //    default:
+        //        break;
+        //}
         
         Collider closestChoppable = GetClosestEnemyCollider(transform.position, hitChoppables);
 
@@ -253,12 +254,17 @@ public class PlayerController : MonoBehaviour
             FieldScript fieldScript = closestChoppable.GetComponent<FieldScript>();
             if (fieldScript.ReturnFieldState() == neededFarmIndex)
             {
-                fieldScript.ChangeFarmstate();
                 player.UseEnergy(1);
+                yield return new WaitForSeconds(timeTilDamage);
+                fieldScript.ChangeFarmstate();
             }
 
         }
     }
+
+
+
+
     
     
     
