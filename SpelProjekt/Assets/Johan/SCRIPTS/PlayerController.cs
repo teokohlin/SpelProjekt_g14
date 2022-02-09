@@ -27,6 +27,14 @@ public class PlayerController : MonoBehaviour
     private bool inDialogue = false;
     private AdditionalKeyControl akc;
     private AS3CharacterMovement as3; //Behövde *using Cinemachine.Examples;
+
+    [Header("Animation Tags")]
+    public string treeChopTriggername;
+    public string stonePickTriggername;
+    public string hoeUseTriggername;
+    public string seedsUseTriggername;
+    public string watercanUseTriggername;
+    public string scytheUseTriggername;
     
 
     void Start()
@@ -67,27 +75,33 @@ public class PlayerController : MonoBehaviour
                 switch (toolScript.currentTool)
                 {
                     case 0://YXA
+                        akc.SetAnimationTrigger(treeChopTriggername);
                         ChopTowardsMouse("Tree");
                         break;
                     case 1: //PICKAXE
+                        akc.SetAnimationTrigger(stonePickTriggername);
                         ChopTowardsMouse("Stone");
                         break;
                     case 2: //PLOG
+                        akc.SetAnimationTrigger(hoeUseTriggername);
                         FarmTowardsMouse(0); //0 = ej plogad
                         break;
                     case 3: //FRÖN
+                        akc.SetAnimationTrigger(seedsUseTriggername);
                         FarmTowardsMouse(1); //1 = plogad
                         break;
                     case 4: //VATTENKANNA
+                        akc.SetAnimationTrigger(watercanUseTriggername);
                         FarmTowardsMouse(2); //2 = sådd
                         break;
                     case 5: //LIE
+                        akc.SetAnimationTrigger(scytheUseTriggername);
                         FarmTowardsMouse(4); //4 = växt
                         break;
                     default:
                         break;
                 }
-                akc.SetAttack();
+                //akc.SetAttack();
 
                 nextChopTime = Time.time + 1f / chopRate;
             }
