@@ -9,8 +9,9 @@ public class Door_Interactable : Interactable
     public Vector3 targetPosition = Vector3.one;
     public Transform spawnpoint;
     public Transform camera;
+    public bool teleport = false;
     private void Start()
-    {
+    { 
         //gm = FindObjectOfType<GameManager>();
     }
     public override void InteractWith(PlayerController pc)
@@ -22,8 +23,11 @@ public class Door_Interactable : Interactable
         //GetComponent<DialogueTrigger>().TriggerDialogue();
 
         //gm.ChangeScene(targetSceneName, targetPosition);
-
+        
+        
         pc.gameObject.transform.position = spawnpoint.position;
         camera.position = spawnpoint.position + camera.GetComponent<CameraFollow>().offset;
+        teleport = true;
+        
     }
 }
