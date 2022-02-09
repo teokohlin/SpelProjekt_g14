@@ -35,14 +35,15 @@ public class PlayerController : MonoBehaviour
     public string seedsUseTriggername;
     public string watercanUseTriggername;
     public string scytheUseTriggername;
-    
 
+    //public BlackScreenManager blackscreen;
     void Start()
     {
          toolScript = gameObject.GetComponent<ToolSwitch>();
          player = GetComponent<Player>();
          akc = GetComponent<AdditionalKeyControl>();
          as3 = GetComponent<AS3CharacterMovement>();
+         //blackscreen = FindObjectOfType<BlackScreenManager>();
     }
 
     // Update is called once per frame

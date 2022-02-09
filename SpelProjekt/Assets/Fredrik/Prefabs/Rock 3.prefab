@@ -102,7 +102,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5014158062156773007}
   m_Layer: 0
-  m_Name: Rock_3
+  m_Name: Rock 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -123,6 +123,7 @@ Transform:
   - {fileID: 8519962496270313326}
   - {fileID: 4331383825372549413}
   - {fileID: 1107427600129193253}
+  - {fileID: 8006904026685564539}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -297,6 +298,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
+  Particle_effect: {fileID: 8006904026685564538}
   dropAmount: 5
   dropPrefab: {fileID: 6408380310064208783, guid: 4680b11f78f842f42b4f63593db97574, type: 3}
 --- !u!1 &8786453116704478259
@@ -329,3 +331,70 @@ Transform:
   m_Father: {fileID: 9098324297406908141}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &6559911254725001954
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 5014158062156773007}
+    m_Modifications:
+    - target: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 270
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383838, guid: c332003e073db164d9e713e73acaa421, type: 3}
+      propertyPath: m_Name
+      value: Stone particles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c332003e073db164d9e713e73acaa421, type: 3}
+--- !u!4 &8006904026685564539 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3753539516221383833, guid: c332003e073db164d9e713e73acaa421, type: 3}
+  m_PrefabInstance: {fileID: 6559911254725001954}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &8006904026685564538 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3753539516221383832, guid: c332003e073db164d9e713e73acaa421, type: 3}
+  m_PrefabInstance: {fileID: 6559911254725001954}
+  m_PrefabAsset: {fileID: 0}
