@@ -16,7 +16,7 @@ public class Choppable : MonoBehaviour
     public virtual void LoseHealth(int damage)
     {
 
-        //Particle_effect.Play();
+        Particle_effect.Play();
 
         health -= damage;
         if (health <= 0)
