@@ -304,22 +304,26 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    public void SetLockMovement(bool inDial) //Borde vara LockMovement
+    public void SetLockMovement(bool inDial) 
     {
         inDialogue = inDial;
 
         as3.LockMovement(inDialogue);
     }
 
-    
-    //private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben
-    //{
-    //    Gizmos.color = Color.red;
+    private void ChangeCursorSprite()
+    {
 
-    //    Gizmos.DrawWireCube(chopPoint.position, chopBoxSize);
+    }
 
-    //}
- 
+    private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben
+    {
+        Gizmos.color = Color.red;
+
+        Gizmos.DrawWireCube(chopPoint.position, chopBoxSize);
+
+    }
+
 
 
 }

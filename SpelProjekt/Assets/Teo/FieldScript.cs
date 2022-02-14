@@ -13,7 +13,7 @@ public class FieldScript : MonoBehaviour
     private GameObject[] fields;
     //[SerializeField] 
     //private ToolSwitch Tool;
-    [SerializeField] 
+    //[SerializeField] 
     private Player p;
 
     //private bool farmzone;
