@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: -165360748715267685}
   m_Layer: 0
   m_Name: MusicManager
-  m_TagString: Untagged
+  m_TagString: MusicManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -44,7 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventEmitters:
-    music: {fileID: 0}
-    musicBoss: {fileID: 0}
-    ambiance: {fileID: 0}
+    musicMain: {fileID: 0}
+    musicMenu: {fileID: 0}
+  gameOverStinger: 
   progressionStinger: 
+  menuStartGame: 
+  timeOfDayParam: 

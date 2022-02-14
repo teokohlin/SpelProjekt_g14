@@ -6,13 +6,17 @@ using FMOD.Studio;
 
 public class MusicManager : MonoBehaviour
 {
+
     [System.Serializable]
     public struct Emitters
     {
         public StudioEventEmitter musicMain;
         public StudioEventEmitter musicMenu;
+        public StudioEventEmitter ambiance;
     }
+
     public Emitters eventEmitters;
+
 
     [EventRef]
     public string gameOverStinger;
@@ -49,8 +53,15 @@ public class MusicManager : MonoBehaviour
             case "musicMenu":
                if (!eventEmitters.musicMenu.IsActive)
 
-                {
+               {
                     eventEmitters.musicMenu.Play();
+               }
+                break;
+            case "ambiance":
+                if (!eventEmitters.ambiance.IsActive)
+
+                {
+                    eventEmitters.ambiance.Play();
                 }
                 break;
         }
@@ -62,12 +73,15 @@ public class MusicManager : MonoBehaviour
             case "musicMain":
                 eventEmitters.musicMain.Stop();
                 break;
-            case "musicBoss":
+            case "musicMenu":
                 eventEmitters.musicMenu.Stop();
                 break;
-          
+            case "ambiance":
+                eventEmitters.ambiance.Stop();
+                break;
         }
     }
+
     public void SetParameter(string eventName)
     {
 
