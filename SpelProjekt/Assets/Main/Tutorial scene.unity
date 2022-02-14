@@ -659,6 +659,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35a7e06b9e4780745b27cff6c3ce5209, type: 3}
+--- !u!1001 &90753735
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1024307252}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 19.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.232725
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -49.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 527ea402213f7394691f4651512f2883, type: 2}
+    - target: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Name
+      value: BunnyMonster_lp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
 --- !u!1001 &108073964
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3434,6 +3503,148 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3513832539097281392, guid: 26427b3fb090526489b8f4d5fd197049, type: 3}
   m_PrefabInstance: {fileID: 921908699}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &925702815 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+  m_PrefabInstance: {fileID: 90753735}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &925702816 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+  m_PrefabInstance: {fileID: 90753735}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &925702817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925702815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbbcc5d003b57364cab76232cf88dbc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &925702818
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925702815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Hello! My name is Boris and I will be your guide.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: Hey, you look funny. Please tell me what you are!
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: We can take that later because right now I will help you with the basics.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: Alright, alright.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Firstly, you need to know how to walk. Use the WASD buttons to move
+      around.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: I already know that. Could you tell me what all these icons are?
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: These icons on the top of the screen show how much wood, stone and
+      food you have in your inventory. Chopping down trees, mining boulders and harvesting
+      crops will cause your inventory to increase.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: The cogwheel in the upper left corner is the settings.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "The icon under the cogwheel is the building menu. When clicking on
+      it a menu of buildings will be shown. Right now, it\u2019s under construction
+      but I will talk about it when it\u2019s done."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "Just remember that buildings take resources so don\u2019t forget to
+      keep gathering more."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: And if you look at your right side you have your quest log. Here, all
+      of your quests appear. By clicking on the icon, you can choose between showing
+      the quests or hiding the quests.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: On the bottom of the screen is your hot bar. Here you have all your
+      tools which you can equip by pressing 1 to 6 on your keyboard. Hovering the
+      cursor on items will give you some information of what they are.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "What about the top right\u2026"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Okay, now I will tell you the basics for farming. Press 3 and you have
+      equipt the garden hoe, then you need to walk up to the field and press the
+      left mouse button.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: This will make me exhausted.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "Well, that is because you\u2019re using energy when you are plowing.
+      You\u2019re also using energy when you\u2019re planting seeds, watering, harvesting
+      crops, chopping down trees or mining boulders."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: 'When the lightning bolt shaped energy bar on the top right is empty,
+      go to the house and press the right mouse button to enter. There you just go
+      to bed by pressing the right mouse button on the bed and your energy should
+      be refilled. '
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: Okay, going to sleep will recharge my energy, got it!
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Now back to farming. To make something grow, you firstly need to plant
+      it. Press 4 to equip the seeds and click on the field with the left mouse button
+      to plant them.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: And the seeds need water. Press 5 to equip the watering can and press
+      the left mouse button to water the plants.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: When the crops are ready to be harvested, you need to equip the scythe.
+      Press 6 to equip and then press the left mouse button. All the crops you picked
+      up will go into your inventory and are shown under the food icon.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "Thanks, do you want to talk about that\u2026"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: 'Okay, time to tell you how to chop a tree. Equip the axe by pressing
+      1. To chop down a tree, just walk up to it and press the left mouse button.
+      When the tree is fully chopped down, small logs will appear that you need to
+      collect and they will be stored under the wood icon. '
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "To mine a boulder, walk up to one and press 2 to equip the pickaxe.
+      Click on the left mouse button to start mining. The boulder will crumble when
+      it\u2019s done. Pick up the stones and they will be collected in your inventory
+      under the stone icon."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: You probably wonder, what is that sun and moon thing in the top right?
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "Yes, I have tried to\u2026"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: That is a clock showing what time of the day it is in this world. Sadly,
+      it seems like your clock is broken, but that is something I can fix for you
+      later.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "That I\u2019m grateful for."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: So, that was it. If you want to go through it all again just talk to
+      me.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "Wait you didn\u2019t tell me what you are?"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Bye.
+--- !u!64 &925702819
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 925702815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6307532369581678554, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
 --- !u!1001 &929619330
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3526,6 +3737,148 @@ Transform:
   m_Father: {fileID: 1885233806}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &977578446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+  m_PrefabInstance: {fileID: 2111726930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &977578447 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+  m_PrefabInstance: {fileID: 2111726930}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &977578448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977578446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbbcc5d003b57364cab76232cf88dbc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &977578449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977578446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Hello! My name is Boris and I will be your guide.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: Hey, you look funny. Please tell me what you are!
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: We can take that later because right now I will help you with the basics.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: Alright, alright.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Firstly, you need to know how to walk. Use the WASD buttons to move
+      around.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: I already know that. Could you tell me what all these icons are?
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: These icons on the top of the screen show how much wood, stone and
+      food you have in your inventory. Chopping down trees, mining boulders and harvesting
+      crops will cause your inventory to increase.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: The cogwheel in the upper left corner is the settings.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "The icon under the cogwheel is the building menu. When clicking on
+      it a menu of buildings will be shown. Right now, it\u2019s under construction
+      but I will talk about it when it\u2019s done."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "Just remember that buildings take resources so don\u2019t forget to
+      keep gathering more."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: And if you look at your right side you have your quest log. Here, all
+      of your quests appear. By clicking on the icon, you can choose between showing
+      the quests or hiding the quests.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: On the bottom of the screen is your hot bar. Here you have all your
+      tools which you can equip by pressing 1 to 6 on your keyboard. Hovering the
+      cursor on items will give you some information of what they are.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "What about the top right\u2026"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Okay, now I will tell you the basics for farming. Press 3 and you have
+      equipt the garden hoe, then you need to walk up to the field and press the
+      left mouse button.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: This will make me exhausted.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "Well, that is because you\u2019re using energy when you are plowing.
+      You\u2019re also using energy when you\u2019re planting seeds, watering, harvesting
+      crops, chopping down trees or mining boulders."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: 'When the lightning bolt shaped energy bar on the top right is empty,
+      go to the house and press the right mouse button to enter. There you just go
+      to bed by pressing the right mouse button on the bed and your energy should
+      be refilled. '
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: Okay, going to sleep will recharge my energy, got it!
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Now back to farming. To make something grow, you firstly need to plant
+      it. Press 4 to equip the seeds and click on the field with the left mouse button
+      to plant them.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: And the seeds need water. Press 5 to equip the watering can and press
+      the left mouse button to water the plants.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: When the crops are ready to be harvested, you need to equip the scythe.
+      Press 6 to equip and then press the left mouse button. All the crops you picked
+      up will go into your inventory and are shown under the food icon.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "Thanks, do you want to talk about that\u2026"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: 'Okay, time to tell you how to chop a tree. Equip the axe by pressing
+      1. To chop down a tree, just walk up to it and press the left mouse button.
+      When the tree is fully chopped down, small logs will appear that you need to
+      collect and they will be stored under the wood icon. '
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "To mine a boulder, walk up to one and press 2 to equip the pickaxe.
+      Click on the left mouse button to start mining. The boulder will crumble when
+      it\u2019s done. Pick up the stones and they will be collected in your inventory
+      under the stone icon."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: You probably wonder, what is that sun and moon thing in the top right?
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "Yes, I have tried to\u2026"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: That is a clock showing what time of the day it is in this world. Sadly,
+      it seems like your clock is broken, but that is something I can fix for you
+      later.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "That I\u2019m grateful for."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: So, that was it. If you want to go through it all again just talk to
+      me.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "Wait you didn\u2019t tell me what you are?"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Bye.
+--- !u!64 &977578450
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 977578446}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6307532369581678554, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
 --- !u!4 &985131081 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 330885799275021918, guid: 35a7e06b9e4780745b27cff6c3ce5209, type: 3}
@@ -3734,6 +4087,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1741979792}
+  - {fileID: 925702816}
+  - {fileID: 977578447}
+  - {fileID: 1480260493}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4512,6 +4868,75 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35a7e06b9e4780745b27cff6c3ce5209, type: 3}
+--- !u!1001 &1256253985
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1024307252}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 29.3
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.232725
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -50
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 527ea402213f7394691f4651512f2883, type: 2}
+    - target: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Name
+      value: BunnyMonster_lp (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
 --- !u!4 &1275811171 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 330885799275021918, guid: 35a7e06b9e4780745b27cff6c3ce5209, type: 3}
@@ -5172,6 +5597,148 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1342205025155372477, guid: 549f4beb5226e134a8f75614f99de6b3, type: 3}
   m_PrefabInstance: {fileID: 1562285927}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1480260492 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+  m_PrefabInstance: {fileID: 1256253985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1480260493 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+  m_PrefabInstance: {fileID: 1256253985}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1480260494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480260492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbbcc5d003b57364cab76232cf88dbc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1480260495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480260492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogue:
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Hello! My name is Boris and I will be your guide.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: Hey, you look funny. Please tell me what you are!
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: We can take that later because right now I will help you with the basics.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: Alright, alright.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Firstly, you need to know how to walk. Use the WASD buttons to move
+      around.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: I already know that. Could you tell me what all these icons are?
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: These icons on the top of the screen show how much wood, stone and
+      food you have in your inventory. Chopping down trees, mining boulders and harvesting
+      crops will cause your inventory to increase.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: The cogwheel in the upper left corner is the settings.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "The icon under the cogwheel is the building menu. When clicking on
+      it a menu of buildings will be shown. Right now, it\u2019s under construction
+      but I will talk about it when it\u2019s done."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "Just remember that buildings take resources so don\u2019t forget to
+      keep gathering more."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: And if you look at your right side you have your quest log. Here, all
+      of your quests appear. By clicking on the icon, you can choose between showing
+      the quests or hiding the quests.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: On the bottom of the screen is your hot bar. Here you have all your
+      tools which you can equip by pressing 1 to 6 on your keyboard. Hovering the
+      cursor on items will give you some information of what they are.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "What about the top right\u2026"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Okay, now I will tell you the basics for farming. Press 3 and you have
+      equipt the garden hoe, then you need to walk up to the field and press the
+      left mouse button.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: This will make me exhausted.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "Well, that is because you\u2019re using energy when you are plowing.
+      You\u2019re also using energy when you\u2019re planting seeds, watering, harvesting
+      crops, chopping down trees or mining boulders."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: 'When the lightning bolt shaped energy bar on the top right is empty,
+      go to the house and press the right mouse button to enter. There you just go
+      to bed by pressing the right mouse button on the bed and your energy should
+      be refilled. '
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: Okay, going to sleep will recharge my energy, got it!
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Now back to farming. To make something grow, you firstly need to plant
+      it. Press 4 to equip the seeds and click on the field with the left mouse button
+      to plant them.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: And the seeds need water. Press 5 to equip the watering can and press
+      the left mouse button to water the plants.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: When the crops are ready to be harvested, you need to equip the scythe.
+      Press 6 to equip and then press the left mouse button. All the crops you picked
+      up will go into your inventory and are shown under the food icon.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "Thanks, do you want to talk about that\u2026"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: 'Okay, time to tell you how to chop a tree. Equip the axe by pressing
+      1. To chop down a tree, just walk up to it and press the left mouse button.
+      When the tree is fully chopped down, small logs will appear that you need to
+      collect and they will be stored under the wood icon. '
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: "To mine a boulder, walk up to one and press 2 to equip the pickaxe.
+      Click on the left mouse button to start mining. The boulder will crumble when
+      it\u2019s done. Pick up the stones and they will be collected in your inventory
+      under the stone icon."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: You probably wonder, what is that sun and moon thing in the top right?
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "Yes, I have tried to\u2026"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: That is a clock showing what time of the day it is in this world. Sadly,
+      it seems like your clock is broken, but that is something I can fix for you
+      later.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "That I\u2019m grateful for."
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: So, that was it. If you want to go through it all again just talk to
+      me.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "Wait you didn\u2019t tell me what you are?"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Bye.
+--- !u!64 &1480260496
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1480260492}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6307532369581678554, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
 --- !u!1001 &1482635583
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7501,6 +8068,75 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2035887399168983226, guid: 128ee4491022406488dee1938e86e45a, type: 3}
   m_PrefabInstance: {fileID: 2108345465}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &2111726930
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1024307252}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -24.6
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -13.232725
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -46.4
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 527ea402213f7394691f4651512f2883, type: 2}
+    - target: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Name
+      value: BunnyMonster_lp (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
 --- !u!1001 &330943149816616495
 PrefabInstance:
   m_ObjectHideFlags: 0
