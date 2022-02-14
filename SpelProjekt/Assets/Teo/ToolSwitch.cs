@@ -1,13 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class ToolSwitch : MonoBehaviour
 {
     public int currentTool;
-    public bool seed;
+    //public bool seed;
     public int index;
     [SerializeField] private Transform[] tools;
+
+    public UnityAction<int> ToolSwitchIndex;
     void Start()
     {
         
@@ -52,12 +55,30 @@ public class ToolSwitch : MonoBehaviour
             index = 5;
             ChangeTool(5);
         }
+
+
+        if (Input.mouseScrollDelta.y > 0f)
+        {
+            index--;
+
+            index = Mathf.Clamp(index,0,5);
+
+            ChangeTool(index);
+        }
+        else if (Input.mouseScrollDelta.y < 0f)
+        {
+            index++;
+
+            index = Mathf.Clamp(index,0,5);
+
+            ChangeTool(index);
+        }
         
     }
 
     public void ChangeTool(int num)
     {
-        seed = false;
+        //seed = false;
         currentTool = num;
         for (int i = 0; i < tools.Length; i++)
         {
@@ -70,5 +91,7 @@ public class ToolSwitch : MonoBehaviour
                 tools[i].gameObject.SetActive(false);
             }
         }
+
+        ToolSwitchIndex?.Invoke(num);
     }
 }

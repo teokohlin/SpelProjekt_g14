@@ -33,7 +33,7 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue[] dialoguez)
     {
-        playerC.SetInDialogue(true);
+        playerC.SetLockMovement(true);
         hotbarCanvasUI.SetActive(false);
         animator.SetBool("IsOpen", true);
 
@@ -77,7 +77,7 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
-        playerC.SetInDialogue(false);
+        playerC.SetLockMovement(false);
         hotbarCanvasUI.SetActive(true);
         animator.SetBool("IsOpen", false);
     }

@@ -156,10 +156,15 @@ public class PlayerController : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 100, choppableLayers))
         {
-            Vector3 targetPostition = new Vector3(hit.point.x,
-                                                   this.transform.position.y,
-                                                   hit.point.z);
-            this.transform.LookAt(targetPostition);
+            //Vector3 targetPostition = new Vector3(hit.point.x,
+            //                                       this.transform.position.y,
+            //                                       hit.point.z);
+
+            Vector3 targetPosition = new Vector3(hit.transform.position.x,
+                                                 this.transform.position.y,
+                                                 hit.transform.position.z);
+
+            this.transform.LookAt(targetPosition);
 
         }
 
@@ -208,10 +213,18 @@ public class PlayerController : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 100, choppableLayers))
         {
-            Vector3 targetPostition = new Vector3(hit.point.x,
-                this.transform.position.y,
-                hit.point.z);
-            this.transform.LookAt(targetPostition);
+            //Vector3 targetPostition = new Vector3(hit.point.x,
+            //    this.transform.position.y,
+            //    hit.point.z);
+            //this.transform.LookAt(targetPostition);
+
+                        Vector3 targetPosition = new Vector3(hit.transform.position.x,
+                                                 this.transform.position.y,
+                                                 hit.transform.position.z);
+
+            this.transform.LookAt(targetPosition);
+
+
 
         }  
         
@@ -291,7 +304,7 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    public void SetInDialogue(bool inDial)
+    public void SetLockMovement(bool inDial) //Borde vara LockMovement
     {
         inDialogue = inDial;
 
