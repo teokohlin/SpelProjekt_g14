@@ -13,7 +13,7 @@ public class AudioInteractables : MonoBehaviour
         Switches,
     }
 
-    private AudioMananger audioMananger;
+    private AudioManager audioMananger;
 
 
 
@@ -50,7 +50,7 @@ public class AudioInteractables : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        audioMananger = FindObjectOfType<AudioMananger>();
+        audioMananger = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame

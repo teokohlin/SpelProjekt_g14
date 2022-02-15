@@ -15,12 +15,12 @@ public class AudioFunctions : MonoBehaviour
     public GameObject hurtObject;
     public GameObject shootObject;
 
-    private AudioMananger audioMananger;
+    private AudioManager audioMananger;
 
     void Awake()
     {
 
-        audioMananger = GameObject.Find("AudioMananger").GetComponent<AudioMananger>();
+        audioMananger = GameObject.Find("AudioMananger").GetComponent<AudioManager>();
     }
 
 

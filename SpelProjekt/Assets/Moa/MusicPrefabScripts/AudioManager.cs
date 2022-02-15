@@ -5,7 +5,7 @@ using System;
 using FMOD.Studio;
 using FMODUnity;
 
-public class AudioMananger : MonoBehaviour
+public class AudioManager : MonoBehaviour
 {
 
     [Serializable]
