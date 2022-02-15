@@ -92,16 +92,16 @@ public class AudioManager : MonoBehaviour
             RuntimeManager.AttachInstanceToGameObject(playerFootstepInstance, footstepObject.transform, footstepObject.GetComponent<Rigidbody>());
             switch (surface)
             {
-                case "Water":
+                case "Carpet":
                     playerFootstepInstance.setParameterByName("Surface", 0f);
                     break;
-                case "Ground":
+                case "Grass":
                     playerFootstepInstance.setParameterByName("Surface", 1f);
                     break;
-                case "Carpet":
+                case "Wood":
                     playerFootstepInstance.setParameterByName("Surface", 2f);
                     break;
-                case "Wood":
+                case "Sand":
                     playerFootstepInstance.setParameterByName("Surface", 3f);
                     break;
 
