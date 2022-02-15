@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class QuestHUDManager : MonoBehaviour
 {
-    public Player player;
+    private Player player;
 
     public GameObject questWindow;
     public GameObject questPanel;
@@ -24,41 +24,72 @@ public class QuestHUDManager : MonoBehaviour
     private void Start()
     {
         player = FindObjectOfType<Player>();
-        Instantiate(questButtonPrefab, questPanel.transform.position, Quaternion.identity, questPanel.transform);
 
     }
-    public void OpenCloseQuestPanel()
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Q))
+        {
+            ToggleQuestPanel();
+        }
+    }
+
+    public void ToggleQuestPanel()
     {
         if (panelOpen)
         {
             panelOpen = false;
             questPanel.SetActive(panelOpen);
-            questWindow.SetActive(false);
+            windowOpen = true;
+            questWindow.SetActive(windowOpen);
         }
         else
         {
             panelOpen = true;
             questPanel.SetActive(panelOpen);
-        }
-    }
-    public void OpenQuestWindow(Quest kvist)
-    {
-        if (windowOpen)
-        {
             windowOpen = false;
             questWindow.SetActive(windowOpen);
         }
+    }
+    public void QuestsButtonClicked()
+    {
+        if (panelOpen || windowOpen)
+        {
+            CloseQuestAll();
+        }
         else
         {
-            windowOpen = true;
-
-            questWindow.SetActive(true);
-            questTitle.text = kvist.title;
-            questDescription.text = kvist.description;
-            rewardImage.sprite = kvist.rewardSprite;
-            rewardAmount.text = kvist.rewardAmount.ToString();
-
+            OpenPanelOnly();
         }
+    }
+    public void CloseQuestAll()
+    {
+        panelOpen = false;
+        questPanel.SetActive(panelOpen);
+        windowOpen = false;
+        questWindow.SetActive(windowOpen);
+    }
+    public void OpenPanelOnly()
+    {
+        panelOpen = true;
+        questPanel.SetActive(panelOpen);
+    }
+
+    public void OpenQuestWindow(Quest kvist)
+    {
+
+        panelOpen = false;
+        questPanel.SetActive(panelOpen);
+
+        windowOpen = true;
+
+        questWindow.SetActive(true);
+        questTitle.text = kvist.title;
+        questDescription.text = kvist.description;
+        rewardImage.sprite = kvist.rewardSprite;
+        rewardAmount.text = kvist.rewardAmount.ToString();
+
         
         //questWindow.SetActive(true);
         //questTitle.text = player.quests[questIndex].title;
@@ -71,7 +102,8 @@ public class QuestHUDManager : MonoBehaviour
     public void AddQuest(Quest quest)
     {
         player.quests.Add(quest);
-
-        Instantiate(questButtonPrefab, questPanel.transform.position, Quaternion.identity, questPanel.transform);
+        quest.isActive = true;
+        GameObject panelButton = Instantiate(questButtonPrefab, questPanel.transform.position, Quaternion.identity, questPanel.transform);
+        panelButton.GetComponent<QuestButton>().quest = quest;
     }
 }

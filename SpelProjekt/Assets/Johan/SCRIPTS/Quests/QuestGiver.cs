@@ -4,22 +4,28 @@ using UnityEngine;
 
 public class QuestGiver : MonoBehaviour
 {
-    public Player player;
+    private Player player;
     [Space]
     public Quest quest;
 
-    public GameObject questWindow;
-
+    private QuestHUDManager questHUD;
 
     private void Start()
     {
         player = FindObjectOfType<Player>();
+        questHUD = FindObjectOfType<QuestHUDManager>();
     }
 
     public void OpenQuestWindow()
     {
-        questWindow.SetActive(true);
+        questHUD.OpenQuestWindow(quest); //Öppna windowet när man fått uppdraget
         
+    }
+
+    public void StartQuest()
+    {
+        questHUD.AddQuest(quest);
+
     }
 
 }

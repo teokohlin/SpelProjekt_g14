@@ -15,6 +15,7 @@ public class FieldScript : MonoBehaviour
     //private ToolSwitch Tool;
     //[SerializeField] 
     private Player p;
+    public int foodYield = 5;
 
     //private bool farmzone;
     private float timer = 0f;
