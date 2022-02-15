@@ -15,15 +15,15 @@ RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
   m_Fog: 0
-  m_FogColor: {r: 0.65729386, g: 0.628491, b: 0.26605538, a: 1}
+  m_FogColor: {r: 0, g: 0, b: 0, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.8013328, g: 0.80112827, b: 0.77914345, a: 1}
+  m_AmbientSkyColor: {r: 0.28586686, g: 0.31711572, b: 0.8301887, a: 1}
   m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
   m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
-  m_AmbientIntensity: 1
+  m_AmbientIntensity: 0.020088244
   m_AmbientMode: 0
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 10304, guid: 0000000000000000f000000000000000, type: 0}
@@ -35,10 +35,10 @@ RenderSettings:
   m_DefaultReflectionMode: 0
   m_DefaultReflectionResolution: 128
   m_ReflectionBounces: 1
-  m_ReflectionIntensity: 1
+  m_ReflectionIntensity: 0.30800128
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2072822638}
-  m_IndirectSpecularColor: {r: 0.446576, g: 0.4964134, b: 0.5748171, a: 1}
+  m_IndirectSpecularColor: {r: 0.24600631, g: 0.27514502, b: 0.3242764, a: 0.30800128}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -150,6 +150,7 @@ MonoBehaviour:
   foodAmount: 0
   energy: 5
   maxEnergy: 5
+  quests: []
 --- !u!114 &83274563
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +271,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5248882302671569117, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_RaycastTarget
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843686831309223909, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: m_RootOrder
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843686831309223909, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843686831309223909, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843686831309223909, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843686831309223909, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843686831309223909, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6013640355920696224, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
@@ -662,7 +687,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &583918878
 Light:
   m_ObjectHideFlags: 0
@@ -674,8 +699,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0, g: 0.22745098, b: 1, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.03139775, g: 0.17253743, b: 0.7451155, a: 1}
+  m_Intensity: 0.19534421
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -732,7 +757,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583918877}
-  m_LocalRotation: {x: 0.03683366, y: 0.902859, z: -0.42101002, w: 0.07899004}
+  m_LocalRotation: {x: 0.47024894, y: 0, z: 0, w: 0.88253385}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -787,7 +812,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9490117, g: 0.9622642, b: 0.7307761, a: 1}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -845,7 +870,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748216702}
-  m_LocalRotation: {x: 0.03683366, y: 0.902859, z: -0.42101002, w: 0.07899004}
+  m_LocalRotation: {x: -0.061628457, y: 0.70441604, z: 0.70441604, w: 0.061628457}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1385,7 +1410,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DirectionalLight: {fileID: 748216703}
   Preset: {fileID: 11400000, guid: 94057fd24aed2124c8e4d1be6ed54ca1, type: 2}
-  TimeOfDay: 7
+  TimeOfDay: 0
   duration: 24
 --- !u!114 &1844376113
 MonoBehaviour:
@@ -1399,8 +1424,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1da7f1cd1592834898848d0ceb462e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  time: 0
-  fullDayLengt: 24
+  time: 1
+  fullDayLength: 100
   startTime: 0.4
   noon: {x: 90, y: 0, z: 0}
   sun: {fileID: 2072822638}
@@ -1446,7 +1471,7 @@ MonoBehaviour:
       inWeight: 0
       outWeight: 0.07305748
     - serializedVersion: 3
-      time: 0.4978668
+      time: 0.5003082
       value: 1.0049813
       inSlope: -0.0009025376
       outSlope: -0.0009025376
@@ -1520,15 +1545,15 @@ MonoBehaviour:
     - serializedVersion: 3
       time: 0.6981707
       value: 0.004716981
-      inSlope: 0.013567218
-      outSlope: 0.013567218
+      inSlope: 0.013489073
+      outSlope: 0.013489073
       tangentMode: 136
       weightedMode: 0
       inWeight: 0.33333334
       outWeight: 0.33333334
     - serializedVersion: 3
-      time: 0.9951466
-      value: 0.495812
+      time: 0.9991749
+      value: 0.49719292
       inSlope: 4.2636766
       outSlope: 4.2636766
       tangentMode: 0
@@ -1655,7 +1680,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.9490117, g: 0.9622642, b: 0.7307761, a: 1}
+  m_Color: {r: 0.95862085, g: 0.5957571, b: 0.3315668, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -1713,13 +1738,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2072822637}
-  m_LocalRotation: {x: 0.03683366, y: 0.902859, z: -0.42101002, w: 0.07899004}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 50, y: 170, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 180}
 --- !u!4 &2106010151 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8794405286970033727, guid: 1df722ecc0a1e6841bc3816909362590, type: 3}
