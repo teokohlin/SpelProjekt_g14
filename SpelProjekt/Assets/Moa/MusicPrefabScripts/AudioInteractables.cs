@@ -11,9 +11,10 @@ public class AudioInteractables : MonoBehaviour
         DestructableBox,
         PressurePad,
         Switches,
+        Stone,
     }
 
-    private AudioManager audioMananger;
+    private AudioManager audioManager;
 
 
 
@@ -27,16 +28,16 @@ public class AudioInteractables : MonoBehaviour
             switch (audioInteractableType)
             {
                 case AudioInteractableType.PickUpHealth:
-                    audioMananger.interactablesAudio.PickUpHealthAudio(audioObject);
+                    audioManager.interactablesAudio.PickUpHealthAudio(audioObject);
                     break;
                 case AudioInteractableType.DoorOpen:
-                    audioMananger.interactablesAudio.DoorOpenAudio(audioObject);
+                    audioManager.interactablesAudio.DoorOpenAudio(audioObject);
                     break;
                 case AudioInteractableType.DestructableBox:
-                    audioMananger.interactablesAudio.DestructableBoxAudio(audioObject);
+                    audioManager.interactablesAudio.DestructableBoxAudio(audioObject);
                     break;
                 case AudioInteractableType.Switches:
-                    audioMananger.interactablesAudio.SwitchesAudio(audioObject);
+                    audioManager.interactablesAudio.SwitchesAudio(audioObject);
                     break;
             }
         }
@@ -44,13 +45,13 @@ public class AudioInteractables : MonoBehaviour
 
     public void DestructableBoxAudioPlay()
     {
-        audioMananger.interactablesAudio.DestructableBoxAudio(audioObject);
+        audioManager.interactablesAudio.DestructableBoxAudio(audioObject);
     }
 
     // Start is called before the first frame update
     void Start()
     {
-        audioMananger = FindObjectOfType<AudioManager>();
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     // Update is called once per frame

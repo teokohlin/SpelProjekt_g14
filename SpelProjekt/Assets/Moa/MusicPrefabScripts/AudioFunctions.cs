@@ -20,7 +20,7 @@ public class AudioFunctions : MonoBehaviour
     void Awake()
     {
 
-        audioMananger = GameObject.Find("AudioMananger").GetComponent<AudioManager>();
+        audioMananger = GameObject.Find("AudioManager").GetComponent<AudioManager>();
     }
 
 

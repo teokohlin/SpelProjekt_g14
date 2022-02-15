@@ -28,7 +28,6 @@ public class AudioManager : MonoBehaviour
         public string menuPressEvent;
 
 
-
         public void DoorOpenAudio(GameObject doorObject)
         {
             RuntimeManager.PlayOneShotAttached(doorOpenEvent.ToString(), doorObject);
