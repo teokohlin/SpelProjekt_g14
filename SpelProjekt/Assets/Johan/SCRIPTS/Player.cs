@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -15,6 +15,8 @@ public class Player : MonoBehaviour
     private int energy = 5;
     [SerializeField]
     public int maxEnergy = 5;
+    [Space]
+    public Quest[] quests;
 
     float percentage;
 

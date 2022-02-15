@@ -2,6 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+public enum dType
+{
+    wood,
+    stone,
+    food
+}
+
+
 public class Pickup : MonoBehaviour
 {
     //public float verticalBobFrequency = 1f;
@@ -12,12 +21,7 @@ public class Pickup : MonoBehaviour
     public dType dropType;
     [Tooltip("Hur mycket av resurser en *pickup* ger")]
     public int pickupAmount = 1;
-    public enum dType
-    {
-        wood,
-        stone,
-        food
-    }
+
     private void Start()
     {
         startPosition = new Vector3(transform.position.x, .5f, transform.position.z);
@@ -60,3 +64,5 @@ public class Pickup : MonoBehaviour
         }
     }
 }
+
+

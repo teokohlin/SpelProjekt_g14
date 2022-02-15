@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Cinemachine.Examples;
-
+using UnityEngine.EventSystems;
+using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
@@ -24,7 +25,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector]
     public Player player;
 
-    private bool inDialogue = false;
+    private bool lockMovement = false;
     private AdditionalKeyControl akc;
     private AS3CharacterMovement as3; //Behövde *using Cinemachine.Examples;
 
@@ -37,6 +38,8 @@ public class PlayerController : MonoBehaviour
     public string scytheUseTriggername;
     [Space]
     public float timeTilDamage = .6f;
+
+
 
     //public BlackScreenManager blackscreen;
     void Start()
@@ -52,10 +55,38 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
-        if (inDialogue) //Avaktiverar också för när man är i dialog
+        if (lockMovement) //Avaktiverar också för när man är i dialog
         {
             return;
         }
+
+
+
+
+        ////Kolla så man inte hoverar UI saker, för att inte göra actions när man klickar buttons //LOCKACTIONS med andra ord
+        //Ray rayman = cam.ScreenPointToRay(Input.mousePosition);
+        //RaycastHit hot;
+
+        //if (Physics.Raycast(rayman, out hot, 10))
+        //{
+        //    Debug.Log(hot.collider.gameObject.name);
+        //    if (hot.collider.gameObject.CompareTag("UI"))
+        //    {
+        //        return;
+        //    }
+        //}
+
+
+
+
+
+
+
+
+
+
+
+
 
         //VÄNSTERKLICK
 
@@ -66,8 +97,10 @@ public class PlayerController : MonoBehaviour
 
 
             //vänsterklick
-            if (Input.GetMouseButtonDown(0))
+            if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
             {
+
+
                 if (player.ReturnEnergy() < 1)
                 {
                     player.noEnergyActivated?.Invoke();
@@ -151,7 +184,7 @@ public class PlayerController : MonoBehaviour
     IEnumerator ChopTowardsMouse(string resourceTag)
     {
 
-         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, 100, choppableLayers))
@@ -304,11 +337,11 @@ public class PlayerController : MonoBehaviour
     }
 
 
-    public void SetLockMovement(bool inDial) 
+    public void SetLockMovement(bool lockMov) 
     {
-        inDialogue = inDial;
+        lockMovement = lockMov;
 
-        as3.LockMovement(inDialogue);
+        as3.LockMovement(lockMovement);
     }
 
     private void ChangeCursorSprite()
@@ -316,13 +349,13 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben
-    {
-        Gizmos.color = Color.red;
+    //private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben
+    //{
+    //    Gizmos.color = Color.red;
 
-        Gizmos.DrawWireCube(chopPoint.position, chopBoxSize);
+    //    Gizmos.DrawWireCube(chopPoint.position, chopBoxSize);
 
-    }
+    //}
 
 
 
