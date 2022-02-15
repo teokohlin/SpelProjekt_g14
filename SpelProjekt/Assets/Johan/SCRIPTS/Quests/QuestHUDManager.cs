@@ -16,12 +16,16 @@ public class QuestHUDManager : MonoBehaviour
     public Image rewardImage;
     public TextMeshProUGUI rewardAmount;
 
+    public GameObject questButtonPrefab;
+
     bool panelOpen;
     bool windowOpen;
 
     private void Start()
     {
         player = FindObjectOfType<Player>();
+        Instantiate(questButtonPrefab, questPanel.transform.position, Quaternion.identity, questPanel.transform);
+
     }
     public void OpenCloseQuestPanel()
     {
@@ -62,5 +66,12 @@ public class QuestHUDManager : MonoBehaviour
         //rewardImage.sprite = player.quests[questIndex].rewardSprite;
         //rewardAmount.text = player.quests[questIndex].rewardAmount.ToString();
 
+    }
+
+    public void AddQuest(Quest quest)
+    {
+        player.quests.Add(quest);
+
+        Instantiate(questButtonPrefab, questPanel.transform.position, Quaternion.identity, questPanel.transform);
     }
 }

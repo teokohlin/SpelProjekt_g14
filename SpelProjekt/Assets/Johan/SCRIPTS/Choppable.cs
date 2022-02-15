@@ -12,7 +12,7 @@ public class Choppable : MonoBehaviour
 
     public int dropAmount = 1;
     public GameObject dropPrefab;
-
+    ///////////////SKRIV IN EN PUBLIK VARIABEL FÖR LJUDET
     public virtual void LoseHealth(int damage)
     {
 
@@ -28,10 +28,17 @@ public class Choppable : MonoBehaviour
         if (dead == true)
         {
             Die();
+            return;
         }
+
+        //////////SPELA LJUD AV SKADA
+
     }
     public virtual void Die()
     {
+        ////////SPELA DÖDS-LJUD
+
+
         for (int i = 0; i < dropAmount; i++)
         {
             Vector3 ranPos = new Vector3(

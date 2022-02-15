@@ -16,7 +16,7 @@ public class Player : MonoBehaviour
     [SerializeField]
     public int maxEnergy = 5;
     [Space]
-    public Quest[] quests;
+    public List<Quest> quests;
 
     float percentage;
 
