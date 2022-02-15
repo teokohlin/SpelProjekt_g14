@@ -9,4 +9,8 @@ public class KNapp : MonoBehaviour
     {
         Debug.Log("klick");
     }
+    public void Exit()
+    {
+        Application.Quit();
+    }
 }
