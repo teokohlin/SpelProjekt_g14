@@ -9,6 +9,8 @@ public class QuestGoal
     public int currentAmount;
     public int requiredAmount = 1;
 
+    public Sprite requiredResourceSprite;
+
     public virtual void Init()
     {
 

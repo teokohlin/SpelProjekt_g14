@@ -15,7 +15,10 @@ public class QuestHUDManager : MonoBehaviour
     public TextMeshProUGUI questDescription;
     public Image rewardImage;
     public TextMeshProUGUI rewardAmount;
+    public TextMeshProUGUI progressText;
+    public Image requiredResourceIMG;
 
+    [Space]
     public GameObject questButtonPrefab;
 
     bool panelOpen;
@@ -89,13 +92,9 @@ public class QuestHUDManager : MonoBehaviour
         questDescription.text = kvist.description;
         rewardImage.sprite = kvist.rewardSprite;
         rewardAmount.text = kvist.rewardAmount.ToString();
+        progressText.text = kvist.goal.currentAmount.ToString() +  "/" + kvist.goal.requiredAmount.ToString();
+        requiredResourceIMG.sprite = kvist.goal.requiredResourceSprite;
 
-        
-        //questWindow.SetActive(true);
-        //questTitle.text = player.quests[questIndex].title;
-        //questDescription.text = player.quests[questIndex].description;
-        //rewardImage.sprite = player.quests[questIndex].rewardSprite;
-        //rewardAmount.text = player.quests[questIndex].rewardAmount.ToString();
 
     }
 

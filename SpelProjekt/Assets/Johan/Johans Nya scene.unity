@@ -6794,12 +6794,13 @@ MonoBehaviour:
     isActive: 0
     title: "Hugg tr\xE4d"
     description: "Du ska hugga 10 tr\xE4d"
-    rewardSprite: {fileID: 0}
-    rewardAmount: 0
+    rewardSprite: {fileID: 21300000, guid: 766c40ab1a4d07a48ab68594d0cb1626, type: 3}
+    rewardAmount: 20
     goal:
       completed: 0
       currentAmount: 0
-      requiredAmount: 1
+      requiredAmount: 10
+      requiredResourceSprite: {fileID: 21300000, guid: 83cc8f2122663f24ca99e34cbd6849dc, type: 3}
 --- !u!1001 &1742102783
 PrefabInstance:
   m_ObjectHideFlags: 0
