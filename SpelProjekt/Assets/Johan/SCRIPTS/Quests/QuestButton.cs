@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class QuestButton : MonoBehaviour
 {
@@ -9,11 +10,16 @@ public class QuestButton : MonoBehaviour
     [HideInInspector]
     public Quest quest;
 
-    public TextMeshProUGUI buttonText;
+    public TextMeshProUGUI titleText;
+    public TextMeshProUGUI progressText;
+    public Image requiredResourceImage;
+
     private void Start()
     {
         questHUD = GetComponentInParent<QuestHUDManager>();
-        buttonText.text = quest.title;
+        titleText.text = quest.title;
+        progressText.text = quest.goal.currentAmount.ToString() +  "/" + quest.goal.requiredAmount.ToString();
+        requiredResourceImage.sprite = quest.goal.requiredResourceSprite;
     }
 
     public void ButtonPressed()

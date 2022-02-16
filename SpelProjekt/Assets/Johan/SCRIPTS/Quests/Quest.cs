@@ -12,5 +12,17 @@ public class Quest
     public Sprite rewardSprite;
     public int rewardAmount;
 
+    public QuestGoal goal;
 
+    public void Evaluate()
+    {
+        if (goal.completed == true)
+        {
+            Complete();
+        }
+    }
+    public void Complete()
+    {
+        isActive = false;
+    }
 }

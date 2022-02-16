@@ -1848,6 +1848,7 @@ GameObject:
   - component: {fileID: 5865231757791859098}
   - component: {fileID: 5865231757791859093}
   - component: {fileID: 5865231757791859092}
+  - component: {fileID: -1127679116628964789}
   m_Layer: 0
   m_Name: First_Draft_model
   m_TagString: Player
@@ -2036,6 +2037,20 @@ MonoBehaviour:
   energy: 10
   maxEnergy: 10
   quests: []
+--- !u!114 &-1127679116628964789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6747541114263133444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4008f0ce6270441915fdbab1bcf85f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardCursor: {fileID: 2800000, guid: f83fbabb2a9eab840891da474f3397bf, type: 3}
+  interactableCursor: {fileID: 2800000, guid: a445313a09eb52743b2be84c98e1dff9, type: 3}
 --- !u!1 &6753423551835574990
 GameObject:
   m_ObjectHideFlags: 0

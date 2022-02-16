@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     public float maxDistanceForInteractions = 5f;
 
     private ToolSwitch toolScript;
+    private CursorScript cursor;
 
 
     float nextChopTime = 0f;
@@ -48,6 +49,8 @@ public class PlayerController : MonoBehaviour
          player = GetComponent<Player>();
          akc = GetComponent<AdditionalKeyControl>();
          as3 = GetComponent<AS3CharacterMovement>();
+         cursor = GetComponent<CursorScript>();
+
          //blackscreen = FindObjectOfType<BlackScreenManager>();
     }
 
@@ -160,6 +163,7 @@ public class PlayerController : MonoBehaviour
             if (interactable != null)
             {
                 //Muspekare blir "interactable" symbol, typ hand med finger
+                cursor.ChangeToInteractableCursor();
 
                 if (Input.GetMouseButtonDown(1))
                 {
@@ -170,10 +174,12 @@ public class PlayerController : MonoBehaviour
                 }
 
             }
-            else
-            {
-                //muspekare blir vanlig
-            }
+
+        }
+        else
+        {
+            //muspekare blir vanlig
+            cursor.ChangeToStandardCursor();
         }
 
 

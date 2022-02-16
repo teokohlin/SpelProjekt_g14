@@ -10,5 +10,7 @@ public class Bunny_Interactable : Interactable
         //base.InteractWith();
 
         GetComponent<DialogueTrigger>().TriggerDialogue();
+
+        GetComponent<QuestGiver>().StartQuest();
     }
 }
