@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3201,6 +3201,25 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5248882302027954324, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
   m_PrefabInstance: {fileID: 1716368063}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &467996920 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6053906140791606053, guid: 3ce3932043303154babecd6055cf6325, type: 3}
+  m_PrefabInstance: {fileID: 1427836512}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &467996922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 467996920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1cdd78b3185d632428fa6016bf02aa9c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  verticalBobFrequency: 1
+  bobbingAmount: 0.5
 --- !u!1001 &481777343
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11955,6 +11974,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bbbcc5d003b57364cab76232cf88dbc3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  exclamationMark: {fileID: 467996920}
+  tillfalligQuestStoppare: 0
+--- !u!114 &1741979796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741979789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quest:
+    isActive: 0
+    title: Gather Wood
+    description: Chop down some trees and gather 10 wood
+    rewardSprite: {fileID: 21300000, guid: c71fd17995c48404cb3f4e8cd9a5df97, type: 3}
+    rewardAmount: 5
+    rewardKind: 0
+    rewardType: 2
+    goal:
+      goalType: 0
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 10
+      requiredResourceSprite: {fileID: 21300000, guid: 83cc8f2122663f24ca99e34cbd6849dc, type: 3}
+      gatherType: 0
 --- !u!1001 &1742102783
 PrefabInstance:
   m_ObjectHideFlags: 0
