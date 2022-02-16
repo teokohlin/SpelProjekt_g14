@@ -29,7 +29,6 @@ public class AudioFunctions : MonoBehaviour
         RaycastHit hit;
         Physics.Raycast(footstepPlayerPosition.transform.position, Vector3.down, out hit, 5f);
         Debug.DrawRay(footstepPlayerPosition.transform.position, Vector3.down * 5f, Color.blue, 1f);
-        Debug.Log("We Hit: " + hit.collider.tag);
         audioMananger.playerAudio.PlayerFootstepAudio(footstepPlayerPosition, hit.collider.tag);
     }
 

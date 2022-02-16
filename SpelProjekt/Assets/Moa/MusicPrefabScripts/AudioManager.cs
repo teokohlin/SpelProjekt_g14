@@ -97,7 +97,6 @@ public class AudioManager : MonoBehaviour
                     break;
                 case "Grass":
                     playerFootstepInstance.setParameterByName("Surface", 1f);
-                    Debug.Log("We Hit: ");
                     break;
                 case "Wood":
                     playerFootstepInstance.setParameterByName("Surface", 2f);
