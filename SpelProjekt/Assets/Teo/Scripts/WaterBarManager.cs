@@ -23,8 +23,8 @@ public class WaterBarManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(currentValue);
-        Debug.Log(lastValue);
+        //Debug.Log(currentValue);
+        //Debug.Log(lastValue);
         t += lerpValue * Time.deltaTime;
         currentValue = player.waterAmount;
         

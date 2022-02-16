@@ -23,6 +23,12 @@ public class Player : MonoBehaviour
     //[HideInInspector]
     public int waterAmount;
     //Hade eventuellt kunnat göra en klass för resources, wood, stone, food (vet knappt hur man gör)
+    public UnityAction<int> woodIncrease;
+    public UnityAction<int> stoneIncrease;
+    public UnityAction<int> foodIncrease;
+
+
+
 
     public UnityAction<int> woodUpdate;
     public UnityAction<int> stoneUpdate;
@@ -35,16 +41,22 @@ public class Player : MonoBehaviour
     {
         woodAmount += amount;
         woodUpdate?.Invoke(woodAmount);
+
+        woodIncrease?.Invoke(amount);
     }
     public void AddStone(int amount)
     {
         stoneAmount += amount;
         stoneUpdate?.Invoke(stoneAmount);
+        
+        stoneIncrease?.Invoke(amount);
     }
     public void AddFood(int amount)
     {
         foodAmount += amount;
         foodUpdate?.Invoke(foodAmount);
+
+        foodIncrease?.Invoke(amount);
     }
     public void UseEnergy(int amount)
     {

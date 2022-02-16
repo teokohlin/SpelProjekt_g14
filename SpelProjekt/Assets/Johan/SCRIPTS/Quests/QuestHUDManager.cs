@@ -17,9 +17,11 @@ public class QuestHUDManager : MonoBehaviour
     public TextMeshProUGUI rewardAmount;
     public TextMeshProUGUI progressText;
     public Image requiredResourceIMG;
+    private Quest currentQuest;
 
     [Space]
     public GameObject questButtonPrefab;
+    private List<GameObject> questButtons = new List<GameObject>();
 
     bool panelOpen;
     bool windowOpen;
@@ -34,8 +36,20 @@ public class QuestHUDManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            ToggleQuestPanel();
+            QuestsButtonClicked();
         }
+
+        if (currentQuest == null)
+        {
+            return;
+        }
+        questTitle.text = currentQuest.title;
+        questDescription.text = currentQuest.description;
+        rewardImage.sprite = currentQuest.rewardSprite;
+        rewardAmount.text = currentQuest.rewardAmount.ToString();
+        progressText.text = currentQuest.goal.currentAmount.ToString() +  "/" + currentQuest.goal.requiredAmount.ToString();
+        requiredResourceIMG.sprite = currentQuest.goal.requiredResourceSprite;
+
     }
 
     public void ToggleQuestPanel()
@@ -81,7 +95,7 @@ public class QuestHUDManager : MonoBehaviour
 
     public void OpenQuestWindow(Quest kvist)
     {
-
+        currentQuest = kvist;
         panelOpen = false;
         questPanel.SetActive(panelOpen);
 
@@ -102,7 +116,22 @@ public class QuestHUDManager : MonoBehaviour
     {
         player.quests.Add(quest);
         quest.isActive = true;
+        quest.Init();
         GameObject panelButton = Instantiate(questButtonPrefab, questPanel.transform.position, Quaternion.identity, questPanel.transform);
-        panelButton.GetComponent<QuestButton>().quest = quest;
+        panelButton.GetComponent<QuestButton>().quest = quest;      
+        questButtons.Add(panelButton);
+    }
+    public void RemoveQuest(Quest quest)
+    {
+        windowOpen = false;
+        questWindow.SetActive(windowOpen);
+        quest.isActive = false;
+        foreach (var button in questButtons)
+        {
+            if (button.GetComponent<QuestButton>().quest.isActive == false)
+            {
+                Destroy(button);
+            }
+        }
     }
 }

@@ -21,6 +21,12 @@ public class QuestButton : MonoBehaviour
         progressText.text = quest.goal.currentAmount.ToString() +  "/" + quest.goal.requiredAmount.ToString();
         requiredResourceImage.sprite = quest.goal.requiredResourceSprite;
     }
+    private void Update()
+    {
+        titleText.text = quest.title;
+        progressText.text = quest.goal.currentAmount.ToString() +  "/" + quest.goal.requiredAmount.ToString();
+        requiredResourceImage.sprite = quest.goal.requiredResourceSprite;
+    }
 
     public void ButtonPressed()
     {

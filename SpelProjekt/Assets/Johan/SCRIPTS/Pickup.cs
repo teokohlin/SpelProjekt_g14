@@ -17,6 +17,7 @@ public class Pickup : MonoBehaviour
     //public float bobbingAmount = 1f;
 
     Vector3 startPosition;
+    private bool alreadyPickedUp;
 
     public dType dropType;
     [Tooltip("Hur mycket av resurser en *pickup* ger")]
@@ -42,8 +43,9 @@ public class Pickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("Player") && !alreadyPickedUp)
         {
+            alreadyPickedUp = true;
             Player p = other.GetComponent<Player>();
 
             switch (dropType)

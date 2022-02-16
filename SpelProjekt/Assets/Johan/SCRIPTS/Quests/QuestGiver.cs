@@ -25,7 +25,6 @@ public class QuestGiver : MonoBehaviour
     public void StartQuest()
     {
         questHUD.AddQuest(quest);
-
     }
 
 }
