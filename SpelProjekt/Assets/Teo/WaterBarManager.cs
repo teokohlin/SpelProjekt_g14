@@ -10,24 +10,33 @@ public class WaterBarManager : MonoBehaviour
     public Player player;
     private float currentValue;
     private float lastValue;
+    private float lerpValue = 0.1f;
+    private float t;
     void Start()
     {
-        player.waterUpdate += DepleteWater;
         slider.maxValue = player.maxWater;
+        slider.value = slider.maxValue;
         lastValue = player.maxWater;
     }
 
     // Update is called once per frame
     void Update()
     {
+        t += Time.deltaTime;
         currentValue = player.waterAmount;
+        if (currentValue < lastValue)
+        {
+            lastValue = currentValue;
+            slider.value = Mathf.Lerp(lastValue, currentValue, lerpValue * Time.deltaTime);
+        }
         //if current < last = lerp mellan last o current
-       
+       Debug.Log(currentValue);
+       Debug.Log(lastValue);
     }
 
-    private void DepleteWater(float f)
+    private void DepleteWater(float time)
     {
         lastValue = currentValue;
-        slider.value = Mathf.Lerp(lastValue, f, Time.deltaTime);
+        slider.value = Mathf.Lerp(lastValue, currentValue, lerpValue * time);
     }
 }
