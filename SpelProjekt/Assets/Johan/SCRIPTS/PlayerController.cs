@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     [Space]
     public float timeTilDamage = .6f;
 
-
+    
 
     //public BlackScreenManager blackscreen;
     void Start()
@@ -134,6 +134,11 @@ public class PlayerController : MonoBehaviour
                         StartCoroutine(FarmTowardsMouse(1));
                         break;
                     case 4: //VATTENKANNA
+                        if (player.waterAmount == 0)
+                        {
+                            return;
+                        }
+                        player.DepleteWater();
                         akc.SetAnimationTrigger(watercanUseTriggername);
                         StartCoroutine(FarmTowardsMouse(2));
                         break;
@@ -185,7 +190,7 @@ public class PlayerController : MonoBehaviour
 
     }
 
-
+    
 
     IEnumerator ChopTowardsMouse(string resourceTag)
     {
@@ -350,10 +355,6 @@ public class PlayerController : MonoBehaviour
         as3.LockMovement(lockMovement);
     }
 
-    private void ChangeCursorSprite()
-    {
-
-    }
 
     //private void OnDrawGizmos() //visar bara rätt om man står helt rakt som man gör i början, den vrids inte med gubben
     //{
@@ -362,7 +363,7 @@ public class PlayerController : MonoBehaviour
     //    Gizmos.DrawWireCube(chopPoint.position, chopBoxSize);
 
     //}
-
+    
 
 
 }

@@ -41,8 +41,8 @@ public class UiScript : MonoBehaviour
 
     }
 
-    //void Update()
-    //{
+    void Update()
+    {
     //    Vector3 axePos = axe.anchoredPosition;
     //    Vector3 hoePos = hoe.anchoredPosition;
     //    Vector3 pickaxePos = pickaxe.anchoredPosition;
@@ -82,7 +82,7 @@ public class UiScript : MonoBehaviour
     //        border.anchoredPosition = scythePos;
     //    }
         
-    //}
+    }
 
     void SwitchTool(int num)
     {

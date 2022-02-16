@@ -19,7 +19,9 @@ public class Player : MonoBehaviour
     public List<Quest> quests;
 
     float percentage;
-
+    public int maxWater;
+    //[HideInInspector]
+    public int waterAmount;
     //Hade eventuellt kunnat göra en klass för resources, wood, stone, food (vet knappt hur man gör)
 
     public UnityAction<int> woodUpdate;
@@ -68,7 +70,14 @@ public class Player : MonoBehaviour
 
     }
 
-
+    public void FillWater()
+    {
+        waterAmount = maxWater;
+    }
+    public void DepleteWater()
+    {
+        waterAmount--;
+    }
 
 
     private float Percentage(float a, float b)
