@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12685,7 +12685,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogue: []
+  dialogue:
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Okay Mackan, I know that I gladly took your workoffer, but I really
+      need a makeover of my own place. You know, the cozy hole in the ground.
+  - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+    sentence: "I don\u2019t know if a hole can be cozy?"
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: Pff, Mackan you have just not tried it yet.
+  - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    sentence: ' I think 50 wood will do. Talk to me when you have gathered it all.'
 --- !u!4 &1741979792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
