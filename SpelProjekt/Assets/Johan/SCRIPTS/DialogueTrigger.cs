@@ -7,7 +7,6 @@ public class DialogueTrigger : MonoBehaviour
     
     public Dialogues[] dialogues;
     public int dialogueIndex;
-    bool outOfDialogue;
 
     [System.Serializable]
     public struct Dialogues
@@ -16,16 +15,13 @@ public class DialogueTrigger : MonoBehaviour
     }
     public void TriggerDialogue()
     {
-        if (outOfDialogue)
+        if (dialogueIndex >= dialogues.Length)
         {
             return;
         }
         FindObjectOfType<DialogueManager>().StartDialogue(dialogues[dialogueIndex].dialogue);
         dialogueIndex++;
-        if (dialogueIndex > dialogues.Length)
-        {
-            outOfDialogue = true;
-        }
+
     }
 
 }

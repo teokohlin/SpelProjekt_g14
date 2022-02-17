@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     [Space]
     public Transform chopPoint;
     public Vector3 chopBoxSize = new Vector3(.5f,4,1.75f); //trodde man skulle behöva dela på 2.       .5, 4, 1.75f är min idé bara. går ändra
+    public Vector3 farmBoxSize = new Vector3(.5f,4,2.5f);
     public float chopRate = 1f;
     [Space]
     public float maxDistanceForInteractions = 5f;
@@ -230,7 +231,7 @@ public class PlayerController : MonoBehaviour
         //}
 
         //CHOPBOX
-        Collider[] hitChoppables = Physics.OverlapBox(chopPoint.position, chopBoxSize, chopPoint.rotation, choppableLayers);
+        Collider[] hitChoppables = Physics.OverlapBox(chopPoint.position, farmBoxSize, chopPoint.rotation, choppableLayers);
 
 
         if (hitChoppables.Length >= 1)
@@ -252,7 +253,9 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator FarmTowardsMouse(int neededFarmIndex)
     {
-          Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        GameObject clickedObject = null;
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
         RaycastHit hit;
 
         if (Physics.Raycast(ray, out hit, 100, choppableLayers))
@@ -261,6 +264,9 @@ public class PlayerController : MonoBehaviour
             //    this.transform.position.y,
             //    hit.point.z);
             //this.transform.LookAt(targetPostition);
+
+            clickedObject = hit.transform.gameObject;
+
 
                         Vector3 targetPosition = new Vector3(hit.transform.position.x,
                                                  this.transform.position.y,
@@ -271,6 +277,7 @@ public class PlayerController : MonoBehaviour
 
 
         }  
+
         
         //FARMBOX
         Collider[] hitChoppables = Physics.OverlapBox(chopPoint.position, chopBoxSize, chopPoint.rotation, choppableLayers);
@@ -302,9 +309,23 @@ public class PlayerController : MonoBehaviour
         //    default:
         //        break;
         //}
-        
-        Collider closestChoppable = GetClosestEnemyCollider(transform.position, hitChoppables);
 
+        //Collider closestChoppable = GetClosestEnemyCollider(transform.position, hitChoppables);
+        GameObject closestChoppable = null;
+
+        foreach (var item in hitChoppables)
+        {
+            if (GameObject.ReferenceEquals(item.gameObject, clickedObject))
+            {
+                closestChoppable = item.gameObject;
+                break;
+            }
+        }
+
+        if (closestChoppable == null)
+        {
+            yield break; //return; i en vanlig funktion
+        }
 
         if (closestChoppable.CompareTag("Field"))
         {
@@ -360,10 +381,10 @@ public class PlayerController : MonoBehaviour
     //{
     //    Gizmos.color = Color.red;
 
-    //    Gizmos.DrawWireCube(chopPoint.position, chopBoxSize);
+    //    Gizmos.DrawWireCube(chopPoint.position, farmBoxSize);
 
     //}
-    
+
 
 
 }
