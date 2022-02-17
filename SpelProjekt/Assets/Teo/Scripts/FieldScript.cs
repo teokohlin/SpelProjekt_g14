@@ -67,7 +67,7 @@ public class FieldScript : MonoBehaviour
         fieldState++;
         if (fieldState > 4)
         {
-            p.AddFood(10);
+            p.AddFood(foodYield);
             fieldState = 0;
         }
 
