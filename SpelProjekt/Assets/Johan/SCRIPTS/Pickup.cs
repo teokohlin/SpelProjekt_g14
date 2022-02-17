@@ -47,7 +47,7 @@ public class Pickup : MonoBehaviour
         {
             alreadyPickedUp = true;
             Player p = other.GetComponent<Player>();
-
+            
             switch (dropType)
             {
                 case dType.wood:
@@ -64,6 +64,17 @@ public class Pickup : MonoBehaviour
             }
             Destroy(gameObject);
         }
+        // else if (other.CompareTag("Woodworker") && !alreadyPickedUp)
+        // {
+        //     alreadyPickedUp = true;
+        //     WoodWorker w = other.GetComponent<WoodWorker>();
+        //     if (dropType == dType.wood)
+        //     {
+        //         w.CollectWood(pickupAmount);
+        //     }
+        //     Destroy(gameObject);
+        // }
+        
     }
 }
 
