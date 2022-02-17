@@ -8,6 +8,8 @@ public class Quest
     [HideInInspector]
     public bool isActive;
 
+    public QuestGiver questGiver;
+
     public string title;
     public string description;
     public Sprite rewardSprite;

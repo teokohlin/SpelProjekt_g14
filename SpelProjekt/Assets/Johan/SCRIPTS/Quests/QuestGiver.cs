@@ -6,9 +6,12 @@ public class QuestGiver : MonoBehaviour
 {
     private Player player;
     [Space]
-    public Quest quest;
+    public Quest[] quests;
 
     private QuestHUDManager questHUD;
+    public int questIndex;
+    public int dialogueIndex;
+    public int questProgress; //0 = start, 1 = in progress, 2 = done
 
     private void Start()
     {
@@ -18,13 +21,18 @@ public class QuestGiver : MonoBehaviour
 
     public void OpenQuestWindow()
     {
-        questHUD.OpenQuestWindow(quest); //Öppna windowet när man fått uppdraget
+        questHUD.OpenQuestWindow(quests[questIndex]); //Öppna windowet när man fått uppdraget
         
     }
 
     public void StartQuest()
     {
-        questHUD.AddQuest(quest);
+        questHUD.AddQuest(quests[questIndex]);
+        OpenQuestWindow();
+    }
+    public void QuestFinished()
+    {
+        questIndex++;
     }
 
 }
