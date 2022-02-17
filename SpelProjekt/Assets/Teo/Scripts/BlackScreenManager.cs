@@ -8,21 +8,10 @@ public class BlackScreenManager : MonoBehaviour
 {
    public GameObject blackScreen;
    public bool isBlack = false;
-   public Door_Interactable door;
    private void Start()
    {
       StartCoroutine(FadeBlackScreen(false));
-      door = FindObjectOfType<Door_Interactable>();
    }
-
-    public void Update()
-    {
-       if (door.teleport)
-       {
-          StartCoroutine(FadeBlackScreen(false));
-       }
-    }
-
    public IEnumerator FadeBlackScreen(bool fadeToBlack = true, int fadeSpeed = 5)
    {
       Color imageColor = blackScreen.GetComponent<Image>().color;
