@@ -5,7 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class Quest 
 {
-    [HideInInspector]
+    //[HideInInspector]
     public bool isActive;
 
     [HideInInspector]

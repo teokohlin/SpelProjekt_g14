@@ -43,12 +43,14 @@ public class QuestHUDManager : MonoBehaviour
         {
             return;
         }
-        questTitle.text = currentQuest.title;
-        questDescription.text = currentQuest.description;
-        rewardImage.sprite = currentQuest.rewardSprite;
-        rewardAmount.text = currentQuest.rewardAmount.ToString();
-        progressText.text = currentQuest.goal.currentAmount.ToString() +  "/" + currentQuest.goal.requiredAmount.ToString();
-        requiredResourceIMG.sprite = currentQuest.goal.requiredResourceSprite;
+        UpdateQuestWindow(currentQuest);
+
+        //questTitle.text = currentQuest.title;
+        //questDescription.text = currentQuest.description;
+        //rewardImage.sprite = currentQuest.rewardSprite;
+        //rewardAmount.text = currentQuest.rewardAmount.ToString();
+        //progressText.text = currentQuest.goal.currentAmount.ToString() + "/" + currentQuest.goal.requiredAmount.ToString();
+        //requiredResourceIMG.sprite = currentQuest.goal.requiredResourceSprite;
 
     }
 
@@ -103,6 +105,21 @@ public class QuestHUDManager : MonoBehaviour
 
         questWindow.SetActive(true);
 
+        UpdateQuestWindow(currentQuest);
+
+        //questTitle.text = kvist.title;
+        //questDescription.text = kvist.description;
+        //rewardImage.sprite = kvist.rewardSprite;
+        //if (kvist.rewardAmount == 0)
+        //{
+        //    rewardAmount.text = " ";
+        //}
+        //else
+        //{
+        //    rewardAmount.text = kvist.rewardAmount.ToString();
+        //}
+        //progressText.text = kvist.goal.currentAmount.ToString() + "/" + kvist.goal.requiredAmount.ToString();
+        //requiredResourceIMG.sprite = kvist.goal.requiredResourceSprite;
 
 
     }
@@ -127,8 +144,9 @@ public class QuestHUDManager : MonoBehaviour
         {
             if (button.GetComponent<QuestButton>().quest.isActive == false)
             {
+                questButtons.Remove(button);
                 Destroy(button);
-                //tror error dyker upp i denna foreach någonstans
+                break;
             }
         }
     }
