@@ -8,6 +8,7 @@ public class Quest
     [HideInInspector]
     public bool isActive;
 
+    [HideInInspector]
     public QuestGiver questGiver;
 
     public string title;
@@ -17,6 +18,8 @@ public class Quest
     public RewardType rewardKind;
     [Header("Om resource, vilken")]
     public dType rewardType;
+    [HideInInspector]
+    public bool completed;
 
     [Space]
     [Header("QuestGoal")]
@@ -46,25 +49,33 @@ public class Quest
     }
     public void Complete()
     {
-        if (!isActive)
+        completed = true;
+        questGiver.QuestCompletedNotFinished();
+    }
+    public void InterractedWith() //När man interragerar med kaninen, kolla om questet är Complete. Då ska det tas bort och så
+    {
+        if (completed)
         {
-            return;
+            RemoveQuest();
         }
-
-
+    }
+    public void RemoveQuest()
+    {
         switch (rewardKind)
         {
-            case RewardType.Resource:
-                RewardPlayer();
-                break;
-            case RewardType.Story:
-                break;
-            default:
-                break;
+        case RewardType.Resource:
+            RewardPlayer();
+            break;
+        case RewardType.Story:
+            break;
+        default:
+            break;
         }
 
         Object.FindObjectOfType<QuestHUDManager>().RemoveQuest(this);
     }
+
+
 
     public void RewardPlayer()
     {

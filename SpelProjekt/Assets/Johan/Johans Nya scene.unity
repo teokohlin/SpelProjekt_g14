@@ -7483,33 +7483,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 6307532369581678554, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
---- !u!114 &1741979791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741979789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogues:
-  - dialogue:
-    - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-      sentence: 1
-    - picture: {fileID: 21300000, guid: 189f37f688eafd546b8f50a41c0c17d7, type: 3}
-      sentence: 2
-    - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-      sentence: 3
-  - dialogue:
-    - picture: {fileID: 21300000, guid: 8e915a874acc26f4b8f24c650b8ec2ef, type: 3}
-      sentence: 4
-  - dialogue:
-    - picture: {fileID: 21300000, guid: a4fc819f3a19f5645b89d1ecfdae9e4b, type: 3}
-      sentence: 5
-  dialogueIndex: 0
 --- !u!4 &1741979792 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
@@ -7528,7 +7501,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 0}
-  tillfalligQuestStoppare: 0
 --- !u!114 &1741979794
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7541,10 +7513,45 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quests: []
+  quests:
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Chop Stone
+    description: Chop 20 stone and bring it back to me
+    rewardSprite: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    rewardAmount: 0
+    rewardKind: 1
+    rewardType: 0
+    completed: 0
+    goal:
+      goalType: 0
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 10
+      requiredResourceSprite: {fileID: 21300000, guid: 83cc8f2122663f24ca99e34cbd6849dc, type: 3}
+      gatherType: 0
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Chop Trees
+    description: Chop 20 trees and bring it back to me
+    rewardSprite: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+    rewardAmount: 0
+    rewardKind: 1
+    rewardType: 0
+    completed: 0
+    goal:
+      goalType: 0
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 10
+      requiredResourceSprite: {fileID: 21300000, guid: 83cc8f2122663f24ca99e34cbd6849dc, type: 3}
+      gatherType: 0
   questIndex: 0
-  dialogueIndex: 0
   questProgress: 0
+  dialogues:
+  - dials:
+    - dialogue: []
+    - dialogue: []
 --- !u!1001 &1742102783
 PrefabInstance:
   m_ObjectHideFlags: 0

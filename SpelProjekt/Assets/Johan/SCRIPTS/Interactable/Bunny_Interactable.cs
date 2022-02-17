@@ -5,20 +5,16 @@ using UnityEngine;
 public class Bunny_Interactable : Interactable
 {
     public GameObject exclamationMark;
-    public bool tillfalligQuestStoppare;
 
     public override void InteractWith(PlayerController pc)
     {
         //base.InteractWith();
-        GetComponent<DialogueTrigger>().TriggerDialogue();
+        //GetComponent<DialogueTrigger>().TriggerDialogue();
+        GetComponent<QuestGiver>().TriggerDialogue();
+        GetComponent<QuestGiver>().TryStartQuest();
+        GetComponent<QuestGiver>().InterractedWith();
 
 
-        if (!tillfalligQuestStoppare)
-        {
-            tillfalligQuestStoppare = true;
-            GetComponent<QuestGiver>().StartQuest();
-            exclamationMark.SetActive(false);
-        }
 
     }
 }

@@ -9,6 +9,7 @@ public class QuestGoal
     public GoalType goalType;
     [HideInInspector]
     public bool completed;
+    [HideInInspector]
     public int currentAmount = 0;
     public int requiredAmount = 1;
 
@@ -56,6 +57,7 @@ public class QuestGoal
     private void ResourceGathered(int amount)
     {
         currentAmount += amount;
+        currentAmount = Mathf.Clamp(currentAmount,0,requiredAmount);
         Evaluate();
     }
     

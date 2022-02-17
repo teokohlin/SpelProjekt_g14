@@ -102,21 +102,17 @@ public class QuestHUDManager : MonoBehaviour
         windowOpen = true;
 
         questWindow.SetActive(true);
-        questTitle.text = kvist.title;
-        questDescription.text = kvist.description;
-        rewardImage.sprite = kvist.rewardSprite;
-        rewardAmount.text = kvist.rewardAmount.ToString();
-        progressText.text = kvist.goal.currentAmount.ToString() +  "/" + kvist.goal.requiredAmount.ToString();
-        requiredResourceIMG.sprite = kvist.goal.requiredResourceSprite;
+
 
 
     }
 
-    public void AddQuest(Quest quest)
+    public void AddQuest(Quest quest, QuestGiver questGiver)
     {
         //player.quests.Add(quest);
         quest.isActive = true;
         quest.Init();
+        quest.questGiver = questGiver;
         GameObject panelButton = Instantiate(questButtonPrefab, questPanel.transform.position, Quaternion.identity, questPanel.transform);
         panelButton.GetComponent<QuestButton>().quest = quest;      
         questButtons.Add(panelButton);
@@ -126,12 +122,32 @@ public class QuestHUDManager : MonoBehaviour
         windowOpen = false;
         questWindow.SetActive(windowOpen);
         quest.isActive = false;
+        quest.questGiver.QuestFinished();
         foreach (var button in questButtons)
         {
             if (button.GetComponent<QuestButton>().quest.isActive == false)
             {
                 Destroy(button);
+                //tror error dyker upp i denna foreach någonstans
             }
         }
+    }
+
+
+    void UpdateQuestWindow(Quest quest)
+    {
+        questTitle.text = quest.title;
+        questDescription.text = quest.description;
+        rewardImage.sprite = quest.rewardSprite;
+        if (quest.rewardAmount == 0)
+        {
+            rewardAmount.text = " ";
+        }
+        else
+        {
+            rewardAmount.text = quest.rewardAmount.ToString();
+        }
+        progressText.text = quest.goal.currentAmount.ToString() +  "/" + quest.goal.requiredAmount.ToString();
+        requiredResourceIMG.sprite = quest.goal.requiredResourceSprite;
     }
 }
