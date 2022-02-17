@@ -12728,8 +12728,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quest:
     isActive: 0
-    title: Gather Wood
-    description: Chop down some trees and gather 10 wood
+    title: Repair Boris home
+    description: Chop down some trees and gather enough wood to repair Boris door
     rewardSprite: {fileID: 21300000, guid: c71fd17995c48404cb3f4e8cd9a5df97, type: 3}
     rewardAmount: 5
     rewardKind: 0
@@ -12738,7 +12738,7 @@ MonoBehaviour:
       goalType: 0
       completed: 0
       currentAmount: 0
-      requiredAmount: 10
+      requiredAmount: 50
       requiredResourceSprite: {fileID: 21300000, guid: 83cc8f2122663f24ca99e34cbd6849dc, type: 3}
       gatherType: 0
 --- !u!1001 &1742102783
