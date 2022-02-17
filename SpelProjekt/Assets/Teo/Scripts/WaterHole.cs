@@ -12,6 +12,5 @@ public class WaterHole : MonoBehaviour
         {
             other.GetComponent<Player>().FillWater();
         }
-        Debug.Log("InsideCollider");
     }
 }
