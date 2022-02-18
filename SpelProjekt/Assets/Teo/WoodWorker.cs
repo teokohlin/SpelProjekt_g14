@@ -114,7 +114,7 @@ public class WoodWorker : MonoBehaviour
         
         foreach (GameObject tree in trees)
         {
-            Vector3 vector = new Vector3(tree.transform.position.x, 0, tree.transform.position.z);
+            Vector3 vector = new Vector3(tree.transform.position.x, 0.5f, tree.transform.position.z);
             treePos = vector;
             break;
         }
