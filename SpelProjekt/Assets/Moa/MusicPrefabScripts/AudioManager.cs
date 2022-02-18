@@ -26,6 +26,9 @@ public class AudioManager : MonoBehaviour
         public string menuHoverEvent;
         [EventRef]
         public string menuPressEvent;
+        [EventRef]
+        public string stoneEvent;
+
 
 
         public void DoorOpenAudio(GameObject doorObject)
@@ -57,8 +60,10 @@ public class AudioManager : MonoBehaviour
         {
             RuntimeManager.PlayOneShotAttached(menuPressEvent.ToString(), menupressObject);
         }
-
-
+        public void StoneAudio(GameObject menupressObject)
+        {
+            RuntimeManager.PlayOneShotAttached(stoneEvent.ToString(), menupressObject);
+        }
     }
 
 

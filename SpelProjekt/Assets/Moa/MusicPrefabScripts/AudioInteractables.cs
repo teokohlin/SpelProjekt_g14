@@ -39,6 +39,9 @@ public class AudioInteractables : MonoBehaviour
                 case AudioInteractableType.Switches:
                     audioManager.interactablesAudio.SwitchesAudio(audioObject);
                     break;
+                case AudioInteractableType.Stone:
+                    audioManager.interactablesAudio.StoneAudio(audioObject);
+                    break;
             }
         }
     }
