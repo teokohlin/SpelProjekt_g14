@@ -17,6 +17,7 @@ public class QuestHUDManager : MonoBehaviour
     public TextMeshProUGUI rewardAmount;
     public TextMeshProUGUI progressText;
     public Image requiredResourceIMG;
+    public TextMeshProUGUI justRewardText;
     private Quest currentQuest;
 
     [Space]
@@ -136,6 +137,7 @@ public class QuestHUDManager : MonoBehaviour
     }
     public void RemoveQuest(Quest quest)
     {
+        Debug.Log("test");
         windowOpen = false;
         questWindow.SetActive(windowOpen);
         quest.isActive = false;
@@ -157,15 +159,39 @@ public class QuestHUDManager : MonoBehaviour
         questTitle.text = quest.title;
         questDescription.text = quest.description;
         rewardImage.sprite = quest.rewardSprite;
-        if (quest.rewardAmount == 0)
+        progressText.text = quest.goal.currentAmount.ToString() +  "/" + quest.goal.requiredAmount.ToString();
+        requiredResourceIMG.sprite = quest.goal.requiredResourceSprite;
+        rewardAmount.text = quest.rewardAmount.ToString();
+
+
+        //Om bilden för required resource == none, t.ex. interractable uppdrag, så försvinner bilden
+        if (quest.goal.requiredResourceSprite == null)
         {
-            rewardAmount.text = " ";
+            requiredResourceIMG.gameObject.SetActive(false);
         }
         else
         {
-            rewardAmount.text = quest.rewardAmount.ToString();
+            requiredResourceIMG.gameObject.SetActive(true);
         }
-        progressText.text = quest.goal.currentAmount.ToString() +  "/" + quest.goal.requiredAmount.ToString();
-        requiredResourceIMG.sprite = quest.goal.requiredResourceSprite;
+        
+        
+        //Om man ska få story "reward" så ska det inte synas några rewards
+        if (quest.rewardKind == Quest.RewardType.Story) 
+        {
+            rewardAmount.gameObject.SetActive(false);
+            rewardImage.gameObject.SetActive(false);
+            justRewardText.gameObject.SetActive(false);
+            Debug.Log("false");
+
+        }
+        else
+        {
+            rewardAmount.gameObject.SetActive(true);
+            rewardImage.gameObject.SetActive(true);
+            justRewardText.gameObject.SetActive(true);
+            Debug.Log("true");
+            
+        }
+
     }
 }

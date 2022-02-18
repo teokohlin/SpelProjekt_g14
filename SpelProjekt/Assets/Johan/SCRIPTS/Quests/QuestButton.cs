@@ -26,6 +26,14 @@ public class QuestButton : MonoBehaviour
         titleText.text = quest.title;
         progressText.text = quest.goal.currentAmount.ToString() +  "/" + quest.goal.requiredAmount.ToString();
         requiredResourceImage.sprite = quest.goal.requiredResourceSprite;
+        if (quest.goal.requiredResourceSprite == null)
+        {
+            requiredResourceImage.gameObject.SetActive(false);
+        }
+        else
+        {
+            requiredResourceImage.gameObject.SetActive(true);
+        }
     }
 
     public void ButtonPressed()

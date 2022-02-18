@@ -22,13 +22,13 @@ public class QuestGiver : MonoBehaviour
 
     public void OpenQuestWindow()
     {
-        questHUD.OpenQuestWindow(quests[questIndex]); //Öppna windowet när man fått uppdraget
+        questHUD.OpenQuestWindow(quests[questIndex]); //ï¿½ppna windowet nï¿½r man fï¿½tt uppdraget
         
     }
 
     public void TryStartQuest()
     {
-        if (questProgress == 0 && questIndex < quests.Length) //kan bara starta om man e klar med förra. Går inte starta nytt om det itne finns fler x) //&& questIndex < quests.Length
+        if (questProgress == 0 && questIndex < quests.Length) //kan bara starta om man e klar med fï¿½rra. Gï¿½r inte starta nytt om det itne finns fler x) //&& questIndex < quests.Length
         {
             questHUD.AddQuest(quests[questIndex], this);
             OpenQuestWindow();
@@ -36,7 +36,7 @@ public class QuestGiver : MonoBehaviour
         }
 
     }
-    public void QuestCompletedNotFinished() //om man klarat av alla saker för uppdraget, men inte snackat med givaren än
+    public void QuestCompletedNotFinished() //om man klarat av alla saker fï¿½r uppdraget, men inte snackat med givaren ï¿½n
     {
         questProgress = 2;
     }
@@ -58,14 +58,14 @@ public class QuestGiver : MonoBehaviour
     }
 
 
-    [Tooltip("Antalet såna här borde vara samma som mängden Quests")]
+    [Tooltip("Antalet sï¿½na hï¿½r borde vara samma som mï¿½ngden Quests")]
     public Dialogues[] dialogues;
 
     [System.Serializable]
     public struct Dialogues
     {
-        [Tooltip("Ska alltid vara 3 st, först för när man börjar uppdraget, " +
-            "andra för när man pratar innan man är klar, och tredje när man är klar!")]
+        [Tooltip("Ska alltid vara 3 st, fï¿½rst fï¿½r nï¿½r man bï¿½rjar uppdraget, " +
+            "andra fï¿½r nï¿½r man pratar innan man ï¿½r klar, och tredje nï¿½r man ï¿½r klar!")]
         public Dial[] dials;
     }
     [System.Serializable]

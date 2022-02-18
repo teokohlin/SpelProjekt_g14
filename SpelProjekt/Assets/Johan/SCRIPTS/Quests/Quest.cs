@@ -52,10 +52,12 @@ public class Quest
         completed = true;
         questGiver.QuestCompletedNotFinished();
     }
-    public void InterractedWith() //När man interragerar med kaninen, kolla om questet är Complete. Då ska det tas bort och så
+    public void InterractedWith() //NÃ¤r man interragerar med kaninen, kolla om questet Ã¤r Complete. DÃ¥ ska det tas bort och sÃ¥
     {
+
         if (completed)
         {
+
             RemoveQuest();
         }
     }
