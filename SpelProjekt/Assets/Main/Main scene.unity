@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12991,10 +12991,80 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quests: []
+  quests:
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Repair Boris home
+    description: Gather 20 wood.
+    rewardSprite: {fileID: 0}
+    rewardAmount: 0
+    rewardKind: 1
+    rewardType: 0
+    completed: 0
+    goal:
+      goalType: 0
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 20
+      requiredResourceSprite: {fileID: 21300000, guid: 83cc8f2122663f24ca99e34cbd6849dc, type: 3}
+      gatherType: 0
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Knock knock
+    description: Put down the door in front of the hole.
+    rewardSprite: {fileID: 0}
+    rewardAmount: 0
+    rewardKind: 1
+    rewardType: 0
+    completed: 0
+    goal:
+      goalType: 1
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 1
+      requiredResourceSprite: {fileID: 0}
+      gatherType: 0
   questIndex: 0
   questProgress: 0
-  dialogues: []
+  dialogues:
+  - dials:
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Okay Mackan, I know that I gladly took your workoffer, but I really
+          need a makeover of my own place. You know, the cozy hole in the ground.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: " I don\u2019t know if a hole can be cozy?"
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Pff, Mackan, how would you know? You have just not tried it yet.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: I think 20 wood will do. Talk to me when you have gathered it all.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: "I told you to come back when you\u2019ve gathered it all.\r\n"
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Amazing, you got it all. Thank you Mackan.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: "You\u2019re testing my limits, aren\u2019t you?"
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Just a little. Thanks once again. Please come and see me again.
+  - dials:
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Now, when you have the resources for my door you only need to walk
+          up to the hole and press right click.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Press right click on the hole to put down a door.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Oh Mackan. It looks amazing. Thank you friend.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: And you have to admit, it looks cozy now.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Yeah, you are right.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Whenever you want, talk to me again.
 --- !u!1001 &1742102783
 PrefabInstance:
   m_ObjectHideFlags: 0
