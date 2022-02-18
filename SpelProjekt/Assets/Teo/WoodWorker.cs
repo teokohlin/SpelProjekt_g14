@@ -10,28 +10,34 @@ public class WoodWorker : MonoBehaviour
     private Vector3 stackPos; 
     public Transform dropZone;
     public Transform dropPoint;
+    public Transform home;
     public List<GameObject> trees;
     private int teleports;
     private float speed = 10f;
     private Vector3 treePos;
     private bool killedWood;
-    public static bool chopWood;
     public int collectedWood = 0;
-    private bool pickedUp;
     private Vector3 newdirection;
     private Vector3 targetDir;
+    public int energy;
+    private bool drop;
     private void Start()
     {
-        trees = new List<GameObject>(GameObject.FindGameObjectsWithTag("Tree"));
         MoveToTree();
+    }
+
+    private void OnEnable()
+    {
+        trees = new List<GameObject>(GameObject.FindGameObjectsWithTag("Tree"));
+        energy = 4;
     }
 
     private void Update()
     {
         //speed
         float step = speed * Time.deltaTime;
-
-        if (trees.Count > 0)
+        
+        if (trees.Count > 0 && energy > 0)
         {
             //Move towards tree
             transform.position = 
@@ -55,7 +61,7 @@ public class WoodWorker : MonoBehaviour
             MoveToTree();
         }
         //When no trees left move to drop point
-        if (trees.Count == 0)
+        if (trees.Count == 0 || energy == 0 && !drop)
         {
             //Rotate towrds drop point
             targetDir = dropZone.position - transform.position;
@@ -66,11 +72,26 @@ public class WoodWorker : MonoBehaviour
             //Move towards drop point
             transform.position = 
                 Vector3.MoveTowards(transform.position, dropZone.position, step);
-        }
+            if (transform.position == dropZone.position)
+            {
+                DropStack();
+            }
 
-        if (transform.position == dropZone.position)
+            if (trees.Count < energy)
+            {
+                energy = 0;
+            }
+        }
+        
+        if (drop)
         {
-            DropStack();
+            transform.position = 
+                Vector3.MoveTowards(transform.position, home.position, step);
+        }
+        if (transform.position == home.position)
+        {
+            drop = false;
+            enabled = false;
         }
     }
 
@@ -81,8 +102,8 @@ public class WoodWorker : MonoBehaviour
             WoodStack.GetComponent<Pickup>().pickupAmount = collectedWood;
             GameObject.Instantiate(WoodStack, dropPoint.position, WoodStack.transform.rotation);
             collectedWood = 0;
+            drop = true;
         }
-        
     }
     public void CollectWood(int amount)
     {
@@ -106,6 +127,7 @@ public class WoodWorker : MonoBehaviour
             int t = tree.GetComponent<Tree>().dropAmount;
             CollectWood(t);
             tree.GetComponent<Tree>().LoseHealth(50);
+            energy--;
             killedWood = true;
             if (killedWood)
             {
