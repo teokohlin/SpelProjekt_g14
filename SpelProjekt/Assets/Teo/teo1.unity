@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.30800128
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2072822638}
-  m_IndirectSpecularColor: {r: 0.24600631, g: 0.27514502, b: 0.3242764, a: 0.30800128}
+  m_IndirectSpecularColor: {r: 0.24600628, g: 0.27514502, b: 0.3242764, a: 0.30800128}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -902,6 +902,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5843686831309223909, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5843686831309223909, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5843686831309223909, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
@@ -2551,6 +2555,17 @@ MonoBehaviour:
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 698db8eab835cb5489fb5724bbfc0d96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &677384827 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 76119169804006293, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+  m_PrefabInstance: {fileID: 136396741}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &687352228
@@ -5846,6 +5861,7 @@ MonoBehaviour:
   fullDayLength: 600
   startTime: 0.4
   noon: {x: 90, y: 0, z: 0}
+  Pil: {fileID: 677384827}
   sun: {fileID: 2072822638}
   sunColor:
     serializedVersion: 2

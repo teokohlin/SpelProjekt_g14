@@ -2,6 +2,8 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 public class DayNightCycle : MonoBehaviour
 {
     [Range(0.0f, 1.0f)]
@@ -10,6 +12,9 @@ public class DayNightCycle : MonoBehaviour
     public float startTime;
     private float timeRate;
     public Vector3 noon;
+    private Vector3 rotation = new Vector3(0,0,90);
+    public Image Pil;
+    private float t;
 
     [Header("Sun")] 
     public Light sun;
@@ -35,7 +40,6 @@ public class DayNightCycle : MonoBehaviour
     {
         //increment time
         time += timeRate * Time.deltaTime;
-
         if (time >= 1.0f)
         {
             time = 0.0f;
@@ -44,7 +48,7 @@ public class DayNightCycle : MonoBehaviour
         //light rotation
         sun.transform.eulerAngles = (time - 0.25f) * noon * 4.0f;
         moon.transform.eulerAngles = (time - 0.75f) * noon * 4.0f;
-        
+        Pil.transform.eulerAngles = (time - 0.5f) * -rotation * 4.0f;
         //light intensity
         sun.intensity = sunIntensity.Evaluate(time);
         moon.intensity = moonIntensity.Evaluate(time);
