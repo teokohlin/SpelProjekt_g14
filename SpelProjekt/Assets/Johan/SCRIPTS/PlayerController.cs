@@ -59,6 +59,38 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
 
+        //HÖGERKLICK
+
+        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit, 100, interactableLayer))
+        {
+            Interactable interactable = hit.collider.GetComponent<Interactable>();
+            if (interactable != null)
+            {
+                //Muspekare blir "interactable" symbol, typ hand med finger
+                cursor.ChangeToInteractableCursor();
+
+                if (Input.GetMouseButtonDown(1))
+                {
+                    if (Vector3.Distance(transform.position, interactable.gameObject.transform.position) <= maxDistanceForInteractions)
+                    {
+                        interactable.InteractWith(this); //släng med "playercontrollern" som referens
+                    }
+                }
+
+            }
+
+        }
+        else
+        {
+            //muspekare blir vanlig
+            cursor.ChangeToStandardCursor();
+        }
+        
+        
+        
         if (lockMovement) //Avaktiverar också för när man är i dialog
         {
             return;
@@ -145,35 +177,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-        //HÖGERKLICK
 
-        Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-
-        if (Physics.Raycast(ray, out hit, 100, interactableLayer))
-        {
-            Interactable interactable = hit.collider.GetComponent<Interactable>();
-            if (interactable != null)
-            {
-                //Muspekare blir "interactable" symbol, typ hand med finger
-                cursor.ChangeToInteractableCursor();
-
-                if (Input.GetMouseButtonDown(1))
-                {
-                    if (Vector3.Distance(transform.position, interactable.gameObject.transform.position) <= maxDistanceForInteractions)
-                    {
-                        interactable.InteractWith(this); //släng med "playercontrollern" som referens
-                    }
-                }
-
-            }
-
-        }
-        else
-        {
-            //muspekare blir vanlig
-            cursor.ChangeToStandardCursor();
-        }
 
 
     }
