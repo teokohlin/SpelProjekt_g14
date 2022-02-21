@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(QuestGiver))]
 public class QuestTrigger_Interractable : Interactable
 {
 
