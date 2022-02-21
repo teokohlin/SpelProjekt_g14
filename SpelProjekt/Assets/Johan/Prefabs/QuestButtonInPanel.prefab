@@ -145,8 +145,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: 1b708172533b08746b6d90ec4497b55e, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -226,15 +226,22 @@ MonoBehaviour:
   questHUD: {fileID: 0}
   quest:
     isActive: 0
+    questGiver: {fileID: 0}
     title: 
     description: 
     rewardSprite: {fileID: 0}
     rewardAmount: 0
+    rewardKind: 0
+    rewardType: 0
+    completed: 0
     goal:
+      goalType: 0
       completed: 0
       currentAmount: 0
       requiredAmount: 1
       requiredResourceSprite: {fileID: 0}
+      gatherType: 0
+      interractableType: 0
   titleText: {fileID: 6948030952612849847}
   progressText: {fileID: 6910410425880462324}
   requiredResourceImage: {fileID: 8101987545028663651}

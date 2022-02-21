@@ -17,6 +17,7 @@ public class DialogueManager : MonoBehaviour
     [Space]
     public GameObject hotbarCanvasUI;
 
+    private bool inDialogue = false;
     void Start()
     {
         dialogues = new Queue<Dialogue>();
@@ -25,7 +26,7 @@ public class DialogueManager : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && inDialogue)
         {
             DisplayNextMessage();
         }
@@ -33,6 +34,8 @@ public class DialogueManager : MonoBehaviour
 
     public void StartDialogue(Dialogue[] dialoguez)
     {
+        inDialogue = true;
+        
         playerC.SetLockMovement(true);
         hotbarCanvasUI.SetActive(false);
         animator.SetBool("IsOpen", true);
@@ -77,6 +80,8 @@ public class DialogueManager : MonoBehaviour
 
     void EndDialogue()
     {
+        inDialogue = false;
+        
         playerC.SetLockMovement(false);
         hotbarCanvasUI.SetActive(true);
         animator.SetBool("IsOpen", false);
