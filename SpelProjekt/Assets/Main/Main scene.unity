@@ -2130,9 +2130,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 654190060}
     m_Modifications:
+    - target: {fileID: 75995112490327300, guid: de552bf2a1b184f478f3d9f321d10be6, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 377611377398656420, guid: de552bf2a1b184f478f3d9f321d10be6, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 582625395139503219, guid: de552bf2a1b184f478f3d9f321d10be6, type: 3}
       propertyPath: m_Name
       value: Stone_Well_Broken
+      objectReference: {fileID: 0}
+    - target: {fileID: 582625395139503219, guid: de552bf2a1b184f478f3d9f321d10be6, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1496202525698471368, guid: de552bf2a1b184f478f3d9f321d10be6, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4285169653685874992, guid: de552bf2a1b184f478f3d9f321d10be6, type: 3}
       propertyPath: m_RootOrder
@@ -2178,6 +2194,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4479976136516714898, guid: de552bf2a1b184f478f3d9f321d10be6, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4755200195352284533, guid: de552bf2a1b184f478f3d9f321d10be6, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5100839348687134603, guid: de552bf2a1b184f478f3d9f321d10be6, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7047576375211654104, guid: de552bf2a1b184f478f3d9f321d10be6, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: de552bf2a1b184f478f3d9f321d10be6, type: 3}
 --- !u!4 &304022887 stripped
@@ -2204,6 +2236,43 @@ CapsuleCollider:
   m_Height: 6.4990296
   m_Direction: 1
   m_Center: {x: 0, y: 1.3963549, z: 0.005514145}
+--- !u!114 &304022890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304022888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests:
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: 
+    description: 
+    rewardSprite: {fileID: 0}
+    rewardAmount: 0
+    rewardKind: 0
+    rewardType: 0
+    completed: 0
+    goal:
+      goalType: 0
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 0
+      requiredResourceSprite: {fileID: 0}
+      gatherType: 0
+      interractableType: 0
+  questIndex: 0
+  questProgress: 0
+  dialogues:
+  - dials:
+    - dialogue:
+      - picture: {fileID: 0}
+        sentence: "Man, brunnen \xE4r ju skr\xE4p. Borde vekligen fixa den."
 --- !u!1001 &308684367
 PrefabInstance:
   m_ObjectHideFlags: 0
