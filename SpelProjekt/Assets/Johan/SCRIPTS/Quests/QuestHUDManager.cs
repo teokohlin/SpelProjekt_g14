@@ -19,6 +19,7 @@ public class QuestHUDManager : MonoBehaviour
     public Image requiredResourceIMG;
     public TextMeshProUGUI justRewardText;
     private Quest currentQuest;
+    private MusicManager musicManager;
 
     [Space]
     public GameObject questButtonPrefab;
@@ -30,6 +31,7 @@ public class QuestHUDManager : MonoBehaviour
     private void Start()
     {
         player = FindObjectOfType<Player>();
+        musicManager = FindObjectOfType<MusicManager>();
 
     }
 
@@ -137,7 +139,9 @@ public class QuestHUDManager : MonoBehaviour
     }
     public void RemoveQuest(Quest quest)
     {
-        Debug.Log("test");
+        //Spela musikjingle dingle pringles
+        musicManager.PlayProgression();
+
         windowOpen = false;
         questWindow.SetActive(windowOpen);
         quest.isActive = false;
