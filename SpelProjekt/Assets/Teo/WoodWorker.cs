@@ -3,33 +3,40 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
+using UnityEngine.UI;
 
 public class WoodWorker : MonoBehaviour
 {
+    public DayNightCycle Dnc;
     public GameObject WoodStack;
     private Vector3 stackPos; 
     public Transform dropZone;
     public Transform dropPoint;
     public Transform home;
     public List<GameObject> trees;
+    public int Energy = 3;
     private int teleports;
     private float speed = 10f;
     private Vector3 treePos;
     private bool killedWood;
-    public int collectedWood = 0;
+    private int collectedWood = 0;
     private Vector3 newdirection;
     private Vector3 targetDir;
-    public int energy;
+    private int targets;
     private bool drop;
+    private int days;
     private void Start()
     {
         MoveToTree();
+        Dnc = FindObjectOfType<DayNightCycle>();
+        Dnc.DayPast += RefillEnergy;
     }
 
     private void OnEnable()
     {
+        Energy--;
         trees = new List<GameObject>(GameObject.FindGameObjectsWithTag("Tree"));
-        energy = 4;
+        targets = 4;
     }
 
     private void Update()
@@ -37,7 +44,7 @@ public class WoodWorker : MonoBehaviour
         //speed
         float step = speed * Time.deltaTime;
         
-        if (trees.Count > 0 && energy > 0)
+        if (trees.Count > 0 && targets > 0)
         {
             //Move towards tree
             transform.position = 
@@ -61,7 +68,7 @@ public class WoodWorker : MonoBehaviour
             MoveToTree();
         }
         //When no trees left move to drop point
-        if (trees.Count == 0 || energy == 0 && !drop)
+        if (trees.Count == 0 || targets == 0 && !drop)
         {
             //Rotate towrds drop point
             targetDir = dropZone.position - transform.position;
@@ -77,9 +84,9 @@ public class WoodWorker : MonoBehaviour
                 DropStack();
             }
 
-            if (trees.Count < energy)
+            if (trees.Count < targets)
             {
-                energy = 0;
+                targets = 0;
             }
         }
         
@@ -95,6 +102,11 @@ public class WoodWorker : MonoBehaviour
         }
     }
 
+    private void RefillEnergy(int d)
+    {
+        days += d;
+        Energy = 3;
+    }
     void DropStack()
     {
         if (collectedWood > 0)
@@ -127,7 +139,7 @@ public class WoodWorker : MonoBehaviour
             int t = tree.GetComponent<Tree>().dropAmount;
             CollectWood(t);
             tree.GetComponent<Tree>().LoseHealth(50);
-            energy--;
+            targets--;
             killedWood = true;
             if (killedWood)
             {

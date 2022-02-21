@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class DayNightCycle : MonoBehaviour
@@ -15,7 +16,7 @@ public class DayNightCycle : MonoBehaviour
     private Vector3 rotation = new Vector3(0,0,90);
     public Image Pil;
     private float t;
-
+    public UnityAction<int> DayPast;
     [Header("Sun")] 
     public Light sun;
     public Gradient sunColor;
@@ -43,6 +44,7 @@ public class DayNightCycle : MonoBehaviour
         if (time >= 1.0f)
         {
             time = 0.0f;
+            DayPast?.Invoke(1);
         }
         
         //light rotation
