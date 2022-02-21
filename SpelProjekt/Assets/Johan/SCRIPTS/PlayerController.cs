@@ -41,7 +41,7 @@ public class PlayerController : MonoBehaviour
     [Space]
     public float timeTilDamage = .6f;
 
-    
+    private bool leftMouseIsDown;
 
     //public BlackScreenManager blackscreen;
     void Start()
@@ -67,32 +67,19 @@ public class PlayerController : MonoBehaviour
 
 
 
-        ////Kolla så man inte hoverar UI saker, för att inte göra actions när man klickar buttons //LOCKACTIONS med andra ord
-        //Ray rayman = cam.ScreenPointToRay(Input.mousePosition);
-        //RaycastHit hot;
-
-        //if (Physics.Raycast(rayman, out hot, 10))
-        //{
-        //    Debug.Log(hot.collider.gameObject.name);
-        //    if (hot.collider.gameObject.CompareTag("UI"))
-        //    {
-        //        return;
-        //    }
-        //}
-
-
-
-
-
-
-
-
-
-
-
-
-
         //VÄNSTERKLICK
+        
+        if (Input.GetMouseButtonDown(0))
+        {
+            leftMouseIsDown = true;
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            leftMouseIsDown = false;
+        }
+        
+        
 
         //Har spelaren energi och har tiden sedan senaste "slaget" gått. 
         if (Time.time >= nextChopTime)
@@ -101,7 +88,7 @@ public class PlayerController : MonoBehaviour
 
 
             //vänsterklick
-            if (Input.GetMouseButtonDown(0) && !EventSystem.current.IsPointerOverGameObject())
+            if (leftMouseIsDown && !EventSystem.current.IsPointerOverGameObject())
             {
 
 

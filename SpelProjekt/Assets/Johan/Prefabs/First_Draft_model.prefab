@@ -2009,6 +2009,7 @@ MonoBehaviour:
     m_Bits: 1024
   chopPoint: {fileID: 6795579290203750791}
   chopBoxSize: {x: 0.5, y: 4, z: 1.75}
+  farmBoxSize: {x: 0.5, y: 4, z: 2.5}
   chopRate: 1
   maxDistanceForInteractions: 5
   player: {fileID: 0}
@@ -2018,7 +2019,7 @@ MonoBehaviour:
   seedsUseTriggername: Chop Wood
   watercanUseTriggername: Pick Stone
   scytheUseTriggername: Chop Wood
-  timeTilDamage: 0.6
+  timeTilDamage: 0.5
 --- !u!114 &5865231757791859092
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2036,7 +2037,8 @@ MonoBehaviour:
   foodAmount: 0
   energy: 10
   maxEnergy: 10
-  quests: []
+  maxWater: 0
+  waterAmount: 0
 --- !u!114 &-1127679116628964789
 MonoBehaviour:
   m_ObjectHideFlags: 0
