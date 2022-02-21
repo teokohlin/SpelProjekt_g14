@@ -2695,19 +2695,36 @@ MonoBehaviour:
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
-    title: Fix well
-    description: Fix it dammit
+    title: Well, well, well
+    description: Collect 30 stones.
     rewardSprite: {fileID: 0}
-    rewardAmount: 5
-    rewardKind: 0
+    rewardAmount: 0
+    rewardKind: 1
     rewardType: 0
     completed: 0
     goal:
       goalType: 0
       completed: 0
       currentAmount: 0
-      requiredAmount: 50
+      requiredAmount: 5
       requiredResourceSprite: {fileID: 21300000, guid: c0151654c257f014a8e2e52397a0bcd0, type: 3}
+      gatherType: 1
+      interractableType: 0
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Well, well, well continued
+    description: Press right click to repair the well.
+    rewardSprite: {fileID: 0}
+    rewardAmount: 0
+    rewardKind: 1
+    rewardType: 0
+    completed: 0
+    goal:
+      goalType: 1
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 0
+      requiredResourceSprite: {fileID: 0}
       gatherType: 1
       interractableType: 0
   questIndex: 0
@@ -2715,8 +2732,34 @@ MonoBehaviour:
   dialogues:
   - dials:
     - dialogue:
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Oh, I had nearly forgotten about the well.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Surely it looks like it needs some restoration.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Hmm...
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: 30 stones should be enough.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Need to gather some more.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: So, that should be it.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Now I just need to make it like new again.
+  - dials:
+    - dialogue:
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Almost done.
+    - dialogue:
       - picture: {fileID: 0}
-        sentence: "Man, brunnen \xE4r ju skr\xE4p. Borde vekligen fixa den."
+        sentence: Repair the well by pressing right click on the well.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Wow, now this is what I call a well.
+      - picture: {fileID: 0}
+        sentence: You can now use the well to refill your watering can.
 --- !u!114 &304022891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15369,7 +15412,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113114092889282255, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
