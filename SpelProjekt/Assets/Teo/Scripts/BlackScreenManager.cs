@@ -12,6 +12,14 @@ public class BlackScreenManager : MonoBehaviour
    {
       StartCoroutine(FadeBlackScreen(false));
    }
+
+   private void Update()
+   {
+      if (isBlack)
+      {
+         StartCoroutine(FadeBlackScreen(false));
+      }
+   }
    public IEnumerator FadeBlackScreen(bool fadeToBlack = true, int fadeSpeed = 5)
    {
       Color imageColor = blackScreen.GetComponent<Image>().color;

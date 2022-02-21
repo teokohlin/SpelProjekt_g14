@@ -46,7 +46,7 @@ public class HoverTipManager : MonoBehaviour
         }
     }
 
-    private void ShowInfo(string info, string titel, Vector2 mousePos, int index)
+    private void ShowInfo(string info, string titel, Vector2 pos, int index)
     {
         
         infoText.text = info;
@@ -58,8 +58,8 @@ public class HoverTipManager : MonoBehaviour
         
         infoWindow.gameObject.SetActive(true);
         
-        infoWindow.transform.position = new Vector2(mousePos.x, mousePos.y + infoWindow.sizeDelta.y / 2);
-        
+        //infoWindow.transform.position = new Vector2(mousePos.x, mousePos.y + infoWindow.sizeDelta.y / 2);
+        infoWindow.transform.position = new Vector2(pos.x, pos.y * 2);
         ChangeSprite(index);
         itemImage.gameObject.SetActive(true);
         border.gameObject.SetActive(true);
