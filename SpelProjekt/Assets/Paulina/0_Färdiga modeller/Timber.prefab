@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4956601716354899379}
   - component: {fileID: 8315537629896757782}
   - component: {fileID: 6089515559873095388}
+  - component: {fileID: 2481814972488002692}
   m_Layer: 0
   m_Name: Timber
   m_TagString: Untagged
@@ -82,6 +83,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &2481814972488002692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5729337747380668169}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.85674584, y: 0.7163003, z: 1.9823068}
+  m_Center: {x: -0.22275901, y: 0.15253612, z: 0}
 --- !u!1001 &3435836630805128339
 PrefabInstance:
   m_ObjectHideFlags: 0
