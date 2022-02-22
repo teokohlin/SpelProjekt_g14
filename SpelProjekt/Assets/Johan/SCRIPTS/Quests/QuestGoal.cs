@@ -20,6 +20,7 @@ public class QuestGoal
     public dType gatherType;
 
     public InterractableType interractableType;
+    public GameObject repairObject;
 
 
     public UnityAction GoalCompleted;
@@ -50,8 +51,13 @@ public class QuestGoal
             case GoalType.Interact:
                 switch (interractableType)
                 {
-                    case InterractableType.RabbitHole:
+                    case InterractableType.BunnyHole:
                         Object.FindObjectOfType<RabbitHole_Interractable>().interractedWith += Interacted;
+                        break;
+                    case InterractableType.Repair:
+                        //prenumerera på repairobjects "repairfunktion" som inte finns nu, 
+                        //repairfunktionen på objektet ska kallas på när man klickar på knappen på canvaset
+                        //som är kopplat till det
                         break;
                     default:
                         break;
@@ -112,6 +118,7 @@ public enum GoalType
 
 public enum InterractableType
 {
-    RabbitHole,
+    BunnyHole,
+    Repair,
     annat
 }
