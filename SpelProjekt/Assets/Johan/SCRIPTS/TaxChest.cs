@@ -13,7 +13,9 @@ public class TaxChest : MonoBehaviour
     public int woodNeeded = 50, stoneNeeded = 50, foodNeeded = 50;
     public TextMeshProUGUI woodText, stoneText, foodText;
     public GameObject woodButton, stoneButton, foodButton;
-    public bool woodPayed, stonePayed, foodPayed;
+    private bool woodPayed, stonePayed, foodPayed;
+
+    private DayNightCycle dnc;
 
     public UnityAction taxNotPaid;
     public UnityAction taxPaid;
@@ -23,7 +25,9 @@ public class TaxChest : MonoBehaviour
     private void Start()
     {
         player = FindObjectOfType<Player>();
-        //prenumerera "newday" på daymanager
+        dnc = FindObjectOfType<DayNightCycle>();
+        dnc.DayPast += NewDay;  //prenumerera "newday" pÃ¥ daymanager
+
     }
 
     public void ButtonClicked(int type)
@@ -59,7 +63,7 @@ public class TaxChest : MonoBehaviour
         if (player.ReturnAmount(dType.stone) > stoneNeeded)
         {
             player.AddStone(-stoneNeeded);
-            stoneButton.SetActive(stoneButton);
+            stoneButton.SetActive(false);
             stonePayed = true;
         }
     }
@@ -81,9 +85,9 @@ public class TaxChest : MonoBehaviour
         foodText.text = foodNeeded.ToString();
     }
 
-    public void NewDay() //prenumerera på nydag unity action från daymanager
+    public void NewDay(int day) //prenumerera pÃ¥ nydag unity action frÃ¥n daymanager
     {
-        weekday++;
+        weekday += day;
         if (weekday >= 7)
         {
             if (woodPayed && stonePayed && foodPayed)
