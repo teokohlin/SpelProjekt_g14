@@ -9,9 +9,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 237262645151317173}
-  m_Layer: 0
-  m_Name: Tree_Stump_Dark
-  m_TagString: Untagged
+  - component: {fileID: -1335869933838314887}
+  - component: {fileID: 4986756673771571513}
+  m_Layer: 9
+  m_Name: Tree_Stump_Gran
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30,9 +32,39 @@ Transform:
   - {fileID: 5651231322725758175}
   - {fileID: 1960537236772202439}
   - {fileID: 3892063632377728386}
+  - {fileID: 7508155152311348596}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &-1335869933838314887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576810066154808847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79f8e2e9143480a42bd42f7be5e87dab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 1
+  Particle_effect: {fileID: 7508155152311348597}
+  dropAmount: 1
+  dropPrefab: {fileID: 4831613451342489149, guid: 4d0cb9da1f635fc48821965d6ba4576f, type: 3}
+--- !u!65 &4986756673771571513
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 576810066154808847}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0766536, y: 1.7724266, z: 1.0930835}
+  m_Center: {x: -0.0383268, y: -5.345537, z: 0.04654181}
 --- !u!1 &866393660831343360
 GameObject:
   m_ObjectHideFlags: 0
@@ -42,7 +74,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4993613532499680526}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Treegran_attempt:transform2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -72,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1960537236772202439}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Treegran_attempt:pCube2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -103,7 +135,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5651231322725758175}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Treegran_attempt:pCube1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -134,7 +166,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2044306648601649505}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Treegran_attempt:transform1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -166,7 +198,7 @@ GameObject:
   - component: {fileID: 3892063632377728386}
   - component: {fileID: 3775391127023527797}
   - component: {fileID: 3554160312773574012}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Treegran_attempt:pCube3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -236,3 +268,70 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &6639734225044834797
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 237262645151317173}
+    m_Modifications:
+    - target: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -5.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.07
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383838, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+      propertyPath: m_Name
+      value: Barr particles
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+--- !u!4 &7508155152311348596 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3753539516221383833, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+  m_PrefabInstance: {fileID: 6639734225044834797}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7508155152311348597 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3753539516221383832, guid: bdf68cd608e907c4cb9c36fec3c7a4e3, type: 3}
+  m_PrefabInstance: {fileID: 6639734225044834797}
+  m_PrefabAsset: {fileID: 0}
