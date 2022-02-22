@@ -152,9 +152,14 @@ public class WoodWorker : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.GetComponent<Pickup>().dropType == dType.wood)
+        if (other.GetComponent<Pickup>() != null)
         {
-            Destroy(other.gameObject);
+            if (other.GetComponent<Pickup>().dropType == dType.wood)
+            {
+                Destroy(other.gameObject);
+            }
         }
+        
+
     }
 }
