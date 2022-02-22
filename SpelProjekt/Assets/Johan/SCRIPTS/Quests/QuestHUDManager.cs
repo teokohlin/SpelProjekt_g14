@@ -185,16 +185,13 @@ public class QuestHUDManager : MonoBehaviour
             rewardAmount.gameObject.SetActive(false);
             rewardImage.gameObject.SetActive(false);
             justRewardText.gameObject.SetActive(false);
-            Debug.Log("false");
 
         }
         else
         {
             rewardAmount.gameObject.SetActive(true);
             rewardImage.gameObject.SetActive(true);
-            justRewardText.gameObject.SetActive(true);
-            Debug.Log("true");
-            
+            justRewardText.gameObject.SetActive(true);            
         }
 
     }
