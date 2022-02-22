@@ -8,19 +8,20 @@ public class BlackScreenManager : MonoBehaviour
 {
    public GameObject blackScreen;
    public bool isBlack = false;
+   [Range(0,2)]
+   public float fadeSpeed = 0.9f;
    private void Start()
    {
       StartCoroutine(FadeBlackScreen(false));
    }
 
-   private void Update()
+
+   public void Fade(bool isBlack)
    {
-      if (isBlack)
-      {
-         StartCoroutine(FadeBlackScreen(false));
-      }
+      StartCoroutine(FadeBlackScreen(isBlack));
+      this.isBlack = isBlack;
    }
-   public IEnumerator FadeBlackScreen(bool fadeToBlack = true, int fadeSpeed = 5)
+   public IEnumerator FadeBlackScreen(bool fadeToBlack = true)
    {
       Color imageColor = blackScreen.GetComponent<Image>().color;
       float fadeAmount;
@@ -33,9 +34,11 @@ public class BlackScreenManager : MonoBehaviour
 
             imageColor = new Color(imageColor.r, imageColor.g, imageColor.b, fadeAmount);
             blackScreen.GetComponent<Image>().color = imageColor;
-            isBlack = true;
+            //isBlack = true;
             yield return null;
          }
+
+         StartCoroutine(FadeBlackScreen(false));
       }
       else
       {
@@ -45,7 +48,7 @@ public class BlackScreenManager : MonoBehaviour
 
             imageColor = new Color(imageColor.r, imageColor.g, imageColor.b, fadeAmount);
             blackScreen.GetComponent<Image>().color = imageColor;
-            isBlack = false;
+            //isBlack = false;
             yield return null;
          }
       }

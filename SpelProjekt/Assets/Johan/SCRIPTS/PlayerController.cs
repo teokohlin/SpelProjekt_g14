@@ -58,7 +58,11 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        if (lockMovement) //Avaktiverar också för när man är i dialog
+        {
+            return;
+        }
+        
         //HÖGERKLICK
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -91,10 +95,7 @@ public class PlayerController : MonoBehaviour
         
         
         
-        if (lockMovement) //Avaktiverar också för när man är i dialog
-        {
-            return;
-        }
+        
 
 
 

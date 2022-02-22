@@ -13,7 +13,7 @@ public class DayManager : MonoBehaviour
         Dnc.DayPast += ChangeDayText;
     }
 
-    private void ChangeDayText(int day)
+    public void ChangeDayText(int day)
     {
         currentDay += day;
         text.text = "Day: " + currentDay.ToString();

@@ -17,6 +17,7 @@ public class DayNightCycle : MonoBehaviour
     public Image Pil;
     private float t;
     public UnityAction<int> DayPast;
+    
     [Header("Sun")] 
     public Light sun;
     public Gradient sunColor;
