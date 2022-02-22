@@ -17,11 +17,13 @@ public class TaxChest_Interactable : Interactable
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && taxCanvas.activeSelf == true)
         {
             taxCanvas.SetActive(false);
+            pc.SetLockMovement(false);
         }
-        pc.SetLockMovement(taxCanvas.activeSelf);
+
+
 
     }
 
@@ -30,6 +32,7 @@ public class TaxChest_Interactable : Interactable
         if (taxCanvas.activeSelf == false)
         {
             taxCanvas.SetActive(true);
+            pc.SetLockMovement(true);
             taxChest.UpdateTaxChestTexts();
         }
         else

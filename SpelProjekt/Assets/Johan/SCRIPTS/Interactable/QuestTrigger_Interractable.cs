@@ -5,6 +5,7 @@ using UnityEngine;
 [RequireComponent(typeof(QuestGiver))]
 public class QuestTrigger_Interractable : Interactable
 {
+    public GameObject canvas;
 
     public override void InteractWith(PlayerController pc)
     {
