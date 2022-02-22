@@ -54,7 +54,4 @@ public class OptionsScript : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
-    void Update()
-    {
-    }
 }
