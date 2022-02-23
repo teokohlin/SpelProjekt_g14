@@ -18221,6 +18221,24 @@ MonoBehaviour:
       gatherType: 0
       interractableType: 0
       repairObject: {fileID: 0}
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Knock on wood
+    description: Find Billy and look if he is all right.
+    rewardSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
+    rewardAmount: 10
+    rewardKind: 0
+    rewardType: 0
+    completed: 0
+    goal:
+      goalType: 1
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 1
+      requiredResourceSprite: {fileID: 0}
+      gatherType: 0
+      interractableType: 0
+      repairObject: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -18253,6 +18271,34 @@ MonoBehaviour:
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Press right click on the hole to put down a door.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Oh Mackan. It looks amazing. Thank you friend.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: And you have to admit, it looks cozy now.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Yeah, you are right.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Whenever you want, talk to me again.
+  - dials:
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Terrible news Mackan.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: What happened?
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: "It\u2019s not me but my friend, Billy."
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: His house got destroyed last night.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Could you be able to help him?
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Sure, where can I find him?
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: He lives upstream from the lake.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Have you talked to Billy yet?
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Oh Mackan. It looks amazing. Thank you friend.
