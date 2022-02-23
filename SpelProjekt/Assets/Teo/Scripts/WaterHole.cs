@@ -5,12 +5,32 @@ using UnityEngine;
 
 public class WaterHole : MonoBehaviour
 {
-    
+    private bool inSideTrigger = false;
+    public Player player;
+    private void Update()
+    {
+        if (Input.GetMouseButtonDown(0) && inSideTrigger)
+        {
+            player.FillWater();
+        }
+        Debug.Log(inSideTrigger);
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            other.GetComponent<Player>().FillWater();
+            player = other.GetComponent<Player>();
+            inSideTrigger = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            inSideTrigger = false;
+            player = null;
         }
     }
 }
