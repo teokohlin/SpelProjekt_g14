@@ -57,9 +57,9 @@ public class QuestGoal
                         Object.FindObjectOfType<RabbitHole_Interractable>().isQuest = true;
                         break;
                     case InterractableType.Repair:
-                        //prenumerera på repairobjects "repairfunktion" som inte finns nu, 
-                        //repairfunktionen på objektet ska kallas på när man klickar på knappen på canvaset
-                        //som är kopplat till det
+                        repairObject.GetComponent<Interactable>().repaired += Repaired;    //prenumerera på repairobjects "repairfunktion" som inte finns nu, 
+                        repairObject.GetComponent<Interactable>().isQuest = true;          //repairfunktionen på objektet ska kallas på när man klickar på knappen på canvaset
+                                                                                           //som är kopplat till det
                         break;
                     case InterractableType.FindSomeone:
                          findSomeoneObject.GetComponent<Interactable>().interractedWith += Interacted;
@@ -87,6 +87,12 @@ public class QuestGoal
     public void BuildingBuilt()
     {
         currentAmount++;
+        Evaluate();
+    }
+    public void Repaired()
+    {
+        currentAmount++;
+        currentAmount = Mathf.Clamp(currentAmount,0,requiredAmount);
         Evaluate();
     }
     public void Interacted()
