@@ -28,6 +28,11 @@ public class Interactable_Woodworker : Interactable
 
     public override void InteractWith(PlayerController pc)
     {
+        if (isQuest)
+        {
+            base.InteractWith(pc);
+        }
+
         window.SetActive(true);
     }
 }

@@ -6,10 +6,13 @@ using UnityEngine.Events;
 public class RabbitHole_Interractable : Interactable
 {
     public GameObject door;
-    public UnityAction interractedWith;
+
     public override void InteractWith(PlayerController pc)
     {
-        door.SetActive(true);
-        interractedWith?.Invoke();
+        base.InteractWith(pc);
+        if (isQuest)
+        {
+            door.SetActive(true);
+        }
     }
 }
