@@ -42,7 +42,7 @@ public class QuestGiver : MonoBehaviour
     {
         questProgress = 2;
 
-        if (quests[questIndex].goal.finishBeforeTalking) //undantaget.. Om man ska klara uppdraget utan att snacka
+        if (quests[questIndex].goal.finishBeforeTalking) //undantaget.. Om man ska klara uppdraget utan att snacka //ger error nu, konstigt
         {
             TriggerDialogue();
             quests[questIndex].RemoveQuest();
