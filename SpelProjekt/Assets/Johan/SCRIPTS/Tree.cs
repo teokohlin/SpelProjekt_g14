@@ -24,6 +24,7 @@ public class Tree : Choppable
             if (dead)
             {
                 Instantiate(stubbe, spawner.transform.position, spawner.transform.rotation);
+                base.Die();
             }
         }
         else
