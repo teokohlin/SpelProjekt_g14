@@ -6,7 +6,7 @@ using UnityEngine;
 public class DayManager : MonoBehaviour
 {
     public TextMeshProUGUI text;
-    public int currentDay = 0;
+    public int currentDay;
     public DayNightCycle Dnc;
     void Start()
     {

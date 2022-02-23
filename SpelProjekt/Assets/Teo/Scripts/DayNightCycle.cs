@@ -84,4 +84,10 @@ public class DayNightCycle : MonoBehaviour
         RenderSettings.ambientIntensity = lightingIntensityMultiplier.Evaluate(time);
         RenderSettings.reflectionIntensity = reflectionIntensityMultiplier.Evaluate(time);
     }
+
+    public void Invoke(int i)
+    {
+        DayPast?.Invoke(i);
+        time = startTime;
+    }
 }

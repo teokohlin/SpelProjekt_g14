@@ -7,6 +7,11 @@ public class FieldScript : MonoBehaviour
 {
     [SerializeField] 
     private float growthTime = 20;
+
+    private DayNightCycle DNC;
+    public int GrowthTime;
+    private int dayCount = 0;
+    
     //[SerializeField] 
     private int fieldState; //0 = ej plogad 1 = plogad 2 = sådd 3= vattnat 4 = växt
     [SerializeField] 
@@ -22,21 +27,15 @@ public class FieldScript : MonoBehaviour
     void Start()
     {
         p = FindObjectOfType<Player>();
+        DNC = FindObjectOfType<DayNightCycle>();
+        DNC.DayPast += DayCount;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (fieldState == 3)
-        {
-            timer += Time.deltaTime; //måste vara deltaTime i vanlig update
-            
-        }
-        if (timer > growthTime)
-        {
-            ChangeFarmstate();
-            timer = 0;
-        }
+        
+        
         /*
         if (farmzone && NeededTool())
         {
@@ -46,6 +45,24 @@ public class FieldScript : MonoBehaviour
                 ChangeFarmstate();
             }
         } */
+    }
+
+    private void DayCount(int day)
+    {
+        if (fieldState == 3)
+        {
+            dayCount += day;
+        }
+        if (dayCount == GrowthTime && fieldState == 3)
+        {
+            ChangeFarmstate();
+            dayCount = 0;
+        }
+        else if (fieldState == 3)
+        {
+            fieldState--;
+            ChangeFieldObject(fieldState);
+        }
     }
 
     /*
@@ -72,7 +89,7 @@ public class FieldScript : MonoBehaviour
         }
 
         
-        ChangeFieldObject();
+        ChangeFieldObject(fieldState);
     }
 
     /*
@@ -100,12 +117,12 @@ public class FieldScript : MonoBehaviour
         }
     }
     */
-    private void ChangeFieldObject()
+    private void ChangeFieldObject(int state)
     {
         
         for (int i = 0; i < fields.Length; i++)
         {
-            if (i == fieldState)
+            if (i == state)
             {
                 fields[i].gameObject.SetActive(true);
             }

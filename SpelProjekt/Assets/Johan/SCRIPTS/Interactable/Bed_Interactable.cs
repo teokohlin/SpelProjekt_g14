@@ -25,8 +25,7 @@ public class Bed_Interactable : Interactable
     public IEnumerator ChangeDay(PlayerController pc)
     {
         yield return new WaitForSeconds(1 / screen.fadeSpeed);
-        dayManager.ChangeDayText(1);
-        dnc.time = dnc.startTime;
+        dnc.Invoke(1);
         pc.player.RefillEnergy();
         yield return new WaitForSeconds(1 / screen.fadeSpeed);
         pc.SetLockMovement(false);
