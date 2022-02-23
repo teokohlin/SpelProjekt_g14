@@ -41,7 +41,10 @@ public class QuestGiver : MonoBehaviour
     public void QuestCompletedNotFinished() //om man klarat av alla saker f�r uppdraget, men inte snackat med givaren �n
     {
         questProgress = 2;
-
+        if (questIndex >= quests.Length )
+        {
+            return;
+        }
         if (quests[questIndex].goal.finishBeforeTalking) //undantaget.. Om man ska klara uppdraget utan att snacka //ger error nu, konstigt
         {
             TriggerDialogue();
