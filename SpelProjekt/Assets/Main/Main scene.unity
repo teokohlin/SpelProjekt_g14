@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2832,7 +2832,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8192427315649043438, guid: 55e84e1fcba253b4abb6e65a20ab5a5b, type: 3}
   m_PrefabInstance: {fileID: 964443539}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 964443540}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 698db8eab835cb5489fb5724bbfc0d96, type: 3}
@@ -8365,7 +8365,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3221507022937160375, guid: 55e84e1fcba253b4abb6e65a20ab5a5b, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -31.8
+      value: -45.97
       objectReference: {fileID: 0}
     - target: {fileID: 3221507022937160375, guid: 55e84e1fcba253b4abb6e65a20ab5a5b, type: 3}
       propertyPath: m_LocalPosition.y
@@ -8373,7 +8373,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3221507022937160375, guid: 55e84e1fcba253b4abb6e65a20ab5a5b, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.5
+      value: 36.05
       objectReference: {fileID: 0}
     - target: {fileID: 3221507022937160375, guid: 55e84e1fcba253b4abb6e65a20ab5a5b, type: 3}
       propertyPath: m_LocalRotation.w
@@ -8421,6 +8421,25 @@ PrefabInstance:
       objectReference: {fileID: 1047104871}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55e84e1fcba253b4abb6e65a20ab5a5b, type: 3}
+--- !u!1 &964443540 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2881959877262450701, guid: 55e84e1fcba253b4abb6e65a20ab5a5b, type: 3}
+  m_PrefabInstance: {fileID: 964443539}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &964443541
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 964443540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues: []
+  dialogueIndex: 0
 --- !u!1001 &966017709
 PrefabInstance:
   m_ObjectHideFlags: 0
