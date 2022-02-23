@@ -65,6 +65,15 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(TypeDialogue(dialogue.sentence));
 
         dialogueCharacterImage.sprite = dialogue.picture;
+
+        if (dialogue.picture == null) //Se till att bilden försvinner om det inte är någon
+        {
+            dialogueCharacterImage.gameObject.SetActive(false);
+        }
+        else
+        {
+            dialogueCharacterImage.gameObject.SetActive(true);
+        }
     }
 
     IEnumerator TypeDialogue (string sentence)
