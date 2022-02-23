@@ -196,6 +196,7 @@ Transform:
   - {fileID: 6404287119579035278}
   - {fileID: 3857762752114000309}
   - {fileID: 5462873298895426686}
+  - {fileID: 6285536776862529458}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -604,3 +605,65 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &1678423008566879169
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 4285169653685874992}
+    m_Modifications:
+    - target: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.033
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.218
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.802
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.25936082
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.2567738
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.6595242
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.65713555
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90.284
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -68.688995
+      objectReference: {fileID: 0}
+    - target: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 205.878
+      objectReference: {fileID: 0}
+    - target: {fileID: 5421087227663060681, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+      propertyPath: m_Name
+      value: Stoneblocks
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+--- !u!4 &6285536776862529458 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4643284540036732019, guid: a329beb22a9dee14ca590ee3d5603d68, type: 3}
+  m_PrefabInstance: {fileID: 1678423008566879169}
+  m_PrefabAsset: {fileID: 0}
