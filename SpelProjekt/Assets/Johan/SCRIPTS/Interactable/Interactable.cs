@@ -17,7 +17,7 @@ public class Interactable : MonoBehaviour
         interractedWith?.Invoke();
 
     }
-    public virtual void Repaired()
+    public virtual void Repair()
     {
         repaired?.Invoke();
     }
