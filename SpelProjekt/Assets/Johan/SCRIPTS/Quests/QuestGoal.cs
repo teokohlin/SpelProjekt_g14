@@ -23,7 +23,8 @@ public class QuestGoal
     public GameObject repairObject;
     public GameObject findSomeoneObject;
 
-
+    [Header("Iklickad om man INTE behöver prata med questgivern för att färdigställa questet")]
+    public bool finishBeforeTalking = false;
     public UnityAction GoalCompleted;
 
     public void Init()

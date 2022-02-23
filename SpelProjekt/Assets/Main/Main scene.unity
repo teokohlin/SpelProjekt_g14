@@ -3481,6 +3481,7 @@ MonoBehaviour:
       interractableType: 0
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
   - isActive: 0
     questGiver: {fileID: 0}
     title: Well, well, well continued
@@ -3501,6 +3502,7 @@ MonoBehaviour:
       interractableType: 1
       repairObject: {fileID: 304022888}
       findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 1
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -14920,7 +14922,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -5.8745894
+      value: 76.46
       objectReference: {fileID: 0}
     - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: m_LocalPosition.y
@@ -14928,7 +14930,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -21.33
+      value: -2.38
       objectReference: {fileID: 0}
     - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: m_LocalRotation.w
@@ -19116,6 +19118,7 @@ MonoBehaviour:
       interractableType: 0
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
   - isActive: 0
     questGiver: {fileID: 0}
     title: Knock knock
@@ -19135,6 +19138,7 @@ MonoBehaviour:
       interractableType: 0
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
   - isActive: 0
     questGiver: {fileID: 0}
     title: Knock on wood
@@ -19154,6 +19158,7 @@ MonoBehaviour:
       interractableType: 2
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 964443540}
+      finishBeforeTalking: 0
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -20426,7 +20431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
       propertyPath: interactablesAudio.treeEvent
-      value: event:/Sound/CutWood
+      value: event:/WoD
       objectReference: {fileID: 0}
     - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
       propertyPath: interactablesAudio.stoneEvent
