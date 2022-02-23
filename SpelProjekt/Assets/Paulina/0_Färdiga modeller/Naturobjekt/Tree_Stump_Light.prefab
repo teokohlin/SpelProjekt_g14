@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6921577884886939832}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.729, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3263690961672087252}
@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   Particle_effect: {fileID: 3263690961672087253}
+  audioManager: {fileID: 0}
   dropAmount: 1
   dropPrefab: {fileID: 4831613451342489149, guid: 4d0cb9da1f635fc48821965d6ba4576f, type: 3}
 --- !u!65 &8737358440892459063
