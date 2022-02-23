@@ -47,7 +47,7 @@ public class RepairQuest_Interractable : Interactable
     {
         if (canvasOpen)
         {
-            if (Vector3.Distance(transform.position, pc.gameObject.transform.position) > 12)
+            if (Vector3.Distance(transform.position, pc.gameObject.transform.position) > 10)
             {
                 canvas.SetActive(false);
                 canvasOpen = false;

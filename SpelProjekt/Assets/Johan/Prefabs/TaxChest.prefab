@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1116500590342381459}
   - component: {fileID: 1116500590342381458}
   m_Layer: 10
-  m_Name: Chest
+  m_Name: TaxChest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -128,7 +128,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 5.4789166, y: 2.778429, z: 1.5962605}
+  m_Size: {x: 4.35, y: 2.778429, z: 1.5962605}
   m_Center: {x: 0.17065835, y: 0.8892145, z: -0.014508963}
 --- !u!114 &1116500590342381459
 MonoBehaviour:
@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29bcef536f7656046bdfd6ecc2fab7f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isQuest: 0
   taxCanvas: {fileID: 1116500590492408743}
 --- !u!114 &1116500590342381458
 MonoBehaviour:

@@ -6,6 +6,7 @@ using UnityEngine;
 public class TaxChest_Interactable : Interactable
 {
     public GameObject taxCanvas;
+    private bool canvasOpen;
     private TaxChest taxChest;
     private PlayerController pc;
     private DialogueTrigger trigger;
@@ -19,12 +20,20 @@ public class TaxChest_Interactable : Interactable
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape) && taxCanvas.activeSelf == true)
-        {
-            taxCanvas.SetActive(false);
-            pc.SetLockMovement(false);
-        }
+        //if (Input.GetKeyDown(KeyCode.Escape) && taxCanvas.activeSelf == true)
+        //{
+        //    taxCanvas.SetActive(false);
+        //    pc.SetLockMovement(false);
+        //}
 
+        if (canvasOpen)
+        {
+            if (Vector3.Distance(transform.position, pc.gameObject.transform.position) > 10)
+            {
+                taxCanvas.SetActive(false);
+                canvasOpen = false;
+            }
+        }
 
 
     }
@@ -32,15 +41,14 @@ public class TaxChest_Interactable : Interactable
     public override void InteractWith(PlayerController pc)
     {
         trigger.TriggerDialogue();
-        if (taxCanvas.activeSelf == false)
-        {
-            taxCanvas.SetActive(true);
-            pc.SetLockMovement(true);
-            taxChest.UpdateTaxChestTexts();
-        }
-        else
-        {
-            taxCanvas.SetActive(false);
-        }
+        taxCanvas.SetActive(true);
+        canvasOpen = true;
+        taxChest.UpdateTaxChestTexts();
+        //pc.SetLockMovement(true);
+        //if (taxCanvas.activeSelf == false)
+        //{
+
+        //}
+
     }
 }
