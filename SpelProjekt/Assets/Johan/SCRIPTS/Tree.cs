@@ -8,6 +8,8 @@ using UnityEngine;
 
 public class Tree : Choppable
 {
+    public GameObject spawner;
+    public GameObject stubbe;
     public override void LoseHealth(int damage)
     {
         audioManager.interactablesAudio.TreeAudio(this.gameObject);
@@ -15,10 +17,17 @@ public class Tree : Choppable
     }
 
 
-    public override void Die() 
+    public override void Die()
     {
-
-        //PlayDieAnimation();
+        if (spawner != null && stubbe != null)
+        {
+            if (dead)
+            {
+                Instantiate(stubbe, spawner.transform.position, spawner.transform.rotation);
+            }
+        }
+        else
+            //PlayDieAnimation();
         base.Die();
     }
 }

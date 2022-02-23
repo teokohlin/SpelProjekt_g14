@@ -98,8 +98,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   Particle_effect: {fileID: 4175905069594057972}
+  audioManager: {fileID: 0}
   dropAmount: 1
   dropPrefab: {fileID: 4831613451342489149, guid: 4d0cb9da1f635fc48821965d6ba4576f, type: 3}
+  spawner: {fileID: 0}
+  stubbe: {fileID: 0}
 --- !u!65 &7924201328926118422
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -108,7 +111,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8410292260999299737}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.077663, y: 1.4252219, z: 2.181642}
