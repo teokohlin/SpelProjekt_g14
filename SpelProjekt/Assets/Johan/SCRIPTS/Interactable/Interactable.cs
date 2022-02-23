@@ -7,6 +7,7 @@ using UnityEngine.Events;
 public class Interactable : MonoBehaviour
 {
     public UnityAction interractedWith;
+    public UnityAction repaired;
     [HideInInspector]
     public bool isQuest = false;
 
@@ -15,6 +16,10 @@ public class Interactable : MonoBehaviour
     {
         interractedWith?.Invoke();
 
+    }
+    public virtual void Repaired()
+    {
+        repaired?.Invoke();
     }
 
 }

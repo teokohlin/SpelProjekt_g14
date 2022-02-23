@@ -34,6 +34,7 @@ public class QuestGiver : MonoBehaviour
             questHUD.AddQuest(quests[questIndex], this);
             OpenQuestWindow();
             questProgress = 1; // =1 ska det bli
+            exclamationMark.SetActive(false);
         }
 
     }
@@ -43,9 +44,17 @@ public class QuestGiver : MonoBehaviour
     }
     public void QuestFinished()
     {
-        questIndex++;       
+     
         questProgress = 0;
-
+        questIndex++;
+        if (questIndex > quests.Length - 1)
+        {
+            exclamationMark.SetActive(false);
+        }
+        else
+        {
+            exclamationMark.SetActive(true);
+        }
     }
 
     public void InterractedWith()
