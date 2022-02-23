@@ -242,8 +242,10 @@ MonoBehaviour:
       requiredResourceSprite: {fileID: 0}
       gatherType: 0
       interractableType: 0
+      repairObject: {fileID: 0}
+      findSomeoneObject: {fileID: 0}
   titleText: {fileID: 6948030952612849847}
-  progressText: {fileID: 0}
+  progressText: {fileID: 3434984116182278960}
   requiredResourceImage: {fileID: 8101987545028663651}
 --- !u!1 &6508221220830963401
 GameObject:
@@ -312,15 +314,15 @@ MonoBehaviour:
       m_Calls: []
   m_text: 0/0
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: d8e362e90d9f01b4384e5a2bc0c3c7d4, type: 2}
+  m_sharedMaterial: {fileID: 6660083971446428624, guid: d8e362e90d9f01b4384e5a2bc0c3c7d4, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4284071058
+  m_fontColor: {r: 0.57131124, g: 0.735849, b: 0.35056958, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -373,7 +375,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 1
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 24.435211, y: 4.729309, z: 103.077545, w: 3.540924}
+  m_margin: {x: -18.402618, y: 4.729309, z: 57.430573, w: 3.540924}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0

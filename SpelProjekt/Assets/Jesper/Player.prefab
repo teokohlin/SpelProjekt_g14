@@ -1,0 +1,400 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1171419948046877920
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1948484760310668890}
+  - component: {fileID: 5614374945961903136}
+  - component: {fileID: 2053872248340433018}
+  - component: {fileID: 2053872248340433021}
+  - component: {fileID: 2053872248340433017}
+  - component: {fileID: 2053872248340433016}
+  - component: {fileID: 2053872248340433019}
+  - component: {fileID: 2053872248340433022}
+  - component: {fileID: 2053872248340433009}
+  - component: {fileID: 2053872248340433008}
+  - component: {fileID: 4448431673195828143}
+  - component: {fileID: 8158824691265573212}
+  - component: {fileID: 6704526740872338010}
+  m_Layer: 0
+  m_Name: Player
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1948484760310668890
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 10.24, y: 1.1, z: -0.19}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 5613082557334661871}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+--- !u!95 &5614374945961903136
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 5eb3ba0affc37024983464489889405b, type: 3}
+  m_Controller: {fileID: 9100000, guid: 702fa98a4fce749479cd35610912dbf8, type: 2}
+  m_CullingMode: 1
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 1
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: '
+
+    Transform ''L_Toe_joint'' has been deleted
+
+    Transform
+    ''L_Ball_joint'' has been deleted
+
+    Transform ''L_Foot_joint'' has been deleted
+
+    Transform
+    ''L_Knee_joint'' has been deleted
+
+    Transform ''L_Hip_joint'' has been deleted
+
+    Transform
+    ''R_Toe_joint'' has been deleted
+
+    Transform ''R_Ball_joint'' has been deleted
+
+    Transform
+    ''R_Foot_joint'' has been deleted
+
+    Transform ''R_Knee_joint'' has been deleted
+
+    Transform
+    ''R_Hip_joint'' has been deleted
+
+    Transform ''L_finger_group_3'' has been
+    deleted
+
+    Transform ''L_finger_group_2'' has been deleted
+
+    Transform ''L_index_joint_3''
+    has been deleted
+
+    Transform ''L_index_joint_2'' has been deleted
+
+    Transform
+    ''L_thumb_joint_3'' has been deleted
+
+    Transform ''L_thumb_joint_2'' has been
+    deleted
+
+    Transform ''L_Hand_joint'' has been deleted
+
+    Transform ''L_Wrist_joint''
+    has been deleted
+
+    Transform ''L_Forearm_joint'' has been deleted
+
+    Transform
+    ''L_Elbow_joint'' has been deleted
+
+    Transform ''L_Shoulder_joint'' has been
+    deleted
+
+    Transform ''L_Collar_joint'' has been deleted
+
+    Transform ''Head_joint''
+    has been deleted
+
+    Transform ''Neck_joint'' has been deleted
+
+    Transform
+    ''R_finger_group_3'' has been deleted
+
+    Transform ''R_finger_group_2'' has
+    been deleted
+
+    Transform ''R_index_joint_3'' has been deleted
+
+    Transform
+    ''R_index_joint_2'' has been deleted
+
+    Transform ''R_thumb_joint_3'' has been
+    deleted
+
+    Transform ''R_thumb_joint_2'' has been deleted
+
+    Transform ''R_Hand_joint''
+    has been deleted
+
+    Transform ''R_Wrist_joint'' has been deleted
+
+    Transform
+    ''R_forearm_joint'' has been deleted
+
+    Transform ''R_Elbow_joint'' has been
+    deleted
+
+    Transform ''R_Shoulder_joint'' has been deleted
+
+    Transform ''R_Collar_joint''
+    has been deleted
+
+    Transform ''Spine_joint_5'' has been deleted
+
+    Transform
+    ''Spine_joint_4'' has been deleted
+
+    Transform ''Spine_joint_3'' has been
+    deleted
+
+    Transform ''Spine_joint_2'' has been deleted
+
+    Transform ''Spine_joint_1''
+    has been deleted
+
+    Transform ''Pelvis_joint'' has been deleted
+
+    Transform
+    ''Root_joint'' has been deleted'
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!54 &2053872248340433018
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  serializedVersion: 2
+  m_Mass: 80
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 3
+--- !u!136 &2053872248340433021
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1
+  m_Height: 5.27
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.59, z: 0}
+--- !u!114 &2053872248340433017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29271764919f3e74a9daf5c76497ef0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 0}
+  turnSmoothing: 0.06
+  sprintFOV: 100
+  sprintButton: Sprint
+  raySubtractModification: 0
+--- !u!114 &2053872248340433016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e94557a412a2f349a689cf01e20e181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &2053872248340433019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d66086fbd5b63d4eb67ef6e1472e613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useCharacterForward: 0
+  turnSpeed: 10
+  sprintJoystick: 332
+  sprintKeyboard: 304
+--- !u!114 &2053872248340433022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00950c2dad807b840949f90ff7b5a3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTool: 0
+  index: 0
+  tools:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &2053872248340433009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4638f5c4bf7fed642ad84efab1299f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  choppableLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  chopPoint: {fileID: 5613082557334661871}
+  chopBoxSize: {x: 0.5, y: 4, z: 1.75}
+  farmBoxSize: {x: 0.5, y: 4, z: 2.5}
+  chopRate: 1
+  maxDistanceForInteractions: 5
+  player: {fileID: 0}
+  treeChopTriggername: Chop Wood
+  stonePickTriggername: Pick Stone
+  hoeUseTriggername: Pick Stone
+  seedsUseTriggername: Chop Wood
+  watercanUseTriggername: Pick Stone
+  scytheUseTriggername: Chop Wood
+  timeTilDamage: 0.5
+--- !u!114 &2053872248340433008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7c6c23a9c8c3b439c3779aae08d2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  woodAmount: 0
+  stoneAmount: 0
+  foodAmount: 0
+  energy: 25
+  maxEnergy: 25
+  maxWater: 10
+  waterAmount: 10
+--- !u!114 &4448431673195828143
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4008f0ce6270441915fdbab1bcf85f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardCursor: {fileID: 2800000, guid: f83fbabb2a9eab840891da474f3397bf, type: 3}
+  interactableCursor: {fileID: 2800000, guid: a445313a09eb52743b2be84c98e1dff9, type: 3}
+--- !u!114 &8158824691265573212
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
+--- !u!114 &6704526740872338010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1171419948046877920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12248f5f7ffbdef4fa0aec1e55a60ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepPlayerPosition: {fileID: 1171419948046877920}
+  landingObject: {fileID: 0}
+  meleeObject: {fileID: 0}
+  deathObject: {fileID: 0}
+  jumpObject: {fileID: 0}
+  damageObject: {fileID: 0}
+  hurtObject: {fileID: 0}
+  shootObject: {fileID: 0}
+--- !u!1 &5613082557334661870
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5613082557334661871}
+  m_Layer: 0
+  m_Name: ChopPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5613082557334661871
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5613082557334661870}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.2, z: 2.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1948484760310668890}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

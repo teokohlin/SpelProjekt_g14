@@ -5089,6 +5089,39 @@ MonoBehaviour:
   woodButton: {fileID: 1710050739}
   stoneButton: {fileID: 1135214600}
   foodButton: {fileID: 300902458}
+--- !u!114 &638362978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638362973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - dialogue:
+    - picture: {fileID: 0}
+      sentence: 11
+    - picture: {fileID: 0}
+      sentence: 2
+    - picture: {fileID: 0}
+      sentence: 3
+  dialogueIndex: 0
+--- !u!114 &638362979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638362973}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd5e7e229e86914ca11f53600b6c894, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &647733256
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12350,7 +12383,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611129384}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -14240,6 +14273,8 @@ MonoBehaviour:
       requiredResourceSprite: {fileID: 0}
       gatherType: 0
       interractableType: 0
+      repairObject: {fileID: 0}
+      findSomeoneObject: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
