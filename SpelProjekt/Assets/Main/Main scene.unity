@@ -3330,7 +3330,7 @@ MonoBehaviour:
       goalType: 0
       completed: 0
       currentAmount: 0
-      requiredAmount: 5
+      requiredAmount: 30
       requiredResourceSprite: {fileID: 21300000, guid: 78f561b48fc7d4c4cad494d4848687d8, type: 3}
       gatherType: 1
       interractableType: 0
@@ -8438,7 +8438,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - dialogue:
+    - picture: {fileID: 21300000, guid: 1a49cd34eb294cb4c8ae1179719b0da3, type: 3}
+      sentence: Hello there stranger!
+    - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      sentence: Are you Billy?
+    - picture: {fileID: 21300000, guid: 1a49cd34eb294cb4c8ae1179719b0da3, type: 3}
+      sentence: Well you seem to know me already, what can I do for you?
+    - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      sentence: Boris sent me, he said that you needed help.
+    - picture: {fileID: 21300000, guid: 1a49cd34eb294cb4c8ae1179719b0da3, type: 3}
+      sentence: "Oh you\u2019re friends with Boris."
+    - picture: {fileID: 21300000, guid: 1a49cd34eb294cb4c8ae1179719b0da3, type: 3}
+      sentence: "Well\u2026"
+    - picture: {fileID: 21300000, guid: 1a49cd34eb294cb4c8ae1179719b0da3, type: 3}
+      sentence: You see my house got burnt down by those monster hunters again so
+        I need to build up my home again.
+    - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      sentence: I can help you with that.
+    - picture: {fileID: 21300000, guid: 1a49cd34eb294cb4c8ae1179719b0da3, type: 3}
+      sentence: "Great, but first\u2026"
+    - picture: {fileID: 21300000, guid: 1a49cd34eb294cb4c8ae1179719b0da3, type: 3}
+      sentence: "Please tell Boris that I\u2019m alright."
   dialogueIndex: 0
 --- !u!1001 &966017709
 PrefabInstance:
@@ -18332,13 +18354,16 @@ MonoBehaviour:
         sentence: Have you talked to Billy yet?
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Oh Mackan. It looks amazing. Thank you friend.
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: And you have to admit, it looks cozy now.
+        sentence: Was he alright?
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: Yeah, you are right.
+        sentence: He is okay but his home got burnt down.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: He just wanted me to come and tell you that he is good, despite
+          the circumstances.
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Whenever you want, talk to me again.
+        sentence: Thank you Mackan.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Here, take this.
 --- !u!1001 &1742102783
 PrefabInstance:
   m_ObjectHideFlags: 0
