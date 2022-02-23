@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3320,7 +3320,7 @@ MonoBehaviour:
   - isActive: 0
     questGiver: {fileID: 0}
     title: Well, well, well
-    description: Collect 30 stones.
+    description: You need to collect 30 stones to be able to repair your old well.
     rewardSprite: {fileID: 0}
     rewardAmount: 0
     rewardKind: 1
@@ -3338,7 +3338,8 @@ MonoBehaviour:
   - isActive: 0
     questGiver: {fileID: 0}
     title: Well, well, well continued
-    description: Press right click to repair the well.
+    description: The stones are cut and ready to be used. You can finally repair
+      the well.
     rewardSprite: {fileID: 0}
     rewardAmount: 0
     rewardKind: 1
@@ -18186,7 +18187,8 @@ MonoBehaviour:
   - isActive: 0
     questGiver: {fileID: 0}
     title: Repair Boris home
-    description: Gather 20 wood. And come talk to him again
+    description: ' You made a deal with your new colleague Boris to help him with
+      his home.'
     rewardSprite: {fileID: 0}
     rewardAmount: 0
     rewardKind: 1
@@ -18204,7 +18206,7 @@ MonoBehaviour:
   - isActive: 0
     questGiver: {fileID: 0}
     title: Knock knock
-    description: Put down the door in front of the hole. Then come for your reward!
+    description: Boris have told you to put down the new door in front of the hole.
     rewardSprite: {fileID: 21300000, guid: 3ee480c741488ff459b2f9fc2b8527ae, type: 3}
     rewardAmount: 10
     rewardKind: 0
