@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427182, b: 0.56452405, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3410,6 +3410,10 @@ PrefabInstance:
       propertyPath: cam
       value: 
       objectReference: {fileID: 637704059}
+    - target: {fileID: 5865231757791859093, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
+      propertyPath: seedsUseTriggername
+      value: Sow Seeds
+      objectReference: {fileID: 0}
     - target: {fileID: 5865231757791859101, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
       propertyPath: playerCamera
       value: 
