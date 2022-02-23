@@ -5,10 +5,9 @@ using UnityEngine;
 
 public class FieldScript : MonoBehaviour
 {
-    [SerializeField] 
-    private float growthTime = 20;
-
+    
     private DayNightCycle DNC;
+    [Tooltip("Så många dagar man måste vattna")]
     public int GrowthTime;
     private int dayCount = 0;
     
