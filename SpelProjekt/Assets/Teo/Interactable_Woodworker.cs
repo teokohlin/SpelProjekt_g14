@@ -31,8 +31,8 @@ public class Interactable_Woodworker : Interactable
         if (isQuest)
         {
             base.InteractWith(pc);
+            GetComponent<DialogueTrigger>().TriggerDialogue();
         }
-
         window.SetActive(true);
     }
 }
