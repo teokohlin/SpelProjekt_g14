@@ -12,6 +12,7 @@ public class AudioInteractables : MonoBehaviour
         PressurePad,
         Switches,
         Stone,
+        Tree,
     }
 
     private AudioManager audioManager;
@@ -41,6 +42,9 @@ public class AudioInteractables : MonoBehaviour
                     break;
                 case AudioInteractableType.Stone:
                     audioManager.interactablesAudio.StoneAudio(audioObject);
+                    break;
+                case AudioInteractableType.Tree:
+                    audioManager.interactablesAudio.TreeAudio(audioObject);
                     break;
             }
         }

@@ -6,13 +6,17 @@ public class Choppable : MonoBehaviour
 {
     public int health = 1;
     public ParticleSystem Particle_effect;
-
+    public AudioManager audioManager;
     //[HideInInspector]
     private bool dead = false; //kan inte använda static bool, då blir den true för ALLA //private eller protected spelar nog ingen roll
 
     public int dropAmount = 1;
     public GameObject dropPrefab;
-    ///////////////SKRIV IN EN PUBLIK VARIABEL FÖR LJUDET
+
+    private void Start()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+    }
     public virtual void LoseHealth(int damage)
     {
 

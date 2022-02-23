@@ -28,6 +28,9 @@ public class AudioManager : MonoBehaviour
         public string menuPressEvent;
         [EventRef]
         public string stoneEvent;
+        [EventRef]
+        public string treeEvent;
+
 
 
 
@@ -60,9 +63,14 @@ public class AudioManager : MonoBehaviour
         {
             RuntimeManager.PlayOneShotAttached(menuPressEvent.ToString(), menupressObject);
         }
-        public void StoneAudio(GameObject menupressObject)
+        public void StoneAudio(GameObject stoneObject)
         {
-            RuntimeManager.PlayOneShotAttached(stoneEvent.ToString(), menupressObject);
+            RuntimeManager.PlayOneShotAttached(stoneEvent.ToString(), stoneObject);
+        }
+
+        public void TreeAudio(GameObject treeObject)
+        {
+            RuntimeManager.PlayOneShotAttached(treeEvent.ToString(), treeObject);
         }
     }
 
