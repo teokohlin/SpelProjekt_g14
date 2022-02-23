@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class QuestGiver : MonoBehaviour
 {
+    public GameObject exclamationMark;
     private Player player;
     [Space]
     
