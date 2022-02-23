@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427182, b: 0.56452405, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -15190,15 +15190,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6293946794168350667, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: events.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6293946794168350667, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: events.Array.data[0].action
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6293946794168350667, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: events.Array.data[1].action
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293946794168350667, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: events.Array.data[0].eventName
       value: musicMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 6293946794168350667, guid: dd81b66457846a4449d7711bad77d458, type: 3}
+      propertyPath: events.Array.data[1].eventName
+      value: ambiance
       objectReference: {fileID: 0}
     - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: m_RootOrder
