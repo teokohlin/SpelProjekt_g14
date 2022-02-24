@@ -30,7 +30,6 @@ public class Door_Interactable : Interactable
 
         screen.Fade(true);
         pc.SetLockMovement(true);
-        Debug.Log("hej");
         StartCoroutine(Teleport(pc));
     }
 

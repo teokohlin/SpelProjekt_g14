@@ -13,7 +13,6 @@ public class WaterHole : MonoBehaviour
         {
             player.FillWater();
         }
-        Debug.Log(inSideTrigger);
     }
 
     private void OnTriggerEnter(Collider other)
