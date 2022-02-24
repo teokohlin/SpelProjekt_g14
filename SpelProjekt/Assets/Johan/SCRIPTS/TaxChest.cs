@@ -14,6 +14,7 @@ public class TaxChest : MonoBehaviour
     public TextMeshProUGUI woodText, stoneText, foodText;
     public GameObject woodButton, stoneButton, foodButton;
     private bool woodPayed, stonePayed, foodPayed;
+    public int daysBetweenTax = 14;
 
     private DayNightCycle dnc;
 
@@ -88,7 +89,7 @@ public class TaxChest : MonoBehaviour
     public void NewDay(int day) //prenumerera på nydag unity action från daymanager
     {
         weekday += day;
-        if (weekday >= 7)
+        if (weekday >= daysBetweenTax)
         {
             if (woodPayed && stonePayed && foodPayed)
             {
