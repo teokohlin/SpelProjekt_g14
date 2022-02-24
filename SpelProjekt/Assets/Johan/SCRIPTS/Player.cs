@@ -27,7 +27,7 @@ public class Player : MonoBehaviour
     public UnityAction<int> stoneIncrease;
     public UnityAction<int> foodIncrease;
 
-
+    public bool NoEnergy;
 
 
     public UnityAction<int> woodUpdate;
@@ -95,6 +95,7 @@ public class Player : MonoBehaviour
     public void RefillEnergy()
     {
         energy = maxEnergy;
+        NoEnergy = false;
         //percentage = energy / maxEnergy;
         //Debug.Log(percentage);
         //energyPercentageUpdate?.Invoke(percentage);

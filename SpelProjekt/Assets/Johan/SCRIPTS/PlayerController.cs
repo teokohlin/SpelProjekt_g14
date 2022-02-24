@@ -7,7 +7,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-
+    public Animator animator;
     public Camera cam;
     public LayerMask choppableLayers;
     public LayerMask interactableLayer;
@@ -128,6 +128,7 @@ public class PlayerController : MonoBehaviour
                 if (player.ReturnEnergy() < 1)
                 {
                     player.noEnergyActivated?.Invoke();
+                    akc.SetAnimationTrigger("Tired");
                     return;
                 }
 
