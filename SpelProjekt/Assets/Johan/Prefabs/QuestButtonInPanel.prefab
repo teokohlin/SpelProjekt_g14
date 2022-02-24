@@ -58,7 +58,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -244,6 +244,7 @@ MonoBehaviour:
       interractableType: 0
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
   titleText: {fileID: 6948030952612849847}
   progressText: {fileID: 3434984116182278960}
   requiredResourceImage: {fileID: 8101987545028663651}
@@ -321,8 +322,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4284071058
-  m_fontColor: {r: 0.57131124, g: 0.735849, b: 0.35056958, a: 1}
+    rgba: 4280558628
+  m_fontColor: {r: 0.14150941, g: 0.14150941, b: 0.14150941, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
