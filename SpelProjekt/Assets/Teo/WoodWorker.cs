@@ -36,7 +36,7 @@ public class WoodWorker : MonoBehaviour
     {
         Energy--;
         trees = new List<GameObject>(GameObject.FindGameObjectsWithTag("Tree"));
-        targets = 4;
+        targets = 3;
     }
 
     private void Update()
