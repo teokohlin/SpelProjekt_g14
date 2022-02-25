@@ -1917,10 +1917,10 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6747541114263133444}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 62df990aeee269f438d0d6929cffd303, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 1
+  m_Radius: 0.9
   m_Height: 5.27
   m_Direction: 1
   m_Center: {x: 0, y: 2.59, z: 0}
@@ -2002,6 +2002,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4638f5c4bf7fed642ad84efab1299f4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animator: {fileID: 0}
   cam: {fileID: 0}
   choppableLayers:
     serializedVersion: 2
@@ -2041,6 +2042,7 @@ MonoBehaviour:
   maxEnergy: 25
   maxWater: 10
   waterAmount: 10
+  NoEnergy: 0
 --- !u!114 &-1127679116628964789
 MonoBehaviour:
   m_ObjectHideFlags: 0

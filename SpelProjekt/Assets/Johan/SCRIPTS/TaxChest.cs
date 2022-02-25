@@ -51,7 +51,7 @@ public class TaxChest : MonoBehaviour
 
     private void TryPayWood()
     {
-        if (player.ReturnAmount(dType.wood) > woodNeeded)
+        if (player.ReturnAmount(dType.wood) >= woodNeeded)
         {
             player.AddWood(-woodNeeded);
             woodButton.SetActive(false);
@@ -61,7 +61,7 @@ public class TaxChest : MonoBehaviour
 
     private void TryPayStone()
     {
-        if (player.ReturnAmount(dType.stone) > stoneNeeded)
+        if (player.ReturnAmount(dType.stone) >= stoneNeeded)
         {
             player.AddStone(-stoneNeeded);
             stoneButton.SetActive(false);
@@ -71,7 +71,7 @@ public class TaxChest : MonoBehaviour
 
     private void TryPayFood()
     {
-        if (player.ReturnAmount(dType.food) > foodNeeded)
+        if (player.ReturnAmount(dType.food) >= foodNeeded)
         {
             player.AddFood(-foodNeeded);
             foodButton.SetActive(false);

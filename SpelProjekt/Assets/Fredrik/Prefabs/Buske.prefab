@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1716445276089308464}
   - component: {fileID: 7451857302042422593}
   - component: {fileID: -5218354516573819313}
+  - component: {fileID: -6045677721543458203}
   m_Layer: 9
   m_Name: Buske
   m_TagString: Tree
@@ -93,7 +94,7 @@ BoxCollider:
   m_GameObject: {fileID: 924070882507027685}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 0.033373788, y: 0.024711747, z: 0.026012948}
   m_Center: {x: -0.0014252202, y: 0.0000000013969836, z: -0.0013702174}
@@ -111,8 +112,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 1
   Particle_effect: {fileID: 1408872859898727605}
+  audioManager: {fileID: 0}
   dropAmount: 1
   dropPrefab: {fileID: 4831613451342489149, guid: 4d0cb9da1f635fc48821965d6ba4576f, type: 3}
+  spawner: {fileID: 0}
+  stubbe: {fileID: 0}
+--- !u!135 &-6045677721543458203
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 924070882507027685}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.014
+  m_Center: {x: -0.0014252202, y: 0.0000000013969836, z: -0.0013702174}
 --- !u!1001 &2853613290879690797
 PrefabInstance:
   m_ObjectHideFlags: 0
