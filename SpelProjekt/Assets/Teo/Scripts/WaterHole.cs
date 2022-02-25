@@ -9,7 +9,7 @@ public class WaterHole : MonoBehaviour
     public Player player;
     private void Update()
     {
-        if (Input.GetMouseButtonDown(0) && inSideTrigger)
+        if (Input.GetMouseButtonDown(1) && inSideTrigger)
         {
             player.FillWater();
         }
