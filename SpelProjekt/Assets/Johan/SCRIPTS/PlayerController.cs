@@ -7,6 +7,7 @@ using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
+    public ParticleSystem Particle_effect_water;
     public Animator animator;
     public Camera cam;
     public LayerMask choppableLayers;
@@ -160,6 +161,7 @@ public class PlayerController : MonoBehaviour
                         {
                             return;
                         }
+                        Particle_effect_water.Play();
                         player.DepleteWater();
                         akc.SetAnimationTrigger(watercanUseTriggername);
                         StartCoroutine(FarmTowardsMouse(2));

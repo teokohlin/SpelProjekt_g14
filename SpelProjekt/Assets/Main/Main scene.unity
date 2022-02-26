@@ -3784,6 +3784,10 @@ PrefabInstance:
       value: Harvest
       objectReference: {fileID: 0}
     - target: {fileID: 5865231757791859093, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
+      propertyPath: Particle_effect_water
+      value: 
+      objectReference: {fileID: 595232886}
+    - target: {fileID: 5865231757791859093, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
       propertyPath: watercanUseTriggername
       value: Water
       objectReference: {fileID: 0}
@@ -5901,6 +5905,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6837128055294133112, guid: 9b3e8810861a8e641a1019b1292c4f0d, type: 3}
   m_PrefabInstance: {fileID: 591678684}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &595232886 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 3753539516221383832, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+  m_PrefabInstance: {fileID: 1886393385}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &597511040
 PrefabInstance:
@@ -23427,6 +23436,83 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1342205025155372477, guid: 549f4beb5226e134a8f75614f99de6b3, type: 3}
   m_PrefabInstance: {fileID: 1885535511}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1886393385
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1113354272}
+    m_Modifications:
+    - target: {fileID: 3753539516221383832, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383832, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: lengthInSec
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383832, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383832, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: startDelay.scalar
+      value: 0.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383832, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: EmissionModule.rateOverTime.scalar
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.17
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383838, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_Name
+      value: Waterfall particle
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
 --- !u!1001 &1891386094
 PrefabInstance:
   m_ObjectHideFlags: 0
