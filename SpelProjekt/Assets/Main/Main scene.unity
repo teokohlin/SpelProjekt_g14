@@ -6352,7 +6352,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Repair well
+  m_text: Repair house
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9423,7 +9423,7 @@ MonoBehaviour:
       goalType: 0
       completed: 0
       currentAmount: 0
-      requiredAmount: 1
+      requiredAmount: 50
       requiredResourceSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
       gatherType: 0
       interractableType: 0
@@ -25260,7 +25260,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 304022891}
+      - m_Target: {fileID: 893821181}
         m_TargetAssemblyTypeName: RepairQuest_Interractable, Assembly-CSharp
         m_MethodName: Repair
         m_Mode: 1
