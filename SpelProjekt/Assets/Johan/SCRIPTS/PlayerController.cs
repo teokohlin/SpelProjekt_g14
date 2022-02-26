@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class PlayerController : MonoBehaviour
 {
     public ParticleSystem Particle_effect_water;
+    public ParticleSystem Particle_effect_seeds;
     public Animator animator;
     public Camera cam;
     public LayerMask choppableLayers;
@@ -153,6 +154,7 @@ public class PlayerController : MonoBehaviour
                         StartCoroutine(FarmTowardsMouse(0));
                         break;
                     case 3: //FRÖN
+                        Particle_effect_seeds.Play();
                         akc.SetAnimationTrigger(seedsUseTriggername);
                         StartCoroutine(FarmTowardsMouse(1));
                         break;
