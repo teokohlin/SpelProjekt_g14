@@ -9137,6 +9137,87 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1997631327916430382, guid: 0bacf0332557a1c4bb33bc8015cf8ecb, type: 3}
   m_PrefabInstance: {fileID: 276386086}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &893821181
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893821180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa511a8c726f27a459c53bf3997f5600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isQuest: 0
+  canvas: {fileID: 0}
+  repairObject: {fileID: 1534407639}
+  removeObject: {fileID: 893821180}
+--- !u!114 &893821182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893821180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exclamationMark: {fileID: 0}
+  quests:
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Repair home gather
+    description: Yo please fix this shit
+    rewardSprite: {fileID: 0}
+    rewardAmount: 0
+    rewardKind: 1
+    rewardType: 0
+    completed: 0
+    goal:
+      goalType: 0
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 50
+      requiredResourceSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
+      gatherType: 0
+      interractableType: 0
+      repairObject: {fileID: 0}
+      findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Repair home build
+    description: Yo please fix this shit
+    rewardSprite: {fileID: 0}
+    rewardAmount: 0
+    rewardKind: 1
+    rewardType: 0
+    completed: 0
+    goal:
+      goalType: 2
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 1
+      requiredResourceSprite: {fileID: 0}
+      gatherType: 0
+      interractableType: 1
+      repairObject: {fileID: 0}
+      findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
+  questIndex: 0
+  questProgress: 0
+  dialogues:
+  - dials:
+    - dialogue: []
+    - dialogue: []
+    - dialogue: []
+  - dials:
+    - dialogue: []
+    - dialogue: []
+    - dialogue: []
 --- !u!64 &893821183
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -18057,6 +18138,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7985012525917111637, guid: e1f3a81f296df584d8d3796e3994534e, type: 3}
   m_PrefabInstance: {fileID: 1530554708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1534407639 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 685261912210694812, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
+  m_PrefabInstance: {fileID: 1415073496}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1545750688
 PrefabInstance:
