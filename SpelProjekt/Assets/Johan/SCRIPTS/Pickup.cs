@@ -48,20 +48,22 @@ public class Pickup : MonoBehaviour
             alreadyPickedUp = true;
             Player p = other.GetComponent<Player>();
             
-            switch (dropType)
-            {
-                case dType.wood:
-                    p.AddWood(pickupAmount); //1 sålänge
-                    break;
-                case dType.stone:
-                    p.AddStone(pickupAmount); //1 sålänge
-                    break;
-                case dType.food:
-                    p.AddFood(pickupAmount); //1 sålänge, hade kanske kunnat göra att det e mer
-                    break;
-                default:
-                    break;
-            }
+            p.AddResource(pickupAmount,dropType);
+
+            //switch (dropType)
+            //{
+            //    case dType.wood:
+            //        p.AddWood(pickupAmount); //1 sålänge
+            //        break;
+            //    case dType.stone:
+            //        p.AddStone(pickupAmount); //1 sålänge
+            //        break;
+            //    case dType.food:
+            //        p.AddFood(pickupAmount); //1 sålänge, hade kanske kunnat göra att det e mer
+            //        break;
+            //    default:
+            //        break;
+            //}
             Destroy(gameObject);
         }
         // else if (other.CompareTag("Woodworker") && !alreadyPickedUp)

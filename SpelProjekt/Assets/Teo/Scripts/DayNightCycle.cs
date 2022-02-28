@@ -17,6 +17,7 @@ public class DayNightCycle : MonoBehaviour
     public Image Pil;
     private float t;
     public UnityAction<int> DayPast;
+    private MusicManager musicManager;
     
     [Header("Sun")] 
     public Light sun;
@@ -34,6 +35,8 @@ public class DayNightCycle : MonoBehaviour
 
     private void Start()
     {
+        musicManager = FindObjectOfType<MusicManager>();
+
         timeRate = 1.0f / fullDayLength;
         time = startTime;
     }
@@ -83,6 +86,14 @@ public class DayNightCycle : MonoBehaviour
         //lighting and reflection intensity
         RenderSettings.ambientIntensity = lightingIntensityMultiplier.Evaluate(time);
         RenderSettings.reflectionIntensity = reflectionIntensityMultiplier.Evaluate(time);
+
+
+        //AudioManager
+        float temp = 0;
+        temp = time * 10;
+        temp = Mathf.RoundToInt(temp);
+        //Debug.Log(temp);
+        musicManager.MusicTimeOfDay(temp);
     }
 
     public void Invoke(int i)

@@ -58,6 +58,23 @@ public class Player : MonoBehaviour
 
         foodIncrease?.Invoke(amount);
     }
+    public void AddResource(int amount, dType type)
+    {
+        switch (type)
+        {
+            case dType.wood:
+                AddWood(amount);
+                break;
+            case dType.stone:
+                AddStone(amount);
+                break;
+            case dType.food:
+                AddFood(amount);
+                break;
+            default:
+                break;
+        }
+    }
 
     public int ReturnAmount(dType type)
     {
@@ -65,16 +82,12 @@ public class Player : MonoBehaviour
         {
             case dType.wood:
                 return woodAmount;
-                break;
             case dType.stone:
                 return stoneAmount;
-                break;
             case dType.food:
                 return foodAmount;
-                break;
             default:
                 return 0;
-                break;
                 
         }
     }

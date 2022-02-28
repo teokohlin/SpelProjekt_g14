@@ -12,6 +12,9 @@ public class RepairQuest_Interractable : Interactable
     public GameObject repairObject;
     [Header("Objektet som ska replaceas, t.ex. gamla brunnen")]
     public GameObject removeObject;
+    [Header("Repair Cost")]
+    public int repairCost;
+    public dType resourceType;
 
     public override void InteractWith(PlayerController pc)
     {
@@ -29,6 +32,14 @@ public class RepairQuest_Interractable : Interactable
     }
     public override void Repair() //koppla knappen i canvaset till denna funktionen
     {
+        if (pc.player.ReturnAmount(resourceType) < repairCost)
+        {
+            return;
+        }
+
+        pc.player.AddResource(-repairCost, resourceType);
+
+
         base.Repair();
         repairObject.SetActive(true);
 

@@ -81,20 +81,22 @@ public class Quest
 
     public void RewardPlayer()
     {
-        switch (rewardType)
-        {
-            case dType.wood:
-                Object.FindObjectOfType<Player>().AddWood(rewardAmount);
-                break;
-            case dType.stone:
-                Object.FindObjectOfType<Player>().AddStone(rewardAmount);
-                break;
-            case dType.food:
-                Object.FindObjectOfType<Player>().AddFood(rewardAmount);
-                break;
-            default:
-                break;
-        }
+        Object.FindObjectOfType<Player>().AddResource(rewardAmount, rewardType);
+
+        //switch (rewardType)
+        //{
+        //    case dType.wood:
+        //        Object.FindObjectOfType<Player>().AddWood(rewardAmount);
+        //        break;
+        //    case dType.stone:
+        //        Object.FindObjectOfType<Player>().AddStone(rewardAmount);
+        //        break;
+        //    case dType.food:
+        //        Object.FindObjectOfType<Player>().AddFood(rewardAmount);
+        //        break;
+        //    default:
+        //        break;
+        //}
     }
 }
 
