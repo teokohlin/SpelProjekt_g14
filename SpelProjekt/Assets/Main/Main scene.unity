@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -10945,24 +10945,37 @@ MonoBehaviour:
   dialogues:
   - dials:
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: Fix house please
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: What would my parents think if they saw the house now?
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: I really need to do something about it.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: "30, 40\u2026 No, I think I need 50 wood to be able to repair the
+          whole house."
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: wor kwork (Peon)
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Need to gather some more.
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: Nice working
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: "Time to line these planks correctly\u2026"
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: " Getting my tools\u2026"
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Okay good to go!
   - dials:
     - dialogue:
       - picture: {fileID: 0}
-        sentence: Fix house man
+        sentence: The work is almost done.
     - dialogue:
       - picture: {fileID: 0}
-        sentence: Fix it man!!!
+        sentence: Press on the "repair house" button.
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: Nice fixing man!
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Home sweet home.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: I miss the days when my parents were here.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: "I will make you proud, mamma\u2026 pappa."
 --- !u!64 &893821183
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -24852,7 +24865,7 @@ MonoBehaviour:
           up to the hole and press right click.
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Press right click on the hole to put down a door.
+        sentence: Press on the "place door" button.
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Oh Mackan. It looks amazing. Thank you friend.
@@ -24892,7 +24905,7 @@ MonoBehaviour:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Thank you Mackan.
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Here, take this.
+        sentence: I gave you some wood as a thank you for the help.
 --- !u!1001 &1742102783
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25066,7 +25079,7 @@ MonoBehaviour:
     - picture: {fileID: 21300000, guid: c269e3fc0b2e4e149bbfc7e0d77d00da, type: 3}
       sentence: 50 wood, 50 stones and 50 food in taxes.
     - picture: {fileID: 21300000, guid: c269e3fc0b2e4e149bbfc7e0d77d00da, type: 3}
-      sentence: ' If the taxes are not paid by sunday, the land shall be confiscated.'
+      sentence: ' If the taxes are not paid by the 14th, the land shall be confiscated.'
     - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
       sentence: The feudal lord has increased the taxes again?
     - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
