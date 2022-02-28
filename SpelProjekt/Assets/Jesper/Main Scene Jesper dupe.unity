@@ -511,6 +511,210 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1289359901612927832, guid: 85d8014685bab8d4483d31fad71e6321, type: 3}
   m_PrefabInstance: {fileID: 31688952}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &33064758 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+  m_PrefabInstance: {fileID: 774268719}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &33064759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33064758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12248f5f7ffbdef4fa0aec1e55a60ec3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  footstepPlayerPosition: {fileID: 33064758}
+  landingObject: {fileID: 0}
+  meleeObject: {fileID: 0}
+  deathObject: {fileID: 0}
+  jumpObject: {fileID: 0}
+  damageObject: {fileID: 0}
+  hurtObject: {fileID: 0}
+  shootObject: {fileID: 0}
+--- !u!114 &33064760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33064758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
+--- !u!114 &33064761
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33064758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb4008f0ce6270441915fdbab1bcf85f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  standardCursor: {fileID: 2800000, guid: f83fbabb2a9eab840891da474f3397bf, type: 3}
+  interactableCursor: {fileID: 2800000, guid: a445313a09eb52743b2be84c98e1dff9, type: 3}
+--- !u!114 &33064762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33064758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e7c6c23a9c8c3b439c3779aae08d2ec, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  woodAmount: 0
+  stoneAmount: 0
+  foodAmount: 0
+  energy: 25
+  maxEnergy: 25
+  maxWater: 10
+  waterAmount: 10
+  NoEnergy: 0
+--- !u!114 &33064763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33064758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4638f5c4bf7fed642ad84efab1299f4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Particle_effect_water: {fileID: 0}
+  Particle_effect_seeds: {fileID: 0}
+  animator: {fileID: 0}
+  cam: {fileID: 0}
+  choppableLayers:
+    serializedVersion: 2
+    m_Bits: 512
+  interactableLayer:
+    serializedVersion: 2
+    m_Bits: 1024
+  chopPoint: {fileID: 0}
+  chopBoxSize: {x: 0.5, y: 4, z: 1.75}
+  farmBoxSize: {x: 0.5, y: 4, z: 2.5}
+  chopRate: 1
+  maxDistanceForInteractions: 5
+  player: {fileID: 0}
+  treeChopTriggername: Chop Wood
+  stonePickTriggername: Pick Stone
+  hoeUseTriggername: Plow Field
+  seedsUseTriggername: Sow Seeds
+  watercanUseTriggername: Water
+  scytheUseTriggername: Harvest
+  timeTilDamage: 0.5
+--- !u!114 &33064764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33064758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 00950c2dad807b840949f90ff7b5a3e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTool: 0
+  index: 0
+  tools:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+--- !u!114 &33064765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33064758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d66086fbd5b63d4eb67ef6e1472e613, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useCharacterForward: 0
+  turnSpeed: 10
+  sprintJoystick: 332
+  sprintKeyboard: 304
+--- !u!114 &33064766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33064758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e94557a412a2f349a689cf01e20e181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &33064767
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33064758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 29271764919f3e74a9daf5c76497ef0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerCamera: {fileID: 637704060}
+  turnSmoothing: 0.06
+  sprintFOV: 100
+  sprintButton: Sprint
+  raySubtractModification: 0
+--- !u!136 &33064768
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33064758}
+  m_Material: {fileID: 13400000, guid: 62df990aeee269f438d0d6929cffd303, type: 2}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.9
+  m_Height: 5.27
+  m_Direction: 1
+  m_Center: {x: 0, y: 2.59, z: 0}
+--- !u!54 &33064769
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 33064758}
+  serializedVersion: 2
+  m_Mass: 80
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 112
+  m_CollisionDetection: 2
 --- !u!1001 &39020189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3337,6 +3541,99 @@ MonoBehaviour:
       interractableType: 0
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
+      quest:
+        isActive: 0
+        questGiver: {fileID: 0}
+        title: 
+        description: 
+        rewardSprite: {fileID: 0}
+        rewardAmount: 0
+        rewardKind: 0
+        rewardType: 0
+        completed: 0
+        goal:
+          goalType: 0
+          completed: 0
+          currentAmount: 0
+          requiredAmount: 1
+          requiredResourceSprite: {fileID: 0}
+          gatherType: 0
+          interractableType: 0
+          repairObject: {fileID: 0}
+          findSomeoneObject: {fileID: 0}
+          finishBeforeTalking: 0
+          quest:
+            isActive: 0
+            questGiver: {fileID: 0}
+            title: 
+            description: 
+            rewardSprite: {fileID: 0}
+            rewardAmount: 0
+            rewardKind: 0
+            rewardType: 0
+            completed: 0
+            goal:
+              goalType: 0
+              completed: 0
+              currentAmount: 0
+              requiredAmount: 1
+              requiredResourceSprite: {fileID: 0}
+              gatherType: 0
+              interractableType: 0
+              repairObject: {fileID: 0}
+              findSomeoneObject: {fileID: 0}
+              finishBeforeTalking: 0
+              quest:
+                isActive: 0
+                questGiver: {fileID: 0}
+                title: 
+                description: 
+                rewardSprite: {fileID: 0}
+                rewardAmount: 0
+                rewardKind: 0
+                rewardType: 0
+                completed: 0
+                goal:
+                  goalType: 0
+                  completed: 0
+                  currentAmount: 0
+                  requiredAmount: 1
+                  requiredResourceSprite: {fileID: 0}
+                  gatherType: 0
+                  interractableType: 0
+                  repairObject: {fileID: 0}
+                  findSomeoneObject: {fileID: 0}
+                  finishBeforeTalking: 0
+                  quest:
+                    isActive: 0
+                    questGiver: {fileID: 0}
+                    title: 
+                    description: 
+                    rewardSprite: {fileID: 0}
+                    rewardAmount: 0
+                    rewardKind: 0
+                    rewardType: 0
+                    completed: 0
+                    goal:
+                      goalType: 0
+                      completed: 0
+                      currentAmount: 0
+                      requiredAmount: 1
+                      requiredResourceSprite: {fileID: 0}
+                      gatherType: 0
+                      interractableType: 0
+                      repairObject: {fileID: 0}
+                      findSomeoneObject: {fileID: 0}
+                      finishBeforeTalking: 0
+                      quest:
+                        isActive: 0
+                        title: 
+                        description: 
+                        rewardAmount: 0
+                        rewardKind: 0
+                        rewardType: 0
+                        completed: 0
   - isActive: 0
     questGiver: {fileID: 0}
     title: Well, well, well continued
@@ -3357,6 +3654,99 @@ MonoBehaviour:
       interractableType: 0
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
+      quest:
+        isActive: 0
+        questGiver: {fileID: 0}
+        title: 
+        description: 
+        rewardSprite: {fileID: 0}
+        rewardAmount: 0
+        rewardKind: 0
+        rewardType: 0
+        completed: 0
+        goal:
+          goalType: 0
+          completed: 0
+          currentAmount: 0
+          requiredAmount: 1
+          requiredResourceSprite: {fileID: 0}
+          gatherType: 0
+          interractableType: 0
+          repairObject: {fileID: 0}
+          findSomeoneObject: {fileID: 0}
+          finishBeforeTalking: 0
+          quest:
+            isActive: 0
+            questGiver: {fileID: 0}
+            title: 
+            description: 
+            rewardSprite: {fileID: 0}
+            rewardAmount: 0
+            rewardKind: 0
+            rewardType: 0
+            completed: 0
+            goal:
+              goalType: 0
+              completed: 0
+              currentAmount: 0
+              requiredAmount: 1
+              requiredResourceSprite: {fileID: 0}
+              gatherType: 0
+              interractableType: 0
+              repairObject: {fileID: 0}
+              findSomeoneObject: {fileID: 0}
+              finishBeforeTalking: 0
+              quest:
+                isActive: 0
+                questGiver: {fileID: 0}
+                title: 
+                description: 
+                rewardSprite: {fileID: 0}
+                rewardAmount: 0
+                rewardKind: 0
+                rewardType: 0
+                completed: 0
+                goal:
+                  goalType: 0
+                  completed: 0
+                  currentAmount: 0
+                  requiredAmount: 1
+                  requiredResourceSprite: {fileID: 0}
+                  gatherType: 0
+                  interractableType: 0
+                  repairObject: {fileID: 0}
+                  findSomeoneObject: {fileID: 0}
+                  finishBeforeTalking: 0
+                  quest:
+                    isActive: 0
+                    questGiver: {fileID: 0}
+                    title: 
+                    description: 
+                    rewardSprite: {fileID: 0}
+                    rewardAmount: 0
+                    rewardKind: 0
+                    rewardType: 0
+                    completed: 0
+                    goal:
+                      goalType: 0
+                      completed: 0
+                      currentAmount: 0
+                      requiredAmount: 1
+                      requiredResourceSprite: {fileID: 0}
+                      gatherType: 0
+                      interractableType: 0
+                      repairObject: {fileID: 0}
+                      findSomeoneObject: {fileID: 0}
+                      finishBeforeTalking: 0
+                      quest:
+                        isActive: 0
+                        title: 
+                        description: 
+                        rewardAmount: 0
+                        rewardKind: 0
+                        rewardType: 0
+                        completed: 0
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -3403,95 +3793,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
---- !u!1001 &323381756
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 5865231757791859093, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: cam
-      value: 
-      objectReference: {fileID: 637704059}
-    - target: {fileID: 5865231757791859093, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: hoeUseTriggername
-      value: Plow Field
-      objectReference: {fileID: 0}
-    - target: {fileID: 5865231757791859093, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: seedsUseTriggername
-      value: Sow Seeds
-      objectReference: {fileID: 0}
-    - target: {fileID: 5865231757791859093, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: watercanUseTriggername
-      value: Water
-      objectReference: {fileID: 0}
-    - target: {fileID: 5865231757791859101, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: playerCamera
-      value: 
-      objectReference: {fileID: 637704060}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 10.24
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6747541114263133444, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-      propertyPath: m_Name
-      value: Player
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
 --- !u!1 &338328384
 GameObject:
   m_ObjectHideFlags: 0
@@ -4998,7 +5299,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slider: {fileID: 569405273}
-  player: {fileID: 1113354263}
+  player: {fileID: 0}
 --- !u!114 &569405273 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 368341884820449952, guid: 25101fb0339e8d44d83952078bac30b5, type: 3}
@@ -5791,7 +6092,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4260b29a71806a4db7209ffcafcc8d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1113354272}
+  target: {fileID: 0}
   smoothSpeed: 7
   offset: {x: 0, y: 14, z: -16}
 --- !u!1 &638362973 stripped
@@ -7015,6 +7316,76 @@ Transform:
   m_Father: {fileID: 1415073497}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &774268719
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.48
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.19
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_Name
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 702fa98a4fce749479cd35610912dbf8, type: 2}
+    - target: {fileID: 5866666021909216657, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
+      propertyPath: m_WarningMessage
+      value: "\nBinding warning: Some generic clip(s) animate transforms that are
+        already bound by a Humanoid avatar. These transforms can only be changed
+        by Humanoid clips.\n\tTransform 'Straw_joint_1'\n\tTransform 'Straw_joint_2'\n\tTransform
+        'Straw_joint_1'\n\tTransform 'Straw_joint_2'\n\tTransform 'Straw_joint_1'\n\tTransform
+        'Straw_joint_2'\n\tFrom animation clip 'Chop Wood'\n\tFrom animation clip
+        'Pick Stone'"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ce5360d2b5364714591ed69319ea4007, type: 3}
 --- !u!1001 &794418385
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7333,7 +7704,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1822773336252089556, guid: be9bd5effa6b31d44864dc3106c76bea, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1822773336252089556, guid: be9bd5effa6b31d44864dc3106c76bea, type: 3}
       propertyPath: m_LocalScale.x
@@ -8898,7 +9269,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5724834533896303739, guid: 6c24bc5574da1d74797491136596db85, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5724834533896303739, guid: 6c24bc5574da1d74797491136596db85, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10340,22 +10711,6 @@ Transform:
   m_Father: {fileID: 1885233806}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1113354263 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5865231757791859092, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-  m_PrefabInstance: {fileID: 323381756}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e7c6c23a9c8c3b439c3779aae08d2ec, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1113354272 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
-  m_PrefabInstance: {fileID: 323381756}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1116872269
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17539,7 +17894,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6013640355920696224, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6013640355920696224, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -17592,7 +17947,7 @@ PrefabInstance:
     - target: {fileID: 6013640355920696227, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 1113354263}
+      objectReference: {fileID: 0}
     - target: {fileID: 6013640356141439302, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -18277,6 +18632,99 @@ MonoBehaviour:
       interractableType: 0
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
+      quest:
+        isActive: 0
+        questGiver: {fileID: 0}
+        title: 
+        description: 
+        rewardSprite: {fileID: 0}
+        rewardAmount: 0
+        rewardKind: 0
+        rewardType: 0
+        completed: 0
+        goal:
+          goalType: 0
+          completed: 0
+          currentAmount: 0
+          requiredAmount: 1
+          requiredResourceSprite: {fileID: 0}
+          gatherType: 0
+          interractableType: 0
+          repairObject: {fileID: 0}
+          findSomeoneObject: {fileID: 0}
+          finishBeforeTalking: 0
+          quest:
+            isActive: 0
+            questGiver: {fileID: 0}
+            title: 
+            description: 
+            rewardSprite: {fileID: 0}
+            rewardAmount: 0
+            rewardKind: 0
+            rewardType: 0
+            completed: 0
+            goal:
+              goalType: 0
+              completed: 0
+              currentAmount: 0
+              requiredAmount: 1
+              requiredResourceSprite: {fileID: 0}
+              gatherType: 0
+              interractableType: 0
+              repairObject: {fileID: 0}
+              findSomeoneObject: {fileID: 0}
+              finishBeforeTalking: 0
+              quest:
+                isActive: 0
+                questGiver: {fileID: 0}
+                title: 
+                description: 
+                rewardSprite: {fileID: 0}
+                rewardAmount: 0
+                rewardKind: 0
+                rewardType: 0
+                completed: 0
+                goal:
+                  goalType: 0
+                  completed: 0
+                  currentAmount: 0
+                  requiredAmount: 1
+                  requiredResourceSprite: {fileID: 0}
+                  gatherType: 0
+                  interractableType: 0
+                  repairObject: {fileID: 0}
+                  findSomeoneObject: {fileID: 0}
+                  finishBeforeTalking: 0
+                  quest:
+                    isActive: 0
+                    questGiver: {fileID: 0}
+                    title: 
+                    description: 
+                    rewardSprite: {fileID: 0}
+                    rewardAmount: 0
+                    rewardKind: 0
+                    rewardType: 0
+                    completed: 0
+                    goal:
+                      goalType: 0
+                      completed: 0
+                      currentAmount: 0
+                      requiredAmount: 1
+                      requiredResourceSprite: {fileID: 0}
+                      gatherType: 0
+                      interractableType: 0
+                      repairObject: {fileID: 0}
+                      findSomeoneObject: {fileID: 0}
+                      finishBeforeTalking: 0
+                      quest:
+                        isActive: 0
+                        title: 
+                        description: 
+                        rewardAmount: 0
+                        rewardKind: 0
+                        rewardType: 0
+                        completed: 0
   - isActive: 0
     questGiver: {fileID: 0}
     title: Knock knock
@@ -18296,6 +18744,99 @@ MonoBehaviour:
       interractableType: 0
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
+      quest:
+        isActive: 0
+        questGiver: {fileID: 0}
+        title: 
+        description: 
+        rewardSprite: {fileID: 0}
+        rewardAmount: 0
+        rewardKind: 0
+        rewardType: 0
+        completed: 0
+        goal:
+          goalType: 0
+          completed: 0
+          currentAmount: 0
+          requiredAmount: 1
+          requiredResourceSprite: {fileID: 0}
+          gatherType: 0
+          interractableType: 0
+          repairObject: {fileID: 0}
+          findSomeoneObject: {fileID: 0}
+          finishBeforeTalking: 0
+          quest:
+            isActive: 0
+            questGiver: {fileID: 0}
+            title: 
+            description: 
+            rewardSprite: {fileID: 0}
+            rewardAmount: 0
+            rewardKind: 0
+            rewardType: 0
+            completed: 0
+            goal:
+              goalType: 0
+              completed: 0
+              currentAmount: 0
+              requiredAmount: 1
+              requiredResourceSprite: {fileID: 0}
+              gatherType: 0
+              interractableType: 0
+              repairObject: {fileID: 0}
+              findSomeoneObject: {fileID: 0}
+              finishBeforeTalking: 0
+              quest:
+                isActive: 0
+                questGiver: {fileID: 0}
+                title: 
+                description: 
+                rewardSprite: {fileID: 0}
+                rewardAmount: 0
+                rewardKind: 0
+                rewardType: 0
+                completed: 0
+                goal:
+                  goalType: 0
+                  completed: 0
+                  currentAmount: 0
+                  requiredAmount: 1
+                  requiredResourceSprite: {fileID: 0}
+                  gatherType: 0
+                  interractableType: 0
+                  repairObject: {fileID: 0}
+                  findSomeoneObject: {fileID: 0}
+                  finishBeforeTalking: 0
+                  quest:
+                    isActive: 0
+                    questGiver: {fileID: 0}
+                    title: 
+                    description: 
+                    rewardSprite: {fileID: 0}
+                    rewardAmount: 0
+                    rewardKind: 0
+                    rewardType: 0
+                    completed: 0
+                    goal:
+                      goalType: 0
+                      completed: 0
+                      currentAmount: 0
+                      requiredAmount: 1
+                      requiredResourceSprite: {fileID: 0}
+                      gatherType: 0
+                      interractableType: 0
+                      repairObject: {fileID: 0}
+                      findSomeoneObject: {fileID: 0}
+                      finishBeforeTalking: 0
+                      quest:
+                        isActive: 0
+                        title: 
+                        description: 
+                        rewardAmount: 0
+                        rewardKind: 0
+                        rewardType: 0
+                        completed: 0
   - isActive: 0
     questGiver: {fileID: 0}
     title: Knock on wood
@@ -18315,6 +18856,99 @@ MonoBehaviour:
       interractableType: 0
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
+      quest:
+        isActive: 0
+        questGiver: {fileID: 0}
+        title: 
+        description: 
+        rewardSprite: {fileID: 0}
+        rewardAmount: 0
+        rewardKind: 0
+        rewardType: 0
+        completed: 0
+        goal:
+          goalType: 0
+          completed: 0
+          currentAmount: 0
+          requiredAmount: 1
+          requiredResourceSprite: {fileID: 0}
+          gatherType: 0
+          interractableType: 0
+          repairObject: {fileID: 0}
+          findSomeoneObject: {fileID: 0}
+          finishBeforeTalking: 0
+          quest:
+            isActive: 0
+            questGiver: {fileID: 0}
+            title: 
+            description: 
+            rewardSprite: {fileID: 0}
+            rewardAmount: 0
+            rewardKind: 0
+            rewardType: 0
+            completed: 0
+            goal:
+              goalType: 0
+              completed: 0
+              currentAmount: 0
+              requiredAmount: 1
+              requiredResourceSprite: {fileID: 0}
+              gatherType: 0
+              interractableType: 0
+              repairObject: {fileID: 0}
+              findSomeoneObject: {fileID: 0}
+              finishBeforeTalking: 0
+              quest:
+                isActive: 0
+                questGiver: {fileID: 0}
+                title: 
+                description: 
+                rewardSprite: {fileID: 0}
+                rewardAmount: 0
+                rewardKind: 0
+                rewardType: 0
+                completed: 0
+                goal:
+                  goalType: 0
+                  completed: 0
+                  currentAmount: 0
+                  requiredAmount: 1
+                  requiredResourceSprite: {fileID: 0}
+                  gatherType: 0
+                  interractableType: 0
+                  repairObject: {fileID: 0}
+                  findSomeoneObject: {fileID: 0}
+                  finishBeforeTalking: 0
+                  quest:
+                    isActive: 0
+                    questGiver: {fileID: 0}
+                    title: 
+                    description: 
+                    rewardSprite: {fileID: 0}
+                    rewardAmount: 0
+                    rewardKind: 0
+                    rewardType: 0
+                    completed: 0
+                    goal:
+                      goalType: 0
+                      completed: 0
+                      currentAmount: 0
+                      requiredAmount: 1
+                      requiredResourceSprite: {fileID: 0}
+                      gatherType: 0
+                      interractableType: 0
+                      repairObject: {fileID: 0}
+                      findSomeoneObject: {fileID: 0}
+                      finishBeforeTalking: 0
+                      quest:
+                        isActive: 0
+                        title: 
+                        description: 
+                        rewardAmount: 0
+                        rewardKind: 0
+                        rewardType: 0
+                        completed: 0
   questIndex: 0
   questProgress: 0
   dialogues:
