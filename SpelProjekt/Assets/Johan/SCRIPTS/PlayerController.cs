@@ -125,6 +125,7 @@ public class PlayerController : MonoBehaviour
             //vänsterklick
             if (leftMouseIsDown && !EventSystem.current.IsPointerOverGameObject())
             {
+                nextChopTime = Time.time + 1f / chopRate;
 
 
                 if (player.ReturnEnergy() < 1)
@@ -151,12 +152,12 @@ public class PlayerController : MonoBehaviour
                         break;
                     case 2: //PLOG
                         akc.SetAnimationTrigger(hoeUseTriggername);
-                        StartCoroutine(FarmTowardsMouse(0));
+                        StartCoroutine(FarmTowardsMouse(new int[] {0}));
                         break;
                     case 3: //FRÖN
                         Particle_effect_seeds.Play();
                         akc.SetAnimationTrigger(seedsUseTriggername);
-                        StartCoroutine(FarmTowardsMouse(1));
+                        StartCoroutine(FarmTowardsMouse(new int[] {1}));
                         break;
                     case 4: //VATTENKANNA
                         if (player.waterAmount == 0)
@@ -166,18 +167,17 @@ public class PlayerController : MonoBehaviour
                         Particle_effect_water.Play();
                         player.DepleteWater();
                         akc.SetAnimationTrigger(watercanUseTriggername);
-                        StartCoroutine(FarmTowardsMouse(2));
+                        StartCoroutine(FarmTowardsMouse(new int[] {2,4,6}));
                         break;
                     case 5: //LIE
                         akc.SetAnimationTrigger(scytheUseTriggername);
-                        StartCoroutine(FarmTowardsMouse(4));
+                        StartCoroutine(FarmTowardsMouse(new int[] {8}));
                         break;
                     default:
                         break;
                 }
                 //akc.SetAttack();
 
-                nextChopTime = Time.time + 1f / chopRate;
             }
         }
 
@@ -248,7 +248,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator FarmTowardsMouse(int neededFarmIndex)
+    IEnumerator FarmTowardsMouse(int[] neededFarmIndex)
     {
         GameObject clickedObject = null;
 
@@ -327,12 +327,16 @@ public class PlayerController : MonoBehaviour
         if (closestChoppable.CompareTag("Field"))
         {
             FieldScript fieldScript = closestChoppable.GetComponent<FieldScript>();
-            if (fieldScript.ReturnFieldState() == neededFarmIndex)
+            foreach (int index in neededFarmIndex)
             {
-                player.UseEnergy(1);
-                yield return new WaitForSeconds(timeTilDamage);
-                fieldScript.ChangeFarmstate();
+                if (fieldScript.ReturnFieldState() == index)
+                {
+                    player.UseEnergy(1);
+                    yield return new WaitForSeconds(timeTilDamage);
+                    fieldScript.ChangeFarmstate();
+                }
             }
+
 
         }
     }

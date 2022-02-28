@@ -8,7 +8,7 @@ public class Bunny_Interactable : Interactable
 
     public override void InteractWith(PlayerController pc)
     {
-        //base.InteractWith();
+        base.InteractWith(pc);
         //GetComponent<DialogueTrigger>().TriggerDialogue();
         GetComponent<QuestGiver>().TriggerDialogue();
         GetComponent<QuestGiver>().TryStartQuest();
