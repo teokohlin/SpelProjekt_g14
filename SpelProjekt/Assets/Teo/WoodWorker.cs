@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
-
+using System.Linq;
 public class WoodWorker : MonoBehaviour
 {
     public DayNightCycle Dnc;
@@ -27,7 +27,6 @@ public class WoodWorker : MonoBehaviour
     private int days;
     private void Start()
     {
-        MoveToTree();
         Dnc = FindObjectOfType<DayNightCycle>();
         Dnc.DayPast += RefillEnergy;
     }
@@ -36,6 +35,8 @@ public class WoodWorker : MonoBehaviour
     {
         Energy--;
         trees = new List<GameObject>(GameObject.FindGameObjectsWithTag("Tree"));
+        SortByDistance();
+        MoveToTree();
         targets = 3;
     }
 
@@ -65,9 +66,10 @@ public class WoodWorker : MonoBehaviour
             {
                 ChopWood();
             }
+            SortByDistance();
             MoveToTree();
         }
-        //When no trees left move to drop point
+        //When no trees left or targets is 0 move to drop point
         if (trees.Count == 0 || targets == 0 && !drop)
         {
             //Rotate towrds drop point
@@ -123,7 +125,6 @@ public class WoodWorker : MonoBehaviour
     }
     private void MoveToTree()
     {
-        
         foreach (GameObject tree in trees)
         {
             Vector3 vector = new Vector3(tree.transform.position.x, 0.5f, tree.transform.position.z);
@@ -161,5 +162,13 @@ public class WoodWorker : MonoBehaviour
         }
         
 
+    }
+
+    private void SortByDistance()
+    {
+        foreach (GameObject tree in trees)
+        {
+            trees = trees.OrderBy((tree) => (tree.transform.position - transform.position).sqrMagnitude).ToList();
+        }
     }
 }
