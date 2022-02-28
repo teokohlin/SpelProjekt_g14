@@ -2842,6 +2842,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2781979096687402698, guid: 2320f0cd645ce0f4a8a7cb885b5e416d, type: 3}
   m_PrefabInstance: {fileID: 234391492}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &239947619 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6681480978528523142, guid: 9bbc4890f750ca94aa12cc1df0fae56d, type: 3}
+  m_PrefabInstance: {fileID: 1732458433}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &239947620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 239947619}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - dialogue:
+    - picture: {fileID: 0}
+      sentence: RIP Pappa
+  dialogueIndex: 0
 --- !u!1 &243220169
 GameObject:
   m_ObjectHideFlags: 0
@@ -19922,6 +19944,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1289359901612927832, guid: 85d8014685bab8d4483d31fad71e6321, type: 3}
   m_PrefabInstance: {fileID: 1521423155}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1524462620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6681480978528523142, guid: 9bbc4890f750ca94aa12cc1df0fae56d, type: 3}
+  m_PrefabInstance: {fileID: 559645280}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1524462621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1524462620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - dialogue:
+    - picture: {fileID: 0}
+      sentence: Rip Mamma
+  dialogueIndex: 0
 --- !u!1001 &1525155225
 PrefabInstance:
   m_ObjectHideFlags: 0
