@@ -5,6 +5,7 @@ using UnityEngine;
 public class QuestGiver : MonoBehaviour
 {
     public GameObject exclamationMark;
+    public GameObject questionMark;
     private Player player;
     [Space]
     
@@ -45,11 +46,16 @@ public class QuestGiver : MonoBehaviour
         {
             return;
         }
-        if (quests[questIndex].goal.finishBeforeTalking) //undantaget.. Om man ska klara uppdraget utan att snacka //ger error nu, konstigt
+        if (quests[questIndex].goal.finishBeforeTalking) //undantaget.. Om man ska klara uppdraget utan att snacka 
         {
             TriggerDialogue();
             quests[questIndex].RemoveQuest();
         }
+        else
+        {
+        questionMark.SetActive(true);
+        }
+
     }
     public void QuestFinished()
     {
@@ -63,6 +69,7 @@ public class QuestGiver : MonoBehaviour
         else
         {
             exclamationMark.SetActive(true);
+            questionMark.SetActive(false);
         }
     }
 

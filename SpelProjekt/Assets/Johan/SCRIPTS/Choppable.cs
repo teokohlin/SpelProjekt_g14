@@ -47,7 +47,7 @@ public class Choppable : MonoBehaviour
         {
             Vector3 ranPos = new Vector3(
                 transform.position.x + Random.Range(-.5f, .5f), 
-                transform.position.y, 
+                transform.position.y + 1, 
                 transform.position.z + Random.Range(-.5f, .5f));
             //Quaternion ranRot = new Quaternion(
             //    dropPrefab.transform.rotation.x,
