@@ -5,6 +5,8 @@ using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
 using System.Linq;
+using UnityEngine.AI;
+
 public class WoodWorker : MonoBehaviour
 {
     public DayNightCycle Dnc;
@@ -25,10 +27,15 @@ public class WoodWorker : MonoBehaviour
     private int targets;
     private bool drop;
     private int days;
+    private float step;
+    private Collider box;
+    private NavMeshAgent agent;
     private void Start()
     {
         Dnc = FindObjectOfType<DayNightCycle>();
         Dnc.DayPast += RefillEnergy;
+        box = GetComponent<BoxCollider>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     private void OnEnable()
@@ -36,52 +43,37 @@ public class WoodWorker : MonoBehaviour
         Energy--;
         trees = new List<GameObject>(GameObject.FindGameObjectsWithTag("Tree"));
         SortByDistance();
-        MoveToTree();
+        GetTreePos();
         targets = 3;
     }
 
     private void Update()
     {
         //speed
-        float step = speed * Time.deltaTime;
+        step = speed * Time.deltaTime;
         
         if (trees.Count > 0 && targets > 0)
         {
-            //Move towards tree
-            transform.position = 
-                Vector3.MoveTowards(transform.position, treePos,step);
-        
-            //Rotate towards tree
-            targetDir = treePos - transform.position;
-            newdirection = 
-                Vector3.RotateTowards
-                    (transform.forward, targetDir, step, 0.0f);
-            transform.rotation = Quaternion.LookRotation(newdirection);
+            //MoveToTree();
+            agent.destination = treePos;
         }
         
         //Chop one tree and move on to the next
-        if (transform.position == treePos)
+        if (box.bounds.Contains(treePos) && targets > 0)
         {
             if (!killedWood)
             {
                 ChopWood();
             }
             SortByDistance();
-            MoveToTree();
+            GetTreePos();
         }
         //When no trees left or targets is 0 move to drop point
         if (trees.Count == 0 || targets == 0 && !drop)
         {
-            //Rotate towrds drop point
-            targetDir = dropZone.position - transform.position;
-            newdirection = 
-                Vector3.RotateTowards
-                    (transform.forward, targetDir, step, 0.0f);
-            transform.rotation = Quaternion.LookRotation(newdirection);
-            //Move towards drop point
-            transform.position = 
-                Vector3.MoveTowards(transform.position, dropZone.position, step);
-            if (transform.position == dropZone.position)
+            //MoveToDropPoint();
+            agent.destination = dropZone.position;
+            if (box.bounds.Contains(dropZone.position))
             {
                 DropStack();
             }
@@ -94,16 +86,43 @@ public class WoodWorker : MonoBehaviour
         
         if (drop)
         {
-            transform.position = 
-                Vector3.MoveTowards(transform.position, home.position, step);
+            //transform.position = 
+                //Vector3.MoveTowards(transform.position, home.position, step);
+                agent.destination = home.position;
         }
-        if (transform.position == home.position)
+        if (box.bounds.Contains(home.position) && drop)
         {
             drop = false;
             enabled = false;
         }
     }
 
+    private void MoveToTree()
+    {
+        //Move towards tree
+        transform.position = 
+            Vector3.MoveTowards(transform.position, treePos,step);
+        //Rotate towards tree
+        targetDir = treePos - transform.position;
+        newdirection = 
+            Vector3.RotateTowards
+                (transform.forward, targetDir, step, 0.0f);
+        transform.rotation = Quaternion.LookRotation(newdirection);
+        
+        
+    }
+    private void MoveToDropPoint()
+    {
+        //Rotate towrds drop point
+        targetDir = dropZone.position - transform.position;
+        newdirection = 
+            Vector3.RotateTowards
+                (transform.forward, targetDir, step, 0.0f);
+        transform.rotation = Quaternion.LookRotation(newdirection);
+        //Move towards drop point
+        transform.position = 
+            Vector3.MoveTowards(transform.position, dropZone.position, step);
+    }
     private void RefillEnergy()
     {
         Energy = 3;
@@ -122,7 +141,7 @@ public class WoodWorker : MonoBehaviour
     {
         collectedWood += amount;
     }
-    private void MoveToTree()
+    private void GetTreePos()
     {
         foreach (GameObject tree in trees)
         {
