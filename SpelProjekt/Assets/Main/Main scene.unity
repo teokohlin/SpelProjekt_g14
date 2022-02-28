@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4097,6 +4097,8 @@ MonoBehaviour:
   canvas: {fileID: 1004258439}
   repairObject: {fileID: 281922880}
   removeObject: {fileID: 304022888}
+  repairCost: 0
+  resourceType: 0
 --- !u!1001 &304124258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7745,7 +7747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &693808294
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10060,6 +10062,8 @@ MonoBehaviour:
   canvas: {fileID: 693808293}
   repairObject: {fileID: 1534407639}
   removeObject: {fileID: 893821180}
+  repairCost: 0
+  resourceType: 0
 --- !u!114 &893821182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22909,7 +22913,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1729736017
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25359,8 +25363,8 @@ Transform:
   - {fileID: 1295598615}
   - {fileID: 706933343}
   - {fileID: 534689704}
-  - {fileID: 1280978138}
   - {fileID: 1071535320}
+  - {fileID: 1280978138}
   - {fileID: 1030259788}
   - {fileID: 696587645}
   - {fileID: 1068982484}
