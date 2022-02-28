@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4455,8 +4455,7 @@ MonoBehaviour:
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
         sentence: Wow, now this is what I call a well.
       - picture: {fileID: 0}
-        sentence: You can now use the well to refill your watering can. (not working
-          atm sorry - Programmer)
+        sentence: 'You can now use the well to refill your waterin can. '
 --- !u!114 &304022891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4551,11 +4550,11 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: 4964fa46424e6df4eb38dec5820a6be5, type: 2}
     - target: {fileID: 5865231757791859092, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
       propertyPath: energy
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5865231757791859092, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
       propertyPath: maxEnergy
-      value: 30
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5865231757791859092, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
       propertyPath: foodAmount
@@ -10723,8 +10722,8 @@ MonoBehaviour:
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
-    title: Repair home gather
-    description: Yo please fix this shit
+    title: Repair home
+    description: Gather resources in order to repair your home.
     rewardSprite: {fileID: 0}
     rewardAmount: 0
     rewardKind: 1
@@ -10836,7 +10835,7 @@ MonoBehaviour:
   - isActive: 0
     questGiver: {fileID: 0}
     title: Repair home build
-    description: Yo please fix this shit
+    description: Now it's time to repair your home.
     rewardSprite: {fileID: 0}
     rewardAmount: 0
     rewardKind: 1
@@ -10981,6 +10980,8 @@ MonoBehaviour:
         sentence: I miss the days when my parents were here.
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
         sentence: "I will make you proud, mamma\u2026 pappa."
+      - picture: {fileID: 0}
+        sentence: You now have increased energy.
 --- !u!64 &893821183
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20604,7 +20605,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1113354263}
-  energyIncrease: 5
+  energyIncrease: 10
 --- !u!1001 &1539569592
 PrefabInstance:
   m_ObjectHideFlags: 0
