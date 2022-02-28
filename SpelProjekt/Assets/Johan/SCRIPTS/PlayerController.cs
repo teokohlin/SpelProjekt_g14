@@ -142,12 +142,12 @@ public class PlayerController : MonoBehaviour
                     case 0://YXA
                         akc.SetAnimationTrigger(treeChopTriggername);
                         //ChopTowardsMouse("Tree");
-                        StartCoroutine(ChopTowardsMouse("Tree"));
+                        StartCoroutine(ChopTowardsMouse("Tree", "TreeMisc"));
                         break;
                     case 1: //PICKAXE
                         akc.SetAnimationTrigger(stonePickTriggername);
                         //ChopTowardsMouse("Stone");
-                        StartCoroutine(ChopTowardsMouse("Stone"));
+                        StartCoroutine(ChopTowardsMouse("Stone", ""));
                         break;
                     case 2: //PLOG
                         akc.SetAnimationTrigger(hoeUseTriggername);
@@ -190,7 +190,7 @@ public class PlayerController : MonoBehaviour
 
     
 
-    IEnumerator ChopTowardsMouse(string resourceTag)
+    IEnumerator ChopTowardsMouse(string resourceTag, string resourceTag2)
     {
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
@@ -238,7 +238,7 @@ public class PlayerController : MonoBehaviour
 
             Collider closestChoppable = GetClosestEnemyCollider(transform.position, hitChoppables);
 
-            if (closestChoppable.CompareTag(resourceTag))
+            if (closestChoppable.CompareTag(resourceTag) || closestChoppable.CompareTag(resourceTag2))
             {
                 //play animation här om det bara ska spelas när man slår på rätt sak
                 player.UseEnergy(1);
