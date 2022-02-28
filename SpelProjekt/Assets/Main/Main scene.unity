@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4472,8 +4472,8 @@ MonoBehaviour:
   canvas: {fileID: 1004258439}
   repairObject: {fileID: 281922880}
   removeObject: {fileID: 304022888}
-  repairCost: 0
-  resourceType: 0
+  repairCost: 30
+  resourceType: 1
   questGiver: {fileID: 0}
 --- !u!1001 &304124258
 PrefabInstance:
@@ -10699,7 +10699,7 @@ MonoBehaviour:
   canvas: {fileID: 693808293}
   repairObject: {fileID: 1534407639}
   removeObject: {fileID: 893821180}
-  repairCost: 0
+  repairCost: 50
   resourceType: 0
   questGiver: {fileID: 0}
 --- !u!114 &893821182
@@ -13913,11 +13913,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1071860269}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1f7c00020ed87d048aa9a883f9c3f1f2, type: 3}
+  m_Script: {fileID: 11500000, guid: aa511a8c726f27a459c53bf3997f5600, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
-  door: {fileID: 476006381}
+  canvas: {fileID: 1407153206}
+  repairObject: {fileID: 476006381}
+  removeObject: {fileID: 0}
+  repairCost: 20
+  resourceType: 0
+  questGiver: {fileID: 0}
 --- !u!1 &1075776343
 GameObject:
   m_ObjectHideFlags: 0
@@ -18523,6 +18528,120 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4320173211277650343, guid: 34814d6762d022f4ea45b018e028ac03, type: 3}
   m_PrefabInstance: {fileID: 1404367815}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1407153205
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1033508807}
+    m_Modifications:
+    - target: {fileID: 253616892498573481, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1071860274}
+    - target: {fileID: 253616892498573481, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Repair
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3798384469894546698, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_Name
+      value: RepairCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 5487316220989728699, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+      propertyPath: m_text
+      value: Place door
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+--- !u!1 &1407153206 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3798384469894546698, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
+  m_PrefabInstance: {fileID: 1407153205}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1407936152
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20524,6 +20643,20 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 685261912210694812, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
   m_PrefabInstance: {fileID: 1415073496}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1534407640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1534407639}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94ab1a119b19aa5498ed8a6b74900074, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1113354263}
+  energyIncrease: 5
 --- !u!1001 &1539569592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24548,8 +24681,8 @@ MonoBehaviour:
       requiredAmount: 1
       requiredResourceSprite: {fileID: 0}
       gatherType: 0
-      interractableType: 0
-      repairObject: {fileID: 0}
+      interractableType: 1
+      repairObject: {fileID: 1071860269}
       findSomeoneObject: {fileID: 0}
       finishBeforeTalking: 0
       quest:
