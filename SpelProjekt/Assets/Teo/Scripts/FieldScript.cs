@@ -8,7 +8,7 @@ public class FieldScript : MonoBehaviour
     
     private DayNightCycle DNC;
     [Tooltip("Så många dagar man måste vattna")]
-    public int GrowthTime;
+    //public int GrowthTime;
     private int dayCount = 0;
     
     //[SerializeField] 
@@ -27,7 +27,7 @@ public class FieldScript : MonoBehaviour
     {
         p = FindObjectOfType<Player>();
         DNC = FindObjectOfType<DayNightCycle>();
-        DNC.DayPast += DayCount;
+        //DNC.DayPast += DayCount;
     }
 
     // Update is called once per frame
@@ -46,7 +46,7 @@ public class FieldScript : MonoBehaviour
         } */
     }
 
-    private void DayCount(int day)
+    /*private void DayCount(int day)
     {
         if (fieldState == 3)
         {
@@ -62,7 +62,7 @@ public class FieldScript : MonoBehaviour
             fieldState--;
             ChangeFieldObject(fieldState);
         }
-    }
+    }*/
 
     /*
     private void OnTriggerEnter(Collider other)
@@ -81,7 +81,7 @@ public class FieldScript : MonoBehaviour
     public void ChangeFarmstate()
     {
         fieldState++;
-        if (fieldState > 4)
+        if (fieldState > 8)
         {
             p.AddFood(foodYield);
             fieldState = 0;
