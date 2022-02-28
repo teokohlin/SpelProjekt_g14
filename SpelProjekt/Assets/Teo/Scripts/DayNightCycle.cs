@@ -16,7 +16,7 @@ public class DayNightCycle : MonoBehaviour
     private Vector3 rotation = new Vector3(0,0,90);
     public Image Pil;
     private float t;
-    public UnityAction<int> DayPast;
+    public UnityAction DayPast;
     private MusicManager musicManager;
     
     [Header("Sun")] 
@@ -48,7 +48,7 @@ public class DayNightCycle : MonoBehaviour
         if (time >= 1.0f)
         {
             time = 0.0f;
-            DayPast?.Invoke(1);
+            DayPast?.Invoke();
         }
         
         //light rotation
@@ -96,9 +96,9 @@ public class DayNightCycle : MonoBehaviour
         musicManager.MusicTimeOfDay(temp);
     }
 
-    public void Invoke(int i)
+    public void Invoke()
     {
-        DayPast?.Invoke(i);
+        DayPast?.Invoke();
         time = startTime;
     }
 }

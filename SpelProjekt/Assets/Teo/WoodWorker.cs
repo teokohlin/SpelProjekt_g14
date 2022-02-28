@@ -104,9 +104,8 @@ public class WoodWorker : MonoBehaviour
         }
     }
 
-    private void RefillEnergy(int d)
+    private void RefillEnergy()
     {
-        days += d;
         Energy = 3;
     }
     void DropStack()

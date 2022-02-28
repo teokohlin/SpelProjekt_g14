@@ -27,7 +27,7 @@ public class FieldScript : MonoBehaviour
     {
         p = FindObjectOfType<Player>();
         DNC = FindObjectOfType<DayNightCycle>();
-        //DNC.DayPast += DayCount;
+        DNC.DayPast += GrowField;
     }
 
     // Update is called once per frame
@@ -46,6 +46,13 @@ public class FieldScript : MonoBehaviour
         } */
     }
 
+    private void GrowField()
+    {
+        if (fieldState == 3 || fieldState == 5 || fieldState == 7)
+        {
+            ChangeFarmstate();
+        }
+    }
     /*private void DayCount(int day)
     {
         if (fieldState == 3)

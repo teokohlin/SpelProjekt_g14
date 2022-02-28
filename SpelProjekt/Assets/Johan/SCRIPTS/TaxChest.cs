@@ -86,9 +86,9 @@ public class TaxChest : MonoBehaviour
         foodText.text = foodNeeded.ToString();
     }
 
-    public void NewDay(int day) //prenumerera på nydag unity action från daymanager
+    public void NewDay() //prenumerera på nydag unity action från daymanager
     {
-        weekday += day;
+        weekday ++;
         if (weekday >= daysBetweenTax)
         {
             if (woodPayed && stonePayed && foodPayed)
