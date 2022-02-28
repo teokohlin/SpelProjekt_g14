@@ -90,10 +90,16 @@ public class DialogueManager : MonoBehaviour
     void EndDialogue()
     {
         inDialogue = false;
-        
-        playerC.SetLockMovement(false);
+        StopAllCoroutines();
+        StartCoroutine(UnlockMovementDelay()); //titta ner
         hotbarCanvasUI.SetActive(true);
         animator.SetBool("IsOpen", false);
+    }
+
+    IEnumerator UnlockMovementDelay() //väntar till slutet av framen för att förhindra att gubben slår
+    {                                 //då dessa olika updates kan komma otajmat  
+        yield return new WaitForEndOfFrame();
+        playerC.SetLockMovement(false);
     }
 
 }
