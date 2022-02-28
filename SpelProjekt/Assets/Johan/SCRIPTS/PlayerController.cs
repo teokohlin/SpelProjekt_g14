@@ -147,7 +147,7 @@ public class PlayerController : MonoBehaviour
                     case 1: //PICKAXE
                         akc.SetAnimationTrigger(stonePickTriggername);
                         //ChopTowardsMouse("Stone");
-                        StartCoroutine(ChopTowardsMouse("Stone"));
+                        StartCoroutine(ChopTowardsMouse("Stone", "Stone"));
                         break;
                     case 2: //PLOG
                         akc.SetAnimationTrigger(hoeUseTriggername);
@@ -190,7 +190,7 @@ public class PlayerController : MonoBehaviour
 
     
 
-    IEnumerator ChopTowardsMouse(string resourceTag, string resourceTag2 = "")
+    IEnumerator ChopTowardsMouse(string resourceTag, string resourceTag2)
     {
 
         Ray ray = cam.ScreenPointToRay(Input.mousePosition);
