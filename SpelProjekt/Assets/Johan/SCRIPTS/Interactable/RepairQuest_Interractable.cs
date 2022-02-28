@@ -15,16 +15,32 @@ public class RepairQuest_Interractable : Interactable
     [Header("Repair Cost")]
     public int repairCost;
     public dType resourceType;
+    [HideInInspector]
+    public QuestGiver questGiver;
 
     public override void InteractWith(PlayerController pc)
     {
-        GetComponent<QuestGiver>().TriggerDialogue();
-        GetComponent<QuestGiver>().TryStartQuest();
-        
-        GetComponent<QuestGiver>().InterractedWith();
+        if (GetComponent<QuestGiver>() != null) //Ifall man vill att objektet själv ska starta questet
+        {
+            GetComponent<QuestGiver>().TriggerDialogue();
+            GetComponent<QuestGiver>().TryStartQuest();
+            GetComponent<QuestGiver>().InterractedWith();
+
+        }
+        //else if (isQuest) //om det startas av någon annan. denna blir dock den som spelas efter första interraktionen
+        //{
+
+        //} 
+
+
         this.pc = pc;
         if (isQuest)
         {
+            questGiver.TriggerDialogue();
+            questGiver.TryStartQuest();
+        
+            questGiver.InterractedWith();
+
             canvas.SetActive(true);
             canvasOpen = true;
         }
@@ -36,7 +52,6 @@ public class RepairQuest_Interractable : Interactable
         {
             return;
         }
-
         pc.player.AddResource(-repairCost, resourceType);
 
 

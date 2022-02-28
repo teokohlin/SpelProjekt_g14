@@ -35,6 +35,7 @@ public class Quest
 
     public void Init()
     {
+        goal.quest = this;
         goal.GoalCompleted += Evaluate;
         goal.Init();
     }

@@ -131,8 +131,8 @@ public class QuestHUDManager : MonoBehaviour
     {
         //player.quests.Add(quest);
         quest.isActive = true;
-        quest.Init();
         quest.questGiver = questGiver;
+        quest.Init();
         GameObject panelButton = Instantiate(questButtonPrefab, questPanel.transform.position, Quaternion.identity, questPanel.transform);
         panelButton.GetComponent<QuestButton>().quest = quest;      
         questButtons.Add(panelButton);

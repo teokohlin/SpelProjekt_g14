@@ -26,6 +26,8 @@ public class QuestGoal
     [Header("Iklickad om man INTE behöver prata med questgivern för att färdigställa questet")]
     public bool finishBeforeTalking = false;
     public UnityAction GoalCompleted;
+    [HideInInspector]
+    public Quest quest;
 
     public void Init()
     {
@@ -58,9 +60,9 @@ public class QuestGoal
                         Object.FindObjectOfType<RabbitHole_Interractable>().isQuest = true;
                         break;
                     case InterractableType.Repair:
-                        repairObject.GetComponent<Interactable>().repaired += Repaired;    //prenumerera på repairobjects "repairfunktion" som inte finns nu, 
-                        repairObject.GetComponent<Interactable>().isQuest = true;          //repairfunktionen på objektet ska kallas på när man klickar på knappen på canvaset
-                                                                                           //som är kopplat till det
+                        repairObject.GetComponent<Interactable>().repaired += Repaired;                 //prenumerera på repairobjects "repairfunktion" som inte finns nu, 
+                        repairObject.GetComponent<Interactable>().isQuest = true;                       //repairfunktionen på objektet ska kallas på när man klickar på knappen på canvaset
+                        repairObject.GetComponent<RepairQuest_Interractable>().questGiver = quest.questGiver;   //som är kopplat till det
                         break;
                     case InterractableType.FindSomeone:
                          findSomeoneObject.GetComponent<Interactable>().interractedWith += Interacted;
