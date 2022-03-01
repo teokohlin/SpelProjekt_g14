@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1822773336252089554}
   - component: {fileID: 1822773336252089555}
   - component: {fileID: 1822773336252089559}
+  - component: {fileID: 5220339653441022982}
   m_Layer: 0
   m_Name: Water
   m_TagString: Untagged
@@ -116,3 +117,16 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &5220339653441022982
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1822773336252089552}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: -0.76, y: 1, z: 1.1}
+  m_Center: {x: 3.2, y: 0, z: 0.16}
