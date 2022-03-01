@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -16375,13 +16375,21 @@ MonoBehaviour:
   - dials:
     - dialogue:
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: I shuld probably start out by gathering some wood!
+        sentence: "It seems like I\u2019m out of wood."
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: I should go and gather some.
     - dialogue:
       - picture: {fileID: 0}
         sentence: 
     - dialogue:
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: Nice! I am the best
+        sentence: That was exhausting.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Haha, I wood like some rest now.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: ...
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: I really need some friends.
 --- !u!65 &995914109
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27999,13 +28007,21 @@ MonoBehaviour:
   - dials:
     - dialogue:
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: I shuld probably start out by farming idk man.
+        sentence: Okay, time to make this farm going again.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: I should start with planting new grains.
+      - picture: {fileID: 0}
+        sentence: 'Hint: Hover the cursor on the items in the hotbar.'
     - dialogue:
       - picture: {fileID: 0}
         sentence: 
     - dialogue:
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: 'Nice! I am the best at farming '
+        sentence: The hard work did paid off in the end.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Wait...
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Some of it is missing.
 --- !u!65 &1549285004
 BoxCollider:
   m_ObjectHideFlags: 0
