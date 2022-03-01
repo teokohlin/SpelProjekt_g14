@@ -27,7 +27,7 @@ public class QuestGoal
     public bool finishBeforeTalking = false;
     public UnityAction GoalCompleted;
     [HideInInspector]
-    public Quest quest;
+    [System.NonSerialized] public Quest quest;
 
     public void Init()
     {
@@ -116,8 +116,12 @@ public class QuestGoal
 
     public void Complete()
     {
-        completed = true;
-        GoalCompleted?.Invoke();
+        if (completed == false)
+        {
+            completed = true;
+            GoalCompleted?.Invoke();
+        }
+
     }
 
 

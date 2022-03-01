@@ -8,7 +8,7 @@ public class Interactable : MonoBehaviour
 {
     public UnityAction interractedWith;
     public UnityAction repaired;
-    //[HideInInspector]
+    [HideInInspector]
     public bool isQuest = false;
 
 
