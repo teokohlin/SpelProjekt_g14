@@ -1523,6 +1523,7 @@ GameObject:
   - component: {fileID: 6877698160536824456}
   - component: {fileID: 6877698160536824462}
   - component: {fileID: 6877698160536824463}
+  - component: {fileID: 6736753698803014521}
   m_Layer: 5
   m_Name: MonsterMenu
   m_TagString: Untagged
@@ -1592,6 +1593,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &6736753698803014521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6877698160536824457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4105b58749385ec44b63c9d07ea61e3f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  image: {fileID: 6877698160267033660}
+  w: {fileID: 0}
 --- !u!1 &6877698160794618672
 GameObject:
   m_ObjectHideFlags: 0

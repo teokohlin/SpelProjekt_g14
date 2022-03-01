@@ -11,22 +11,22 @@ public class EnergyBarManager : MonoBehaviour
     private int e;
     void Start()
     {
-        e = w.Energy;
-        originalSize = image.sizeDelta.y;
+        e = w.energy;
+        originalSize = image.sizeDelta.x;
         rectSize = image.sizeDelta;
     }
 
     void Update()
     {
-        if (e > w.Energy)
+        if (e > w.energy)
         {
-            image.sizeDelta -= new Vector2(0, originalSize / 3);
-            e = w.Energy;
+            image.sizeDelta -= new Vector2(originalSize / 3, 0);
+            e = w.energy;
         }
-        else if (e < w.Energy)
+        else if (e < w.energy)
         {
             image.sizeDelta = rectSize;
-            e = w.Energy;
+            e = w.energy;
         }
     }
 }
