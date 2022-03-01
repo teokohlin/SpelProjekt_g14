@@ -360,6 +360,7 @@ MonoBehaviour:
   infoToShow: Can be planted if the field is plowed.
   titelToShow: Wheat seeds
   toolIndex: 3
+  position: {x: 0, y: 0}
 --- !u!1 &1785054278140436828
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +990,7 @@ MonoBehaviour:
     a lake or by the well. Water the seeds daily to make them grow.
   titelToShow: The wooden watering can
   toolIndex: 4
+  position: {x: 0, y: 0}
 --- !u!1 &8561662947155308252
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1318,7 @@ MonoBehaviour:
     to hack stone from boulders and other materials from the mine."
   titelToShow: The trusty pickaxe
   toolIndex: 1
+  position: {x: 0, y: 0}
 --- !u!1 &8561662947629622860
 GameObject:
   m_ObjectHideFlags: 0
@@ -1409,6 +1412,7 @@ MonoBehaviour:
     helpful when it comes to chopping down trees and bushes.
   titelToShow: "Father\u2019s axe"
   toolIndex: 0
+  position: {x: 0, y: 0}
 --- !u!1 &8561662947735280199
 GameObject:
   m_ObjectHideFlags: 0
@@ -1503,6 +1507,7 @@ MonoBehaviour:
     hoe to plow the fields.
   titelToShow: "Mother\u2019s garden hoe"
   toolIndex: 2
+  position: {x: 0, y: 0}
 --- !u!1 &8561662947834504564
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,6 +1601,7 @@ MonoBehaviour:
     fabulous masterpiece. Use the scythe to harvest the crops.
   titelToShow: The homemade scythe
   toolIndex: 5
+  position: {x: 0, y: 0}
 --- !u!1 &8561662948043280428
 GameObject:
   m_ObjectHideFlags: 0
@@ -1647,7 +1653,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
       propertyPath: m_Pivot.y
-      value: 0.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
       propertyPath: m_RootOrder
@@ -1655,19 +1661,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
-      propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
       propertyPath: m_SizeDelta.x
@@ -1707,11 +1713,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 960
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -541
+      value: 331
       objectReference: {fileID: 0}
     - target: {fileID: 3013518002626631752, guid: 47daadd9282b0cf4b941e7ba6b4e81d2, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
