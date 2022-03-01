@@ -1,11 +1,8 @@
 fileFormatVersion: 2
-guid: 25df5577b4ba059479773550a0ebf2bd
+guid: ca719425f926d264da21f7edd9acb0ad
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable:
-  - first:
-      74: -1828962444965018548
-    second: Run_ani
+  internalIDToNameTable: []
   externalObjects: {}
   materials:
     materialImportMode: 2
@@ -26,155 +23,14 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Run_ani
-      takeName: Run_ani
-      internalID: 0
-      firstFrame: 17
-      lastFrame: 30
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 1
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask:
-      - path: 
-        weight: 1
-      - path: L_arm_FK_ctrl_group
-        weight: 1
-      - path: L_arm_FK_ctrl_group/L_collar_FK_joint
-        weight: 1
-      - path: L_arm_FK_ctrl_group/L_collar_FK_joint/L_shoulder_FK_joint
-        weight: 1
-      - path: L_arm_FK_ctrl_group/L_collar_FK_joint/L_shoulder_FK_joint/L_elbow_FK_joint
-        weight: 1
-      - path: L_arm_FK_ctrl_group/L_collar_FK_joint/L_shoulder_FK_joint/L_elbow_FK_joint/L_forearm_FK_joint
-        weight: 1
-      - path: L_arm_FK_ctrl_group/L_collar_FK_joint/L_shoulder_FK_joint/L_elbow_FK_joint/L_forearm_FK_joint/L_wrist_FK_joint
-        weight: 1
-      - path: L_arm_FK_ctrl_group/L_collar_FK_joint/L_shoulder_FK_joint/L_elbow_FK_joint/L_forearm_FK_joint/L_wrist_FK_joint/L_paw_FK_joint
-        weight: 1
-      - path: L_arm_FK_ctrl_group/L_collar_FK_joint/L_shoulder_FK_joint/L_elbow_FK_joint/L_forearm_FK_joint/L_wrist_FK_joint/L_paw_FK_joint/L_paw_tip_FK_joint
-        weight: 1
-      - path: Root_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/L_hip_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/L_hip_bind_joint/L_knee_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/L_hip_bind_joint/L_knee_bind_joint/L_hock_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/L_hip_bind_joint/L_knee_bind_joint/L_hock_bind_joint/L_foot_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/L_hip_bind_joint/L_knee_bind_joint/L_hock_bind_joint/L_foot_bind_joint/L_ball_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/L_hip_bind_joint/L_knee_bind_joint/L_hock_bind_joint/L_foot_bind_joint/L_ball_bind_joint/L_toe_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/R_hip__bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/R_hip__bind_joint/R_knee_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/R_hip__bind_joint/R_knee_bind_joint/R_hock_bind_joint_
-        weight: 1
-      - path: Root_joint/pelvis_joint/R_hip__bind_joint/R_knee_bind_joint/R_hock_bind_joint_/R_foot_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/R_hip__bind_joint/R_knee_bind_joint/R_hock_bind_joint_/R_foot_bind_joint/R_ball_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/R_hip__bind_joint/R_knee_bind_joint/R_hock_bind_joint_/R_foot_bind_joint/R_ball_bind_joint/R_toe_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/puch_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/L_collar_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/L_collar_bind_joint/L_shoulder_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/L_collar_bind_joint/L_shoulder_bind_joint/L_elbow_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/L_collar_bind_joint/L_shoulder_bind_joint/L_elbow_bind_joint/L_forearm_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/L_collar_bind_joint/L_shoulder_bind_joint/L_elbow_bind_joint/L_forearm_bind_joint/L_wrist_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/L_collar_bind_joint/L_shoulder_bind_joint/L_elbow_bind_joint/L_forearm_bind_joint/L_wrist_bind_joint/L_paw_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/L_collar_bind_joint/L_shoulder_bind_joint/L_elbow_bind_joint/L_forearm_bind_joint/L_wrist_bind_joint/L_paw_bind_joint/L_paw_tip_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/neck_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/neck_joint/head_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/neck_joint/head_joint/jaw_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/neck_joint/head_joint/L_ear_joint_1
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/neck_joint/head_joint/L_ear_joint_1/L_ear_joint_2
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/neck_joint/head_joint/L_ear_joint_1/L_ear_joint_2/L_ear_joint_3
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/neck_joint/head_joint/L_ear_joint_1/L_ear_joint_2/L_ear_joint_3/L_ear_joint_4
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/neck_joint/head_joint/R_ear_joint_1
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/neck_joint/head_joint/R_ear_joint_1/R_ear_joint_2
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/neck_joint/head_joint/R_ear_joint_1/R_ear_joint_2/R_ear_joint_3
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/neck_joint/head_joint/R_ear_joint_1/R_ear_joint_2/R_ear_joint_3/R_ear_joint_4
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/R_collar_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/R_collar_bind_joint/R_shoulder_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/R_collar_bind_joint/R_shoulder_bind_joint/R_elbow_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/R_collar_bind_joint/R_shoulder_bind_joint/R_elbow_bind_joint/R_forearm_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/R_collar_bind_joint/R_shoulder_bind_joint/R_elbow_bind_joint/R_forearm_bind_joint/R_wrist_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/R_collar_bind_joint/R_shoulder_bind_joint/R_elbow_bind_joint/R_forearm_bind_joint/R_wrist_bind_joint/R_paw_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/spine_1_joint/spine_2_joint/spine_3_joint/spine_4_joint/spine_5_joint/R_collar_bind_joint/R_shoulder_bind_joint/R_elbow_bind_joint/R_forearm_bind_joint/R_wrist_bind_joint/R_paw_bind_joint/R_paw_tip_bind_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/tail_joint
-        weight: 1
-      - path: Root_joint/pelvis_joint/tail_joint/tail_tip_joint
-        weight: 1
-      maskType: 0
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 17
+    clipAnimations: []
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -479,11 +335,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 2
   humanoidOversampling: 1
-  avatarSetup: 2
+  avatarSetup: 1
   addHumanoidExtraRootOnlyWhenUsingAvatar: 1
   additionalBone: 0
   userData: 
