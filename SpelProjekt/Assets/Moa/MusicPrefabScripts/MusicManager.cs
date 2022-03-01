@@ -18,13 +18,12 @@ public class MusicManager : MonoBehaviour
     public Emitters eventEmitters;
 
 
-    [EventRef]
-    public string gameOverStinger;
+    
     [EventRef]
     public string progressionStinger;
     [EventRef]
     public string menuStartGame;
-    [EventRef]
+    [ParamRef]
     public string timeOfDayParam;
 
     // Start is called before the first frame update
