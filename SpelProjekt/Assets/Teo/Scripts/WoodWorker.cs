@@ -16,7 +16,9 @@ public class WoodWorker : MonoBehaviour
     public Transform dropPoint;
     public Transform home;
     public List<GameObject> trees;
-    public int Energy = 3;
+    public int MaxEnergy = 3;
+    [HideInInspector]
+    public int energy;
     private int teleports;
     private float speed = 10f;
     private Vector3 treePos;
@@ -40,7 +42,7 @@ public class WoodWorker : MonoBehaviour
 
     private void OnEnable()
     {
-        Energy--;
+        energy--;
         trees = new List<GameObject>(GameObject.FindGameObjectsWithTag("Tree"));
         SortByDistance();
         GetTreePos();
@@ -125,7 +127,7 @@ public class WoodWorker : MonoBehaviour
     }
     private void RefillEnergy()
     {
-        Energy = 3;
+        energy = MaxEnergy;
     }
     void DropStack()
     {
