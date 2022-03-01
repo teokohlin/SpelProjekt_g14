@@ -34,6 +34,26 @@ public class QuestGoal
         switch (goalType)
         {
             case GoalType.Gathering:
+                switch (gatherType)
+                {
+                    case dType.wood:
+                        Object.FindObjectOfType<Player>().woodUpdate += ResourceTotal;
+                        Object.FindObjectOfType<Player>().AddWood(0); //för att uppdatera, orkar inte göra en uppdatefunktion x)
+                        break;
+                    case dType.stone:
+                        Object.FindObjectOfType<Player>().stoneUpdate += ResourceTotal;
+                        Object.FindObjectOfType<Player>().AddStone(0); //för att uppdatera, orkar inte göra en uppdatefunktion x)
+                        break;
+                    case dType.food:
+                        Object.FindObjectOfType<Player>().foodUpdate += ResourceTotal;
+                        Object.FindObjectOfType<Player>().AddFood(0); //för att uppdatera, orkar inte göra en uppdatefunktion x)
+                        break;
+                    default:
+                        break;
+                }
+                break;
+
+            case GoalType.GatherNew:
 
                 switch (gatherType)
                 {
@@ -77,12 +97,20 @@ public class QuestGoal
             default:
                 break;
         }
+
+
     }
 
     
     private void ResourceGathered(int amount)
     {
         currentAmount += amount;
+        currentAmount = Mathf.Clamp(currentAmount,0,requiredAmount);
+        Evaluate();
+    }
+    private void ResourceTotal(int amount)
+    {
+        currentAmount = amount;
         currentAmount = Mathf.Clamp(currentAmount,0,requiredAmount);
         Evaluate();
     }
@@ -131,14 +159,14 @@ public class QuestGoal
 public enum GoalType
 {
     Gathering,
+    GatherNew,
     Interact,
-    Build
+    Build //används inte
 }
 
 public enum InterractableType
 {
     BunnyHole,
     Repair,
-    FindSomeone,
-    annat
+    FindSomeone
 }

@@ -34,29 +34,27 @@ public class QuestGiver : MonoBehaviour
         {
             questHUD.AddQuest(quests[questIndex], this);
             OpenQuestWindow();
-            questProgress = 1; // =1 ska det bli
+            questProgress = 1; // = 1 ska det bli
             exclamationMark.SetActive(false);
+
         }
 
     }
     public void QuestCompletedNotFinished() //om man klarat av alla saker f�r uppdraget, men inte snackat med givaren �n 
     {
         questProgress = 2;
-        Debug.Log(quests[questIndex].goal.finishBeforeTalking);
         if (questIndex >= quests.Length ) 
         {
             return;
         }
         if (quests[questIndex].goal.finishBeforeTalking) //undantaget.. Om man ska klara uppdraget utan att snacka /////////ERROR HÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄR
         {
-            Debug.Log("1");
             TriggerDialogue();
-            Debug.Log("2");
             quests[questIndex].RemoveQuest();
         }
         else
         {
-        questionMark.SetActive(true);
+            questionMark.SetActive(true);
         }
 
     }
@@ -111,6 +109,11 @@ public class QuestGiver : MonoBehaviour
         FindObjectOfType<DialogueManager>().StartDialogue(dialogues[questIndex].dials[questProgress].dialogue);
         
 
+    }
+
+    public void DelayQuestActivation(Quest quest)
+    {
+        StartCoroutine(quest.DelaySomething());
     }
 
 

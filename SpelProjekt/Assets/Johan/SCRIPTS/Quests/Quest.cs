@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Threading;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -21,9 +22,13 @@ public class Quest
     [HideInInspector]
     public bool completed;
 
+    [HideInInspector]
+    public bool justStarted = true;
+
     [Space]
     [Header("QuestGoal")]
     public QuestGoal goal;
+
     public enum RewardType
     {
         Resource,
@@ -35,9 +40,15 @@ public class Quest
 
     public void Init()
     {
+        justStarted = true; //boorde inte behövas
+        
+        
+
         goal.quest = this;
         goal.GoalCompleted += Evaluate;
         goal.Init();
+
+        questGiver.DelayQuestActivation(this); //Behöver starta couroutine i ett skript med *MonoBehaviour*, nu QuestGiver
     }
     public void Evaluate()
     {
@@ -56,10 +67,14 @@ public class Quest
     public void InterractedWith() //När man interragerar med (questgivern), kolla om questet är Complete. Då ska det tas bort och så
     {
 
-        if (completed)
+        if (completed && !justStarted)
         {
 
             RemoveQuest();
+        }
+        else if (completed && justStarted)
+        {
+            questGiver.questProgress = 2;
         }
     }
     public void RemoveQuest()
@@ -99,6 +114,15 @@ public class Quest
         //        break;
         //}
     }
+
+
+    public IEnumerator DelaySomething()
+    {
+        yield return new WaitForEndOfFrame();
+        justStarted = false;
+    }
+
+
 }
 
 
