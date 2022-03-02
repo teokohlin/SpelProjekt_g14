@@ -22,6 +22,8 @@ public class Quest
     [HideInInspector]
     public bool completed;
 
+    public StartQuest questStartScript; 
+
     [HideInInspector]
     public bool justStarted = true;
 
@@ -49,6 +51,14 @@ public class Quest
             goal.GoalCompleted += Evaluate;
             goal.Init();
         }
+
+
+        //Starta eventuellt skript i valfritt objekt
+        if (questStartScript != null)
+        {
+            questStartScript.StartSomething();
+        }
+        
 
 
 
