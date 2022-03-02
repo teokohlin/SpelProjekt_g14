@@ -15,8 +15,12 @@ public class QuestHUDManager : MonoBehaviour
     public TextMeshProUGUI questDescription;
     public Image rewardImage;
     public TextMeshProUGUI rewardAmount;
+
     public TextMeshProUGUI progressText;
     public Image requiredResourceIMG;
+    public TextMeshProUGUI progressText2;
+    public Image requiredResourceIMG2;
+
     public TextMeshProUGUI justRewardText;
     private Quest currentQuest;
     private MusicManager musicManager;
@@ -163,23 +167,9 @@ public class QuestHUDManager : MonoBehaviour
         questTitle.text = quest.title;
         questDescription.text = quest.description;
         rewardImage.sprite = quest.rewardSprite;
-        progressText.text = quest.goal.currentAmount.ToString() +  "/" + quest.goal.requiredAmount.ToString();
-        requiredResourceIMG.sprite = quest.goal.requiredResourceSprite;
         rewardAmount.text = quest.rewardAmount.ToString();
 
-
-        //Om bilden för required resource == none, t.ex. interractable uppdrag, så försvinner bilden
-        if (quest.goal.requiredResourceSprite == null)
-        {
-            requiredResourceIMG.gameObject.SetActive(false);
-        }
-        else
-        {
-            requiredResourceIMG.gameObject.SetActive(true);
-        }
-        
-        
-        //Om man ska få story "reward" så ska det inte synas några rewards
+                //Om man ska få story "reward" så ska det inte synas några rewards
         if (quest.rewardKind == Quest.RewardType.Story) 
         {
             rewardAmount.gameObject.SetActive(false);
@@ -193,6 +183,50 @@ public class QuestHUDManager : MonoBehaviour
             rewardImage.gameObject.SetActive(true);
             justRewardText.gameObject.SetActive(true);            
         }
+
+
+        //PROGRESS o så
+
+        //Första goalet kommer alltid vara denna
+        progressText.text = quest.goals[0].currentAmount.ToString() +  "/" + quest.goals[0].requiredAmount.ToString();
+        requiredResourceIMG.sprite = quest.goals[0].requiredResourceSprite;
+        switch (quest.goals.Length)
+        {
+
+            case 1:
+                progressText2.gameObject.SetActive(false);
+                requiredResourceIMG2.gameObject.SetActive(false);
+                break;
+
+            case 2:
+                progressText2.gameObject.SetActive(true);
+                requiredResourceIMG2.gameObject.SetActive(true);
+                progressText2.text = quest.goals[1].currentAmount.ToString() +  "/" + quest.goals[1].requiredAmount.ToString();
+                requiredResourceIMG2.sprite = quest.goals[1].requiredResourceSprite;
+                break;
+            default:
+                break;
+        }
+
+
+
+
+        //Om bilden för required resource == none, t.ex. interractable uppdrag, så försvinner bilden
+        for (int i = 0; i < quest.goals.Length; i++)
+        {
+            if (quest.goals[i].requiredResourceSprite == null)
+            {
+                requiredResourceIMG.gameObject.SetActive(false);
+            }
+            else
+            {
+                requiredResourceIMG.gameObject.SetActive(true);
+            }
+        }
+
+        
+        
+
 
     }
 }

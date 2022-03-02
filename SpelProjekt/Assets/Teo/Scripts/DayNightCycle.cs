@@ -91,7 +91,6 @@ public class DayNightCycle : MonoBehaviour
         //AudioManager
         float temp = 0;
         temp = time;
-        Debug.Log(temp);
         musicManager.MusicTimeOfDay(temp);
     }
 

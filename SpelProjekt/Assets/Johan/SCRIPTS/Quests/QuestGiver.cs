@@ -47,7 +47,7 @@ public class QuestGiver : MonoBehaviour
         {
             return;
         }
-        if (quests[questIndex].goal.finishBeforeTalking) //undantaget.. Om man ska klara uppdraget utan att snacka /////////ERROR HÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄÄR
+        if (quests[questIndex].finishBeforeTalking) //undantaget.. Om man ska klara uppdraget utan att snacka 
         {
             TriggerDialogue();
             quests[questIndex].RemoveQuest();

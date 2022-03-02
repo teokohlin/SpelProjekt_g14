@@ -18,15 +18,15 @@ public class QuestButton : MonoBehaviour
     {
         questHUD = GetComponentInParent<QuestHUDManager>();
         titleText.text = quest.title;
-        progressText.text = quest.goal.currentAmount.ToString() +  "/" + quest.goal.requiredAmount.ToString();
-        requiredResourceImage.sprite = quest.goal.requiredResourceSprite;
+        progressText.text = quest.goals[0].currentAmount.ToString() +  "/" + quest.goals[0].requiredAmount.ToString();
+        requiredResourceImage.sprite = quest.goals[0].requiredResourceSprite;
     }
     private void Update()
     {
         titleText.text = quest.title;
-        progressText.text = quest.goal.currentAmount.ToString() +  "/" + quest.goal.requiredAmount.ToString();
-        requiredResourceImage.sprite = quest.goal.requiredResourceSprite;
-        if (quest.goal.requiredResourceSprite == null)
+        progressText.text = quest.goals[0].currentAmount.ToString() +  "/" + quest.goals[0].requiredAmount.ToString();
+        requiredResourceImage.sprite = quest.goals[0].requiredResourceSprite;
+        if (quest.goals[0].requiredResourceSprite == null)
         {
             requiredResourceImage.gameObject.SetActive(false);
         }

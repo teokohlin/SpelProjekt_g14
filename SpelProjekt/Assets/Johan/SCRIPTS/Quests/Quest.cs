@@ -27,8 +27,9 @@ public class Quest
 
     [Space]
     [Header("QuestGoal")]
-    public QuestGoal goal;
-
+    public QuestGoal[] goals;
+    [Header("Iklickad om man INTE behöver prata med questgivern för att färdigställa questet")]
+    public bool finishBeforeTalking = false;
     public enum RewardType
     {
         Resource,
@@ -41,22 +42,36 @@ public class Quest
     public void Init()
     {
         justStarted = true; //boorde inte behövas
-        
-        
 
-        goal.quest = this;
-        goal.GoalCompleted += Evaluate;
-        goal.Init();
+        foreach (QuestGoal goal in goals)
+        {
+            goal.quest = this;
+            goal.GoalCompleted += Evaluate;
+            goal.Init();
+        }
+
+
 
         questGiver.DelayQuestActivation(this); //Behöver starta couroutine i ett skript med *MonoBehaviour*, nu QuestGiver
     }
     public void Evaluate()
     {
-
-        if (goal.completed == true)
+        foreach (QuestGoal goal in goals)
         {
-            Complete();
+            if (!goal.completed)
+            {
+                return;
+            }
         }
+
+        Debug.Log("1");
+        Complete();
+
+
+        //if (goal.completed == true)
+        //{
+        //    Complete();
+        //}
 
     }
     public void Complete()
