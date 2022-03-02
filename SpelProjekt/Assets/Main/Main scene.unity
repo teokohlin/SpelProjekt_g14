@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667546, g: 0.48427135, b: 0.5645225, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -643,7 +643,7 @@ Transform:
   - {fileID: 559645281}
   - {fileID: 1732458434}
   m_Father: {fileID: 0}
-  m_RootOrder: 37
+  m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &28169733
 PrefabInstance:
@@ -3921,7 +3921,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 573359449250368681, guid: bca8928b099ba9048983511d5298c20e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 573359449250368681, guid: bca8928b099ba9048983511d5298c20e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -5335,7 +5335,7 @@ Transform:
   - {fileID: 1993640847}
   - {fileID: 546912182}
   m_Father: {fileID: 0}
-  m_RootOrder: 36
+  m_RootOrder: 37
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &277316884
 PrefabInstance:
@@ -5687,7 +5687,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &290954098
 PrefabInstance:
@@ -6372,7 +6372,7 @@ PrefabInstance:
       objectReference: {fileID: 637704060}
     - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6264441420955715518, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
       propertyPath: m_LocalScale.x
@@ -6554,7 +6554,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &342331291
 PrefabInstance:
@@ -6658,7 +6658,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 31
+  m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &349495079 stripped
 Transform:
@@ -7037,7 +7037,7 @@ Transform:
   m_Children:
   - {fileID: 1744477384}
   m_Father: {fileID: 0}
-  m_RootOrder: 29
+  m_RootOrder: 30
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &372770364 stripped
 Transform:
@@ -7346,7 +7346,7 @@ Transform:
   - {fileID: 108936732}
   - {fileID: 593076218}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &415833383
 PrefabInstance:
@@ -8121,11 +8121,6 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5248882302027954324, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
   m_PrefabInstance: {fileID: 1716368063}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &467996920 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6053906140791606053, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-  m_PrefabInstance: {fileID: 1427836512}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &470996954
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8745,75 +8740,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6053906140791606053, guid: 3ce3932043303154babecd6055cf6325, type: 3}
   m_PrefabInstance: {fileID: 2023982857}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &523420969
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1741979792}
-    m_Modifications:
-    - target: {fileID: 1657134515814020017, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657134515814020017, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657134515814020017, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.4663363
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657134515814020017, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.8005783
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657134515814020017, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657134515814020017, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657134515814020017, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657134515814020017, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657134515814020017, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657134515814020017, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1657134515814020017, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2140480460798716171, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_Name
-      value: Question Mark
-      objectReference: {fileID: 0}
-    - target: {fileID: 2140480460798716171, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7479911089939510376, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: bobbingAmount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7479911089939510376, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-      propertyPath: verticalBobFrequency
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
 --- !u!1001 &525268202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9205,11 +9131,6 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6436709750388122129, guid: c05e93b94dee04d4cb7f375559a77fd3, type: 3}
   m_PrefabInstance: {fileID: 538439543}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &544481511 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2140480460798716171, guid: 004c37e02e456674d95a7c4cafe8e36e, type: 3}
-  m_PrefabInstance: {fileID: 523420969}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &544734374
 PrefabInstance:
@@ -9985,7 +9906,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 570285205595940325, guid: e1be5d691d4cee447a463c8aa40338e1, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 570285205595940325, guid: e1be5d691d4cee447a463c8aa40338e1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -11486,7 +11407,7 @@ Transform:
   - {fileID: 1865456090}
   - {fileID: 276386087}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &655363705
 PrefabInstance:
@@ -14980,7 +14901,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1822773336252089556, guid: be9bd5effa6b31d44864dc3106c76bea, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 1822773336252089556, guid: be9bd5effa6b31d44864dc3106c76bea, type: 3}
       propertyPath: m_LocalScale.x
@@ -18048,7 +17969,7 @@ Transform:
   m_Children:
   - {fileID: 1393233884}
   m_Father: {fileID: 0}
-  m_RootOrder: 39
+  m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: -18.194, z: 0}
 --- !u!1001 &999355462
 PrefabInstance:
@@ -18323,7 +18244,7 @@ Transform:
   - {fileID: 877006977}
   - {fileID: 1372402798}
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1004078269
 PrefabInstance:
@@ -18466,7 +18387,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5724834533896303739, guid: 6c24bc5574da1d74797491136596db85, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 5724834533896303739, guid: 6c24bc5574da1d74797491136596db85, type: 3}
       propertyPath: m_LocalPosition.x
@@ -18863,10 +18784,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1741979792}
   - {fileID: 452020108}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1027457060
 PrefabInstance:
@@ -20105,7 +20025,7 @@ Transform:
   - {fileID: 223438334}
   - {fileID: 1581256108}
   m_Father: {fileID: 0}
-  m_RootOrder: 26
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1082921191
 PrefabInstance:
@@ -20772,7 +20692,7 @@ Transform:
   - {fileID: 743775516}
   - {fileID: 1932877044}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1096535517
 PrefabInstance:
@@ -22386,7 +22306,7 @@ Transform:
   - {fileID: 1539569593}
   - {fileID: 1157699594}
   m_Father: {fileID: 0}
-  m_RootOrder: 35
+  m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1197112093
 PrefabInstance:
@@ -23687,7 +23607,7 @@ Transform:
   - {fileID: 1373718570}
   - {fileID: 1998677281}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1249165874
 PrefabInstance:
@@ -24587,6 +24507,270 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1289359901612927832, guid: 85d8014685bab8d4483d31fad71e6321, type: 3}
   m_PrefabInstance: {fileID: 1292207013}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1299285010
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 76.9
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -42.5
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -3357509266312536905, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 527ea402213f7394691f4651512f2883, type: 2}
+    - target: {fileID: 919132149155446097, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_Name
+      value: Boris_model
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 87167f5398491e74697afe3856ed04b0, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+--- !u!1 &1299285011 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+  m_PrefabInstance: {fileID: 1299285010}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1299285012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299285011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exclamationMark: {fileID: 0}
+  questionMark: {fileID: 0}
+  quests:
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Repair Boris home
+    description: ' You made a deal with your new colleague Boris to help him with
+      his home.'
+    rewardSprite: {fileID: 0}
+    rewardAmount: 0
+    rewardKind: 1
+    rewardType: 0
+    completed: 0
+    justStarted: 1
+    goal:
+      goalType: 0
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 40
+      requiredResourceSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
+      gatherType: 0
+      interractableType: 0
+      repairObject: {fileID: 0}
+      findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Knock knock
+    description: Boris have told you to put down the new door in front of the hole.
+    rewardSprite: {fileID: 21300000, guid: 3ee480c741488ff459b2f9fc2b8527ae, type: 3}
+    rewardAmount: 10
+    rewardKind: 0
+    rewardType: 2
+    completed: 0
+    justStarted: 1
+    goal:
+      goalType: 2
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 1
+      requiredResourceSprite: {fileID: 0}
+      gatherType: 0
+      interractableType: 1
+      repairObject: {fileID: 1071860269}
+      findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Knock on wood
+    description: Find Billy and see if he is all right.
+    rewardSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
+    rewardAmount: 10
+    rewardKind: 0
+    rewardType: 0
+    completed: 0
+    justStarted: 1
+    goal:
+      goalType: 2
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 1
+      requiredResourceSprite: {fileID: 21300000, guid: 1a49cd34eb294cb4c8ae1179719b0da3, type: 3}
+      gatherType: 0
+      interractableType: 2
+      repairObject: {fileID: 0}
+      findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
+  questIndex: 0
+  questProgress: 0
+  dialogues:
+  - dials:
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Okay Mackan, I know that I gladly took your workoffer, but I really
+          need a makeover of my own place. You know, the cozy hole in the ground.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: " I don\u2019t know if a hole can be cozy?"
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Pff, Mackan, how would you know? You have just not tried it yet.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: I think 40 wood will do. Talk to me when you have gathered it all.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: "I told you to come back when you\u2019ve gathered it all.\r\n"
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Amazing, you got it all. Thank you Mackan.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: "You\u2019re testing my limits, aren\u2019t you?"
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Just a little. Thanks once again. Please come and see me again.
+  - dials:
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Now, when you have the resources for my door you only need to walk
+          up to the hole and press right click.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Press on the "place door" button.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Oh Mackan. It looks amazing. Thank you friend.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: And you have to admit, it looks cozy now.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Yeah, you are right.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Whenever you want, talk to me again.
+  - dials:
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Terrible news Mackan.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: What happened?
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: "It\u2019s not me but my friend, Billy."
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: His house got destroyed last night.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Could you be able to help him?
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: Sure, where can I find him?
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: He lives upstream from the lake.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Have you talked to Billy yet?
+    - dialogue:
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Was he alright?
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: He is okay but his home got burnt down.
+      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+        sentence: He just wanted me to come and tell you that he is good, despite
+          the circumstances.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Thank you Mackan.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: I gave you some wood as a thank you for the help.
+--- !u!114 &1299285013
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299285011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbbcc5d003b57364cab76232cf88dbc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isQuest: 0
+  exclamationMark: {fileID: 0}
+--- !u!114 &1299285014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299285011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues: []
+  dialogueIndex: 0
+  loop: 0
+--- !u!64 &1299285015
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299285011}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 6307532369581678554, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
 --- !u!1001 &1300110426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25355,7 +25539,7 @@ Transform:
   - {fileID: 724824385}
   - {fileID: 1027457061}
   m_Father: {fileID: 0}
-  m_RootOrder: 25
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1327789829
 PrefabInstance:
@@ -26450,7 +26634,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 34
+  m_RootOrder: 35
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1372402797
 PrefabInstance:
@@ -27438,7 +27622,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 32
+  m_RootOrder: 33
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1421278382
 PrefabInstance:
@@ -27576,71 +27760,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 134812338347263816, guid: ae0cbba73b156e349a3ea1274785c97c, type: 3}
   m_PrefabInstance: {fileID: 1425158831}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &1427836512
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1741979792}
-    m_Modifications:
-    - target: {fileID: 3145711099450244696, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: bobbingAmount
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3145711099450244696, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: verticalBobFrequency
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6053906140791606053, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_Name
-      value: Exclamation_Mark
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_RootOrder
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.03
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 2.4663363
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.8005783
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 3ce3932043303154babecd6055cf6325, type: 3}
 --- !u!1001 &1429081788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -28617,7 +28736,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: m_RootOrder
-      value: 15
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: m_LocalScale.x
@@ -30551,7 +30670,7 @@ Transform:
   m_Children:
   - {fileID: 2093115974}
   m_Father: {fileID: 0}
-  m_RootOrder: 40
+  m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1552106460
 PrefabInstance:
@@ -31091,7 +31210,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: m_RootOrder
-      value: 16
+      value: 17
       objectReference: {fileID: 0}
     - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: m_LocalScale.x
@@ -32260,7 +32379,7 @@ PrefabInstance:
       objectReference: {fileID: 976952999}
     - target: {fileID: 5697063612209721320, guid: 316352e7a9986e64d8bdd5fffda1d593, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 5697063612209721320, guid: 316352e7a9986e64d8bdd5fffda1d593, type: 3}
       propertyPath: m_LocalPosition.x
@@ -32795,77 +32914,8 @@ Transform:
   m_LocalScale: {x: 200, y: 1, z: 200}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1001 &1656472551
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1024307252}
-    m_Modifications:
-    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 76.9
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 1.7436638
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -42.5
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 180
-      objectReference: {fileID: 0}
-    - target: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: -7511558181221131132, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 527ea402213f7394691f4651512f2883, type: 2}
-    - target: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_Name
-      value: BunnyMonster_lp
-      objectReference: {fileID: 0}
-    - target: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-      propertyPath: m_Layer
-      value: 10
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
 --- !u!1001 &1658860366
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34368,7 +34418,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6013640355920696224, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6013640355920696224, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -35122,7 +35172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 7800777412770540081, guid: dd81b66457846a4449d7711bad77d458, type: 3}
       propertyPath: m_LocalScale.x
@@ -35440,212 +35490,8 @@ Transform:
   - {fileID: 1197112094}
   - {fileID: 2105195716}
   m_Father: {fileID: 0}
-  m_RootOrder: 27
+  m_RootOrder: 28
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1741979789 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-  m_PrefabInstance: {fileID: 1656472551}
-  m_PrefabAsset: {fileID: 0}
---- !u!64 &1741979790
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741979789}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 6307532369581678554, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
---- !u!114 &1741979791
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741979789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  dialogues: []
-  dialogueIndex: 0
-  loop: 0
---- !u!4 &1741979792 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 2a93f9188ee9ebe40b99d58eff3e2e25, type: 3}
-  m_PrefabInstance: {fileID: 1656472551}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1741979793
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741979789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bbbcc5d003b57364cab76232cf88dbc3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isQuest: 0
-  exclamationMark: {fileID: 467996920}
---- !u!114 &1741979796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1741979789}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  exclamationMark: {fileID: 467996920}
-  questionMark: {fileID: 544481511}
-  quests:
-  - isActive: 0
-    questGiver: {fileID: 0}
-    title: Repair Boris home
-    description: ' You made a deal with your new colleague Boris to help him with
-      his home.'
-    rewardSprite: {fileID: 0}
-    rewardAmount: 0
-    rewardKind: 1
-    rewardType: 0
-    completed: 0
-    justStarted: 1
-    goal:
-      goalType: 0
-      completed: 0
-      currentAmount: 0
-      requiredAmount: 40
-      requiredResourceSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
-      gatherType: 0
-      interractableType: 0
-      repairObject: {fileID: 0}
-      findSomeoneObject: {fileID: 0}
-      finishBeforeTalking: 0
-  - isActive: 0
-    questGiver: {fileID: 0}
-    title: Knock knock
-    description: Boris have told you to put down the new door in front of the hole.
-    rewardSprite: {fileID: 21300000, guid: 3ee480c741488ff459b2f9fc2b8527ae, type: 3}
-    rewardAmount: 10
-    rewardKind: 0
-    rewardType: 2
-    completed: 0
-    justStarted: 1
-    goal:
-      goalType: 2
-      completed: 0
-      currentAmount: 0
-      requiredAmount: 1
-      requiredResourceSprite: {fileID: 0}
-      gatherType: 0
-      interractableType: 1
-      repairObject: {fileID: 1071860269}
-      findSomeoneObject: {fileID: 0}
-      finishBeforeTalking: 0
-  - isActive: 0
-    questGiver: {fileID: 0}
-    title: Knock on wood
-    description: Find Billy and see if he is all right.
-    rewardSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
-    rewardAmount: 10
-    rewardKind: 0
-    rewardType: 0
-    completed: 0
-    justStarted: 1
-    goal:
-      goalType: 2
-      completed: 0
-      currentAmount: 0
-      requiredAmount: 1
-      requiredResourceSprite: {fileID: 21300000, guid: 1a49cd34eb294cb4c8ae1179719b0da3, type: 3}
-      gatherType: 0
-      interractableType: 2
-      repairObject: {fileID: 0}
-      findSomeoneObject: {fileID: 0}
-      finishBeforeTalking: 0
-  questIndex: 0
-  questProgress: 0
-  dialogues:
-  - dials:
-    - dialogue:
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Okay Mackan, I know that I gladly took your workoffer, but I really
-          need a makeover of my own place. You know, the cozy hole in the ground.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: " I don\u2019t know if a hole can be cozy?"
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Pff, Mackan, how would you know? You have just not tried it yet.
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: I think 40 wood will do. Talk to me when you have gathered it all.
-    - dialogue:
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: "I told you to come back when you\u2019ve gathered it all.\r\n"
-    - dialogue:
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Amazing, you got it all. Thank you Mackan.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: "You\u2019re testing my limits, aren\u2019t you?"
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Just a little. Thanks once again. Please come and see me again.
-  - dials:
-    - dialogue:
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Now, when you have the resources for my door you only need to walk
-          up to the hole and press right click.
-    - dialogue:
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Press on the "place door" button.
-    - dialogue:
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Oh Mackan. It looks amazing. Thank you friend.
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: And you have to admit, it looks cozy now.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: Yeah, you are right.
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Whenever you want, talk to me again.
-  - dials:
-    - dialogue:
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Terrible news Mackan.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: What happened?
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: "It\u2019s not me but my friend, Billy."
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: His house got destroyed last night.
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Could you be able to help him?
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: Sure, where can I find him?
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: He lives upstream from the lake.
-    - dialogue:
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Have you talked to Billy yet?
-    - dialogue:
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Was he alright?
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: He is okay but his home got burnt down.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: He just wanted me to come and tell you that he is good, despite
-          the circumstances.
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Thank you Mackan.
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: I gave you some wood as a thank you for the help.
 --- !u!1001 &1743593025
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36150,7 +35996,7 @@ Transform:
   - {fileID: 740940556}
   - {fileID: 712721813}
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1777177561
 GameObject:
@@ -36724,7 +36570,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1812447094
 PrefabInstance:
@@ -37121,7 +36967,7 @@ Transform:
   - {fileID: 671908531}
   - {fileID: 1882042782}
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1837274591
 PrefabInstance:
@@ -37543,7 +37389,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2438026194695237984, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 2438026194695237984, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38338,7 +38184,7 @@ Transform:
   - {fileID: 427698810}
   - {fileID: 1722648405}
   m_Father: {fileID: 0}
-  m_RootOrder: 30
+  m_RootOrder: 31
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1883384333
 PrefabInstance:
@@ -38753,7 +38599,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1910192201
 PrefabInstance:
@@ -38879,7 +38725,7 @@ Transform:
   - {fileID: 487330087}
   - {fileID: 1789285734}
   m_Father: {fileID: 0}
-  m_RootOrder: 33
+  m_RootOrder: 34
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1920972616
 PrefabInstance:
@@ -41075,7 +40921,7 @@ Transform:
   - {fileID: 1555974165}
   - {fileID: 1679251529}
   m_Father: {fileID: 0}
-  m_RootOrder: 28
+  m_RootOrder: 29
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2039506142
 PrefabInstance:
@@ -41594,7 +41440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7006844946111903084, guid: 56349acd8b4563b448e8286f17a14bd4, type: 3}
       propertyPath: m_RootOrder
-      value: 38
+      value: 39
       objectReference: {fileID: 0}
     - target: {fileID: 7006844946111903084, guid: 56349acd8b4563b448e8286f17a14bd4, type: 3}
       propertyPath: m_LocalPosition.x
