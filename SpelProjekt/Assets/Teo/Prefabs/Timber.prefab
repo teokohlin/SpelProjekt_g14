@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 989950658791821530}
   - component: {fileID: 24603899326334500}
   - component: {fileID: 729584694614893053}
+  - component: {fileID: 1838511842995788586}
   m_Layer: 0
   m_Name: Timber
   m_TagString: Untagged
@@ -111,6 +112,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.8251017, y: 0.7779468, z: 1.9823068}
   m_Center: {x: -0.2069368, y: 0.18335938, z: 0}
+--- !u!95 &1838511842995788586
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1638745738774901007}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: f93cc10b57e5c6d40858db255c048557, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &3660408211905551598
 PrefabInstance:
   m_ObjectHideFlags: 0
