@@ -32,6 +32,7 @@ Transform:
   m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children:
   - {fileID: 7014005355193716849}
+  - {fileID: 692184703558474613}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -102,7 +103,7 @@ MonoBehaviour:
   dropAmount: 4
   dropPrefab: {fileID: 3301212826242974832, guid: 42208716b0533dc40b672e84ebaa8cb0, type: 3}
   spawner: {fileID: 0}
-  stubbe: {fileID: 0}
+  stubbe: {fileID: 4605560154945188803, guid: df900e79fccca614287007a7ae2629aa, type: 3}
 --- !u!136 &4096947203645829284
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -117,6 +118,36 @@ CapsuleCollider:
   m_Height: 0.07437681
   m_Direction: 1
   m_Center: {x: 0.00017430304, y: 0.0007150984, z: 0.035765048}
+--- !u!1 &8722409212357705028
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 692184703558474613}
+  m_Layer: 0
+  m_Name: StubbeSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &692184703558474613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8722409212357705028}
+  m_LocalRotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: 0, y: 0, z: 0.0016}
+  m_LocalScale: {x: 0.01, y: 0.010000002, z: 0.010000002}
+  m_Children: []
+  m_Father: {fileID: 2308287495750886170}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &6143333173574382824
 PrefabInstance:
   m_ObjectHideFlags: 0
