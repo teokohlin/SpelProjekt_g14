@@ -21,7 +21,7 @@ public class Quest
     public dType rewardType;
     [HideInInspector]
     public bool completed;
-
+    [Header("Inte ett måste")]
     public StartQuest questStartScript; 
 
     [HideInInspector]
