@@ -8052,7 +8052,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4247022767420376737, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
   m_PrefabInstance: {fileID: 845947562}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 1181854916}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 698db8eab835cb5489fb5724bbfc0d96, type: 3}
@@ -22374,6 +22374,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 134812338347263816, guid: ae0cbba73b156e349a3ea1274785c97c, type: 3}
   m_PrefabInstance: {fileID: 1179277920}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1181854916 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7836239940920376642, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+  m_PrefabInstance: {fileID: 845947562}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1181854925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1181854916}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  exclamationMark: {fileID: 0}
+  questionMark: {fileID: 0}
+  quests:
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: Gather wood
+    description: Gather man
+    rewardSprite: {fileID: 0}
+    rewardAmount: 0
+    rewardKind: 1
+    rewardType: 0
+    completed: 0
+    justStarted: 0
+    goal:
+      goalType: 0
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 50
+      requiredResourceSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
+      gatherType: 0
+      interractableType: 0
+      repairObject: {fileID: 0}
+      findSomeoneObject: {fileID: 0}
+      finishBeforeTalking: 0
+  questIndex: 0
+  questProgress: 0
+  dialogues:
+  - dials:
+    - dialogue:
+      - picture: {fileID: 0}
+        sentence: Gather wood plz
+    - dialogue:
+      - picture: {fileID: 0}
+        sentence: Gather faster
+    - dialogue:
+      - picture: {fileID: 0}
+        sentence: Nice gathering
 --- !u!1 &1196187035
 GameObject:
   m_ObjectHideFlags: 0
