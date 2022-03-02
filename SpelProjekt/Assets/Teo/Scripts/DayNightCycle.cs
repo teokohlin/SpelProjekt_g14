@@ -90,9 +90,8 @@ public class DayNightCycle : MonoBehaviour
 
         //AudioManager
         float temp = 0;
-        temp = time * 10;
-        temp = Mathf.RoundToInt(temp);
-        //Debug.Log(temp);
+        temp = time;
+        Debug.Log(temp);
         musicManager.MusicTimeOfDay(temp);
     }
 
