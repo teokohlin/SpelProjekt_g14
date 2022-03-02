@@ -9,10 +9,6 @@ public class Interactable_Woodworker : Interactable
 {
     public GameObject MonsterMenu;
     public Button button;
-    public Image ProfilePic;
-    public Sprite Sprite;
-    public TextMeshProUGUI Nametext;
-    public string Name;
     private WoodWorker w;
     private void Start()
     {
@@ -21,7 +17,7 @@ public class Interactable_Woodworker : Interactable
 
     private void Update()
     {
-        if (w.energy <= 0)
+        if (w.Energy <= 0)
         {
             button.enabled = false;
         }
@@ -38,8 +34,6 @@ public class Interactable_Woodworker : Interactable
             base.InteractWith(pc);
             GetComponent<DialogueTrigger>().TriggerDialogue();
         }
-        ProfilePic.sprite = Sprite;
-        Nametext.text = Name;
         MonsterMenu.SetActive(true);
     }
 }

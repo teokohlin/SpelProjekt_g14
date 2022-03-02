@@ -7,18 +7,15 @@ using UnityEngine.UI;
 using System.Linq;
 using UnityEngine.AI;
 
-public class WoodWorker : MonoBehaviour
+public class WoodWorker : Worker
 {
-    public DayNightCycle Dnc;
+    private DayNightCycle Dnc;
     public GameObject WoodStack;
     private Vector3 stackPos; 
     public Transform dropZone;
     public Transform dropPoint;
     public Transform home;
     public List<GameObject> trees;
-    public int MaxEnergy = 3;
-    [HideInInspector]
-    public int energy;
     private int teleports;
     private float speed = 10f;
     private Vector3 treePos;
@@ -28,7 +25,6 @@ public class WoodWorker : MonoBehaviour
     private Vector3 targetDir;
     private int targets;
     private bool drop;
-    private int days;
     private float step;
     private Collider box;
     private NavMeshAgent agent;
@@ -42,7 +38,7 @@ public class WoodWorker : MonoBehaviour
 
     private void OnEnable()
     {
-        energy--;
+        Energy--;
         trees = new List<GameObject>(GameObject.FindGameObjectsWithTag("Tree"));
         SortByDistance();
         GetTreePos();
@@ -127,7 +123,7 @@ public class WoodWorker : MonoBehaviour
     }
     private void RefillEnergy()
     {
-        energy = MaxEnergy;
+        Energy = MaxEnergy;
     }
     void DropStack()
     {

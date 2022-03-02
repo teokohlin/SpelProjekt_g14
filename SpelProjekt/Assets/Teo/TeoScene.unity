@@ -4557,17 +4557,10 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    goal:
-      goalType: 0
-      completed: 0
-      currentAmount: 0
-      requiredAmount: 30
-      requiredResourceSprite: {fileID: 21300000, guid: 78f561b48fc7d4c4cad494d4848687d8, type: 3}
-      gatherType: 1
-      interractableType: 0
-      repairObject: {fileID: 0}
-      findSomeoneObject: {fileID: 0}
-      finishBeforeTalking: 0
+    questStartScript: {fileID: 0}
+    justStarted: 1
+    goals: []
+    finishBeforeTalking: 0
   - isActive: 0
     questGiver: {fileID: 0}
     title: Well, well, well continued
@@ -4578,17 +4571,10 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    goal:
-      goalType: 1
-      completed: 0
-      currentAmount: 0
-      requiredAmount: 1
-      requiredResourceSprite: {fileID: 0}
-      gatherType: 1
-      interractableType: 1
-      repairObject: {fileID: 304022888}
-      findSomeoneObject: {fileID: 0}
-      finishBeforeTalking: 1
+    questStartScript: {fileID: 0}
+    justStarted: 1
+    goals: []
+    finishBeforeTalking: 0
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -4640,9 +4626,8 @@ MonoBehaviour:
   canvas: {fileID: 1004258439}
   repairObject: {fileID: 281922880}
   removeObject: {fileID: 304022888}
-  repairCost: 30
-  resourceType: 1
   questGiver: {fileID: 0}
+  RepairCost: []
 --- !u!1001 &304124258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6151,17 +6136,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1528046138548833462, guid: a38fb7cf3d692cf418fdc564b1d8bab5, type: 3}
   m_PrefabInstance: {fileID: 470996954}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &474905126 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5400773120993374574, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
-  m_PrefabInstance: {fileID: 1716368063}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &476006381 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 486940992383781914, guid: 9f95d3e089a9a3a42af721e7f19edeea, type: 3}
@@ -11361,9 +11335,8 @@ MonoBehaviour:
   canvas: {fileID: 693808293}
   repairObject: {fileID: 1534407639}
   removeObject: {fileID: 893821180}
-  repairCost: 50
-  resourceType: 0
   questGiver: {fileID: 0}
+  RepairCost: []
 --- !u!114 &893821182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11388,17 +11361,10 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    goal:
-      goalType: 0
-      completed: 0
-      currentAmount: 0
-      requiredAmount: 50
-      requiredResourceSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
-      gatherType: 0
-      interractableType: 0
-      repairObject: {fileID: 0}
-      findSomeoneObject: {fileID: 0}
-      finishBeforeTalking: 0
+    questStartScript: {fileID: 0}
+    justStarted: 1
+    goals: []
+    finishBeforeTalking: 0
   - isActive: 0
     questGiver: {fileID: 0}
     title: Repair home build
@@ -11408,17 +11374,10 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    goal:
-      goalType: 1
-      completed: 0
-      currentAmount: 0
-      requiredAmount: 1
-      requiredResourceSprite: {fileID: 0}
-      gatherType: 0
-      interractableType: 1
-      repairObject: {fileID: 893821180}
-      findSomeoneObject: {fileID: 0}
-      finishBeforeTalking: 1
+    questStartScript: {fileID: 0}
+    justStarted: 1
+    goals: []
+    finishBeforeTalking: 0
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -14107,25 +14066,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1289359901612927832, guid: 85d8014685bab8d4483d31fad71e6321, type: 3}
   m_PrefabInstance: {fileID: 1040649119}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1047104871 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3852329372038508803, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
-  m_PrefabInstance: {fileID: 1716368063}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1047104875
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1047104871}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4105b58749385ec44b63c9d07ea61e3f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  image: {fileID: 1613618261}
-  w: {fileID: 8192427314685666941}
 --- !u!1001 &1048314990
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14650,9 +14590,8 @@ MonoBehaviour:
   canvas: {fileID: 1407153206}
   repairObject: {fileID: 476006381}
   removeObject: {fileID: 0}
-  repairCost: 20
-  resourceType: 0
   questGiver: {fileID: 0}
+  RepairCost: []
 --- !u!1 &1075776343
 GameObject:
   m_ObjectHideFlags: 0
@@ -23190,16 +23129,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 547509781169745503, guid: cb166726648d3f346aae617bd2e0c066, type: 3}
   m_PrefabInstance: {fileID: 1611913675}
   m_PrefabAsset: {fileID: 0}
---- !u!224 &1613618261 stripped
-RectTransform:
-  m_CorrespondingSourceObject: {fileID: 5223736300348916185, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
-  m_PrefabInstance: {fileID: 1716368063}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1614734349 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3325313099885858062, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
-  m_PrefabInstance: {fileID: 1716368063}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1619884677
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24292,17 +24221,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1342205025155372477, guid: 549f4beb5226e134a8f75614f99de6b3, type: 3}
   m_PrefabInstance: {fileID: 1684445645}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1687087219 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3325313098419844131, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
-  m_PrefabInstance: {fileID: 1716368063}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1693707519
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24981,7 +24899,7 @@ PrefabInstance:
       objectReference: {fileID: 8192427314685666941}
     - target: {fileID: 3325313099885858062, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3325313100153035707, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_AnchorMax.x
@@ -25013,7 +24931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3657216705539758444, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 3657216705639727441, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_Sprite
@@ -25098,7 +25016,7 @@ PrefabInstance:
     - target: {fileID: 3704569255097400385, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 2143355706}
+      objectReference: {fileID: 0}
     - target: {fileID: 3704569255097400385, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_Colors.m_NormalColor.a
       value: 0
@@ -25233,7 +25151,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4763292056655738469, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4763292056655738469, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_SizeDelta.x
@@ -25430,7 +25348,7 @@ PrefabInstance:
     - target: {fileID: 6480517669540878090, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1614734349}
+      objectReference: {fileID: 0}
     - target: {fileID: 6480517669540878090, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -25450,7 +25368,7 @@ PrefabInstance:
     - target: {fileID: 6599156314262728221, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 1788146161}
+      objectReference: {fileID: 0}
     - target: {fileID: 6599156314262728221, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_Colors.m_NormalColor.a
       value: 0
@@ -25586,7 +25504,7 @@ PrefabInstance:
     - target: {fileID: 7453405421222916646, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1614734349}
+      objectReference: {fileID: 0}
     - target: {fileID: 7453405421222916646, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -25626,7 +25544,7 @@ PrefabInstance:
     - target: {fileID: 7730465399030791952, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_TargetGraphic
       value: 
-      objectReference: {fileID: 474905126}
+      objectReference: {fileID: 0}
     - target: {fileID: 7730465399030791952, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_Colors.m_NormalColor.a
       value: 0
@@ -25721,7 +25639,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8113114092889282255, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8113114092889282255, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_LocalScale.y
@@ -25767,17 +25685,6 @@ PrefabInstance:
     - {fileID: 9145812048258931204, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
     - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
---- !u!114 &1716368064 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 3852329371931629588, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
-  m_PrefabInstance: {fileID: 1716368063}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1719546499
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26551,7 +26458,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
-  exclamationMark: {fileID: 467996920}
 --- !u!114 &1741979796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26577,17 +26483,10 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    goal:
-      goalType: 0
-      completed: 0
-      currentAmount: 0
-      requiredAmount: 20
-      requiredResourceSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
-      gatherType: 0
-      interractableType: 0
-      repairObject: {fileID: 0}
-      findSomeoneObject: {fileID: 0}
-      finishBeforeTalking: 0
+    questStartScript: {fileID: 0}
+    justStarted: 1
+    goals: []
+    finishBeforeTalking: 0
   - isActive: 0
     questGiver: {fileID: 0}
     title: Knock knock
@@ -26597,17 +26496,10 @@ MonoBehaviour:
     rewardKind: 0
     rewardType: 2
     completed: 0
-    goal:
-      goalType: 1
-      completed: 0
-      currentAmount: 0
-      requiredAmount: 1
-      requiredResourceSprite: {fileID: 0}
-      gatherType: 0
-      interractableType: 1
-      repairObject: {fileID: 1071860269}
-      findSomeoneObject: {fileID: 0}
-      finishBeforeTalking: 0
+    questStartScript: {fileID: 0}
+    justStarted: 1
+    goals: []
+    finishBeforeTalking: 0
   - isActive: 0
     questGiver: {fileID: 0}
     title: Knock on wood
@@ -26617,17 +26509,10 @@ MonoBehaviour:
     rewardKind: 0
     rewardType: 0
     completed: 0
-    goal:
-      goalType: 1
-      completed: 0
-      currentAmount: 0
-      requiredAmount: 1
-      requiredResourceSprite: {fileID: 21300000, guid: 1a49cd34eb294cb4c8ae1179719b0da3, type: 3}
-      gatherType: 0
-      interractableType: 2
-      repairObject: {fileID: 0}
-      findSomeoneObject: {fileID: 2881959876577467806}
-      finishBeforeTalking: 0
+    questStartScript: {fileID: 0}
+    justStarted: 1
+    goals: []
+    finishBeforeTalking: 0
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -27281,17 +27166,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 134812338347263816, guid: ae0cbba73b156e349a3ea1274785c97c, type: 3}
   m_PrefabInstance: {fileID: 1785254379}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1788146161 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7827891408543688625, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
-  m_PrefabInstance: {fileID: 1716368063}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1792374302
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30375,17 +30249,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1342205025155372477, guid: 549f4beb5226e134a8f75614f99de6b3, type: 3}
   m_PrefabInstance: {fileID: 726951715}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2014738735 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7159645522376321326, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
-  m_PrefabInstance: {fileID: 1716368063}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2015893987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31219,7 +31082,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 372770364}
-  m_RootOrder: 22
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &2070021917
 Light:
@@ -32257,17 +32120,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
   m_PrefabInstance: {fileID: 2142869403}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2143355706 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1361396695068776014, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
-  m_PrefabInstance: {fileID: 1716368063}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &2145495691
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32342,11 +32194,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1289359901612927832, guid: 85d8014685bab8d4483d31fad71e6321, type: 3}
   m_PrefabInstance: {fileID: 2145495691}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &2881959876577467806 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7836239940920376642, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
-  m_PrefabInstance: {fileID: 5422665489696252124}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3221507022522697508 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7490675963030218744, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
@@ -32370,23 +32217,27 @@ PrefabInstance:
     - target: {fileID: 4247022767420376736, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: button
       value: 
-      objectReference: {fileID: 1716368064}
+      objectReference: {fileID: 5422665489696252125}
     - target: {fileID: 4247022767420376736, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: window
       value: 
-      objectReference: {fileID: 1614734349}
+      objectReference: {fileID: 0}
     - target: {fileID: 4247022767420376736, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: Nametext
       value: 
-      objectReference: {fileID: 2014738735}
+      objectReference: {fileID: 0}
     - target: {fileID: 4247022767420376736, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: ProfilePic
       value: 
-      objectReference: {fileID: 1687087219}
+      objectReference: {fileID: 0}
     - target: {fileID: 4247022767420376736, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: MonsterMenu
       value: 
-      objectReference: {fileID: 1614734349}
+      objectReference: {fileID: 5422665489696252126}
+    - target: {fileID: 4247022767420376737, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: Name
+      value: Billy
+      objectReference: {fileID: 0}
     - target: {fileID: 4247022767420376737, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: home
       value: 
@@ -32395,6 +32246,26 @@ PrefabInstance:
       propertyPath: dropZone
       value: 
       objectReference: {fileID: 1415977014}
+    - target: {fileID: 4247022767420376737, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: Happiness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247022767420376737, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: MaxEnergy
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4247022767420376737, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: ProfilePic
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 5368908669410792612, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: worker
+      value: 
+      objectReference: {fileID: 8192427314685666941}
+    - target: {fileID: 5573229491038586017, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 7490675963030218744, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -32445,6 +32316,22 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+--- !u!114 &5422665489696252125 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8741476668600229728, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+  m_PrefabInstance: {fileID: 5422665489696252124}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &5422665489696252126 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3460388148815077448, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+  m_PrefabInstance: {fileID: 5422665489696252124}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &7081921098957934013
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32507,7 +32394,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4247022767420376737, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
   m_PrefabInstance: {fileID: 5422665489696252124}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2881959876577467806}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 698db8eab835cb5489fb5724bbfc0d96, type: 3}
