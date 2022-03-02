@@ -14,6 +14,7 @@ public class Interactable : MonoBehaviour
 
     public virtual void InteractWith(PlayerController pc)
     {
+
         interractedWith?.Invoke();
 
     }

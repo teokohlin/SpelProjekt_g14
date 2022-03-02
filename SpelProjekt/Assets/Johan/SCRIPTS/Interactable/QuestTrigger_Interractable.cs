@@ -8,7 +8,12 @@ public class QuestTrigger_Interractable : Interactable
 
     public override void InteractWith(PlayerController pc)
     {
-        //base.InteractWith(pc);
+        if (enabled == false)
+        {
+            return;
+        }
+
+        base.InteractWith(pc);
 
         GetComponent<QuestGiver>().TriggerDialogue();
         GetComponent<QuestGiver>().TryStartQuest();

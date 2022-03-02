@@ -17,6 +17,11 @@ public class Bed_Interactable : Interactable
 
     public override void InteractWith(PlayerController pc)
     {
+        if (enabled == false)
+        {
+            return;
+        }
+
         pc.SetLockMovement(true);
         screen.Fade(true);
         StartCoroutine(ChangeDay(pc));

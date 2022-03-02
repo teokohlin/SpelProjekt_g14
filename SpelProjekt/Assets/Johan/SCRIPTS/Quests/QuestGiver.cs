@@ -21,6 +21,10 @@ public class QuestGiver : MonoBehaviour
         player = FindObjectOfType<Player>();
         questHUD = FindObjectOfType<QuestHUDManager>();
     }
+    private void OnEnable()
+    {
+        exclamationMark.SetActive(true);
+    }
 
     public void OpenQuestWindow()
     {

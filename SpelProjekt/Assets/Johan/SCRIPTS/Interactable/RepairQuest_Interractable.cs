@@ -26,6 +26,13 @@ public class RepairQuest_Interractable : Interactable
 
     public override void InteractWith(PlayerController pc)
     {
+        if (enabled == false)
+        {
+            return;
+        }
+
+        base.InteractWith(pc);
+
         if (GetComponent<QuestGiver>() != null) //Ifall man vill att objektet själv ska starta questet
         {
             GetComponent<QuestGiver>().TriggerDialogue();

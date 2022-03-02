@@ -6189,11 +6189,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1545625727323291469, guid: 91bde726f5916f441985cc1a4007db6e, type: 3}
   m_PrefabInstance: {fileID: 302725064}
   m_PrefabAsset: {fileID: 0}
---- !u!4 &303261865 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4247022768410616025, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
-  m_PrefabInstance: {fileID: 845947562}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &304022886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6366,7 +6361,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304022888}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
   m_Name: 
@@ -6384,6 +6379,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals:
     - goalType: 0
@@ -6416,6 +6412,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals:
     - goalType: 2
@@ -6469,7 +6466,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 304022888}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa511a8c726f27a459c53bf3997f5600, type: 3}
   m_Name: 
@@ -6484,6 +6481,18 @@ MonoBehaviour:
     resourceType: 1
   - cost: 20
     resourceType: 0
+--- !u!114 &304022892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304022888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b08b034280c9bf408b2e3271103731e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &304124258
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7886,36 +7895,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10a849b42a8fbbe4c9852a9de8b9d1e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &436708897
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 436708898}
-  m_Layer: 10
-  m_Name: Tomt
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &436708898
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 436708897}
-  m_LocalRotation: {x: -0.2638729, y: -0, z: -0, w: 0.96455747}
-  m_LocalPosition: {x: -0.6, y: -1.141918, z: 6.4377966}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_Children: []
-  m_Father: {fileID: 303261865}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &438286619
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16391,6 +16370,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals:
     - goalType: 0
@@ -16422,6 +16402,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 304022892}
     justStarted: 1
     goals:
     - goalType: 2
@@ -16433,7 +16414,7 @@ MonoBehaviour:
       interractableType: 1
       repairObject: {fileID: 893821180}
       findSomeoneObject: {fileID: 0}
-    finishBeforeTalking: 0
+    finishBeforeTalking: 1
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -17778,6 +17759,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 865499644697335579, guid: 573bb5158ffb70c45bd13adaf5bb31d6, type: 3}
   m_PrefabInstance: {fileID: 954996601}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &955289291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 955289292}
+  m_Layer: 10
+  m_Name: Empty Temporary
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &955289292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 955289291}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 452020108}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &962485465
 GameObject:
   m_ObjectHideFlags: 0
@@ -18438,6 +18449,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals:
     - goalType: 1
@@ -22924,8 +22936,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  exclamationMark: {fileID: 436708897}
-  questionMark: {fileID: 436708897}
+  exclamationMark: {fileID: 955289291}
+  questionMark: {fileID: 955289291}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -22937,6 +22949,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 0
     goals: []
     finishBeforeTalking: 0
@@ -25547,6 +25560,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals:
     - goalType: 0
@@ -25569,6 +25583,7 @@ MonoBehaviour:
     rewardType: 2
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals:
     - goalType: 2
@@ -25591,6 +25606,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 1181854917}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals:
     - goalType: 2
@@ -31668,6 +31684,7 @@ MonoBehaviour:
     rewardType: 2
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals:
     - goalType: 1
@@ -41869,6 +41886,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6053906140791606053, guid: 3ce3932043303154babecd6055cf6325, type: 3}
       propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053906140791606053, guid: 3ce3932043303154babecd6055cf6325, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6053906140791606053, guid: 3ce3932043303154babecd6055cf6325, type: 3}

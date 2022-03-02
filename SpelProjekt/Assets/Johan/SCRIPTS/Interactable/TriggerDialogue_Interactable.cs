@@ -15,6 +15,12 @@ public class TriggerDialogue_Interactable : Interactable
 
     public override void InteractWith(PlayerController pc)
     {
+        if (enabled == false)
+        {
+            return;
+        }
+
+        base.InteractWith(pc);
         dialogueTrigger.TriggerDialogue();
     }
 }

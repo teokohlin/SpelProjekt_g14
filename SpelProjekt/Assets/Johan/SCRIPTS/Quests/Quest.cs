@@ -21,9 +21,9 @@ public class Quest
     public dType rewardType;
     [HideInInspector]
     public bool completed;
-    [Header("Inte ett måste")]
+    [Header("StartQuest-skript som ska startas när questet startas/avklaras")]
     public StartQuest questStartScript; 
-
+    public StartQuest questEndScript;
     [HideInInspector]
     public bool justStarted = true;
 
@@ -101,7 +101,7 @@ public class Quest
             questGiver.questProgress = 2;
         }
     }
-    public void RemoveQuest()
+    public void RemoveQuest() //Totalt completad
     {
         switch (rewardKind)
         {
@@ -114,7 +114,13 @@ public class Quest
             break;
         }
 
+        if (questEndScript != null)
+        {
+            questEndScript.StartSomething();
+        }
+
         Object.FindObjectOfType<QuestHUDManager>().RemoveQuest(this);
+        
     }
 
 

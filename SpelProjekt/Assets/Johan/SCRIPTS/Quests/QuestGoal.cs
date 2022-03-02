@@ -75,10 +75,10 @@ public class QuestGoal
             case GoalType.Interact:
                 switch (interractableType)
                 {
-                    case InterractableType.BunnyHole:
-                        Object.FindObjectOfType<RabbitHole_Interractable>().interractedWith += Interacted;
-                        Object.FindObjectOfType<RabbitHole_Interractable>().isQuest = true;
-                        break;
+                    //case InterractableType.BunnyHole:
+                    //    Object.FindObjectOfType<RabbitHole_Interractable>().interractedWith += Interacted;
+                    //    Object.FindObjectOfType<RabbitHole_Interractable>().isQuest = true;
+                    //    break;
                     case InterractableType.Repair:
                         repairObject.GetComponent<Interactable>().repaired += Repaired;                 //prenumerera på repairobjects "repairfunktion" som inte finns nu, 
                         repairObject.GetComponent<Interactable>().isQuest = true;                       //repairfunktionen på objektet ska kallas på när man klickar på knappen på canvaset

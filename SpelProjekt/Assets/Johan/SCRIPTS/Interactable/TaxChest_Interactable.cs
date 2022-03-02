@@ -40,6 +40,14 @@ public class TaxChest_Interactable : Interactable
 
     public override void InteractWith(PlayerController pc)
     {
+        if (enabled == false)
+        {
+            return;
+        }
+
+
+        base.InteractWith(pc);
+
         trigger.TriggerDialogue();
         taxCanvas.SetActive(true);
         canvasOpen = true;

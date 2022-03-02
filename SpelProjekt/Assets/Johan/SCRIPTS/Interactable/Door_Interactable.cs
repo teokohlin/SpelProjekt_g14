@@ -20,6 +20,11 @@ public class Door_Interactable : Interactable
 
     public override void InteractWith(PlayerController pc)
     {
+        if (enabled == false)
+        {
+            return;
+        }
+
         //base.InteractWith();
 
         //refill energy
