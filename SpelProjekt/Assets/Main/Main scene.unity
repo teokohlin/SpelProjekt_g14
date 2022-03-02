@@ -6218,7 +6218,7 @@ MonoBehaviour:
   - isActive: 0
     questGiver: {fileID: 0}
     title: Well, well, well
-    description: You need to collect 30 stones to be able to repair your old well.
+    description: You need to collect 50 stones to be able to repair your old well.
     rewardSprite: {fileID: 0}
     rewardAmount: 0
     rewardKind: 1
@@ -6229,7 +6229,7 @@ MonoBehaviour:
       goalType: 0
       completed: 0
       currentAmount: 0
-      requiredAmount: 30
+      requiredAmount: 50
       requiredResourceSprite: {fileID: 21300000, guid: 78f561b48fc7d4c4cad494d4848687d8, type: 3}
       gatherType: 1
       interractableType: 0
@@ -6270,7 +6270,7 @@ MonoBehaviour:
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
         sentence: Hmm...
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: 30 stones should be enough.
+        sentence: 50 stones should be enough.
     - dialogue:
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
         sentence: Need to gather some more.
@@ -6308,7 +6308,7 @@ MonoBehaviour:
   canvas: {fileID: 1004258439}
   repairObject: {fileID: 281922880}
   removeObject: {fileID: 304022888}
-  repairCost: 30
+  repairCost: 50
   resourceType: 1
   questGiver: {fileID: 0}
 --- !u!1001 &304124258
@@ -13865,24 +13865,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1342205025155372477, guid: 549f4beb5226e134a8f75614f99de6b3, type: 3}
   m_PrefabInstance: {fileID: 752727408}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &757414044 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7389260014984650294, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
-  m_PrefabInstance: {fileID: 1443553108}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &757414046
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 757414044}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 4.7149277, y: 2.5967903, z: 1.9880834}
-  m_Center: {x: -0.14117813, y: 0.79839516, z: -0.08036494}
 --- !u!1001 &758403995
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16035,7 +16017,7 @@ MonoBehaviour:
   canvas: {fileID: 693808293}
   repairObject: {fileID: 1534407639}
   removeObject: {fileID: 893821180}
-  repairCost: 50
+  repairCost: 100
   resourceType: 0
   questGiver: {fileID: 0}
 --- !u!114 &893821182
@@ -16067,7 +16049,7 @@ MonoBehaviour:
       goalType: 0
       completed: 0
       currentAmount: 0
-      requiredAmount: 50
+      requiredAmount: 100
       requiredResourceSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
       gatherType: 0
       interractableType: 0
@@ -16105,8 +16087,8 @@ MonoBehaviour:
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
         sentence: I really need to do something about it.
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: "30, 40\u2026 No, I think I need 50 wood to be able to repair the
-          whole house."
+        sentence: "30, 40\u2026 No, I think I need 100 wood to be able to repair
+          the whole house."
     - dialogue:
       - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
         sentence: Need to gather some more.
@@ -28104,6 +28086,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1781442691732553598, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 1958461612590061207, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -28336,6 +28322,10 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 4452028212862434853, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4485821431904648442, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -28343,6 +28333,10 @@ PrefabInstance:
     - target: {fileID: 4669572311148732709, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
       value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 4814182686962245214, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 5153391774688881620, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
@@ -28359,6 +28353,10 @@ PrefabInstance:
     - target: {fileID: 5534737229012824430, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 5668476041728715961, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5711613795749896095, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -28386,7 +28384,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6639602323354575187, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
-      value: 23
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 6881786124635860398, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
@@ -28399,6 +28397,10 @@ PrefabInstance:
     - target: {fileID: 7202385159973717296, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7224076882764671368, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 7300508258255271001, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
@@ -28418,7 +28420,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7908387440087794828, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 8282109078471338484, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_Layer
@@ -35523,7 +35525,7 @@ MonoBehaviour:
       goalType: 0
       completed: 0
       currentAmount: 0
-      requiredAmount: 20
+      requiredAmount: 40
       requiredResourceSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
       gatherType: 0
       interractableType: 0
@@ -35585,7 +35587,7 @@ MonoBehaviour:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Pff, Mackan, how would you know? You have just not tried it yet.
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: I think 20 wood will do. Talk to me when you have gathered it all.
+        sentence: I think 40 wood will do. Talk to me when you have gathered it all.
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: "I told you to come back when you\u2019ve gathered it all.\r\n"
@@ -41938,7 +41940,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 372770364}
-  m_RootOrder: 23
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &2070021917
 Light:
