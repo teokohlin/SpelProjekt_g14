@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Bunny_Interactable : Interactable
 {
-    public GameObject exclamationMark;
+    //public GameObject exclamationMark;
 
     public override void InteractWith(PlayerController pc)
     {

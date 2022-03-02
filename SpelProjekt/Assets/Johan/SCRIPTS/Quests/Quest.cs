@@ -64,7 +64,6 @@ public class Quest
             }
         }
 
-        Debug.Log("1");
         Complete();
 
 
