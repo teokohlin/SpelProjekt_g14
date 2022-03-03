@@ -6,11 +6,12 @@ public class QuestGiver : MonoBehaviour
 {
     public GameObject exclamationMark;
     public GameObject questionMark;
+    [SerializeField]
     private Player player;
     [Space]
     
     public Quest[] quests;
-
+    [SerializeField]
     private QuestHUDManager questHUD;
     public int questIndex;
     //public int dialogueIndex;
@@ -24,6 +25,8 @@ public class QuestGiver : MonoBehaviour
     private void OnEnable()
     {
         exclamationMark.SetActive(true);
+        player = FindObjectOfType<Player>();
+        questHUD = FindObjectOfType<QuestHUDManager>();
     }
 
     public void OpenQuestWindow()

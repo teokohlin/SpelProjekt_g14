@@ -15,6 +15,12 @@ public class Bunny_Interactable : Interactable
 
 
         base.InteractWith(pc);
+
+        if (canNotInteract)
+        {
+            return;
+        }
+
         //GetComponent<DialogueTrigger>().TriggerDialogue();
         GetComponent<QuestGiver>().TriggerDialogue();
         GetComponent<QuestGiver>().TryStartQuest();
@@ -22,5 +28,10 @@ public class Bunny_Interactable : Interactable
 
 
 
+    }
+
+    private void Update()
+    {
+        
     }
 }

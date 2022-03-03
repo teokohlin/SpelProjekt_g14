@@ -1405,6 +1405,61 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1289359901612927832, guid: 85d8014685bab8d4483d31fad71e6321, type: 3}
   m_PrefabInstance: {fileID: 62405370}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &67273043 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+  m_PrefabInstance: {fileID: 1506268089}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &67273045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67273043}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0585d3cfcd06e0648bfc8450b5329d18, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isQuest: 0
+  canNotInteract: 0
+  targetPosition: {x: 1, y: 1, z: 1}
+  spawnpoint: {fileID: 0}
+  camera: {fileID: 0}
+  anim: {fileID: 0}
+--- !u!95 &67273046
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67273043}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8f3e7b4b1e83ea941afc96341a56084d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!65 &67273047
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67273043}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 0
+  serializedVersion: 2
+  m_Size: {x: 3.3581, y: 5.211488, z: 0.57526547}
+  m_Center: {x: 1.5518084, y: 0.1, z: 0.43}
 --- !u!1001 &68374840
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4744,6 +4799,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
 --- !u!1 &243220169
 GameObject:
   m_ObjectHideFlags: 0
@@ -5668,10 +5724,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7619985150212842805, guid: 0bacf0332557a1c4bb33bc8015cf8ecb, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 8425038068823365861, guid: 0bacf0332557a1c4bb33bc8015cf8ecb, type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8787803544270921306, guid: 0bacf0332557a1c4bb33bc8015cf8ecb, type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8787803544270921306, guid: 0bacf0332557a1c4bb33bc8015cf8ecb, type: 3}
@@ -5711,9 +5771,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
   targetPosition: {x: 1, y: 1, z: 1}
   spawnpoint: {fileID: 1520870403}
   camera: {fileID: 637704060}
+  anim: {fileID: 0}
 --- !u!65 &276386090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6685,6 +6747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 521536736}
   questionMark: {fileID: 54550347}
+  player: {fileID: 0}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -6742,6 +6805,7 @@ MonoBehaviour:
       repairObject: {fileID: 304022888}
       findSomeoneObject: {fileID: 0}
     finishBeforeTalking: 1
+  questHUD: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -6789,6 +6853,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
   canvas: {fileID: 1004258439}
   repairObject: {fileID: 281922880}
   removeObject: {fileID: 304022888}
@@ -10726,6 +10791,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7130448027130560399, guid: 0bacf0332557a1c4bb33bc8015cf8ecb, type: 3}
   m_PrefabInstance: {fileID: 276386086}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &577096824 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7619985150212842805, guid: 0bacf0332557a1c4bb33bc8015cf8ecb, type: 3}
+  m_PrefabInstance: {fileID: 276386086}
+  m_PrefabAsset: {fileID: 0}
 --- !u!95 &577096825
 Animator:
   serializedVersion: 3
@@ -10734,7 +10804,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577096823}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 8f3e7b4b1e83ea941afc96341a56084d, type: 2}
   m_CullingMode: 0
@@ -10758,9 +10828,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
   targetPosition: {x: 1, y: 1, z: 1}
-  spawnpoint: {fileID: 0}
-  camera: {fileID: 0}
+  spawnpoint: {fileID: 1520870403}
+  camera: {fileID: 637704060}
+  anim: {fileID: 67273046}
 --- !u!65 &577096827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13735,7 +13807,7 @@ RectTransform:
   m_Children:
   - {fileID: 1729736017}
   m_Father: {fileID: 276386087}
-  m_RootOrder: 7
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -15920,7 +15992,7 @@ Transform:
   - {fileID: 655363706}
   - {fileID: 1760003830}
   m_Father: {fileID: 276386087}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &794418385
 PrefabInstance:
@@ -17552,6 +17624,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 1909695357}
   questionMark: {fileID: 1909695357}
+  player: {fileID: 0}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -17572,10 +17645,11 @@ MonoBehaviour:
       requiredAmount: 1
       requiredResourceSprite: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
       gatherType: 0
-      interractableType: 0
+      interractableType: 2
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 1299285011}
     finishBeforeTalking: 1
+  questHUD: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -17983,6 +18057,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
   canvas: {fileID: 693808293}
   repairObject: {fileID: 1534407639}
   removeObject: {fileID: 893821180}
@@ -18006,6 +18081,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 105008035}
   questionMark: {fileID: 817985909}
+  player: {fileID: 0}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -18062,6 +18138,7 @@ MonoBehaviour:
       repairObject: {fileID: 893821180}
       findSomeoneObject: {fileID: 0}
     finishBeforeTalking: 1
+  questHUD: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -20217,6 +20294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 1393233883}
   questionMark: {fileID: 1393233883}
+  player: {fileID: 0}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -20241,6 +20319,7 @@ MonoBehaviour:
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 0}
     finishBeforeTalking: 1
+  questHUD: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -20332,7 +20411,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 995914106}
   m_LocalRotation: {x: -0, y: -0.15810676, z: -0, w: 0.98742205}
-  m_LocalPosition: {x: 17, y: 3.5, z: -40}
+  m_LocalPosition: {x: 4.18, y: 3.5, z: -47.67}
   m_LocalScale: {x: 12, y: 12, z: 12}
   m_Children:
   - {fileID: 1393233884}
@@ -22688,6 +22767,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
   canvas: {fileID: 1407153206}
   repairObject: {fileID: 476006381}
   removeObject: {fileID: 0}
@@ -25174,6 +25254,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 955289291}
   questionMark: {fileID: 955289291}
+  player: {fileID: 0}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -25189,6 +25270,7 @@ MonoBehaviour:
     justStarted: 0
     goals: []
     finishBeforeTalking: 0
+  questHUD: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -28044,6 +28126,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 1160037494}
   questionMark: {fileID: 1109556812}
+  player: {fileID: 0}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -28115,6 +28198,7 @@ MonoBehaviour:
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 1181854916}
     finishBeforeTalking: 0
+  questHUD: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -28200,6 +28284,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
 --- !u!114 &1299285014
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33976,7 +34061,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 276386087}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1502532312
 PrefabInstance:
@@ -34122,6 +34207,71 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 134812338347263816, guid: ae0cbba73b156e349a3ea1274785c97c, type: 3}
   m_PrefabInstance: {fileID: 1502854726}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1506268089
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 577096824}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 95ebf9ef78db59146bab21f195ac4e32, type: 2}
+    - target: {fileID: 919132149155446097, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_Name
+      value: Broken_door_Pivot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: da0641388cf7de44a99c43d3c2ab84f1, type: 3}
 --- !u!108 &1507693816 stripped
 Light:
   m_CorrespondingSourceObject: {fileID: 570285205595940324, guid: e1be5d691d4cee447a463c8aa40338e1, type: 3}
@@ -34506,6 +34656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
 --- !u!1001 &1525155225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -35010,6 +35161,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 2093115973}
   questionMark: {fileID: 2093115973}
+  player: {fileID: 0}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -35034,6 +35186,7 @@ MonoBehaviour:
       repairObject: {fileID: 0}
       findSomeoneObject: {fileID: 0}
     finishBeforeTalking: 1
+  questHUD: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -47618,6 +47771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
 --- !u!1001 &2088514768
 PrefabInstance:
   m_ObjectHideFlags: 0

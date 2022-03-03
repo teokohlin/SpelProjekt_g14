@@ -12,6 +12,7 @@ public class Door_Interactable : Interactable
     public Transform spawnpoint;
     public Transform camera;
     private BlackScreenManager screen;
+    public Animator anim;
 
     private void Start()
     {
@@ -30,8 +31,14 @@ public class Door_Interactable : Interactable
         //refill energy
         //pc.player.RefillEnergy();
         //GetComponent<DialogueTrigger>().TriggerDialogue();
-        
+
         //gm.ChangeScene(targetSceneName, targetPosition);
+
+        //Animation
+        if (anim != null)
+        {
+            anim.SetTrigger("Door_Interractable");
+        }
 
         screen.Fade(true);
         pc.SetLockMovement(true);

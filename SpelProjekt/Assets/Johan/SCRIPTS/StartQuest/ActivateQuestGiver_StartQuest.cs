@@ -8,7 +8,24 @@ public class ActivateQuestGiver_StartQuest : StartQuest
     {
         base.StartSomething();
 
+
+
         GetComponent<QuestGiver>().enabled = true;
         GetComponent<Interactable>().enabled = true;
+
+        if (TryGetComponent(out Interactable interactable))
+        {
+            StopAllCoroutines();
+            StartCoroutine(Wait(interactable));
+
+            //interactable.canNotInteract = false; //Gör så dess "InteractWith" inte gör mer än att
+                                                //invoka unityaction när man interragerar
+        }
+    }
+
+    IEnumerator Wait(Interactable interactable)
+    {
+        yield return new WaitForEndOfFrame();
+        interactable.canNotInteract = false;
     }
 }

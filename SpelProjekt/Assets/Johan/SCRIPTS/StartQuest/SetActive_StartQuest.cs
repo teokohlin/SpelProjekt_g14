@@ -10,5 +10,11 @@ public class SetActive_StartQuest : StartQuest
         base.StartSomething();
 
         gameObject.SetActive(true);
+
+        if (TryGetComponent(out Interactable interactable))
+        {
+            interactable.canNotInteract = true; //Gör så dess "InteractWith" inte gör mer än att
+                                                //invoka unityaction när man interragerar
+        }
     }
 }
