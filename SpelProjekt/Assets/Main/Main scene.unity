@@ -6811,32 +6811,32 @@ MonoBehaviour:
   dialogues:
   - dials:
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Oh, I had nearly forgotten about the well.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Surely it looks like it needs some restoration.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Hmm...
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: 50 stones should be enough.
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Need to gather some more.
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: So, that should be it.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Now I just need to make it like new again.
   - dials:
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Almost done.
     - dialogue:
       - picture: {fileID: 0}
         sentence: Repair the well by pressing right click on the well and then press
           repair.
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Wow, now this is what I call a well.
       - picture: {fileID: 0}
         sentence: 'You can now use the well to refill your waterin can. '
@@ -17078,6 +17078,18 @@ PrefabInstance:
       propertyPath: dropZone
       value: 
       objectReference: {fileID: 1415977014}
+    - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[1].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+    - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[3].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+    - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[7].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
     - target: {fileID: 7490675963030218744, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -17655,22 +17667,49 @@ MonoBehaviour:
   dialogues:
   - dials:
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: "It seems like I\u2019m out of Boris"
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: I should go and gather Boris.
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Hah, I got you now, thief.
     - dialogue:
       - picture: {fileID: 0}
         sentence: 
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: That was exhausting Boris
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: Haha, I wood like some Boris now.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: Boris...
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: I really need some Boris.
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Stop there, you thief.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: "Please, don\u2019t hurt me. I\u2019m just a small innocent creature."
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: "Wait a minute\u2026 You\u2019re that monster that steals from
+          my farm all the time!"
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: "We can talk about this\u2026"
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Heh...
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: "Okay, okay I\u2019m the one borrowing from your fields, but I
+          will return it to you."
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Can I have them back please?
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: I may have already eaten it.
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: ...
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Please, I can do anything for you.
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: ...
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: If you start working for me, then your debt is paid off.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Do I get food for that?
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: ' I can give you some.'
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Amazing, when do I start?
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Today.
+      - picture: {fileID: 0}
+        sentence: "You can now control the monster by right clicking on him and choosing
+          \u201Csow seeds\u201D."
 --- !u!65 &884562819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -18144,39 +18183,43 @@ MonoBehaviour:
   dialogues:
   - dials:
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: What would my parents think if they saw the house now?
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: I really need to do something about it.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: "30, 40\u2026 No, I think I need 100 wood to be able to repair
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: "50, 70\u2026 No, I think I need 100 wood to be able to repair
           the whole house."
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: I also seem to need 50 stones.
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Need to gather some more.
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: "Time to line these planks correctly\u2026"
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: " Getting my tools\u2026"
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: Okay good to go!
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Phew...
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Finally gather it all.
   - dials:
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: The work is almost done.
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: "Time to line these planks correctly\u2026"
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Getting my tools...
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Okay good to go.
     - dialogue:
       - picture: {fileID: 0}
         sentence: Press on the "repair house" button.
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Home sweet home.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: I miss the days when my parents were here.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: "I will make you proud, mamma\u2026 pappa."
       - picture: {fileID: 0}
-        sentence: You now have increased energy.
+        sentence: You have now increased your energy.
 --- !u!64 &893821183
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -20325,21 +20368,21 @@ MonoBehaviour:
   dialogues:
   - dials:
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: "It seems like I\u2019m out of wood."
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: I should go and gather some.
     - dialogue:
       - picture: {fileID: 0}
         sentence: 
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: That was exhausting.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Haha, I wood like some rest now.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: ...
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: I really need some friends.
 --- !u!65 &995914109
 BoxCollider:
@@ -28205,10 +28248,22 @@ MonoBehaviour:
   - dials:
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Alright comrade, I didn't get your name.
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: My name is Magnus Bonne. What is yours?
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: Oh, It's Boris.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: But you know what...
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
+        sentence: I will call you Mackan from here on out.
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Please don't.
+      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Okay Mackan, I know that I gladly took your workoffer, but I really
           need a makeover of my own place. You know, the cozy hole in the ground.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: " I don\u2019t know if a hole can be cozy?"
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: "I don\u2019t know if a hole can be cozy?"
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Pff, Mackan, how would you know? You have just not tried it yet.
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
@@ -28219,7 +28274,7 @@ MonoBehaviour:
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Amazing, you got it all. Thank you Mackan.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: "You\u2019re testing my limits, aren\u2019t you?"
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Just a little. Thanks once again. Please come and see me again.
@@ -28236,7 +28291,7 @@ MonoBehaviour:
         sentence: Oh Mackan. It looks amazing. Thank you friend.
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: And you have to admit, it looks cozy now.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Yeah, you are right.
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Whenever you want, talk to me again.
@@ -28244,7 +28299,7 @@ MonoBehaviour:
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Terrible news Mackan.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: What happened?
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: "It\u2019s not me but my friend, Billy."
@@ -28252,7 +28307,7 @@ MonoBehaviour:
         sentence: His house got destroyed last night.
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Could you be able to help him?
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Sure, where can I find him?
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: He lives upstream from the lake.
@@ -28262,9 +28317,9 @@ MonoBehaviour:
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
         sentence: Was he alright?
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: He is okay but his home got burnt down.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: He just wanted me to come and tell you that he is good, despite
           the circumstances.
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
@@ -35192,9 +35247,9 @@ MonoBehaviour:
   dialogues:
   - dials:
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Okay, time to make this farm going again.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: I should start with planting new grains.
       - picture: {fileID: 0}
         sentence: 'Hint: Hover the cursor on the items in the hotbar.'
@@ -35202,11 +35257,11 @@ MonoBehaviour:
       - picture: {fileID: 0}
         sentence: 
     - dialogue:
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
-        sentence: The hard work did paid off in the end.
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: The hard work did pay off in the end.
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Wait...
-      - picture: {fileID: 21300000, guid: b843528df3c08f74ea4f19deedb481f3, type: 3}
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Some of it is missing.
 --- !u!65 &1549285004
 BoxCollider:
