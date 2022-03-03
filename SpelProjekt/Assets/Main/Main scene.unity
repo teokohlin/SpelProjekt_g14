@@ -16594,7 +16594,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893821180}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: aa511a8c726f27a459c53bf3997f5600, type: 3}
   m_Name: 
@@ -16616,7 +16616,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 893821180}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
   m_Name: 
@@ -16731,6 +16731,18 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -1396570329142337558, guid: 7e6c1b7d0f456914ba3f8331bd37bce4, type: 3}
+--- !u!114 &893821186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893821180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b08b034280c9bf408b2e3271103731e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &897863127
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18775,7 +18787,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
-    questEndScript: {fileID: 0}
+    questEndScript: {fileID: 893821186}
     justStarted: 1
     goals:
     - goalType: 1
@@ -26025,6 +26037,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1465545796902581471, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
       propertyPath: m_Layer
       value: 10
@@ -26336,6 +26352,18 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ca719425f926d264da21f7edd9acb0ad, type: 3}
   m_PrefabInstance: {fileID: 1299285010}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1299285018
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1299285011}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4551d680edc5e4b9fc47db1cfaa971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1300110426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -32624,7 +32652,7 @@ MonoBehaviour:
     rewardType: 2
     completed: 0
     questStartScript: {fileID: 0}
-    questEndScript: {fileID: 0}
+    questEndScript: {fileID: 1299285018}
     justStarted: 1
     goals:
     - goalType: 1
@@ -32669,8 +32697,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.2638769, y: 1, z: 1.2885883}
+  m_Center: {x: -0.13193767, y: 0, z: 0.13004395}
 --- !u!23 &1549285005
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -35470,6 +35498,10 @@ PrefabInstance:
     - target: {fileID: 6053906140791606053, guid: 3ce3932043303154babecd6055cf6325, type: 3}
       propertyPath: m_Name
       value: Exclamation_Mark
+      objectReference: {fileID: 0}
+    - target: {fileID: 6053906140791606053, guid: 3ce3932043303154babecd6055cf6325, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6053906140791606053, guid: 3ce3932043303154babecd6055cf6325, type: 3}
       propertyPath: m_StaticEditorFlags
