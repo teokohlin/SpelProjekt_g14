@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 1704459257907915967}
   - component: {fileID: 3477768352329029749}
   - component: {fileID: 3228053577152132229}
-  - component: {fileID: 4096947203645829284}
+  - component: {fileID: 6695545828145737523}
   m_Layer: 9
   m_Name: Small_Fir_Tree
-  m_TagString: Choppable
+  m_TagString: Tree
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,10 +102,10 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   dropAmount: 4
   dropPrefab: {fileID: 3301212826242974832, guid: 42208716b0533dc40b672e84ebaa8cb0, type: 3}
-  spawner: {fileID: 0}
+  spawner: {fileID: 8722409212357705028}
   stubbe: {fileID: 4605560154945188803, guid: df900e79fccca614287007a7ae2629aa, type: 3}
---- !u!136 &4096947203645829284
-CapsuleCollider:
+--- !u!64 &6695545828145737523
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -114,10 +114,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.037188396
-  m_Height: 0.07437681
-  m_Direction: 1
-  m_Center: {x: 0.00017430304, y: 0.0007150984, z: 0.035765048}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 1081099606295460425, guid: 44b8621b2ed17f049b3e1f381610fed5, type: 3}
 --- !u!1 &8722409212357705028
 GameObject:
   m_ObjectHideFlags: 0
