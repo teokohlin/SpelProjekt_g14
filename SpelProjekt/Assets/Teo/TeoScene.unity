@@ -4558,6 +4558,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals: []
     finishBeforeTalking: 0
@@ -4572,6 +4573,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals: []
     finishBeforeTalking: 0
@@ -11362,6 +11364,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals: []
     finishBeforeTalking: 0
@@ -11375,6 +11378,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals: []
     finishBeforeTalking: 0
@@ -19938,6 +19942,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 4285223569324572261, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 6093004928079660611, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -20465,6 +20473,10 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 1781442691732553598, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
+      propertyPath: m_RootOrder
+      value: 23
+      objectReference: {fileID: 0}
     - target: {fileID: 1958461612590061207, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -20721,9 +20733,13 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 6639602323354575187, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
+      propertyPath: m_RootOrder
+      value: 22
+      objectReference: {fileID: 0}
     - target: {fileID: 6881786124635860398, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
-      value: 19
+      value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 6939532546246155669, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -20733,9 +20749,13 @@ PrefabInstance:
       propertyPath: m_StaticEditorFlags
       value: 4294967295
       objectReference: {fileID: 0}
+    - target: {fileID: 7224076882764671368, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
+      propertyPath: m_RootOrder
+      value: 24
+      objectReference: {fileID: 0}
     - target: {fileID: 7428702478661405531, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
-      value: 20
+      value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 7908387440087794828, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_RootOrder
@@ -26484,6 +26504,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals: []
     finishBeforeTalking: 0
@@ -26497,6 +26518,7 @@ MonoBehaviour:
     rewardType: 2
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals: []
     finishBeforeTalking: 0
@@ -26510,6 +26532,7 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScript: {fileID: 0}
+    questEndScript: {fileID: 0}
     justStarted: 1
     goals: []
     finishBeforeTalking: 0
@@ -31082,7 +31105,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 372770364}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &2070021917
 Light:
@@ -32206,6 +32229,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1024307252}
     m_Modifications:
+    - target: {fileID: 3260328909986572186, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_Color.a
+      value: 0.83137256
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260328909986572186, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_Color.b
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260328909986572186, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_Color.g
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3260328909986572186, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_Color.r
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3460388148815077448, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4247022767420376736, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: Name
       value: Billy
@@ -32313,6 +32356,10 @@ PrefabInstance:
     - target: {fileID: 7836239940920376642, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: m_Name
       value: Beaver
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741476668600229728, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}

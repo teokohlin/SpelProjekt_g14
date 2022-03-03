@@ -28,8 +28,19 @@ public class MonsterMenu : MonoBehaviour
     [Header("Happiness")]
     [SerializeField] 
     private RectTransform HappinessBar;
+    [SerializeField] 
+    private Gradient gradient;
+    [SerializeField] 
+    private Image HappinessImage;
+    [SerializeField] 
+    private Sprite[] sprites;
     private float originalSizeHappiness;
     private int maxH = 10;
+    private Image fill;
+
+    [Header("Buttons")][Tooltip("0 = Work")]
+    [SerializeField] 
+    private Button[] buttons;
     void Start()
     {
         e = worker.Energy;
@@ -39,11 +50,14 @@ public class MonsterMenu : MonoBehaviour
         rectSize = EnergyBar.sizeDelta;
         Picture.sprite = worker.ProfilePic;
         NameText.text = worker.Name;
+        fill = HappinessBar.GetComponent<Image>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        fill.color = gradient.Evaluate(worker.Happiness);
+        
         if (e > worker.Energy)
         {
             EnergyBar.sizeDelta -= new Vector2(originalSizeEnergy / maxE, 0);
@@ -55,6 +69,38 @@ public class MonsterMenu : MonoBehaviour
         {
             EnergyBar.sizeDelta = rectSize;
             e = worker.Energy;
+        }
+        if (worker.Energy <= 0)
+        {
+            buttons[0].enabled = false;
+        }
+        else
+        {
+            buttons[0].enabled = true;
+        }
+
+        switch (worker.Happiness)
+        {
+            case float f when f > 0.6f:
+                ChangeHappinesSprite(0);
+                break;
+            case float f when f < 0.6f:
+                ChangeHappinesSprite(1);
+                break;
+            case float f when f < 0.4f:
+                ChangeHappinesSprite(2);
+                break;
+        }
+    }
+
+    private void ChangeHappinesSprite(int index)
+    {
+        for (int i = 0; i < sprites.Length; i++)
+        {
+            if (i == index)
+            {
+                HappinessImage.sprite = sprites[i];
+            }
         }
     }
 }
