@@ -18059,6 +18059,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1024307252}
     m_Modifications:
+    - target: {fileID: 1921507810610577074, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 452020113}
+    - target: {fileID: 1921507810610577074, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
     - target: {fileID: 4247022767420376736, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: Name
       value: Billy
@@ -18159,8 +18167,21 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8741476668600229728, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 845947563}
+    - target: {fileID: 8741476668600229728, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+--- !u!1 &845947563 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3757170507982199451, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+  m_PrefabInstance: {fileID: 845947562}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &848401268
 PrefabInstance:
   m_ObjectHideFlags: 0

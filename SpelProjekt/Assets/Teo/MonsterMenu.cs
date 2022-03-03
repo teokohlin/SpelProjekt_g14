@@ -41,6 +41,8 @@ public class MonsterMenu : MonoBehaviour
     [Header("Buttons")][Tooltip("0 = Work")]
     [SerializeField] 
     private Button[] buttons;
+
+    private Player player;
     void Start()
     {
         e = worker.Energy;
@@ -51,6 +53,7 @@ public class MonsterMenu : MonoBehaviour
         Picture.sprite = worker.ProfilePic;
         NameText.text = worker.Name;
         fill = HappinessBar.GetComponent<Image>();
+        player = FindObjectOfType<Player>();
     }
 
     // Update is called once per frame
@@ -93,6 +96,15 @@ public class MonsterMenu : MonoBehaviour
         }
     }
 
+    public void AddHappiness()
+    {
+        if (worker.Happiness != 1)
+        {
+            player.AddFood(-15);
+            worker.Happiness = 1;
+            HappinessBar.sizeDelta = rectSize;
+        }
+    }
     private void ChangeHappinesSprite(int index)
     {
         for (int i = 0; i < sprites.Length; i++)

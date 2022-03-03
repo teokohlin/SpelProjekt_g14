@@ -3139,6 +3139,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
 --- !u!1 &243220169
 GameObject:
   m_ObjectHideFlags: 0
@@ -3772,9 +3773,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
   targetPosition: {x: 1, y: 1, z: 1}
   spawnpoint: {fileID: 1520870403}
   camera: {fileID: 637704060}
+  anim: {fileID: 0}
 --- !u!65 &276386090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4547,6 +4550,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 521536736}
   questionMark: {fileID: 0}
+  player: {fileID: 0}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -4577,6 +4581,7 @@ MonoBehaviour:
     justStarted: 1
     goals: []
     finishBeforeTalking: 0
+  questHUD: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -4625,6 +4630,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
   canvas: {fileID: 1004258439}
   repairObject: {fileID: 281922880}
   removeObject: {fileID: 304022888}
@@ -10127,7 +10133,7 @@ Transform:
   - {fileID: 655363706}
   - {fileID: 1760003830}
   m_Father: {fileID: 276386087}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &794418385
 PrefabInstance:
@@ -11334,6 +11340,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
   canvas: {fileID: 693808293}
   repairObject: {fileID: 1534407639}
   removeObject: {fileID: 893821180}
@@ -11353,6 +11360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 105008035}
   questionMark: {fileID: 0}
+  player: {fileID: 0}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -11382,6 +11390,7 @@ MonoBehaviour:
     justStarted: 1
     goals: []
     finishBeforeTalking: 0
+  questHUD: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -12846,7 +12855,7 @@ Transform:
   - {fileID: 234391493}
   - {fileID: 2128744131}
   m_Father: {fileID: 276386087}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &989972500
 PrefabInstance:
@@ -14591,6 +14600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
   canvas: {fileID: 1407153206}
   repairObject: {fileID: 476006381}
   removeObject: {fileID: 0}
@@ -21825,6 +21835,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
 --- !u!1001 &1525155225
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26478,6 +26489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isQuest: 0
+  canNotInteract: 0
 --- !u!114 &1741979796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26492,6 +26504,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 467996920}
   questionMark: {fileID: 0}
+  player: {fileID: 0}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -26536,6 +26549,7 @@ MonoBehaviour:
     justStarted: 1
     goals: []
     finishBeforeTalking: 0
+  questHUD: {fileID: 0}
   questIndex: 0
   questProgress: 0
   dialogues:
@@ -27886,6 +27900,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60d0bfaf5ef531840829c95226f8a3d1, type: 3}
+--- !u!1 &1848790827 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3757170507982199451, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+  m_PrefabInstance: {fileID: 5422665489696252124}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1851681736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31105,7 +31124,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 372770364}
-  m_RootOrder: 23
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &2070021917
 Light:
@@ -32229,6 +32248,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1024307252}
     m_Modifications:
+    - target: {fileID: 1921507810610577074, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8192427314685666941}
+    - target: {fileID: 1921507810610577074, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: set_enabled
+      objectReference: {fileID: 0}
     - target: {fileID: 3260328909986572186, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: m_Color.a
       value: 0.83137256
@@ -32360,6 +32387,14 @@ PrefabInstance:
     - target: {fileID: 8741476668600229728, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: m_Enabled
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8741476668600229728, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1848790827}
+    - target: {fileID: 8741476668600229728, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetActive
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
