@@ -16,6 +16,7 @@ public class QuestButton : MonoBehaviour
     public GameObject panelInPanel;
     public GameObject progressPrefab;
     public List<GameObject> progressObjects = new List<GameObject>();
+    public Sprite completedSprite;
 
     private void Start()
     {
@@ -34,23 +35,50 @@ public class QuestButton : MonoBehaviour
     }
     private void Update()
     {
+        //Quest Title
         titleText.text = quest.title;
 
+        //Every goal
         for (int i = 0; i < progressObjects.Count; i++)
         {
+            //Text
             progressObjects[i].GetComponentInChildren<TextMeshProUGUI>().text =
                 quest.goals[i].currentAmount.ToString() +  "/" + quest.goals[i].requiredAmount.ToString();
-            progressObjects[i].GetComponentInChildren<Image>().sprite =
-                quest.goals[i].requiredResourceSprite;
+
+            if (quest.goals[i].completed)
+            {
+                progressObjects[i].GetComponentInChildren<TextMeshProUGUI>().color = Color.green;
+            }
+
+
+
+            //Images
             if (quest.goals[i].requiredResourceSprite == null)
             {
-                 progressObjects[i].GetComponentInChildren<Image>().gameObject.SetActive(false);
+                if (progressObjects[i].GetComponentInChildren<Image>() != null)
+                {
+                    progressObjects[i].GetComponentInChildren<Image>().gameObject.SetActive(false);
+                }
+
+
+                //if (progressObjects[i].TryGetComponent<Image>(out Image image)) //Behövdes tydligen för det kunde bli error när knappen tas bort mitt i
+                //{
+                //    image.gameObject.SetActive(false);
+                //}
             }
             else
             {
                 progressObjects[i].GetComponentInChildren<Image>().gameObject.SetActive(true);
+                progressObjects[i].GetComponentInChildren<Image>().sprite =
+                quest.goals[i].requiredResourceSprite;
             }
 
+        }
+
+        if (quest.completed)
+        {
+            //GetComponent<Image>().color = Color.green;
+            GetComponent<Image>().sprite = completedSprite;
         }
 
 

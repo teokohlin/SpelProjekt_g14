@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.Events;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -16,6 +17,8 @@ public class DialogueManager : MonoBehaviour
     public float timeBetweenLetters = 0.01f;
     [Space]
     public GameObject hotbarCanvasUI;
+
+    public UnityAction dialogueEnd;
 
     private bool inDialogue = false;
     void Start()
@@ -94,6 +97,8 @@ public class DialogueManager : MonoBehaviour
         StartCoroutine(UnlockMovementDelay()); //titta ner
         hotbarCanvasUI.SetActive(true);
         animator.SetBool("IsOpen", false);
+
+        dialogueEnd?.Invoke();
     }
 
     IEnumerator UnlockMovementDelay() //väntar till slutet av framen för att förhindra att gubben slår

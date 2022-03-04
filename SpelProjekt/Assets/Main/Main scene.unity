@@ -3142,6 +3142,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 3315809273627173844, guid: 0c1358ca95dd93547865ad8b8c0986ef, type: 3}
   m_PrefabInstance: {fileID: 161777052}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &163535284 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5788608478297942155, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
+  m_PrefabInstance: {fileID: 1415073496}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &164457000
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3430,6 +3435,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 4924134057218242034, guid: 1a79ecbfb8b93904a8ab1e4ac3014b55, type: 3}
   m_PrefabInstance: {fileID: 179297691}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &180016139 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 7862441281717673998, guid: 34814d6762d022f4ea45b018e028ac03, type: 3}
+  m_PrefabInstance: {fileID: 1702491815}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &183915170
 PrefabInstance:
@@ -17211,7 +17221,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   exclamationMark: {fileID: 1909695357}
   questionMark: {fileID: 1909695357}
-  player: {fileID: 0}
+  player: {fileID: 1113354263}
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
@@ -17355,7 +17365,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 884562815}
   m_LocalRotation: {x: -0, y: -0.15810676, z: -0, w: 0.98742205}
-  m_LocalPosition: {x: 17, y: 3.5, z: -40}
+  m_LocalPosition: {x: 17.53, y: 3.5, z: -41.62}
   m_LocalScale: {x: 12, y: 12, z: 12}
   m_Children:
   - {fileID: 1909695358}
@@ -25390,6 +25400,30 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1289359901612927832, guid: 85d8014685bab8d4483d31fad71e6321, type: 3}
   m_PrefabInstance: {fileID: 1239133966}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1239358313 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 935618901327118550, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+  m_PrefabInstance: {fileID: 1299929251}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1239358314
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1239358313}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5472b516fa29bc345bb3d4bb6c0ace40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &1241253250
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -27156,6 +27190,79 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b08b034280c9bf408b2e3271103731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1001 &1299929251
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 163535284}
+    m_Modifications:
+    - target: {fileID: 553991972747926124, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 553991972747926124, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 553991972747926124, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 553991972747926124, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 553991972747926124, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 553991972747926124, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 553991972747926124, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 553991972747926124, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 553991972747926124, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 553991972747926124, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 553991972747926124, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 935618901327118550, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 935618901327118550, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_Name
+      value: Door_fixed_pivot (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1420696860139734613, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432387018147411323, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3432387018147411323, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
+      propertyPath: m_Center.z
+      value: 0.24
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af42b364087d44e499666084d1ecdc8d, type: 3}
 --- !u!1001 &1300110426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30590,6 +30697,26 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 4620245035443327972, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4923063563128009906, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
+      propertyPath: anim
+      value: 
+      objectReference: {fileID: 1239358314}
+    - target: {fileID: 4923063563128009906, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
+      propertyPath: camera
+      value: 
+      objectReference: {fileID: 637704060}
+    - target: {fileID: 4923063563128009906, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
+      propertyPath: spawnpoint
+      value: 
+      objectReference: {fileID: 1520870403}
+    - target: {fileID: 4923063563128009906, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1929007257}
     - target: {fileID: 5788608478297942155, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
       propertyPath: m_RootOrder
       value: 9
@@ -30609,6 +30736,10 @@ PrefabInstance:
     - target: {fileID: 6097725272005922155, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
+      objectReference: {fileID: 0}
+    - target: {fileID: 7230008231541466900, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
@@ -33843,7 +33974,8 @@ MonoBehaviour:
   - isActive: 0
     questGiver: {fileID: 0}
     title: Farm first time
-    description: It's time to farm for the first time
+    description: It's time to farm for the first time.                                                
+      Don't forget to water the plants every day!
     rewardSprite: {fileID: 21300000, guid: 3ee480c741488ff459b2f9fc2b8527ae, type: 3}
     rewardAmount: 10
     rewardKind: 0
@@ -37218,6 +37350,14 @@ PrefabInstance:
     - target: {fileID: 4320173211277650343, guid: 34814d6762d022f4ea45b018e028ac03, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4835953502715778461, guid: 34814d6762d022f4ea45b018e028ac03, type: 3}
+      propertyPath: Particle_effect
+      value: 
+      objectReference: {fileID: 180016139}
+    - target: {fileID: 7862441281717673992, guid: 34814d6762d022f4ea45b018e028ac03, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7862441281717673992, guid: 34814d6762d022f4ea45b018e028ac03, type: 3}
       propertyPath: m_StaticEditorFlags

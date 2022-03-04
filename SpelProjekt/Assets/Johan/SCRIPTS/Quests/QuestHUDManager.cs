@@ -112,8 +112,9 @@ public class QuestHUDManager : MonoBehaviour
         windowOpen = true;
 
         questWindow.SetActive(true);
-
         UpdateQuestWindow(currentQuest);
+
+        
 
         //questTitle.text = kvist.title;
         //questDescription.text = kvist.description;
@@ -210,6 +211,55 @@ public class QuestHUDManager : MonoBehaviour
         }
 
 
+
+        //Borde lösa detta som QuestButton, så det inte är ett bestämt antal goal-texts i windowet. Nåväl
+        //För nu kan man ju inta ha mer än 2 goals för det finns bara 2 texter i windowet. Men om man fixar att man kan skrolla så det får plats fler
+        //kan man göra som i QúestButton, att det skapas fler => oändliga möjligheter för goals
+
+
+        //Fungerar ju inte ens, skit
+
+        switch (quest.goals.Length)
+        {
+            case 1:
+                if (quest.goals[0].completed)
+                {
+                    progressText.color = Color.green;
+                }
+                else
+                {
+                    progressText.color = Color.black;
+                }
+                break;
+            case 2:
+                if (quest.goals[0].completed)
+                {
+                    progressText.color = Color.green;
+                }
+                else
+                {
+                    progressText.color = Color.black;
+                }
+                if (quest.goals[1].completed)
+                {
+                    progressText2.color = Color.green;
+                }
+                else
+                {
+                    progressText2.color = Color.black;
+                }
+
+                break;
+            default:
+                break;
+        }
+
+
+        //if (quest.completed)
+        //{
+        //    //Questwindowetbilden, gör den grön typ eller något
+        //    questWindow.GetComponent<Image>().color = new Color(.75f, .95f, .4f);
+        //}
 
 
         //Om bilden för required resource == none, t.ex. interractable uppdrag, så försvinner bilden
