@@ -37,6 +37,7 @@ public class MonsterMenu : MonoBehaviour
     private float originalSizeHappiness;
     private int maxH = 10;
     private Image fill;
+    public int foodCost = 20;
 
     [Header("Buttons")][Tooltip("0 = Work")]
     [SerializeField] 
@@ -100,7 +101,7 @@ public class MonsterMenu : MonoBehaviour
     {
         if (worker.Happiness != 1)
         {
-            player.AddFood(-15);
+            player.AddFood(-foodCost);
             worker.Happiness = 1;
             HappinessBar.sizeDelta = rectSize;
         }
