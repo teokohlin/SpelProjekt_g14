@@ -12089,6 +12089,22 @@ PrefabInstance:
       propertyPath: EmissionModule.rateOverTime.scalar
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383832, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.a
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383832, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383832, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383832, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3753539516221383833, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -12138,9 +12154,25 @@ PrefabInstance:
       value: Seeds particle
       objectReference: {fileID: 0}
     - target: {fileID: 3753539516221383839, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_UseCustomVertexStreams
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383839, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 06287db57bafd7b46b2f421bd0ee7ad5, type: 2}
+    - target: {fileID: 3753539516221383839, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_VertexStreams.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383839, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_VertexStreams.Array.data[1]
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 3753539516221383839, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
+      propertyPath: m_VertexStreams.Array.data[2]
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 71cd253caf8a0d54d8592009de8a88b8, type: 3}
 --- !u!1001 &599687721
