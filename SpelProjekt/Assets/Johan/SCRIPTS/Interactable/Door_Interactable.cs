@@ -13,6 +13,7 @@ public class Door_Interactable : Interactable
     public Transform camera;
     private BlackScreenManager screen;
     public Animator anim;
+    public AudioManager audioManager;
 
     private void Start()
     {
@@ -39,6 +40,7 @@ public class Door_Interactable : Interactable
         {
             anim.SetTrigger("Door_Interractable");
         }
+        audioManager.interactablesAudio.DoorOpenAudio(this.gameObject);
 
         screen.Fade(true);
         pc.SetLockMovement(true);

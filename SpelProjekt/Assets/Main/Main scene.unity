@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1596,6 +1596,7 @@ MonoBehaviour:
   spawnpoint: {fileID: 0}
   camera: {fileID: 0}
   anim: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!95 &67273046
 Animator:
   serializedVersion: 3
@@ -6279,6 +6280,7 @@ MonoBehaviour:
   spawnpoint: {fileID: 1520870403}
   camera: {fileID: 637704060}
   anim: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!65 &276386090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -11506,6 +11508,7 @@ MonoBehaviour:
   spawnpoint: {fileID: 1520870403}
   camera: {fileID: 637704060}
   anim: {fileID: 67273046}
+  audioManager: {fileID: 0}
 --- !u!65 &577096827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27310,6 +27313,7 @@ MonoBehaviour:
   spawnpoint: {fileID: 418885017}
   camera: {fileID: 637704060}
   anim: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!65 &1200482501
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -37306,18 +37310,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 685261912210694812, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
   m_PrefabInstance: {fileID: 1415073496}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1534407640
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1534407639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ab1a119b19aa5498ed8a6b74900074, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1539569592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -41740,7 +41732,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 920744456925169586, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 974569397650701343, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -41969,7 +41961,7 @@ PrefabInstance:
     - target: {fileID: 4636510484941213842, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 78e318132f3960546ad79b34cee1f8c4, type: 3}
+      objectReference: {fileID: 21300000, guid: 710ee58263ba7154d9dca9992f566c31, type: 3}
     - target: {fileID: 4636510484941213842, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_Color.a
       value: 1
@@ -42017,7 +42009,7 @@ PrefabInstance:
     - target: {fileID: 4792350552065201090, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 78e318132f3960546ad79b34cee1f8c4, type: 3}
+      objectReference: {fileID: 21300000, guid: 710ee58263ba7154d9dca9992f566c31, type: 3}
     - target: {fileID: 4792350552065201090, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_Color.b
       value: 1
@@ -42260,7 +42252,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7967819390404200516, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_CellSize.x
-      value: 180
+      value: 210
+      objectReference: {fileID: 0}
+    - target: {fileID: 7967819390404200516, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: m_Padding.m_Top
+      value: 95
       objectReference: {fileID: 0}
     - target: {fileID: 8034028744751001509, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_fontSize
@@ -48196,6 +48192,7 @@ MonoBehaviour:
   spawnpoint: {fileID: 542559765}
   camera: {fileID: 637704060}
   anim: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!65 &1946742970
 BoxCollider:
   m_ObjectHideFlags: 0

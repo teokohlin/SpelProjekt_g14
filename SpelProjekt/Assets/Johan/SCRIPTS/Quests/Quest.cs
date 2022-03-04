@@ -85,6 +85,10 @@ public class Quest
     }
     public void Complete()
     {
+        if (justStarted)
+        {
+            return;
+        }
         completed = true;
         questGiver.QuestCompletedNotFinished();
     }
@@ -149,6 +153,8 @@ public class Quest
     public IEnumerator DelaySomething()
     {
         yield return new WaitForEndOfFrame();
+        yield return new WaitForEndOfFrame();
+        Debug.Log("waited");
         justStarted = false;
     }
 
