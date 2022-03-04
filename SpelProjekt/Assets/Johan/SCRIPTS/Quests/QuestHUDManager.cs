@@ -27,6 +27,7 @@ public class QuestHUDManager : MonoBehaviour
 
     [Space]
     public GameObject questButtonPrefab;
+    public GameObject questButtonFinished;
     private List<GameObject> questButtons = new List<GameObject>();
 
     bool panelOpen;
