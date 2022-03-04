@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427182, b: 0.56452405, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -11508,7 +11508,7 @@ MonoBehaviour:
   spawnpoint: {fileID: 1520870403}
   camera: {fileID: 637704060}
   anim: {fileID: 67273046}
-  audioManager: {fileID: 0}
+  audioManager: {fileID: 1929007257}
 --- !u!65 &577096827
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -34478,6 +34478,10 @@ PrefabInstance:
       propertyPath: spawnpoint
       value: 
       objectReference: {fileID: 1603205867}
+    - target: {fileID: 3240235846742816851, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
+      propertyPath: audioManager
+      value: 
+      objectReference: {fileID: 1929007257}
     - target: {fileID: 3240235846742816877, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295
@@ -45640,6 +45644,10 @@ PrefabInstance:
       propertyPath: playerAudio.playerFootstepEvent
       value: event:/Player Footsteps
       objectReference: {fileID: 0}
+    - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
+      propertyPath: interactablesAudio.doorOpenEvent
+      value: event:/Door Open
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
 --- !u!1001 &1859217108
@@ -47720,6 +47728,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4320173211277650343, guid: 34814d6762d022f4ea45b018e028ac03, type: 3}
   m_PrefabInstance: {fileID: 925658022}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1929007257 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
+  m_PrefabInstance: {fileID: 1858841545}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f27f4e439488974ab4f806cf25d8cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1932877043
 PrefabInstance:
   m_ObjectHideFlags: 0

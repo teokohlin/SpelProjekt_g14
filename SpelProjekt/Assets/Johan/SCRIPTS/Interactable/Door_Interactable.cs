@@ -40,7 +40,10 @@ public class Door_Interactable : Interactable
         {
             anim.SetTrigger("Door_Interractable");
         }
-        audioManager.interactablesAudio.DoorOpenAudio(this.gameObject);
+        if (audioManager != null)
+        {
+            audioManager.interactablesAudio.DoorOpenAudio(this.gameObject);
+        }      
 
         screen.Fade(true);
         pc.SetLockMovement(true);
