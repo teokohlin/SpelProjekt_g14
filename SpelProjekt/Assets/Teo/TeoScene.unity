@@ -3778,6 +3778,7 @@ MonoBehaviour:
   spawnpoint: {fileID: 1520870403}
   camera: {fileID: 637704060}
   anim: {fileID: 0}
+  audioManager: {fileID: 0}
 --- !u!65 &276386090
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -25248,6 +25249,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 540
       objectReference: {fileID: 0}
+    - target: {fileID: 5248882300780099059, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: PauseMenu
+      value: 
+      objectReference: {fileID: 1765529246}
     - target: {fileID: 5505839800540013365, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_fontSize
       value: 36

@@ -6,6 +6,11 @@ using UnityEngine;
 public class UiScript : MonoBehaviour
 {
     [SerializeField] 
+    private GameObject PauseMenu;
+
+    private bool pause;
+    
+    [SerializeField] 
     private RectTransform border;
 
     [SerializeField]
@@ -43,6 +48,20 @@ public class UiScript : MonoBehaviour
 
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            switch (pause)
+            {
+                case true:
+                    PauseMenu.SetActive(false);
+                    pause = false;
+                    break;
+                case false:
+                    PauseMenu.SetActive(true);
+                    pause = true;
+                    break;
+            }
+        }
     //    Vector3 axePos = axe.anchoredPosition;
     //    Vector3 hoePos = hoe.anchoredPosition;
     //    Vector3 pickaxePos = pickaxe.anchoredPosition;
