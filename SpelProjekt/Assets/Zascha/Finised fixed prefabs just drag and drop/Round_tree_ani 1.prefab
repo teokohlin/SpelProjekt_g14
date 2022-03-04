@@ -129,7 +129,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3315809272109962080}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 0}
   m_CullingMode: 0
@@ -352,6 +352,7 @@ MonoBehaviour:
   dropPrefab: {fileID: 3301212826242974832, guid: 42208716b0533dc40b672e84ebaa8cb0, type: 3}
   spawner: {fileID: 6246398517635487805}
   stubbe: {fileID: 8410292260999299737, guid: ddf32502206f5ba419c08504459fda3b, type: 3}
+  animator: {fileID: 8128492757898218660, guid: 5325cd093d6e51748bd75d96a6a25a6f, type: 3}
 --- !u!1 &3315809273981186762
 GameObject:
   m_ObjectHideFlags: 0

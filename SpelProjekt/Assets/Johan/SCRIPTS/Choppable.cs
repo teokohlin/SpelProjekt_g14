@@ -13,7 +13,7 @@ public class Choppable : MonoBehaviour
     public int dropAmount = 1;
     public GameObject dropPrefab;
 
-    private void Start()
+    public virtual void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
     }

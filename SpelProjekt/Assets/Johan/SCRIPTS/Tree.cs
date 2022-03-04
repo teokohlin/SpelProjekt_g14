@@ -10,10 +10,27 @@ public class Tree : Choppable
 {
     public GameObject spawner;
     public GameObject stubbe;
+    public Animator animator;
+
+
+    public override void Start()
+    {
+        base.Start();
+        if (TryGetComponent<Animator>(out Animator anim))
+        {
+            animator = anim;
+        }
+        
+    }
     public override void LoseHealth(int damage)
     {
-        audioManager.interactablesAudio.TreeAudio(this.gameObject);
+        if (animator != null)
+        {
+        animator.SetTrigger("isCutting");
+        }
         base.LoseHealth(damage);
+        audioManager.interactablesAudio.TreeAudio(this.gameObject);
+
     }
 
 

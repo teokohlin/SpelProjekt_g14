@@ -13,13 +13,23 @@ public class QuestButton : MonoBehaviour
     public TextMeshProUGUI titleText;
     public TextMeshProUGUI progressText;
     public Image requiredResourceImage;
+    public GameObject[] progressObjects;
 
     private void Start()
     {
         questHUD = GetComponentInParent<QuestHUDManager>();
         titleText.text = quest.title;
+        for (int i = 0; i < quest.goals.Length; i++)
+        {
+            //progressObjects
+        }
         progressText.text = quest.goals[0].currentAmount.ToString() +  "/" + quest.goals[0].requiredAmount.ToString();
         requiredResourceImage.sprite = quest.goals[0].requiredResourceSprite;
+
+        //if ()
+        //{
+
+        //}
     }
     private void Update()
     {
@@ -34,6 +44,8 @@ public class QuestButton : MonoBehaviour
         {
             requiredResourceImage.gameObject.SetActive(true);
         }
+
+
     }
 
     public void ButtonPressed()
