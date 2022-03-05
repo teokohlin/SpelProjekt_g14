@@ -6,14 +6,19 @@ public class increase_energy : MonoBehaviour
 {
     public Player player;
 
-    public int energy_increase = 10;
-    public void Start()
+    public int energyIncrease = 10;
+    //public void Start()
+    //{
+    //    player = FindObjectOfType<Player>();
+    //}
+    //public void OnEnabled()
+    //{
+    //    player.maxEnergy += energyIncrease;
+    //    Debug.Log("hejsan Johan");
+    //}
+    public void Awake()
     {
-        player = FindObjectOfType<Player>();
+        player.maxEnergy += energyIncrease;
+        Debug.Log("hejsan Johan");
     }
-    public void OnEnabled()
-    {
-        player.maxEnergy += energy_increase;
-    }
-
 }
