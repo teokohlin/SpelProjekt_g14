@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 6181019440791807320}
   - component: {fileID: 7091128700470749949}
   - component: {fileID: 5011460416748002871}
-  m_Layer: 0
+  - component: {fileID: 4632715009114037410}
+  - component: {fileID: 7871311181383050990}
+  - component: {fileID: 4550272574057732779}
+  m_Layer: 10
   m_Name: Blueberry_Bush
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -82,6 +85,46 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &4632715009114037410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813019082906779618}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87eda6cfdb43c1446b61cc954f8ab6da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isQuest: 0
+  canNotInteract: 0
+--- !u!65 &7871311181383050990
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813019082906779618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0167508, y: 1.4166604, z: 2.0963507}
+  m_Center: {x: -0.06898445, y: 0.6857386, z: -0.11321333}
+--- !u!65 &4550272574057732779
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6813019082906779618}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.0167508, y: 1.4166604, z: 2.0963507}
+  m_Center: {x: -0.06898445, y: 0.6857386, z: -0.11321333}
 --- !u!1001 &7708002107688956491
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -140,6 +183,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ef8d6bd77a4e7b841ba6043ebf75d021, type: 3}
       propertyPath: m_Name
       value: Blueberries
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ef8d6bd77a4e7b841ba6043ebf75d021, type: 3}
+      propertyPath: m_Layer
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef8d6bd77a4e7b841ba6043ebf75d021, type: 3}
