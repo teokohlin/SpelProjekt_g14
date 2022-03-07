@@ -168,7 +168,6 @@ public class Quest
     {
         yield return new WaitForEndOfFrame();
         yield return new WaitForEndOfFrame();
-        Debug.Log("waited");
         justStarted = false;
     }
 

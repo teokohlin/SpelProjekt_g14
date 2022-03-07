@@ -19,6 +19,5 @@ public class increase_energy : MonoBehaviour
     public void Awake()
     {
         player.maxEnergy += energyIncrease;
-        Debug.Log("hejsan Johan");
     }
 }
