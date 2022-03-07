@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class pick_blueberry : Interactable
 {
-    public Player player;
+    //public Player player;
     public DayNightCycle dnc;
+    public ParticleSystem ps;
 
     public int berryAmount = 1;
 
@@ -22,9 +23,11 @@ public class pick_blueberry : Interactable
 
         if (berrysActive == true)
         {
-            player.AddResource(berryAmount, dType.food);
+            pc.player.AddResource(berryAmount, dType.food);
             berries.SetActive(false);
             berrysActive = false;
+
+            ps.Play();
         }
 
     }
@@ -34,6 +37,9 @@ public class pick_blueberry : Interactable
     {
         dnc = FindObjectOfType<DayNightCycle>();
         dnc.DayPast += Check_Day;
+
+        ps = GetComponentInChildren<ParticleSystem>();
+
         counter = daysUntilGrowth;
     }
     public void Check_Day()

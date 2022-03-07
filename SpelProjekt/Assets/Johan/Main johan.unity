@@ -1999,11 +1999,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5b9a3ec859f993c4687f4756c20590ac, type: 3}
---- !u!4 &93392426 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-  m_PrefabInstance: {fileID: 686592739}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &97923509
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5659,7 +5654,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1997631327916430382, guid: 0bacf0332557a1c4bb33bc8015cf8ecb, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1997631327916430382, guid: 0bacf0332557a1c4bb33bc8015cf8ecb, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -12846,67 +12841,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1545625727323291469, guid: 91bde726f5916f441985cc1a4007db6e, type: 3}
   m_PrefabInstance: {fileID: 7081921098957934013}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &686592739
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1835466780}
-    m_Modifications:
-    - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_RootOrder
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 11.081515
-      objectReference: {fileID: 0}
-    - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.51451814
-      objectReference: {fileID: 0}
-    - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 20.201801
-      objectReference: {fileID: 0}
-    - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.000000081460335
-      objectReference: {fileID: 0}
-    - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6813019082906779618, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_Name
-      value: Blueberry_Bush
-      objectReference: {fileID: 0}
-    - target: {fileID: 7871311181383050990, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
 --- !u!1001 &687895406
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -30714,7 +30648,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 685261912210694812, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 685261912210694812, guid: 10d54e8c161cb9248a5891d7ab95f0c8, type: 3}
       propertyPath: m_StaticEditorFlags
@@ -40982,8 +40916,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 93392426}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
