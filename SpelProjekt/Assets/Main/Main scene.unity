@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -17495,17 +17495,45 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1415977014}
     - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[0].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: dialogues.Array.data[0].dialogue.Array.data[1].picture
       value: 
       objectReference: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+    - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[2].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
     - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: dialogues.Array.data[0].dialogue.Array.data[3].picture
       value: 
       objectReference: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
     - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[4].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[5].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[6].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: dialogues.Array.data[0].dialogue.Array.data[7].picture
       value: 
       objectReference: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+    - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[8].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 5422665490355019081, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[9].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
     - target: {fileID: 7490675963030218744, guid: eca07b765e78f0d4a87ab6a63c613f3f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -25273,8 +25301,8 @@ MonoBehaviour:
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
-    title: Gather wood
-    description: Gather man
+    title: Knock on wood part 2
+    description: Billy wants you to gather 40 wood for his new dam.
     rewardSprite: {fileID: 0}
     rewardAmount: 0
     rewardKind: 1
@@ -25283,7 +25311,16 @@ MonoBehaviour:
     questStartScript: {fileID: 0}
     questEndScript: {fileID: 0}
     justStarted: 0
-    goals: []
+    goals:
+    - goalType: 0
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 40
+      requiredResourceSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
+      gatherType: 0
+      interractableType: 0
+      repairObject: {fileID: 0}
+      findSomeoneObject: {fileID: 0}
     finishBeforeTalking: 0
   questHUD: {fileID: 0}
   questIndex: 0
@@ -25291,14 +25328,30 @@ MonoBehaviour:
   dialogues:
   - dials:
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: Gather wood plz
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: All well here?
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Yes, but I would like an extra hand.
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: If you could be so kind and get me 40 wood?
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: Gather faster
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: "Thank you for helping me out with the housing.\r"
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: Nice gathering
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Thank you stranger.
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: "Now there\u2019s only one thing left."
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: ' I guess it is the building part.'
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Exactly.
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Do you need some help with that?
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: ' You know, I''m something of a builder myself.'
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: But, I always appreciate some extra eyes.
 --- !u!1 &1183389331 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2349813308718338933, guid: 3fd6d04ebea2c0d44a3892255e0ab4c8, type: 3}
