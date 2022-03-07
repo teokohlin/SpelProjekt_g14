@@ -10,18 +10,20 @@ public class pick_blueberry : Interactable
     public int berryAmount = 1;
 
     public int daysUntilGrowth;
-    private int counter;
+    public int counter;
 
-    public GameObject berrys;
+    public GameObject berries;
     private bool berrysActive = true;
     public override void InteractWith(PlayerController pc)
     {
         //här är allt som ska hända när man högerklickar
 
+        base.InteractWith(pc);
+
         if (berrysActive == true)
         {
             player.AddResource(berryAmount, dType.food);
-            berrys.SetActive(false);
+            berries.SetActive(false);
             berrysActive = false;
         }
 
@@ -40,10 +42,10 @@ public class pick_blueberry : Interactable
         {
             counter--;
         }
-        else if(berrysActive == false && counter == 0) {
+        if(berrysActive == false && counter < 1) {
             berrysActive = true;
             counter = daysUntilGrowth;
-            berrys.SetActive(true);
+            berries.SetActive(true);
         }
     }
 }
