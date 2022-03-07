@@ -26,6 +26,7 @@ public class Quest
     public StartQuest questEndScript;
     [HideInInspector]
     public bool justStarted = true;
+    private bool gatheredButNotComplete = false;
 
     [Space]
     [Header("QuestGoal")]
@@ -44,6 +45,8 @@ public class Quest
     public void Init()
     {
         justStarted = true; //boorde inte behövas
+
+        Object.FindObjectOfType<DialogueManager>().dialogueEnd += OnDialogueEnd;
 
         foreach (QuestGoal goal in goals)
         {
@@ -85,6 +88,7 @@ public class Quest
     }
     public void Complete()
     {
+        gatheredButNotComplete = true;
         if (justStarted)
         {
             return;
@@ -147,6 +151,16 @@ public class Quest
         //    default:
         //        break;
         //}
+    }
+
+
+    public void OnDialogueEnd()
+    {
+        if (gatheredButNotComplete && !completed)
+        {
+            Object.FindObjectOfType<DialogueManager>().dialogueEnd -= OnDialogueEnd;
+            Complete();
+        }
     }
 
 
