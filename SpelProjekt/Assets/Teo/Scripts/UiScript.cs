@@ -1,7 +1,11 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class UiScript : MonoBehaviour
 {
@@ -31,19 +35,37 @@ public class UiScript : MonoBehaviour
     [SerializeField] 
     private RectTransform seeds;
 
+    [Space] 
+    [SerializeField]
+    private int CabbageCount, CarrotCount, WheatCount;
+    [SerializeField] 
+    private int[] seedCountList = new int[3];
+    private int SeedAmount;
+    [Space]
+    [SerializeField] 
+    private TextMeshProUGUI wheatText, carrotText, cabbageText, seedText;
+    [SerializeField] 
+    private Sprite[] seedSprites;
+
     Vector3 axePos, pickaxePos, hoePos, seedsPos, watercanPos, scythePos;
+    
+    public UnityAction<int> SeedIndex;
 
     private void Start()
     {
         FindObjectOfType<ToolSwitch>().ToolSwitchIndex += SwitchTool;
-
         axePos = axe.anchoredPosition;
         pickaxePos = pickaxe.anchoredPosition;
         hoePos = hoe.anchoredPosition;
         seedsPos = seeds.anchoredPosition;
         watercanPos = watercan.anchoredPosition;    
         scythePos = scythe.anchoredPosition;
-
+        seedCountList[0] = CabbageCount;
+        seedCountList[1] = CarrotCount;
+        seedCountList[2] = WheatCount;
+        wheatText.text = WheatCount.ToString();
+        carrotText.text = CarrotCount.ToString();
+        cabbageText.text = CabbageCount.ToString();
     }
 
     void Update()
@@ -103,6 +125,19 @@ public class UiScript : MonoBehaviour
         
     }
 
+    public void ChangeSeed(int num)
+    {
+        for (int i = 0; i < seedSprites.Length; i++)
+        {
+            if (i == num)
+            {
+                seeds.GetComponent<Image>().sprite = seedSprites[i];
+                SeedAmount = seedCountList[i];
+                seedText.text = SeedAmount.ToString();
+                SeedIndex?.Invoke(i);
+            }
+        }
+    }
     void SwitchTool(int num)
     {
         switch (num)

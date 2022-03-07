@@ -7,29 +7,43 @@ public class FieldScript : MonoBehaviour
 {
     
     private DayNightCycle DNC;
-    [Tooltip("Så många dagar man måste vattna")]
-    //public int GrowthTime;
     private int dayCount = 0;
     
     //[SerializeField] 
-    private int fieldState; //0 = ej plogad 1 = plogad 2 = sådd 3= vattnat 4 = växt
+    private int fieldState;
     [SerializeField] 
     private GameObject[] fields;
+
+    public GameObject[] finalStage;
     //[SerializeField] 
     //private ToolSwitch Tool;
     //[SerializeField] 
     private Player p;
+    private UiScript ui;
     public int foodYield = 5;
 
     //private bool farmzone;
     private float timer = 0f;
     void Start()
     {
+        ChangeLastElement(2);
+        ui = FindObjectOfType<UiScript>();
         p = FindObjectOfType<Player>();
         DNC = FindObjectOfType<DayNightCycle>();
         DNC.DayPast += GrowField;
+        ui.SeedIndex += ChangeLastElement;
     }
 
+    public void ChangeLastElement(int index)
+    {
+        for (int i = 0; i < finalStage.Length; i++)
+        {
+            if (i == index && fieldState < 2)
+            {
+                fields[8] = finalStage[i];
+            }
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -53,38 +67,7 @@ public class FieldScript : MonoBehaviour
             ChangeFarmstate();
         }
     }
-    /*private void DayCount(int day)
-    {
-        if (fieldState == 3)
-        {
-            dayCount += day;
-        }
-        if (dayCount == GrowthTime && fieldState == 3)
-        {
-            ChangeFarmstate();
-            dayCount = 0;
-        }
-        else if (fieldState == 3)
-        {
-            fieldState--;
-            ChangeFieldObject(fieldState);
-        }
-    }*/
-
-    /*
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
-        {
-            farmzone = true;
-        }
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        farmzone = false;
-    }
-    */
+    
     public void ChangeFarmstate()
     {
         fieldState++;
@@ -98,31 +81,7 @@ public class FieldScript : MonoBehaviour
         ChangeFieldObject(fieldState);
     }
 
-    /*
-    private bool NeededTool()
-    {
-        if (fieldState == 0 && Tool.currentTool == 2)
-        {
-            return true;
-        }
-        if (fieldState == 1 && Tool.seed)
-        {
-            return true;
-        }
-        if (fieldState == 2 && Tool.currentTool == 3)
-        {
-            return true;
-        }
-        if (fieldState == 4 && Tool.currentTool == 4)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
-    */
+    
     private void ChangeFieldObject(int state)
     {
         
