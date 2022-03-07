@@ -99,6 +99,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isQuest: 0
   canNotInteract: 0
+  player: {fileID: 0}
+  dnc: {fileID: 0}
+  berryAmount: 1
+  daysUntilGrowth: 1
+  berrys: {fileID: 7365983287095725850}
 --- !u!65 &7871311181383050990
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -190,6 +195,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ef8d6bd77a4e7b841ba6043ebf75d021, type: 3}
+--- !u!1 &7365983287095725850 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: ef8d6bd77a4e7b841ba6043ebf75d021, type: 3}
+  m_PrefabInstance: {fileID: 7708002107688956491}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &7886623636226725280 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: ef8d6bd77a4e7b841ba6043ebf75d021, type: 3}

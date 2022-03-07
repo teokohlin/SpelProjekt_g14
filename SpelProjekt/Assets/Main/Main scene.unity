@@ -12853,6 +12853,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1835466780}
     m_Modifications:
+    - target: {fileID: 4632715009114037410, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1113354263}
     - target: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -12900,6 +12904,10 @@ PrefabInstance:
     - target: {fileID: 6813019082906779618, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
       propertyPath: m_Name
       value: Blueberry_Bush
+      objectReference: {fileID: 0}
+    - target: {fileID: 7365983287095725850, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7871311181383050990, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
       propertyPath: m_IsTrigger
