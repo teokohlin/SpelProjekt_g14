@@ -73,6 +73,7 @@ public class QuestGiver : MonoBehaviour
         if (questIndex > quests.Length - 1)
         {
             exclamationMark.SetActive(false);
+            questionMark.SetActive(false);
         }
         else
         {
