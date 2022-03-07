@@ -7,14 +7,18 @@ public class FieldScript : MonoBehaviour
 {
     
     private DayNightCycle DNC;
-    private int dayCount = 0;
     
     //[SerializeField] 
     private int fieldState;
+    private int wheatState, carrotState, CabbageState;
     [SerializeField] 
     private GameObject[] fields;
-
-    public GameObject[] finalStage;
+    [SerializeField] 
+    private GameObject[] wheat;
+    [SerializeField] 
+    private GameObject[] carrots;
+    [SerializeField] 
+    private GameObject[] cabbage;
     //[SerializeField] 
     //private ToolSwitch Tool;
     //[SerializeField] 
@@ -26,24 +30,24 @@ public class FieldScript : MonoBehaviour
     private float timer = 0f;
     void Start()
     {
-        ChangeLastElement(2);
+        //ChangeLastElement(2);
         ui = FindObjectOfType<UiScript>();
         p = FindObjectOfType<Player>();
         DNC = FindObjectOfType<DayNightCycle>();
         DNC.DayPast += GrowField;
-        ui.SeedIndex += ChangeLastElement;
+        //ui.SeedIndex += ChangeLastElement;
     }
 
-    public void ChangeLastElement(int index)
-    {
-        for (int i = 0; i < finalStage.Length; i++)
-        {
-            if (i == index && fieldState < 2)
-            {
-                fields[8] = finalStage[i];
-            }
-        }
-    }
+    // public void ChangeLastElement(int index)
+    // {
+    //     for (int i = 0; i < finalStage.Length; i++)
+    //     {
+    //         if (i == index && fieldState < 2)
+    //         {
+    //             fields[8] = finalStage[i];
+    //         }
+    //     }
+    // }
     // Update is called once per frame
     void Update()
     {
