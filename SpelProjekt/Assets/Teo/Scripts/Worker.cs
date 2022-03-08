@@ -16,7 +16,7 @@ public class Worker : MonoBehaviour
     [Range(0,1)]
     public float Happiness;
 
-    private void Start()
+    private void Awake()
     {
         Energy = MaxEnergy;
     }

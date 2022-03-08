@@ -39,6 +39,7 @@ public class FarmWorker_Worker : Worker
         rangeBox = GetComponent<BoxCollider>();
         agent = GetComponent<NavMeshAgent>();
         animator = GetComponent<Animator>();
+        Debug.Log(Energy);
     }
 
 

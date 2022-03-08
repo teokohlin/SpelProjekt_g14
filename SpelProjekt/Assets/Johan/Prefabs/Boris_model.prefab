@@ -519,7 +519,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4226848636583271179
 Transform:
   m_ObjectHideFlags: 0
@@ -597,8 +597,8 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 0}
+    questStartScripts: []
+    questEndScripts: []
     justStarted: 1
     goals:
     - goalType: 0
@@ -620,8 +620,8 @@ MonoBehaviour:
     rewardKind: 0
     rewardType: 2
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 0}
+    questStartScripts: []
+    questEndScripts: []
     justStarted: 1
     goals:
     - goalType: 2
@@ -643,8 +643,8 @@ MonoBehaviour:
     rewardKind: 0
     rewardType: 0
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 0}
+    questStartScripts: []
+    questEndScripts: []
     justStarted: 1
     goals:
     - goalType: 2

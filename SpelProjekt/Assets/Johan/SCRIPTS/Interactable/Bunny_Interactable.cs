@@ -13,15 +13,15 @@ public class Bunny_Interactable : Interactable
             return;
         }
 
+        if (!isQuest)
+        {
+            MonsterMenu.SetActive(true);
+        }
 
         base.InteractWith(pc);
-
-        if (isQuest)
-        {
-            return;
-        }
         
-        MonsterMenu.SetActive(true);
+        
+        
 
         /*
         if (canNotInteract) //Denna hindrar basically......   Denna == dialogknappen är disabled
