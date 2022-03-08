@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -9145,8 +9145,8 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 0}
+    questStartScripts: []
+    questEndScripts: []
     justStarted: 1
     goals:
     - goalType: 0
@@ -9178,8 +9178,8 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 0}
+    questStartScripts: []
+    questEndScripts: []
     justStarted: 1
     goals:
     - goalType: 2
@@ -26072,6 +26072,7 @@ GameObject:
   - component: {fileID: 884562818}
   - component: {fileID: 884562817}
   - component: {fileID: 884562816}
+  - component: {fileID: 884562823}
   m_Layer: 0
   m_Name: Quest vid porten hitta kanin
   m_TagString: Untagged
@@ -26128,8 +26129,11 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    questStartScript: {fileID: 1299285018}
-    questEndScript: {fileID: 1299285019}
+    questStartScripts:
+    - {fileID: 1299285018}
+    questEndScripts:
+    - {fileID: 1299285019}
+    - {fileID: 884562823}
     justStarted: 1
     goals:
     - goalType: 2
@@ -26271,6 +26275,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: -18.194, z: 0}
+--- !u!114 &884562823
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 884562815}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4042ec714f22c70449ed62ea86135b24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &884678831
 GameObject:
   m_ObjectHideFlags: 0
@@ -26673,8 +26689,8 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 0}
+    questStartScripts: []
+    questEndScripts: []
     justStarted: 1
     goals:
     - goalType: 0
@@ -26705,8 +26721,9 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 304022892}
+    questStartScripts: []
+    questEndScripts:
+    - {fileID: 304022892}
     justStarted: 1
     goals:
     - goalType: 2
@@ -30184,8 +30201,9 @@ MonoBehaviour:
     rewardKind: 0
     rewardType: 0
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 893821186}
+    questStartScripts: []
+    questEndScripts:
+    - {fileID: 893821186}
     justStarted: 1
     goals:
     - goalType: 1
@@ -36764,8 +36782,8 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 0}
+    questStartScripts: []
+    questEndScripts: []
     justStarted: 0
     goals:
     - goalType: 0
@@ -40748,8 +40766,8 @@ MonoBehaviour:
     rewardKind: 1
     rewardType: 0
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 0}
+    questStartScripts: []
+    questEndScripts: []
     justStarted: 1
     goals:
     - goalType: 0
@@ -40771,8 +40789,8 @@ MonoBehaviour:
     rewardKind: 0
     rewardType: 2
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 0}
+    questStartScripts: []
+    questEndScripts: []
     justStarted: 1
     goals:
     - goalType: 2
@@ -40794,8 +40812,8 @@ MonoBehaviour:
     rewardKind: 0
     rewardType: 0
     completed: 0
-    questStartScript: {fileID: 1181854917}
-    questEndScript: {fileID: 0}
+    questStartScripts: []
+    questEndScripts: []
     justStarted: 1
     goals:
     - goalType: 2
@@ -49721,8 +49739,9 @@ MonoBehaviour:
     rewardKind: 0
     rewardType: 2
     completed: 0
-    questStartScript: {fileID: 0}
-    questEndScript: {fileID: 884562816}
+    questStartScripts: []
+    questEndScripts:
+    - {fileID: 884562816}
     justStarted: 1
     goals:
     - goalType: 1

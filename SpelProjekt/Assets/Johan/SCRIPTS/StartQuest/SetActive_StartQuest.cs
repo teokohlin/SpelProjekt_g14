@@ -13,8 +13,8 @@ public class SetActive_StartQuest : StartQuest
 
         if (TryGetComponent(out Interactable interactable))
         {
-            interactable.canNotInteract = true; //Gör så dess "InteractWith" inte gör mer än att
-                                                //invoka unityaction när man interragerar
+            interactable.canNotInteract = true; //GÃ¶r sÃ¥ dess "InteractWith" inte gÃ¶r mer Ã¤n att
+                                                //invoka unityaction nÃ¤r man interragerar
         }
     }
 }

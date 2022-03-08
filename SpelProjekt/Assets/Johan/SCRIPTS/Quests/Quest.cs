@@ -2,6 +2,7 @@ using System.Collections;
 using System.Threading;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 [System.Serializable]
 public class Quest 
@@ -22,8 +23,8 @@ public class Quest
     [HideInInspector]
     public bool completed;
     [Header("StartQuest-skript som ska startas när questet startas/avklaras")]
-    public StartQuest questStartScript; 
-    public StartQuest questEndScript;
+    public StartQuest[] questStartScripts; 
+    public StartQuest[] questEndScripts;
     [HideInInspector]
     public bool justStarted = true;
     private bool gatheredButNotComplete = false;
@@ -57,9 +58,13 @@ public class Quest
 
 
         //Starta eventuellt skript i valfritt objekt
-        if (questStartScript != null)
+        if (questStartScripts != null)
         {
-            questStartScript.StartSomething();
+            foreach (var questStartScript in questStartScripts)
+            {
+                questStartScript.StartSomething();
+            }
+            
         }
         
 
@@ -122,9 +127,12 @@ public class Quest
             break;
         }
 
-        if (questEndScript != null)
+        if (questEndScripts != null)
         {
-            questEndScript.StartSomething();
+            foreach (var questEndScript in questEndScripts)
+            {
+                questEndScript.StartSomething();
+            }
         }
 
         Object.FindObjectOfType<QuestHUDManager>().RemoveQuest(this);

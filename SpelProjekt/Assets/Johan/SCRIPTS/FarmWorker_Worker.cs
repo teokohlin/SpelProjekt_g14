@@ -22,7 +22,7 @@ public class FarmWorker_Worker : Worker
     private bool plantedOnField; //killedwood
     private bool inAnimation = false;
 
-    [Tooltip("Hur många fält som monstret kan så per gång")]
+    [Tooltip("Hur mï¿½nga fï¿½lt som monstret kan sï¿½ per gï¿½ng")]
     public int targets = 10; 
     private Animator animator;
 
@@ -46,19 +46,18 @@ public class FarmWorker_Worker : Worker
     {
         Debug.Log("Enable");
         Energy--;
-        List<GameObject> tempFields = new List<GameObject>(GameObject.FindGameObjectsWithTag("Field")); //Skapa tillfällig
+        List<GameObject> tempFields = new List<GameObject>(GameObject.FindGameObjectsWithTag("Field")); //Skapa tillfï¿½llig
 
-        //Lägg till alla fält som är plöjda i listan
+        //Lï¿½gg till alla fï¿½lt som ï¿½r plï¿½jda i listan
         foreach (var field in tempFields)
         {
-            if (field.GetComponent<FieldScript>().ReturnFieldState() == 1) //Tror det var 1 som är plöjd
+            if (field.GetComponent<FieldScript>().ReturnFieldState() == 1) //Tror det var 1 som ï¿½r plï¿½jd
             {
                 fields.Add(field);
             }
         }
 
         SortByDistance();
-        //GetFieldPos();
         targets = 10;
 
         if (fields.Count <= 0)
@@ -82,7 +81,7 @@ public class FarmWorker_Worker : Worker
         animator.SetFloat("Speed", .5f);
         if (fields.Count > 0 && targets > 0 )
         {
-            agent.SetDestination(currentField.transform.position); //Röra sig mot nuvaranda fältet
+            agent.SetDestination(currentField.transform.position); //Rï¿½ra sig mot nuvaranda fï¿½ltet
             
         }
 
@@ -125,7 +124,7 @@ public class FarmWorker_Worker : Worker
 
     private void GetFieldPos()
     {
-        foreach (GameObject field in fields) //Glömt hur man kommer åt något i en list? xD
+        foreach (GameObject field in fields) //Glï¿½mt hur man kommer ï¿½t nï¿½got i en list? xD
         {
             Vector3 vector = new Vector3(field.transform.position.x, 0.5f, field.transform.position.z);
             currentFieldPos = vector;
