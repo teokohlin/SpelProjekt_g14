@@ -135,6 +135,7 @@ public class UiScript : MonoBehaviour
                 seeds.GetComponent<Image>().sprite = seedSprites[i];
                 SeedAmount = seedCountList[i];
                 seedText.text = SeedAmount.ToString();
+                GetComponent<HoverTipManager>().itemSprites[3] = seedSprites[i];
                 SeedIndex?.Invoke(i);
             }
         }
