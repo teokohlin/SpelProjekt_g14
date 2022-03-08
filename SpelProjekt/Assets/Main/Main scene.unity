@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -36827,8 +36827,8 @@ MonoBehaviour:
     finishBeforeTalking: 0
   - isActive: 0
     questGiver: {fileID: 0}
-    title: repair Beaver home
-    description: repair home
+    title: Damn dam
+    description: Time to repair Billy's home.
     rewardSprite: {fileID: 0}
     rewardAmount: 0
     rewardKind: 1
@@ -36878,6 +36878,25 @@ MonoBehaviour:
         sentence: ' You know, I''m something of a builder myself.'
       - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
         sentence: But, I always appreciate some extra eyes.
+  - dials:
+    - dialogue:
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Have you built something before?
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: I made Boris door, if that counts?
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Of course it does. Now do the same with my home.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Right click on my house and click on "repair house"-button.
+    - dialogue:
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: It looks marvelous.
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: I'm just hoping that the monster hunters will leave my house alone
+          this time.
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: If you need help with chopping down trees, you know where to ask.
 --- !u!1 &1183389331 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 2349813308718338933, guid: 3fd6d04ebea2c0d44a3892255e0ab4c8, type: 3}
