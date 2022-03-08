@@ -66,6 +66,7 @@ public class UiScript : MonoBehaviour
         wheatText.text = WheatCount.ToString();
         carrotText.text = CarrotCount.ToString();
         cabbageText.text = CabbageCount.ToString();
+        ChangeSeed(2);
     }
 
     void Update()
