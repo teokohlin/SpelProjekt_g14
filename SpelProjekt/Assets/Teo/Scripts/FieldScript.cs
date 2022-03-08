@@ -7,75 +7,164 @@ public class FieldScript : MonoBehaviour
 {
     
     private DayNightCycle DNC;
-    
-    //[SerializeField] 
+    private FieldType type;
     private int fieldState;
     private int wheatState, carrotState, CabbageState;
     [SerializeField] 
-    private GameObject[] fields;
+    private List<GameObject> fields = new List<GameObject>();
     [SerializeField] 
     private GameObject[] wheat;
     [SerializeField] 
     private GameObject[] carrots;
     [SerializeField] 
     private GameObject[] cabbage;
-    //[SerializeField] 
-    //private ToolSwitch Tool;
-    //[SerializeField] 
     private Player p;
     private UiScript ui;
-    public int foodYield = 5;
+    public int WheatYield, CarrotYield, CabbageYield;
+    private int foodYield;
 
-    //private bool farmzone;
-    private float timer = 0f;
     void Start()
     {
-        //ChangeLastElement(2);
+        AddFieldList(2);
         ui = FindObjectOfType<UiScript>();
         p = FindObjectOfType<Player>();
         DNC = FindObjectOfType<DayNightCycle>();
         DNC.DayPast += GrowField;
-        //ui.SeedIndex += ChangeLastElement;
+        ui.SeedIndex += AddFieldList;
     }
 
-    // public void ChangeLastElement(int index)
-    // {
-    //     for (int i = 0; i < finalStage.Length; i++)
-    //     {
-    //         if (i == index && fieldState < 2)
-    //         {
-    //             fields[8] = finalStage[i];
-    //         }
-    //     }
-    // }
-    // Update is called once per frame
-    void Update()
+    public void AddFieldList(int index)
     {
-        
-        
-        /*
-        if (farmzone && NeededTool())
+        if (fieldState < 2)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse0))
+            while (fields.Count > 4)
             {
-                p.UseEnergy(1);
-                ChangeFarmstate();
+                fields.Remove(fields[4]);
             }
-        } */
+            switch (index)
+            {
+                case 0:
+                    type = FieldType.Cabbage;
+                    foodYield = CabbageYield;
+                    for (int i = 0; i < cabbage.Length; i++)
+                    {
+                        fields.Add(cabbage[i]);
+                    }
+                    break;
+                case 1:
+                    type = FieldType.Carrot;
+                    foodYield = CarrotYield;
+                    for (int i = 0; i < carrots.Length; i++)
+                    {
+                        fields.Add(carrots[i]);
+                    }
+                    break;
+                case 2:
+                    type = FieldType.Wheat;
+                    foodYield = WheatYield;
+                    for (int i = 0; i < wheat.Length; i++)
+                    {
+                        fields.Add(wheat[i]);
+                    }
+                    break;
+            }
+        }
     }
 
+    public bool CanUseTool(int toolIndex)
+    {
+        switch (toolIndex)
+        {
+            case 2:
+                if (fieldState == 0)
+                {
+                    return true;
+                }
+                break;
+            case 3:
+                if (fieldState == 1)
+                {
+                    return true;
+                }
+                break;
+            case 4:
+                return WaterIndexes();
+            break;
+            case 5:
+                if (fieldState == fields.Count -1)
+                {
+                    return true;
+                }
+                break;
+        }
+
+        return false;
+
+    }
+
+    private bool WaterIndexes()
+    {
+        switch (type)
+        {
+            case FieldType.Cabbage:
+                if (fieldState == 2 || fieldState == 4 || 
+                    fieldState == 6 || fieldState == 8 || fieldState == 10)
+                {
+                    return true;
+                }
+                break;
+            
+            case FieldType.Carrot:
+                if (fieldState == 2 || fieldState == 4 ||
+                    fieldState == 6 || fieldState == 8)
+                {
+                    return true;
+                }
+                break;
+            
+            case FieldType.Wheat:
+                if (fieldState == 2 || fieldState == 4 || 
+                    fieldState == 6)
+                {
+                    return true;
+                }
+                break;
+        }
+
+        return false;
+    }
     private void GrowField()
     {
-        if (fieldState == 3 || fieldState == 5 || fieldState == 7)
+        switch (type)
         {
-            ChangeFarmstate();
+            case FieldType.Cabbage:
+                if (fieldState == 3 || fieldState == 5 || 
+                    fieldState == 7 || fieldState == 9 || fieldState == 11)
+                {
+                    ChangeFarmstate();
+                }
+                break;
+            
+            case FieldType.Carrot:
+                if (fieldState == 3 || fieldState == 5 || fieldState == 7 || fieldState == 9)
+                {
+                    ChangeFarmstate();
+                }
+                break;
+            
+            case FieldType.Wheat:
+                if (fieldState == 3 || fieldState == 5 || fieldState ==7)
+                {
+                    ChangeFarmstate();
+                }
+                break;
         }
     }
     
     public void ChangeFarmstate()
     {
         fieldState++;
-        if (fieldState > 8)
+        if (fieldState > fields.Count - 1)
         {
             p.AddFood(foodYield);
             fieldState = 0;
@@ -89,7 +178,7 @@ public class FieldScript : MonoBehaviour
     private void ChangeFieldObject(int state)
     {
         
-        for (int i = 0; i < fields.Length; i++)
+        for (int i = 0; i < fields.Count; i++)
         {
             if (i == state)
             {
@@ -106,4 +195,11 @@ public class FieldScript : MonoBehaviour
     {
         return fieldState;
     }
+}
+
+public enum FieldType
+{
+    Cabbage,
+    Carrot,
+    Wheat
 }

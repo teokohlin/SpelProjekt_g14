@@ -36,8 +36,9 @@ public class ToolSwitch : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha4))
         {
             ChangeTool(3);
-            /*
             index = 3;
+            /*
+           
             seed = true;
             for (int i = 0; i < tools.Length; i++)
             {

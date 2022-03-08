@@ -152,12 +152,12 @@ public class PlayerController : MonoBehaviour
                         break;
                     case 2: //PLOG
                         akc.SetAnimationTrigger(hoeUseTriggername);
-                        StartCoroutine(FarmTowardsMouse(new int[] {0}));
+                        StartCoroutine(FarmTowardsMouse());
                         break;
                     case 3: //FRÖN
                         Particle_effect_seeds.Play();
                         akc.SetAnimationTrigger(seedsUseTriggername);
-                        StartCoroutine(FarmTowardsMouse(new int[] {1}));
+                        StartCoroutine(FarmTowardsMouse());
                         break;
                     case 4: //VATTENKANNA
                         if (player.waterAmount == 0)
@@ -167,11 +167,11 @@ public class PlayerController : MonoBehaviour
                         Particle_effect_water.Play();
                         player.DepleteWater();
                         akc.SetAnimationTrigger(watercanUseTriggername);
-                        StartCoroutine(FarmTowardsMouse(new int[] {2,4,6}));
+                        StartCoroutine(FarmTowardsMouse());
                         break;
                     case 5: //LIE
                         akc.SetAnimationTrigger(scytheUseTriggername);
-                        StartCoroutine(FarmTowardsMouse(new int[] {8}));
+                        StartCoroutine(FarmTowardsMouse());
                         break;
                     default:
                         break;
@@ -248,7 +248,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator FarmTowardsMouse(int[] neededFarmIndex)
+    IEnumerator FarmTowardsMouse()
     {
         GameObject clickedObject = null;
 
@@ -327,15 +327,14 @@ public class PlayerController : MonoBehaviour
         if (closestChoppable.CompareTag("Field"))
         {
             FieldScript fieldScript = closestChoppable.GetComponent<FieldScript>();
-            foreach (int index in neededFarmIndex)
+            
+            if (fieldScript.CanUseTool(toolScript.index))
             {
-                if (fieldScript.ReturnFieldState() == index)
-                {
-                    player.UseEnergy(1);
-                    yield return new WaitForSeconds(timeTilDamage);
-                    fieldScript.ChangeFarmstate();
-                }
+                player.UseEnergy(1);
+                yield return new WaitForSeconds(timeTilDamage);
+                fieldScript.ChangeFarmstate();
             }
+            
 
 
         }
