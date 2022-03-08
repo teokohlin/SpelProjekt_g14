@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -19746,6 +19746,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1182264327912675745, guid: c026ef4ba4fb60147859a834013f43a4, type: 3}
   m_PrefabInstance: {fileID: 700788587}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &701157644 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6120298811206558591, guid: f6f2f7a7acc84c6479fcfd12ff99ad7d, type: 3}
+  m_PrefabInstance: {fileID: 993438281}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &701277287
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -26056,6 +26061,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6181019440791807320, guid: 7023f6594ff8b0742bf8a553cf1a1ebd, type: 3}
   m_PrefabInstance: {fileID: 877065332}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &879386486 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6420846309145546689, guid: 12c73ae66d8010f4e8c63dd6561dcbfe, type: 3}
+  m_PrefabInstance: {fileID: 809967172}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &884562815
 GameObject:
@@ -33145,6 +33155,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1182264327912675745, guid: c026ef4ba4fb60147859a834013f43a4, type: 3}
   m_PrefabInstance: {fileID: 1066226690}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1066490453 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3360488447606533626, guid: 12c73ae66d8010f4e8c63dd6561dcbfe, type: 3}
+  m_PrefabInstance: {fileID: 809967172}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &1066490457
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1066490453}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6735981335268153333, guid: 7d52ee478ea307b4aaae75b9ff2bc9cf, type: 3}
 --- !u!1001 &1068697829
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -36794,6 +36823,29 @@ MonoBehaviour:
       gatherType: 0
       interractableType: 0
       repairObject: {fileID: 0}
+      findSomeoneObject: {fileID: 0}
+    finishBeforeTalking: 0
+  - isActive: 0
+    questGiver: {fileID: 0}
+    title: repair Beaver home
+    description: repair home
+    rewardSprite: {fileID: 0}
+    rewardAmount: 0
+    rewardKind: 1
+    rewardType: 0
+    completed: 0
+    questStartScripts: []
+    questEndScripts: []
+    justStarted: 0
+    goals:
+    - goalType: 2
+      completed: 0
+      currentAmount: 0
+      requiredAmount: 1
+      requiredResourceSprite: {fileID: 0}
+      gatherType: 0
+      interractableType: 1
+      repairObject: {fileID: 701157644}
       findSomeoneObject: {fileID: 0}
     finishBeforeTalking: 0
   questHUD: {fileID: 0}
@@ -54176,6 +54228,46 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5524891854986311929, guid: ee6d4b94ab581614d8854f5897c5ddce, type: 3}
   m_PrefabInstance: {fileID: 1707521473}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1707559061 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2546254067138412868, guid: f6f2f7a7acc84c6479fcfd12ff99ad7d, type: 3}
+  m_PrefabInstance: {fileID: 993438281}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1707559062
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707559061}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa511a8c726f27a459c53bf3997f5600, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isQuest: 0
+  canNotInteract: 0
+  canvas: {fileID: 1407153206}
+  repairObject: {fileID: 879386486}
+  removeObject: {fileID: 701157644}
+  questGiver: {fileID: 0}
+  RepairCost:
+  - cost: 40
+    resourceType: 0
+--- !u!64 &1707559065
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707559061}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -6735981335268153333, guid: 31d5e72ba7f4cca4ab4d96f278833285, type: 3}
 --- !u!4 &1708020380 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7781824728148417439, guid: e7cd5139dcdffbf4d98d22b8b652f2b7, type: 3}
