@@ -11,9 +11,9 @@ public class Interactable : MonoBehaviour
     [HideInInspector]
     public bool isQuest = false;
     [HideInInspector]
-    public bool canNotInteract = false; //T‰nker att i varje child, att denna kommer efter base.InteractWith
-                                        //S≈ om man interragerar med ett objekt sÂ invokas unityaction, men inget
-                                        //av det i interact ska h‰nda
+    public bool canNotInteract = false; //T√§nker att i varje child, att denna kommer efter base.InteractWith
+                                        //S√Ö om man interragerar med ett objekt s√• invokas unityaction, men inget
+                                        //av det i interact ska h√§nda
     public virtual void InteractWith(PlayerController pc)
     {
 

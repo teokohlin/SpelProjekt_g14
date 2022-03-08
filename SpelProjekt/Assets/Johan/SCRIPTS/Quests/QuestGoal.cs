@@ -148,6 +148,10 @@ public class QuestGoal
         {
             completed = true;
             GoalCompleted?.Invoke();
+            if (findSomeoneObject != null)
+            {
+                findSomeoneObject.GetComponent<Interactable>().isQuest = false;
+            }
         }
 
     }

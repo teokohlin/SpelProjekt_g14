@@ -15,20 +15,23 @@ public class Bunny_Interactable : Interactable
 
 
         base.InteractWith(pc);
-        MonsterMenu.SetActive(true);
 
-
-        if (canNotInteract) //Denna hindrar basically......   Denna == dialogknappen är disabled
+        if (isQuest)
         {
             return;
         }
+        
+        MonsterMenu.SetActive(true);
 
+        /*
+        if (canNotInteract) //Denna hindrar basically......   Denna == dialogknappen Ã¤r disabled
+        {
+            return;
+        }
+        */
         //GetComponent<DialogueTrigger>().TriggerDialogue();
         
-        //Lägga detta under en funktion som kallas på av knapp
-        GetComponent<QuestGiver>().TriggerDialogue();
-        GetComponent<QuestGiver>().TryStartQuest();
-        GetComponent<QuestGiver>().InterractedWith();
+
 
 
 
@@ -38,4 +41,14 @@ public class Bunny_Interactable : Interactable
     {
         
     }
+
+
+    public void DialogueButtonPressed()
+    {
+        //LÃ¤gga detta under en funktion som kallas pÃ¥ av knapp
+        GetComponent<QuestGiver>().TriggerDialogue();
+        GetComponent<QuestGiver>().TryStartQuest();
+        GetComponent<QuestGiver>().InterractedWith();
+    }
+    
 }
