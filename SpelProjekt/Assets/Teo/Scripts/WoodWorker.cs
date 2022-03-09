@@ -61,12 +61,10 @@ public class WoodWorker : Worker
         //Chop one tree and move on to the next
         if (box.bounds.Contains(treePos) && targets > 0)
         {
-            step += Time.deltaTime;
-            if (!killedWood && step > 0.15f)
-            {
-                animator.SetTrigger("ChoppingWood");
+            animator.SetTrigger("ChoppingWood");
+            if (!killedWood)
+            {            
                 ChopWood();
-                step = 0;
             }
             SortByDistance();
             GetTreePos();
@@ -154,7 +152,7 @@ public class WoodWorker : Worker
             break;
         }
     }
-
+    
     void ChopWood()
     {
         foreach (GameObject tree in trees)
