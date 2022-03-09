@@ -27,4 +27,12 @@ public class Interactable_Woodworker : Interactable
         base.InteractWith(pc);
 
     }
+    
+    public void DialogueButtonPressed()
+    {
+        //Lägga detta under en funktion som kallas på av knapp
+        GetComponent<QuestGiver>().TriggerDialogue();
+        GetComponent<QuestGiver>().TryStartQuest();
+        GetComponent<QuestGiver>().InterractedWith();
+    }
 }
