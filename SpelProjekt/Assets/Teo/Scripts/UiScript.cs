@@ -9,10 +9,17 @@ using UnityEngine.UI;
 
 public class UiScript : MonoBehaviour
 {
+    [Header("PauseMenu")]
     [SerializeField] 
     private GameObject PauseMenu;
+    [SerializeField] 
+    private GameObject OptionsMenu;
+    [SerializeField] 
+    private GameObject ControlsMenu;
 
     private bool pause;
+    
+    [Header("ToolBar")]
     
     [SerializeField] 
     private RectTransform border;
@@ -34,6 +41,10 @@ public class UiScript : MonoBehaviour
 
     [SerializeField] 
     private RectTransform seeds;
+
+    [Header("Arrow")]
+    [SerializeField] 
+    private GameObject ArrowButton;
 
     [Space] 
     [SerializeField]
@@ -77,6 +88,8 @@ public class UiScript : MonoBehaviour
             {
                 case true:
                     PauseMenu.SetActive(false);
+                    OptionsMenu.SetActive(false);
+                    ControlsMenu.SetActive(false);
                     pause = false;
                     break;
                 case false:
@@ -151,13 +164,19 @@ public class UiScript : MonoBehaviour
             case 2: border.anchoredPosition = hoePos;
                 break;
             case 3: border.anchoredPosition = seedsPos;
-                break;
+                    ArrowButton.SetActive(true);
+                    break;
             case 4: border.anchoredPosition = watercanPos;
                 break;
             case 5: border.anchoredPosition = scythePos;
                 break;
             default:
                 break;
+        }
+
+        if (num != 3)
+        {
+            ArrowButton.SetActive(false);
         }
     }
 
