@@ -9809,7 +9809,7 @@ MonoBehaviour:
       - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
         sentence: Wow, now this is what I call a well.
       - picture: {fileID: 0}
-        sentence: 'You can now use the well to refill your waterin can. '
+        sentence: 'You can now use the well to refill your watering can. '
 --- !u!114 &304022891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -71597,10 +71597,11 @@ MonoBehaviour:
   dialogues:
   - dialogue:
     - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
-      sentence: Oh noo
+      sentence: '*Sigh*'
     - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
-      sentence: Seems like I am out of water. I need to refill it by the river or
-        in the well
+      sentence: "Seems like I\u2019m out of water."
+    - picture: {fileID: 0}
+      sentence: Refill your watering can in the lake or in the well.
   dialogueIndex: 0
   loop: 0
 --- !u!114 &2138785167
@@ -71618,8 +71619,11 @@ MonoBehaviour:
   dialogues:
   - dialogue:
     - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
-      sentence: Looks like my energy has depleted. I should probably get a good night's
-        sleep.
+      sentence: All this hard work makes me exhausted.
+    - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+      sentence: I think I need some hard earned rest.
+    - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+      sentence: Thankfully I have a nice bed in these trying times.
   dialogueIndex: 0
   loop: 0
 --- !u!1001 &2139534546

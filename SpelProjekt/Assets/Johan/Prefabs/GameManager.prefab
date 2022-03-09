@@ -1219,7 +1219,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2464608112236371165, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
       propertyPath: infoToShow
-      value: Can be planted if the field is plowed. Takes 3 day to grow.
+      value: Can be planted if the field is plowed. Needs to be watered every day
+        to be able to grow.
       objectReference: {fileID: 0}
     - target: {fileID: 7120179769334143371, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
       propertyPath: itemSprites.Array.data[4]
@@ -1488,7 +1489,19 @@ PrefabInstance:
       value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 8700854148609400735, guid: 70fd6f7116cde514689be9de29fa2709, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700854148609400735, guid: 70fd6f7116cde514689be9de29fa2709, type: 3}
       propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700854148609400735, guid: 70fd6f7116cde514689be9de29fa2709, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700854148633271250, guid: 70fd6f7116cde514689be9de29fa2709, type: 3}
+      propertyPath: m_AnchorMax.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8700854148633271250, guid: 70fd6f7116cde514689be9de29fa2709, type: 3}
