@@ -1205,6 +1205,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 4099719118235924011}
     m_Modifications:
+    - target: {fileID: 1929488960543735465, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 540b5331fb8accf40bab7a78b4f77779, type: 3}
     - target: {fileID: 1929488961674313571, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
       propertyPath: m_IsActive
       value: 1
@@ -1217,6 +1221,10 @@ PrefabInstance:
       propertyPath: infoToShow
       value: Can be planted if the field is plowed. Takes 3 day to grow.
       objectReference: {fileID: 0}
+    - target: {fileID: 7120179769334143371, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
+      propertyPath: itemSprites.Array.data[4]
+      value: 
+      objectReference: {fileID: 21300000, guid: 540b5331fb8accf40bab7a78b4f77779, type: 3}
     - target: {fileID: 8561662946646152853, guid: 8ce4609dac89eba4c8fd80c409c6c4e4, type: 3}
       propertyPath: m_Sprite
       value: 
