@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12568,6 +12568,46 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7088183208947981648, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[0].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 7088183208947981648, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[1].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+    - target: {fileID: 7088183208947981648, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[2].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 7088183208947981648, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[3].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+    - target: {fileID: 7088183208947981648, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[4].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 7088183208947981648, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[5].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 7088183208947981648, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[6].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 7088183208947981648, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[7].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+    - target: {fileID: 7088183208947981648, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[8].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+    - target: {fileID: 7088183208947981648, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
+      propertyPath: dialogues.Array.data[0].dialogue.Array.data[9].picture
+      value: 
+      objectReference: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
     m_RemovedComponents:
     - {fileID: 7033499113335038151, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
@@ -74478,8 +74518,8 @@ MonoBehaviour:
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
-    title: 
-    description: 
+    title: Knock on wood
+    description: Billy wants you to gather 40 wood for his new dam.
     rewardSprite: {fileID: 0}
     rewardAmount: 0
     rewardKind: 1
@@ -74501,8 +74541,8 @@ MonoBehaviour:
     finishBeforeTalking: 0
   - isActive: 0
     questGiver: {fileID: 0}
-    title: 
-    description: 
+    title: Knock on wood part 2
+    description: Help Billy with creating the new dam.
     rewardSprite: {fileID: 0}
     rewardAmount: 0
     rewardKind: 0
@@ -74528,24 +74568,49 @@ MonoBehaviour:
   dialogues:
   - dials:
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: 1
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: All well here?
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Yes, but I would like an extra hand.
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: If you could be so kind and get me 40 wood?
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: 2
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Thank you for helping me out with the housing.
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: 3
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Thank you stranger.
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: "Now there\u2019s only one thing left."
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: I guess it is the building part.
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Exactly.
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Do you need some help with that?
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: You know, I'm something of a builder myself.
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: But, I always appreciate some extra eyes.
   - dials:
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: 123
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Have you built something before?
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: I made Boris door, if that counts?
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: Of course it does. Now do the same with my home.
     - dialogue:
       - picture: {fileID: 0}
-        sentence: asdasd
+        sentence: 'Right click on the dam and click on the "repair dam"-button. '
     - dialogue:
-      - picture: {fileID: 0}
-        sentence: adsads
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: It looks marvelous.
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: I'm just hoping that the monster hunters will leave my house alone
+          this time.
+      - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
+        sentence: If you need help with chopping down trees, you know where to ask.
 --- !u!4 &2136332756 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4263645915374061282, guid: 9908c15ebbadec046b67064f148c5996, type: 3}
