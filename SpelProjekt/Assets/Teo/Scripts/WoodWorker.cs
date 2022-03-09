@@ -26,13 +26,15 @@ public class WoodWorker : Worker
     private int targets;
     private bool drop;
     private float step;
+    [SerializeField]
     private Collider box;
     private NavMeshAgent agent;
+    public Animator animator;
     private void Start()
     {
         Dnc = FindObjectOfType<DayNightCycle>();
         Dnc.DayPast += RefillEnergy;
-        box = GetComponent<BoxCollider>();
+        //box = GetComponent<BoxCollider>();
         agent = GetComponent<NavMeshAgent>();
     }
 
@@ -48,20 +50,23 @@ public class WoodWorker : Worker
     private void Update()
     {
         //speed
-        step = speed * Time.deltaTime;
+        
         
         if (trees.Count > 0 && targets > 0)
         {
-            //MoveToTree();
+            animator.SetFloat("Speed", 0.5f);
             agent.destination = treePos;
         }
         
         //Chop one tree and move on to the next
         if (box.bounds.Contains(treePos) && targets > 0)
         {
-            if (!killedWood)
+            step += Time.deltaTime;
+            if (!killedWood && step > 0.15f)
             {
+                animator.SetTrigger("ChoppingWood");
                 ChopWood();
+                step = 0;
             }
             SortByDistance();
             GetTreePos();
@@ -90,6 +95,7 @@ public class WoodWorker : Worker
         }
         if (box.bounds.Contains(home.position) && drop)
         {
+            animator.SetFloat("Speed", 0);
             drop = false;
             enabled = false;
         }
@@ -129,7 +135,7 @@ public class WoodWorker : Worker
     {
         if (collectedWood > 0)
         {
-            WoodStack.GetComponent<Pickup>().pickupAmount = collectedWood;
+            WoodStack.GetComponentInChildren<Pickup>().pickupAmount = collectedWood;
             GameObject.Instantiate(WoodStack, dropPoint.position, WoodStack.transform.rotation);
             collectedWood = 0;
             drop = true;
