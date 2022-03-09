@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -35958,7 +35958,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 5865231757791859092, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
   m_PrefabInstance: {fileID: 323381756}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 2138785164}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3e7c6c23a9c8c3b439c3779aae08d2ec, type: 3}
@@ -71398,6 +71398,65 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1da7f1cd1592834898848d0ceb462e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &2138785164 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6747541114263133444, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
+  m_PrefabInstance: {fileID: 323381756}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2138785165
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138785164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bfacfe2c230b304e8dec25061362c03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogueTriggerEnergy: {fileID: 2138785167}
+  dialogueTriggerWater: {fileID: 2138785166}
+--- !u!114 &2138785166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138785164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - dialogue:
+    - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+      sentence: Oh noo
+    - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+      sentence: Seems like I am out of water. I need to refill it by the river or
+        in the well
+  dialogueIndex: 0
+  loop: 0
+--- !u!114 &2138785167
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2138785164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - dialogue:
+    - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+      sentence: Looks like my energy has depleted. I should probably get a good night's
+        sleep.
+  dialogueIndex: 0
+  loop: 0
 --- !u!1001 &2139534546
 PrefabInstance:
   m_ObjectHideFlags: 0
