@@ -135,15 +135,17 @@ public class FarmWorker_Worker : Worker
 
     void SowField()
     {
+        /*
         //Trigga animation och delay
-        //animator.SetTrigger("StandingUp");
-        //animator.SetFloat("Speed", 0);
-        //agent.speed = 0;
-        //inAnimation = true;
-        //StopAllCoroutines();
-        //StartCoroutine("WaitOnAnimation");
+        animator.SetTrigger("StandingUp");
+        animator.SetFloat("Speed", 0);
+        agent.speed = 0;
+        inAnimation = true;
+        StopAllCoroutines();
+        StartCoroutine("WaitOnAnimation");
+        */
 
-
+        
         FieldScript field = fields[0].GetComponent<FieldScript>();
 
         field.ChangeFarmstate();
@@ -154,6 +156,7 @@ public class FarmWorker_Worker : Worker
             fields.Remove(field.gameObject);
             plantedOnField = false;
         }
+        
 
     }
 
@@ -169,23 +172,25 @@ public class FarmWorker_Worker : Worker
         }
     }
 
-    //private IEnumerator WaitOnAnimation()
-    //{
-    //    yield return new WaitForSeconds(animationDelay);
-    //    agent.speed = 1;
-    //    inAnimation = false;
+    /*
+    private IEnumerator WaitOnAnimation()
+    {
+        yield return new WaitForSeconds(animationDelay);
+        agent.speed = 1;
+        inAnimation = false;
 
-    //    FieldScript field = fields[0].GetComponent<FieldScript>();
+        FieldScript field = fields[0].GetComponent<FieldScript>();
 
-    //    field.ChangeFarmstate();
+        field.ChangeFarmstate();
 
-    //    plantedOnField = true;
-    //    if (plantedOnField)
-    //    {
-    //        fields.Remove(field.gameObject);
-    //        plantedOnField = false;
-    //    }
+        plantedOnField = true;
+        if (plantedOnField)
+        {
+            fields.Remove(field.gameObject);
+            plantedOnField = false;
+        }
 
 
-    //}
+    }
+    */
 }
