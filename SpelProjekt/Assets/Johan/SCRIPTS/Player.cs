@@ -35,6 +35,7 @@ public class Player : MonoBehaviour
     public UnityAction<int> foodUpdate;
     public UnityAction<float> energyPercentageUpdate;
     public UnityAction noEnergyActivated;
+    public UnityAction noWaterActivated;
 
 
     public void AddWood(int amount)
@@ -123,6 +124,10 @@ public class Player : MonoBehaviour
     public void DepleteWater()
     {
         waterAmount--;
+        if (waterAmount <= 0)
+        {
+            noWaterActivated?.Invoke();
+        }
     }
 
 

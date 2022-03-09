@@ -24,7 +24,10 @@ public class QuestGiver : MonoBehaviour
     }
     private void OnEnable()
     {
-        exclamationMark.SetActive(true);
+        if (exclamationMark != null)
+        {
+            exclamationMark.SetActive(true);
+        }
         player = FindObjectOfType<Player>();
         questHUD = FindObjectOfType<QuestHUDManager>();
     }
@@ -42,7 +45,10 @@ public class QuestGiver : MonoBehaviour
             questHUD.AddQuest(quests[questIndex], this);
             OpenQuestWindow();
             questProgress = 1; // = 1 ska det bli
+        if (exclamationMark != null)
+        {
             exclamationMark.SetActive(false);
+        }
 
         }
 
@@ -61,7 +67,11 @@ public class QuestGiver : MonoBehaviour
         }
         else
         {
-            questionMark.SetActive(true);
+            if (questionMark != null)
+            {
+                questionMark.SetActive(true);
+            }
+
         }
 
     }
@@ -72,13 +82,25 @@ public class QuestGiver : MonoBehaviour
         questIndex++;
         if (questIndex > quests.Length - 1)
         {
+        if (exclamationMark != null)
+        {
             exclamationMark.SetActive(false);
-            questionMark.SetActive(false);
+        }
+            if (questionMark != null)
+            {
+                questionMark.SetActive(false);
+            }
         }
         else
         {
+        if (exclamationMark != null)
+        {
             exclamationMark.SetActive(true);
-            questionMark.SetActive(false);
+        }
+            if (questionMark != null)
+            {
+                questionMark.SetActive(false);
+            }
         }
     }
 
