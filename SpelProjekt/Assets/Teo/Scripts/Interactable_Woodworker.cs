@@ -11,11 +11,20 @@ public class Interactable_Woodworker : Interactable
     
     public override void InteractWith(PlayerController pc)
     {
+        if (enabled == false)
+        {
+            return;
+        }
         if (isQuest)
         {
-            base.InteractWith(pc);
             GetComponent<DialogueTrigger>().TriggerDialogue();
         }
-        MonsterMenu.SetActive(true);
+
+        else if (!isQuest)
+        {
+            MonsterMenu.SetActive(true);
+        }
+        base.InteractWith(pc);
+
     }
 }

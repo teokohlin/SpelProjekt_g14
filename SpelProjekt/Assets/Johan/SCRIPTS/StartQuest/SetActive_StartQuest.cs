@@ -9,7 +9,7 @@ public class SetActive_StartQuest : StartQuest
     {
         base.StartSomething();
 
-        gameObject.SetActive(true);
+        this.gameObject.SetActive(true);
 
         if (TryGetComponent(out Interactable interactable))
         {
