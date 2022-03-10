@@ -23,7 +23,7 @@ public class WoodWorker : Worker
     private int collectedWood = 0;
     private Vector3 newdirection;
     private Vector3 targetDir;
-    private int targets;
+    public int targets = 3;
     private bool drop;
     private float step;
     [SerializeField]
