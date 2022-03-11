@@ -26,6 +26,7 @@ public class FarmWorker_Worker : Worker
     public int targets = 10; 
     private int originalTargets = 10;
     private Animator animator;
+    private Bunny_Interactable bunny_int;
 
     private bool done = false;
 
@@ -40,6 +41,7 @@ public class FarmWorker_Worker : Worker
     }
     private void Awake()
     {
+        bunny_int = GetComponent<Bunny_Interactable>();
         originalTargets = targets;
         Energy = MaxEnergy; //Stor bokstav?
 
@@ -76,7 +78,7 @@ public class FarmWorker_Worker : Worker
         SortByDistance();
         targets = originalTargets;
 
-
+        bunny_int.enabled = false;
 
         currentField = fields[0];
     }
@@ -123,6 +125,8 @@ public class FarmWorker_Worker : Worker
         if (rangeBox.bounds.Contains(homePosition.position) && done)
         {
             done = false;
+
+            bunny_int.enabled = true;
             enabled = false;
             animator.SetFloat("Speed", 0.0f);
         }
@@ -192,7 +196,7 @@ public class FarmWorker_Worker : Worker
         yield return new WaitForSeconds(animationDelay);
         
 
-        field.ChangeFarmstate(); 
+        field.ChangeFarmstateSpecific(2); 
         inAnimation = false;
         //yield return new WaitForSeconds(animationDelay);
 

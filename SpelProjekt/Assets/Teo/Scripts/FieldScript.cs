@@ -173,6 +173,12 @@ public class FieldScript : MonoBehaviour
         
         ChangeFieldObject(fieldState);
     }
+    public void ChangeFarmstateSpecific(int index)
+    {
+        fieldState = index;
+
+        ChangeFieldObject(fieldState);
+    }
 
     
     private void ChangeFieldObject(int state)
