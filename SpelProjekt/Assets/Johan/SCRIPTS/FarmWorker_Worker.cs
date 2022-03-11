@@ -193,9 +193,9 @@ public class FarmWorker_Worker : Worker
         
 
         field.ChangeFarmstate(); 
-        
-        yield return new WaitForSeconds(animationDelay);
         inAnimation = false;
+        //yield return new WaitForSeconds(animationDelay);
+
         //agent.speed = 1;
 
 
