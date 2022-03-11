@@ -103,6 +103,7 @@ MonoBehaviour:
   dropPrefab: {fileID: 3301212826242974832, guid: 42208716b0533dc40b672e84ebaa8cb0, type: 3}
   spawner: {fileID: 0}
   stubbe: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!136 &8000575283752177194
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -111,7 +112,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6499582562399656553}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.965925
   m_Height: 2.7460465

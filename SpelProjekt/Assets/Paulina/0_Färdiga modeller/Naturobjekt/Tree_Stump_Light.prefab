@@ -103,6 +103,7 @@ MonoBehaviour:
   dropPrefab: {fileID: 3301212826242974832, guid: 42208716b0533dc40b672e84ebaa8cb0, type: 3}
   spawner: {fileID: 0}
   stubbe: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!65 &8737358440892459063
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -111,7 +112,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6921577884886939832}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.077663, y: 1.4252219, z: 2.181642}
