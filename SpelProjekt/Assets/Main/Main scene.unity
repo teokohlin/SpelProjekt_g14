@@ -9900,6 +9900,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b08b034280c9bf408b2e3271103731e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &304022893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 304022888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - dialogue:
+    - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+      sentence: The well is broken, you can't refill your water can right now.
+  dialogueIndex: 0
+  loop: 0
 --- !u!1001 &304975006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -54577,7 +54595,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 136.56358
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
       propertyPath: m_LocalRotation.w
@@ -54585,23 +54603,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -104.48035
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.03999999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1939876883702216446, guid: 4a8341be82a5dcb4d8a74782db3397fe, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -55583,8 +55601,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.3347266, y: 0.17397729, z: 0.7912771}
-  m_Center: {x: 2.5362427, y: -0.08698864, z: 0.90089685}
+  m_Size: {x: 1.3347266, y: 0.17397729, z: 0.8514037}
+  m_Center: {x: 2.5362427, y: -0.08698864, z: 0.93096024}
 --- !u!114 &1605135754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74183,7 +74201,7 @@ MonoBehaviour:
       completed: 0
       currentAmount: 0
       requiredAmount: 40
-      requiredResourceSprite: {fileID: 21300000, guid: 766c40ab1a4d07a48ab68594d0cb1626, type: 3}
+      requiredResourceSprite: {fileID: 21300000, guid: 180b4eb91bfa1ad43a4a72fd7e6f4dac, type: 3}
       gatherType: 0
       interractableType: 1
       repairObject: {fileID: 0}
