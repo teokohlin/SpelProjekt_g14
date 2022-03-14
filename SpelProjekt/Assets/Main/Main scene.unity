@@ -39787,7 +39787,8 @@ MonoBehaviour:
     completed: 0
     questStartScripts:
     - {fileID: 1308992647}
-    questEndScripts: []
+    questEndScripts:
+    - {fileID: 1183389340}
     justStarted: 0
     goals:
     - goalType: 2
@@ -39849,6 +39850,74 @@ CapsuleCollider:
   m_Height: 3.2
   m_Direction: 1
   m_Center: {x: 0, y: 1.5, z: 0}
+--- !u!114 &1183389337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183389331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9e35196b3debbe4ebca238808fa486f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frog: {fileID: 1183389338}
+--- !u!114 &1183389338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183389331}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: acbbf3a1e0db2c5409f917ed73dcd076, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isQuest: 0
+  canNotInteract: 0
+  exclamationMark: {fileID: 709568047}
+  interval: {x: -10, y: 10}
+  badCatchMessage: I had terrible luck this time
+  decentCatchMessage: I had a decent catch
+  goodCatchMessage: I had a pretty good catch
+  perfectCatchMessage: I caught extremely many this time
+  fishCatchString: I managed to catch
+  fishCatchString2: today
+--- !u!114 &1183389339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183389331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - dialogue:
+    - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
+      sentence: 
+    - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
+      sentence: 
+  dialogueIndex: 0
+  loop: 1
+--- !u!114 &1183389340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1183389331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5750f2ea20555dd4292b1abd0a727a47, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questTriggerInterractable: {fileID: 0}
 --- !u!1001 &1184146748
 PrefabInstance:
   m_ObjectHideFlags: 0
