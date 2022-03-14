@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -20,7 +21,11 @@ public class PlayerController : MonoBehaviour
     public float chopRate = 1f;
     [Space]
     public float maxDistanceForInteractions = 5f;
+    //[Tooltip("Interaction collidern som är en trigger")]
+    //public Collider interactionSphereCollider;
 
+    private List<GameObject> interactables = new List<GameObject>();
+    
     private ToolSwitch toolScript;
     private CursorScript cursor;
 
@@ -80,7 +85,7 @@ public class PlayerController : MonoBehaviour
 
                 if (Input.GetMouseButtonDown(1))
                 {
-                    if (Vector3.Distance(transform.position, interactable.gameObject.transform.position) <= maxDistanceForInteractions)  //istället kolla om är i listan
+                    if (interactables.Contains(interactable.gameObject))  //istället kolla om är i listan if (Vector3.Distance(transform.position, interactable.gameObject.transform.position) <= maxDistanceForInteractions)
                     {
                         interactable.InteractWith(this); //släng med "playercontrollern" som referens
                     }
@@ -394,6 +399,14 @@ public class PlayerController : MonoBehaviour
 
     //}
 
+    private void OnTriggerEnter(Collider other)
+    {
+        interactables.Add(other.gameObject);
+    }
 
+    private void OnTriggerExit(Collider other)
+    {
+        interactables.Remove(other.gameObject);
 
+    }
 }

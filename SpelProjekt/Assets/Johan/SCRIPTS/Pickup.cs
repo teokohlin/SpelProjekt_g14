@@ -45,6 +45,10 @@ public class Pickup : MonoBehaviour
     {
         if (other.CompareTag("Player") && !alreadyPickedUp)
         {
+            if (other.isTrigger)
+            {
+                return;
+            }
             alreadyPickedUp = true;
             Player p = other.GetComponent<Player>();
             
