@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
 
                 if (Input.GetMouseButtonDown(1))
                 {
-                    if (Vector3.Distance(transform.position, interactable.gameObject.transform.position) <= maxDistanceForInteractions)
+                    if (Vector3.Distance(transform.position, interactable.gameObject.transform.position) <= maxDistanceForInteractions)  //istället kolla om är i listan
                     {
                         interactable.InteractWith(this); //släng med "playercontrollern" som referens
                     }
@@ -309,14 +309,23 @@ public class PlayerController : MonoBehaviour
 
         //Collider closestChoppable = GetClosestEnemyCollider(transform.position, hitChoppables);
         GameObject closestChoppable = null;
-
+        bool rightOneFound = false;
+        
         foreach (var item in hitChoppables)
         {
             if (GameObject.ReferenceEquals(item.gameObject, clickedObject))
             {
                 closestChoppable = item.gameObject;
+                rightOneFound = true;
                 break;
             }
+        }
+        
+        //Om objektet man klickat på (om man klickat på ett överhuvudtaget) inte är i spelarens range. Gör action på
+        //det närmsta objektet istället
+        if (!rightOneFound)
+        {
+            closestChoppable = GetClosestEnemyCollider(transform.position, hitChoppables).gameObject;
         }
 
         if (closestChoppable == null)
