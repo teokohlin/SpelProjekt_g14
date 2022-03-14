@@ -37746,6 +37746,10 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -231.5
       objectReference: {fileID: 0}
+    - target: {fileID: 3657216705539758445, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3657216705639727441, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -37808,15 +37812,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3657216707517288699, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 3657216707517288699, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3657216707517288699, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 3657216707525580128, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -37832,11 +37836,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3657216707542176950, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 3657216707542176950, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3797002190762670963, guid: 5447baa7392b1134bb50bdd7846eb64c, type: 3}
       propertyPath: m_enableWordWrapping
@@ -47674,10 +47678,12 @@ MonoBehaviour:
   MaxEnergy: 3
   Energy: 0
   Happiness: 1
+  noPlownFieldsDialogueTrigger: {fileID: 0}
   homePosition: {fileID: 37661823}
   fields: []
   rangeBox: {fileID: 919132148172896582}
   animationDelay: 5
+  animationDelay2: 1
   targets: 10
 --- !u!65 &919132148172896582
 BoxCollider:

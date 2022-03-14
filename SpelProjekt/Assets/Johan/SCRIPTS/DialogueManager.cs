@@ -19,6 +19,8 @@ public class DialogueManager : MonoBehaviour
     public GameObject hotbarCanvasUI;
 
     public UnityAction dialogueEnd;
+    private bool typingClicked;
+    private bool doneTyping;
 
     private bool inDialogue = false;
     void Start()
@@ -31,7 +33,16 @@ public class DialogueManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0) && inDialogue)
         {
-            DisplayNextMessage();
+
+            if (doneTyping)
+            {
+                DisplayNextMessage();
+            }
+            else
+            {
+                typingClicked = true;
+            }
+            
         }
     }
 
@@ -54,6 +65,8 @@ public class DialogueManager : MonoBehaviour
     }
     public void DisplayNextMessage()
     {
+        doneTyping = false;
+        
         if (dialogues.Count == 0)
         {
             EndDialogue();
@@ -69,7 +82,7 @@ public class DialogueManager : MonoBehaviour
 
         dialogueCharacterImage.sprite = dialogue.picture;
 
-        if (dialogue.picture == null) //Se till att bilden försvinner om det inte är någon
+        if (dialogue.picture == null) //Se till att bilden fï¿½rsvinner om det inte ï¿½r nï¿½gon
         {
             dialogueCharacterImage.gameObject.SetActive(false);
         }
@@ -84,10 +97,21 @@ public class DialogueManager : MonoBehaviour
         dialogueText.text = " ";
         foreach  (char letter in sentence.ToCharArray())
         {
+
+            if (typingClicked)
+            {
+                typingClicked = false;
+                dialogueText.text = sentence;
+                break;
+            }
             dialogueText.text += letter;
             yield return new WaitForSeconds(timeBetweenLetters);
+            
             //yield return null; //kommer skriva en bokstav per frame
         }
+
+        doneTyping = true;
+        typingClicked = false;
     }
 
     void EndDialogue()
@@ -101,8 +125,8 @@ public class DialogueManager : MonoBehaviour
         dialogueEnd?.Invoke();
     }
 
-    IEnumerator UnlockMovementDelay() //väntar till slutet av framen för att förhindra att gubben slår
-    {                                 //då dessa olika updates kan komma otajmat  
+    IEnumerator UnlockMovementDelay() //vï¿½ntar till slutet av framen fï¿½r att fï¿½rhindra att gubben slï¿½r
+    {                                 //dï¿½ dessa olika updates kan komma otajmat  
         yield return new WaitForEndOfFrame();
         playerC.SetLockMovement(false);
     }
