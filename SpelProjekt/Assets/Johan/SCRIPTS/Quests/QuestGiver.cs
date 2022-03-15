@@ -73,7 +73,16 @@ public class QuestGiver : MonoBehaviour
             }
 
         }
+    }
 
+    public void QuestNotCompletedAnymore()
+    {
+        questProgress = 1;
+
+        if (questionMark != null)
+        {
+            questionMark.SetActive(false);
+        }
     }
     public void QuestFinished()
     {

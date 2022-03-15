@@ -26,6 +26,8 @@ public class QuestGoal
     [Header("Iklickad om man INTE behöver prata med questgivern för att färdigställa questet")]
     //public bool finishBeforeTalking = false;
     public UnityAction GoalCompleted;
+
+    public UnityAction GoalNotCompleted;
     [HideInInspector]
     [System.NonSerialized] public Quest quest;
 
@@ -140,6 +142,10 @@ public class QuestGoal
         {
             Complete();
         }
+        else
+        {
+            UnComplete();
+        }
     }
 
     public void Complete()
@@ -154,6 +160,15 @@ public class QuestGoal
             }
         }
 
+    }
+
+    public void UnComplete()
+    {
+        if (completed == true)
+        {
+            completed = false;
+            GoalNotCompleted?.Invoke();
+        }
     }
 
 

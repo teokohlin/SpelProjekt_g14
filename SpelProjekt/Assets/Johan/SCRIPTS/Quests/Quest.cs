@@ -53,6 +53,7 @@ public class Quest
         {
             goal.quest = this;
             goal.GoalCompleted += Evaluate;
+            goal.GoalNotCompleted += Evaluate;
             goal.Init();
         }
 
@@ -78,6 +79,7 @@ public class Quest
         {
             if (!goal.completed)
             {
+                UnComplete();
                 return;
             }
         }
@@ -100,6 +102,18 @@ public class Quest
         }
         completed = true;
         questGiver.QuestCompletedNotFinished();
+    }
+
+    public void UnComplete()
+    {
+        if (completed = false)
+        {
+            return;
+        }
+        gatheredButNotComplete = false;
+
+        completed = false;
+        questGiver.QuestNotCompletedAnymore();
     }
     public void InterractedWith() //När man interragerar med (questgivern), kolla om questet är Complete. Då ska det tas bort och så
     {

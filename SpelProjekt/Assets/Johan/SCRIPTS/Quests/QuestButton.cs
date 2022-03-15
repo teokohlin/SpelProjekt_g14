@@ -16,6 +16,7 @@ public class QuestButton : MonoBehaviour
     public GameObject panelInPanel;
     public GameObject progressPrefab;
     public List<GameObject> progressObjects = new List<GameObject>();
+    public Sprite originalSprite;
     public Sprite completedSprite;
 
     private void Start()
@@ -49,6 +50,10 @@ public class QuestButton : MonoBehaviour
             {
                 progressObjects[i].GetComponentInChildren<TextMeshProUGUI>().color = Color.green;
             }
+            else
+            {
+                progressObjects[i].GetComponentInChildren<TextMeshProUGUI>().color = Color.black;
+            }
 
 
 
@@ -61,7 +66,7 @@ public class QuestButton : MonoBehaviour
                 }
 
 
-                //if (progressObjects[i].TryGetComponent<Image>(out Image image)) //Behövdes tydligen för det kunde bli error när knappen tas bort mitt i
+                //if (progressObjects[i].TryGetComponent<Image>(out Image image)) //BehÃ¶vdes tydligen fÃ¶r det kunde bli error nÃ¤r knappen tas bort mitt i
                 //{
                 //    image.gameObject.SetActive(false);
                 //}
@@ -79,6 +84,10 @@ public class QuestButton : MonoBehaviour
         {
             //GetComponent<Image>().color = Color.green;
             GetComponent<Image>().sprite = completedSprite;
+        }
+        else
+        {
+            GetComponent<Image>().sprite = originalSprite;
         }
 
 
