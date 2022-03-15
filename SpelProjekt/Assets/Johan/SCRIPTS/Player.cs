@@ -51,8 +51,7 @@ public class Player : MonoBehaviour
 
         woodIncrease?.Invoke(amount);
 
-        GameObject ra = Instantiate(resourceAdditionPrefab, parentPanel.transform.position, Quaternion.identity, parentPanel.transform);
-        ra.GetComponent<TextMeshProUGUI>().text = "+ " + amount.ToString();
+        SpawnText(amount);
     }
     public void AddStone(int amount)
     {
@@ -61,8 +60,7 @@ public class Player : MonoBehaviour
         
         stoneIncrease?.Invoke(amount);
         
-        GameObject ra = Instantiate(resourceAdditionPrefab, parentPanel.transform.position, Quaternion.identity, parentPanel.transform);
-        ra.GetComponent<TextMeshProUGUI>().text = "+ " + amount.ToString();
+        SpawnText(amount);
     }
     public void AddFood(int amount)
     {
@@ -71,8 +69,7 @@ public class Player : MonoBehaviour
 
         foodIncrease?.Invoke(amount);
         
-        GameObject ra = Instantiate(resourceAdditionPrefab, parentPanel.transform.position, Quaternion.identity, parentPanel.transform);
-        ra.GetComponent<TextMeshProUGUI>().text = "+ " + amount.ToString();
+        SpawnText(amount);
     }
     public void AddResource(int amount, dType type)
     {
@@ -153,5 +150,26 @@ public class Player : MonoBehaviour
     public int ReturnEnergy()
     {
         return energy;
+    }
+
+    private void SpawnText(int amount)
+    {
+        if (amount == 0)
+        {
+            return;
+        }
+        
+        GameObject ra = Instantiate(resourceAdditionPrefab, parentPanel.transform.position, Quaternion.identity, parentPanel.transform);
+
+        if (amount > 0)
+        {
+            ra.GetComponent<TextMeshProUGUI>().text = "+ " + amount.ToString();
+        }
+        else
+        {
+            int tempAmount = amount * -1;
+            ra.GetComponent<TextMeshProUGUI>().text = "- " + tempAmount.ToString();
+        }
+        
     }
 }
