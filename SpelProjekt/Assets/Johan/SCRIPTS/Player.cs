@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
+ using TMPro;
+ 
 
 public class Player : MonoBehaviour
 {
@@ -28,6 +30,10 @@ public class Player : MonoBehaviour
     public UnityAction<int> foodIncrease;
 
     public bool NoEnergy;
+    [SerializeField]
+    private GameObject resourceAdditionPrefab;
+
+    [SerializeField] private GameObject parentPanel;
 
 
     public UnityAction<int> woodUpdate;
@@ -44,6 +50,9 @@ public class Player : MonoBehaviour
         woodUpdate?.Invoke(woodAmount);
 
         woodIncrease?.Invoke(amount);
+
+        GameObject ra = Instantiate(resourceAdditionPrefab, parentPanel.transform.position, Quaternion.identity, parentPanel.transform);
+        ra.GetComponent<TextMeshProUGUI>().text = "+ " + amount.ToString();
     }
     public void AddStone(int amount)
     {
@@ -51,6 +60,9 @@ public class Player : MonoBehaviour
         stoneUpdate?.Invoke(stoneAmount);
         
         stoneIncrease?.Invoke(amount);
+        
+        GameObject ra = Instantiate(resourceAdditionPrefab, parentPanel.transform.position, Quaternion.identity, parentPanel.transform);
+        ra.GetComponent<TextMeshProUGUI>().text = "+ " + amount.ToString();
     }
     public void AddFood(int amount)
     {
@@ -58,6 +70,9 @@ public class Player : MonoBehaviour
         foodUpdate?.Invoke(foodAmount);
 
         foodIncrease?.Invoke(amount);
+        
+        GameObject ra = Instantiate(resourceAdditionPrefab, parentPanel.transform.position, Quaternion.identity, parentPanel.transform);
+        ra.GetComponent<TextMeshProUGUI>().text = "+ " + amount.ToString();
     }
     public void AddResource(int amount, dType type)
     {

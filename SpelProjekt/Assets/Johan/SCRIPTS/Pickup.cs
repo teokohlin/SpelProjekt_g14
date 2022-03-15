@@ -45,7 +45,6 @@ public class Pickup : MonoBehaviour
             speed += Time.deltaTime * 10;
         }
         transform.position = Vector3.MoveTowards(this.gameObject.transform.position, player.position, speed * Time.deltaTime );
-        Debug.Log(speed);
 
     }
 
