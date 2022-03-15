@@ -26,24 +26,27 @@ public class Pickup : MonoBehaviour
     [Tooltip("Hur mycket av resurser en *pickup* ger")]
     public int pickupAmount = 1;
 
+    private float maxSpeed = 10;
+    private float speed = 0;
+    private Transform player;
+    
     private void Start()
     {
         startPosition = new Vector3(transform.position.x, .5f, transform.position.z);
         audioManager = FindObjectOfType<AudioManager>();
+        player = FindObjectOfType<Player>().gameObject.transform;
+
 
     }
     void Update()
     {
-        //göra så att den kanske guppar lite, istället för att de spawnar på varandra och flyger iväg med rigidbodys
-        //med andra ord, kan ta bort rigidbody
+        if (speed < 40)
+        {
+            speed += Time.deltaTime * 10;
+        }
+        transform.position = Vector3.MoveTowards(this.gameObject.transform.position, player.position, speed * Time.deltaTime );
+        Debug.Log(speed);
 
-        ///////////////////////////////////DETTA UNDER
-
-        //float bobbingAnimationPhase = ((Mathf.Sin(Time.time * verticalBobFrequency) * 0.5f) + 0.5f) * bobbingAmount;
-
-        //transform.position = startPosition + Vector3.up * bobbingAnimationPhase;
-
-        ///////////////////////////////////DETTA ÖVER
     }
 
     private void OnTriggerEnter(Collider other)
