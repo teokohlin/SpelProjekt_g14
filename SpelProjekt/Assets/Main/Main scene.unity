@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -40672,7 +40672,7 @@ MonoBehaviour:
   quests:
   - isActive: 0
     questGiver: {fileID: 0}
-    title: Find the fishing rod
+    title: A grumpy encounter
     description: 'Help the scary looking frog in his search for his fishing rod. '
     rewardSprite: {fileID: 0}
     rewardAmount: 0
@@ -73814,11 +73814,9 @@ MonoBehaviour:
       sentence: I promise that I will keep the farm.
   - dialogue:
     - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
-      sentence: aaaaaaaaaaaaaaaaaaaaaaa
+      sentence: I should also get a nice painting.
     - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
-      sentence: Pappa...
-    - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
-      sentence: I promise that I will keep the farm.
+      sentence: But not as boring as this one.
   dialogueIndex: 0
   loop: 1
 --- !u!114 &2086536669
