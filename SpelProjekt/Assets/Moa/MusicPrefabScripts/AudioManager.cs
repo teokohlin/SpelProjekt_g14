@@ -17,19 +17,15 @@ public class AudioManager : MonoBehaviour
         [EventRef]
         public string doorOpenEvent;
         [EventRef]
-        public string pickupHealthEvent;
-        [EventRef]
-        public string destructableBoxEvent;
-        [EventRef]
-        public string switchesEvent;
-        [EventRef]
-        public string menuHoverEvent;
-        [EventRef]
         public string menuPressEvent;
         [EventRef]
         public string stoneEvent;
         [EventRef]
         public string treeEvent;
+        [EventRef]
+        public string pickupEvent;
+
+
 
 
 
@@ -37,26 +33,6 @@ public class AudioManager : MonoBehaviour
         public void DoorOpenAudio(GameObject doorObject)
         {
             RuntimeManager.PlayOneShotAttached(doorOpenEvent.ToString(), doorObject);
-        }
-
-        public void PickUpHealthAudio(GameObject pickUpHealthObject)
-        {
-            RuntimeManager.PlayOneShotAttached(pickupHealthEvent.ToString(), pickUpHealthObject);
-        }
-
-        public void DestructableBoxAudio(GameObject destructableBoxObject)
-        {
-            RuntimeManager.PlayOneShotAttached(destructableBoxEvent.ToString(), destructableBoxObject);
-        }
-
-        public void SwitchesAudio(GameObject switchesObject)
-        {
-            RuntimeManager.PlayOneShotAttached(switchesEvent.ToString(), switchesObject);
-        }
-
-        public void MenuHoverAudio(GameObject menuhoverObject)
-        {
-            RuntimeManager.PlayOneShotAttached(menuHoverEvent.ToString(), menuhoverObject);
         }
 
         public void MenuPressAudio(GameObject menupressObject)
@@ -72,7 +48,13 @@ public class AudioManager : MonoBehaviour
         {
             RuntimeManager.PlayOneShotAttached(treeEvent.ToString(), treeObject);
         }
+        public void PickupAudio(GameObject pickupObject)
+        {
+            RuntimeManager.PlayOneShotAttached(pickupEvent.ToString(), pickupObject);
+        }
+
     }
+
 
 
     [Serializable]
@@ -82,20 +64,7 @@ public class AudioManager : MonoBehaviour
         [EventRef]
         public string playerFootstepEvent;
         private EventInstance playerFootstepInstance;
-        [EventRef]
-        public string playerDamageEvent;
-        private EventInstance playerDamageInstance;
 
-        public void PlayerDamageAudio(GameObject damageObject)
-        {
-            playerDamageInstance = RuntimeManager.CreateInstance(playerDamageEvent);
-
-            RuntimeManager.AttachInstanceToGameObject(playerDamageInstance, damageObject.transform, damageObject.GetComponent<Rigidbody>());
-
-            playerDamageInstance.start();
-
-            playerDamageInstance.release();
-        }
 
         public void PlayerFootstepAudio(GameObject footstepObject, string surface)
         {

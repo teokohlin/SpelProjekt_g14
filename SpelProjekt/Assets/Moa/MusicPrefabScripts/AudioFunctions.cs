@@ -7,13 +7,6 @@ public class AudioFunctions : MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject footstepPlayerPosition;
-    public GameObject landingObject;
-    public GameObject meleeObject;
-    public GameObject deathObject;
-    public GameObject jumpObject;
-    public GameObject damageObject;
-    public GameObject hurtObject;
-    public GameObject shootObject;
 
     private AudioManager audioMananger;
 
@@ -33,10 +26,5 @@ public class AudioFunctions : MonoBehaviour
     }
 
 
-
-    public void DamageAudioPlay()
-    {
-        audioMananger.playerAudio.PlayerDamageAudio(hurtObject);
-    }
 
 }

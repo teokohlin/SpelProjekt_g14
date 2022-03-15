@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667564, g: 0.48427135, b: 0.5645232, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427182, b: 0.56452405, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -65242,6 +65242,10 @@ PrefabInstance:
     - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
       propertyPath: interactablesAudio.stoneEvent
       value: event:/Sound/Stone
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
+      propertyPath: interactablesAudio.pickupEvent
+      value: event:/Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
       propertyPath: playerAudio.playerFootstepEvent

@@ -13,6 +13,8 @@ public class AudioInteractables : MonoBehaviour
         Switches,
         Stone,
         Tree,
+        Pickup,
+        Menu,
     }
 
     private AudioManager audioManager;
@@ -28,17 +30,8 @@ public class AudioInteractables : MonoBehaviour
             Debug.Log("Ditt Error Meddelande");
             switch (audioInteractableType)
             {
-                case AudioInteractableType.PickUpHealth:
-                    audioManager.interactablesAudio.PickUpHealthAudio(audioObject);
-                    break;
                 case AudioInteractableType.DoorOpen:
                     audioManager.interactablesAudio.DoorOpenAudio(audioObject);
-                    break;
-                case AudioInteractableType.DestructableBox:
-                    audioManager.interactablesAudio.DestructableBoxAudio(audioObject);
-                    break;
-                case AudioInteractableType.Switches:
-                    audioManager.interactablesAudio.SwitchesAudio(audioObject);
                     break;
                 case AudioInteractableType.Stone:
                     audioManager.interactablesAudio.StoneAudio(audioObject);
@@ -46,14 +39,18 @@ public class AudioInteractables : MonoBehaviour
                 case AudioInteractableType.Tree:
                     audioManager.interactablesAudio.TreeAudio(audioObject);
                     break;
+                case AudioInteractableType.Pickup:
+                    audioManager.interactablesAudio.PickupAudio(audioObject);
+                    break;
+                case AudioInteractableType.Menu:
+                    audioManager.interactablesAudio.MenuPressAudio(audioObject);
+                    break;
+
             }
         }
     }
 
-    public void DestructableBoxAudioPlay()
-    {
-        audioManager.interactablesAudio.DestructableBoxAudio(audioObject);
-    }
+
 
     // Start is called before the first frame update
     void Start()

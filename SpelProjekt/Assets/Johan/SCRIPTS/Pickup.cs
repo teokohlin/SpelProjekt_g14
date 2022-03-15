@@ -11,6 +11,7 @@ public enum dType
 }
 
 
+
 public class Pickup : MonoBehaviour
 {
     //public float verticalBobFrequency = 1f;
@@ -19,6 +20,8 @@ public class Pickup : MonoBehaviour
     Vector3 startPosition;
     private bool alreadyPickedUp;
 
+    private AudioManager audioManager;
+
     public dType dropType;
     [Tooltip("Hur mycket av resurser en *pickup* ger")]
     public int pickupAmount = 1;
@@ -26,6 +29,8 @@ public class Pickup : MonoBehaviour
     private void Start()
     {
         startPosition = new Vector3(transform.position.x, .5f, transform.position.z);
+        audioManager = FindObjectOfType<AudioManager>();
+
     }
     void Update()
     {
@@ -53,6 +58,8 @@ public class Pickup : MonoBehaviour
             Player p = other.GetComponent<Player>();
             
             p.AddResource(pickupAmount,dropType);
+
+            audioManager.interactablesAudio.PickupAudio(this.gameObject); 
 
             //switch (dropType)
             //{
