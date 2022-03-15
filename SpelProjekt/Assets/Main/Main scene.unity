@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427182, b: 0.56452405, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -24352,7 +24352,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialogues: []
+  dialogues:
+  - dialogue:
+    - picture: {fileID: 0}
+      sentence: Welcome to Korpatorp.
+    - picture: {fileID: 0}
+      sentence: 'Population: 20.'
   dialogueIndex: 0
   loop: 0
 --- !u!1001 &742474735
@@ -40199,23 +40204,46 @@ MonoBehaviour:
   dialogues:
   - dials:
     - dialogue:
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Ehm, hello?
       - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
-        sentence: Oy mister
+        sentence: Is the sumethin bothering ya?
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: "No, no I\u2019m just here to greet you."
       - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
-        sentence: I've lost mey fishing rod somewhere
+        sentence: "Well, could ya not, you\u2019re disturbin the peace mate."
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: "Sorry I didn\u2019t mean to irritate you."
       - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
-        sentence: I probablay dropped it near sum water in town
+        sentence: "Today's youth\u2026"
+      - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
+        sentence: If you wan to be useful, ya should fin me fishin rod.
+      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
+        sentence: Where should I look?
+      - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
+        sentence: "I don\u2019 know, I wouldn\u2019 ask ya if I knew it me self."
     - dialogue:
       - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
-        sentence: Have ye found me rod yet?
+        sentence: Have ya found me rod yet?
     - dialogue:
       - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
-        sentence: There it is
+        sentence: Innit beautiful.
       - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
-        sentence: Thanks a lot mister
+        sentence: "It\u2019s just a fishing rod."
       - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
-        sentence: Now that I can fesh again, I can bring ye sum food when I have
-          caught sum
+        sentence: "Ya don\u2019 understand. "
+      - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
+        sentence: 'This is me livelihood mate. '
+      - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
+        sentence: "Well I\u2019m gladly to help you mister."
+      - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
+        sentence: "Don\u2019 call me mister, call me Hubert friend."
+      - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
+        sentence: "And you can call me Mack\u2026 Magnus."
+      - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
+        sentence: Call me Magnus.
+      - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
+        sentence: Well if ya come to me tomorrow, I will get ya sum of me catch.
 --- !u!114 &1183389335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -40271,10 +40299,10 @@ MonoBehaviour:
   canNotInteract: 0
   exclamationMark: {fileID: 709568047}
   interval: {x: -10, y: 10}
-  badCatchMessage: I had terrible luck this time
-  decentCatchMessage: I had a decent catch
-  goodCatchMessage: I had a pretty good catch
-  perfectCatchMessage: I caught extremely many this time
+  badCatchMessage: Sorry mate, no luck this time.
+  decentCatchMessage: Here ya go. Sum of me fish.
+  goodCatchMessage: Got sum catch for ya mate. Ya welcome.
+  perfectCatchMessage: Innit the biggest fish ya seen. An ugley one too.
   fishCatchString: I managed to catch
   fishCatchString2: today
 --- !u!114 &1183389339
