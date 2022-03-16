@@ -21,7 +21,12 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: 
+    animationImportWarnings: "\nClip 'Fill Water Can' has import animation warnings
+      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
+      to improve retargeting quality.\n\t'L_Forearm_joint' is inbetween humanoid
+      transforms and has rotation animation that will be discarded.\n\t'R_forearm_joint'
+      is inbetween humanoid transforms and has rotation animation that will be discarded.\n\t'R_finger_group_2'
+      has translation animation that will be discarded.\n"
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -33,7 +38,178 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Fill Water Can
+      takeName: Fill Water Can
+      internalID: 0
+      firstFrame: 300
+      lastFrame: 323
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 1
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 1
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: Root_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Belt_joint_1
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Belt_joint_1/Belt_joint_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Belt_joint_1/Belt_joint_2/Belt_joint_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Belt_joint_1/Belt_joint_2/Belt_joint_3/Belt_joint_4
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Belt_joint_1/Belt_joint_2/Belt_joint_3/Belt_joint_4/Belt_joint_5
+        weight: 1
+      - path: Root_joint/Pelvis_joint/L_hip_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/L_hip_joint/L_knee_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/L_hip_joint/L_knee_joint/L_foot_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/L_hip_joint/L_knee_joint/L_foot_joint/L_ball_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/L_hip_joint/L_knee_joint/L_foot_joint/L_ball_joint/L_toe_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Left_belt_ring_1
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Left_belt_ring_1/Left_belt_ring_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Left_belt_ring_1/Left_belt_ring_2/Left_belt_ring_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Middle_belt_ring_1
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Middle_belt_ring_1/Middle_belt_ring_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Middle_belt_ring_1/Middle_belt_ring_2/Middle_belt_ring_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/R_hip_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/R_hip_joint/R_knee_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/R_hip_joint/R_knee_joint/R_foot_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/R_hip_joint/R_knee_joint/R_foot_joint/R_ball_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/R_hip_joint/R_knee_joint/R_foot_joint/R_ball_joint/R_toe_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Right_belt_ring_1
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Right_belt_ring_1/Right_belt_ring_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Right_belt_ring_1/Right_belt_ring_2/Right_belt_ring_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint/L_Hand_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint/L_Hand_joint/L_finger_group_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint/L_Hand_joint/L_finger_group_2/L_finger_group_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint/L_Hand_joint/L_finger_group_2/L_finger_group_3/L_finger_group_4
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint/L_Hand_joint/L_index_joint_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint/L_Hand_joint/L_index_joint_2/L_index_joint_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint/L_Hand_joint/L_index_joint_2/L_index_joint_3/L_index_joint_4
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint/L_Hand_joint/L_thumb_joint_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint/L_Hand_joint/L_thumb_joint_2/L_thumb_joint_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint/L_Hand_joint/L_thumb_joint_2/L_thumb_joint_3/L_thumb_joint_4
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/L_Collar_joint/L_Shoulder_joint/L_Elbow_joint/L_Forearm_joint/L_Wrist_joint/L_Hand_joint/L_tool_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/Neck_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/Neck_joint/Head_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/Neck_joint/Head_joint/Straw_joint_1
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/Neck_joint/Head_joint/Straw_joint_1/Straw_joint_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/Neck_joint/Head_joint/Straw_joint_1/Straw_joint_2/Straw_joint_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/Neck_joint/Head_joint/Straw_joint_1/Straw_joint_2/Straw_joint_3/Straw_joint_4
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/Neck_joint/Head_joint/Straw_joint_1/Straw_joint_2/Straw_joint_3/Straw_joint_4/Straw_joint_5
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint/R_Hand_joint
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint/R_Hand_joint/R_finger_group_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint/R_Hand_joint/R_finger_group_2/R_finger_group_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint/R_Hand_joint/R_finger_group_2/R_finger_group_3/R_finger_group_4
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint/R_Hand_joint/R_index_joint_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint/R_Hand_joint/R_index_joint_2/R_index_joint_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint/R_Hand_joint/R_index_joint_2/R_index_joint_3/R_index_joint_4
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint/R_Hand_joint/R_thumb_joint_2
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint/R_Hand_joint/R_thumb_joint_2/R_thumb_joint_3
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint/R_Hand_joint/R_thumb_joint_2/R_thumb_joint_3/R_thumb_joint_4
+        weight: 1
+      - path: Root_joint/Pelvis_joint/Spine_joint_1/Spine_joint_2/Spine_joint_3/Spine_joint_4/Spine_joint_5/R_Collar_joint/R_Shoulder_joint/R_Elbow_joint/R_forearm_joint/R_Wrist_joint/R_Hand_joint/R_tool_joint
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 300
     isReadable: 0
   meshes:
     lODScreenPercentages: []
