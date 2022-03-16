@@ -51,7 +51,10 @@ public class DialogueManager : MonoBehaviour
         inDialogue = true;
         
         playerC.SetLockMovement(true);
-        hotbarCanvasUI.SetActive(false);
+        if (hotbarCanvasUI != null)
+        {
+            hotbarCanvasUI.SetActive(false);
+        }
         animator.SetBool("IsOpen", true);
 
         dialogues.Clear();
@@ -119,7 +122,11 @@ public class DialogueManager : MonoBehaviour
         inDialogue = false;
         StopAllCoroutines();
         StartCoroutine(UnlockMovementDelay()); //titta ner
-        hotbarCanvasUI.SetActive(true);
+        if (hotbarCanvasUI != null)
+        {
+            hotbarCanvasUI.SetActive(true);
+
+        }
         animator.SetBool("IsOpen", false);
 
         dialogueEnd?.Invoke();
