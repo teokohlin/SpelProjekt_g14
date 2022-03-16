@@ -8997,7 +8997,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 272915158}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6cd5e7e229e86914ca11f53600b6c894, type: 3}
   m_Name: 
@@ -41140,6 +41140,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1075776344}
     m_Modifications:
+    - target: {fileID: 1365942008880112470, guid: 0c1358ca95dd93547865ad8b8c0986ef, type: 3}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3315809273627173832, guid: 0c1358ca95dd93547865ad8b8c0986ef, type: 3}
       propertyPath: m_Name
       value: Round_tree_ani 1 (24)
@@ -63901,6 +63905,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1075776344}
     m_Modifications:
+    - target: {fileID: 1365942008880112470, guid: 0c1358ca95dd93547865ad8b8c0986ef, type: 3}
+      propertyPath: m_Carve
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3315809273627173832, guid: 0c1358ca95dd93547865ad8b8c0986ef, type: 3}
       propertyPath: m_Name
       value: Round_tree_ani 1 (14)

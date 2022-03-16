@@ -275,6 +275,7 @@ GameObject:
   - component: {fileID: 3315809273627173845}
   - component: {fileID: 3315809273627173846}
   - component: {fileID: 3315809273627173847}
+  - component: {fileID: 1365942008880112470}
   m_Layer: 9
   m_Name: Round_tree_ani 1
   m_TagString: Tree
@@ -353,6 +354,22 @@ MonoBehaviour:
   spawner: {fileID: 6246398517635487805}
   stubbe: {fileID: 6921577884886939832, guid: c86dc14d90ac2e74baa957d33d433e06, type: 3}
   animator: {fileID: 8128492757898218660, guid: 5325cd093d6e51748bd75d96a6a25a6f, type: 3}
+--- !u!208 &1365942008880112470
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3315809273627173832}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 1.1, y: 5, z: 1.1}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0.34, y: 4.03, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &3315809273981186762
 GameObject:
   m_ObjectHideFlags: 0

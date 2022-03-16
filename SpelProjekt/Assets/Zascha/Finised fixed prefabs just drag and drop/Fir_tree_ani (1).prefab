@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 5524891854986311926}
   - component: {fileID: 5524891854986311927}
   - component: {fileID: 5524891854986311924}
+  - component: {fileID: 8160948936541176028}
   m_Layer: 9
   m_Name: Fir_tree_ani (1)
   m_TagString: Tree
@@ -241,6 +242,22 @@ CapsuleCollider:
   m_Height: 10.93
   m_Direction: 1
   m_Center: {x: 0, y: 5.24, z: 0}
+--- !u!208 &8160948936541176028
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5524891854986311925}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 0
+  m_Extents: {x: 1, y: 5, z: 1}
+  m_MoveThreshold: 0.1
+  m_Carve: 1
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 3, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &5524891855146414484
 GameObject:
   m_ObjectHideFlags: 0
