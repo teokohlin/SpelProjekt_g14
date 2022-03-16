@@ -8965,6 +8965,58 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4416748345685294584, guid: c8bab68c097f594459a1a65865b7e546, type: 3}
   m_PrefabInstance: {fileID: 271452278}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &272915158 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6496798684963121270, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+  m_PrefabInstance: {fileID: 994704111}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &272915159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272915158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed25c8e7cf5145a4093c58ce719d9576, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogues:
+  - dialogue:
+    - picture: {fileID: 0}
+      sentence: Welcome to Korpatorp.
+    - picture: {fileID: 0}
+      sentence: 'Population: 20.'
+  dialogueIndex: 0
+  loop: 1
+--- !u!114 &272915160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272915158}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6cd5e7e229e86914ca11f53600b6c894, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isQuest: 0
+  canNotInteract: 0
+--- !u!65 &272915161
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 272915158}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.01, y: 0.0026335455, z: 0.020070849}
+  m_Center: {x: 2.7575991e-16, y: 0.00051260914, z: -0.004085199}
 --- !u!1001 &274294871
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34264,6 +34316,79 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 6891769647944055237, guid: f6f2f7a7acc84c6479fcfd12ff99ad7d, type: 3}
   m_PrefabInstance: {fileID: 993438281}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &994704111
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_RootOrder
+      value: 47
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 150
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -97.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6960966
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.6960968
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.12429587
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.12429582
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5864411667076739788, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 20.248
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496798684963121270, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_Name
+      value: Sign_Korpatorp (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6496798684963121270, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
+      propertyPath: m_Layer
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3cf7c62cabc29f744a9c8718536954ee, type: 3}
 --- !u!1 &995914106
 GameObject:
   m_ObjectHideFlags: 0
