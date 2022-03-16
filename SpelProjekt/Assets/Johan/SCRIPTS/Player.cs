@@ -1,3 +1,4 @@
+ using System;
  using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -17,8 +18,11 @@ public class Player : MonoBehaviour
     private int energy = 5;
     [SerializeField]
     public int maxEnergy = 5;
+
     [Space]
     //public List<Quest> quests;
+
+    private Animator animator;
 
     float percentage;
     public int maxWater;
@@ -43,6 +47,10 @@ public class Player : MonoBehaviour
     public UnityAction noEnergyActivated;
     public UnityAction noWaterActivated;
 
+    private void Start()
+    {
+        animator = GetComponent<Animator>();
+    }
 
     public void AddWood(int amount)
     {
@@ -120,18 +128,27 @@ public class Player : MonoBehaviour
 
     public void RefillEnergy()
     {
+        
         energy = maxEnergy;
         NoEnergy = false;
         //percentage = energy / maxEnergy;
         //Debug.Log(percentage);
         //energyPercentageUpdate?.Invoke(percentage);
         energyPercentageUpdate?.Invoke(Percentage(energy, maxEnergy));
+        
 
+
+    }
+
+    public void PlaySleepAnimation()
+    {
+        animator.SetTrigger("Go To Bed");
     }
 
     public void FillWater()
     {
         waterAmount = maxWater;
+        animator.SetTrigger("Fill Water Can");
     }
     public void DepleteWater()
     {

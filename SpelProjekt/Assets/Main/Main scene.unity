@@ -33623,6 +33623,36 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1289359901612927832, guid: 85d8014685bab8d4483d31fad71e6321, type: 3}
   m_PrefabInstance: {fileID: 979226656}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &979321349
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 979321350}
+  m_Layer: 10
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &979321350
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 979321349}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: 2.89, y: 0.00000011920929, z: 2.7}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1406649833}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 270, z: 0}
 --- !u!1001 &982591006
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50021,6 +50051,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4320173211277650343, guid: 34814d6762d022f4ea45b018e028ac03, type: 3}
   m_PrefabInstance: {fileID: 1404367815}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1406649833 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5913672248349892530, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
+  m_PrefabInstance: {fileID: 1443553108}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1407153205
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -51716,6 +51751,10 @@ PrefabInstance:
       propertyPath: m_Center.z
       value: 2.4824371
       objectReference: {fileID: 0}
+    - target: {fileID: 3240235846890871685, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
+      propertyPath: tpTransform
+      value: 
+      objectReference: {fileID: 979321350}
     - target: {fileID: 3240235847004776519, guid: 7069478210842d2498dc5dcfd6a90868, type: 3}
       propertyPath: m_StaticEditorFlags
       value: 4294967295

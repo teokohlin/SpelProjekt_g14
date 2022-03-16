@@ -8,6 +8,8 @@ public class Bed_Interactable : Interactable
     public BlackScreenManager screen;
     public DayManager dayManager;
     public DayNightCycle dnc;
+    [SerializeField]
+    private Transform tpTransform;
     private void Start()
     {
         screen = FindObjectOfType<BlackScreenManager>();
@@ -23,12 +25,17 @@ public class Bed_Interactable : Interactable
         }
 
         pc.SetLockMovement(true);
-        screen.Fade(true);
+        pc.gameObject.transform.position = tpTransform.position;
+        pc.gameObject.transform.rotation = tpTransform.rotation;
+        //screen.Fade(true);
         StartCoroutine(ChangeDay(pc));
     }
 
     public IEnumerator ChangeDay(PlayerController pc)
     {
+        pc.player.PlaySleepAnimation();
+        yield return new WaitForSeconds(.8f);
+        screen.Fade(true, 1);
         yield return new WaitForSeconds(1 / screen.fadeSpeed);
         dnc.Invoke();
         pc.player.RefillEnergy();

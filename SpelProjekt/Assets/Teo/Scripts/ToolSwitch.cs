@@ -6,6 +6,8 @@ using UnityEngine.Events;
 public class ToolSwitch : MonoBehaviour
 {
     public int currentTool;
+
+    private Animator animator;
     //public bool seed;
     public int index;
     [SerializeField] private Transform[] tools;
@@ -13,7 +15,7 @@ public class ToolSwitch : MonoBehaviour
     public UnityAction<int> ToolSwitchIndex;
     void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     void Update()
@@ -80,6 +82,9 @@ public class ToolSwitch : MonoBehaviour
     public void ChangeTool(int num)
     {
         //seed = false;
+        
+        animator.SetTrigger("Change Tool");
+        
         currentTool = num;
         for (int i = 0; i < tools.Length; i++)
         {

@@ -10,14 +10,17 @@ public class BlackScreenManager : MonoBehaviour
    public bool isBlack = false;
    [Range(0,2)]
    public float fadeSpeed = 0.9f;
+
+   private float delay = 0;
    private void Start()
    {
       StartCoroutine(FadeBlackScreen(false));
    }
 
 
-   public void Fade(bool isBlack)
+   public void Fade(bool isBlack, float delay = 0)
    {
+      this.delay = delay;
       StartCoroutine(FadeBlackScreen(isBlack));
       this.isBlack = isBlack;
    }
@@ -38,6 +41,7 @@ public class BlackScreenManager : MonoBehaviour
             yield return null;
          }
 
+         yield return new WaitForSeconds(delay);
          StartCoroutine(FadeBlackScreen(false));
       }
       else
