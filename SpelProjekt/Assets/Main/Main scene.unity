@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427182, b: 0.56452405, a: 1}
+  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3373,8 +3373,8 @@ MonoBehaviour:
   Preload: 0
   Params: []
   OverrideAttenuation: 1
-  OverrideMinDistance: 20.906578
-  OverrideMaxDistance: 23.719048
+  OverrideMinDistance: 17.89986
+  OverrideMaxDistance: 53.659676
 --- !u!4 &113530433
 Transform:
   m_ObjectHideFlags: 0
@@ -4534,6 +4534,25 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4647047101844179292, guid: 197a6ac62cb9a8d42b5646699ba28299, type: 3}
   m_PrefabInstance: {fileID: 141011395}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &141346312 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1450714274040086588, guid: 25f3c8b2b704ea847b23a4e15300ff1b, type: 3}
+  m_PrefabInstance: {fileID: 1218458969}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &141346318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141346312}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attenuationObject: {fileID: 0}
+  ListenerNumber: -1
 --- !u!1001 &142693266
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10631,6 +10650,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4837891789999748936, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1889961328728125276, guid: ae78791ffaab4ae4cb0e4d0a2d5b2db3, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -20459,7 +20482,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 637704057}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &637704059
 Camera:
   m_ObjectHideFlags: 0
