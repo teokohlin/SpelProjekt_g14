@@ -83,7 +83,7 @@ public class AudioManager : MonoBehaviour
                 case "Wood":
                     playerFootstepInstance.setParameterByName("Surface", 2f);
                     break;
-                case "Sand":
+                case "Water":
                     playerFootstepInstance.setParameterByName("Surface", 3f);
                     break;
 
