@@ -9,13 +9,17 @@ using UnityEngine.UI;
 public class AnimaticController : MonoBehaviour
 {
 
+    public float timeUntilText = 3f;
+
     public float minimumWaitTime = 2f;
     [Space] 
     public Sprite[] sprites;
 
     public string[] strings;
-    
-    [Space]
+    public BlackScreenManager blackScreen;
+
+    [Space] 
+    public GameObject textBox;
     public TextMeshProUGUI text;
     public Image image;
     
@@ -25,7 +29,9 @@ public class AnimaticController : MonoBehaviour
     private void Start()
     {
         justSwapped = true;
-        NextImage();
+        
+        
+        //StartCoroutine(NextImage());
     }
 
     void Update()
@@ -46,28 +52,47 @@ public class AnimaticController : MonoBehaviour
 
             justSwapped = true;
             
-            NextImage();
+            if (index > sprites.Length - 1)
+            {
+                return;
+            }
+            StartCoroutine(NextImage());
 
 
         }
     }
 
-    private void NextImage()
+    private void NextImageVoid()
     {
-        if (index > sprites.Length - 1)
-        {
-            return;
-        }
-        
         image.sprite = sprites[index];
-        text.text = strings[index];
+        text.text = strings
 
-        index++;
+
+
 
         StopAllCoroutines();
         StartCoroutine(Delay());
         
 
+    } 
+
+    IEnumerator NextImage()
+    {
+        blackScreen.Fade(true);
+        yield return new WaitForSeconds(1 / blackScreen.fadeSpeed);
+        
+        image.sprite = sprites[index];
+        text.text = strings[index];
+        textBox.SetActive(false);
+        index++;
+
+
+        yield return new WaitForSeconds(timeUntilText);
+        textBox.SetActive(true);
+
+        
+        StopCoroutine(Delay());
+        StartCoroutine(Delay());
     }
 
     IEnumerator Delay()
