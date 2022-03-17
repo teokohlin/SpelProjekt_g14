@@ -13,6 +13,7 @@ public class MusicManager : MonoBehaviour
         public StudioEventEmitter musicMain;
         public StudioEventEmitter musicMenu;
         public StudioEventEmitter ambiance;
+        public StudioEventEmitter musicStart;
     }
 
     public Emitters eventEmitters;
@@ -25,6 +26,8 @@ public class MusicManager : MonoBehaviour
     public string menuStartGame;
     [ParamRef]
     public string timeOfDayParam;
+    [ParamRef]
+    public string progress;
 
     // Start is called before the first frame update
     void Start()
@@ -63,6 +66,13 @@ public class MusicManager : MonoBehaviour
                     eventEmitters.ambiance.Play();
                 }
                 break;
+            case "musicStart":
+                if (!eventEmitters.musicStart.IsActive)
+
+                {
+                    eventEmitters.musicStart.Play();
+                }
+                break;
         }
     }
     public void StopMusic(string eventName)
@@ -77,6 +87,9 @@ public class MusicManager : MonoBehaviour
                 break;
             case "ambiance":
                 eventEmitters.ambiance.Stop();
+                break;
+            case "musicStart":
+                eventEmitters.musicStart.Stop();
                 break;
         }
     }
@@ -100,6 +113,11 @@ public class MusicManager : MonoBehaviour
     public void MusicTimeOfDay(float timeOfDay)
     {
         RuntimeManager.StudioSystem.setParameterByName(timeOfDayParam, timeOfDay);
+    }
+
+    public void ProgressIntro(float stage)
+    {
+        RuntimeManager.StudioSystem.setParameterByName(progress, stage);
     }
 
 
