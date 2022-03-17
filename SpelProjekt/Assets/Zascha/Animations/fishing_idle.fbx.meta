@@ -31,7 +31,23 @@ ModelImporter:
       that will be discarded.\n\t'R_collor_joint' has translation animation that
       will be discarded.\n\t'R_little_joint_2' has translation animation that will
       be discarded.\n"
-    animationRetargetingWarnings: 
+    animationRetargetingWarnings: "\nRetargeting quality report for clip 'fishing_idle':\n\tLeftLowerLeg
+      average position error 0.4 mm and maximum position error 7.2 mm at time 35:
+      0 (100.0%) Frame 1050\n\tLeftFoot average position error 0.4 mm and maximum
+      position error 7.0 mm at time 35: 0 (100.0%) Frame 1050\n\tRightLowerLeg average
+      position error 0.4 mm and maximum position error 7.2 mm at time 35: 0 (100.0%)
+      Frame 1050\n\tRightFoot average position error 0.4 mm and maximum position
+      error 7.3 mm at time 35: 0 (100.0%) Frame 1050\n\tLeftUpperArm average position
+      error 1.2 mm and maximum position error 20.7 mm at time 35: 0 (100.0%) Frame
+      1050\n\tLeftLowerArm average position error 1.2 mm and maximum position error
+      19.3 mm at time 35: 0 (100.0%) Frame 1050\n\tLeftHand average position error
+      1.1 mm and maximum position error 18.6 mm at time 35: 0 (100.0%) Frame 1050\n\tRightUpperArm
+      average position error 1.2 mm and maximum position error 20.7 mm at time 35:
+      0 (100.0%) Frame 1050\n\tRightLowerArm average position error 1.2 mm and maximum
+      position error 19.2 mm at time 35: 0 (100.0%) Frame 1050\n\tRightHand average
+      position error 1.1 mm and maximum position error 18.3 mm at time 35: 0 (100.0%)
+      Frame 1050\n\tHead average position error 2.7 mm and maximum position error
+      44.4 mm at time 35: 0 (100.0%) Frame 1050\n"
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
@@ -122,19 +138,19 @@ ModelImporter:
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/L_collor_joint/L_shoulder_joint/L_elbow_joint/L_forarm_joint/L_wrist_joint/L_hand_joint/L_little_joint_1/L_little_joint_2
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/L_collor_joint/L_shoulder_joint/L_elbow_joint/L_forarm_joint/L_wrist_joint/L_hand_joint/L_little_joint_1/L_little_joint_2/L_little_joint_3
-        weight: 0
+        weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/L_collor_joint/L_shoulder_joint/L_elbow_joint/L_forarm_joint/L_wrist_joint/L_hand_joint/L_mid_1
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/L_collor_joint/L_shoulder_joint/L_elbow_joint/L_forarm_joint/L_wrist_joint/L_hand_joint/L_mid_1/L_mid_2
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/L_collor_joint/L_shoulder_joint/L_elbow_joint/L_forarm_joint/L_wrist_joint/L_hand_joint/L_mid_1/L_mid_2/L_mid_3
-        weight: 0
+        weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/L_collor_joint/L_shoulder_joint/L_elbow_joint/L_forarm_joint/L_wrist_joint/L_hand_joint/L_point_joint_1
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/L_collor_joint/L_shoulder_joint/L_elbow_joint/L_forarm_joint/L_wrist_joint/L_hand_joint/L_point_joint_1/L_point_joint_2
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/L_collor_joint/L_shoulder_joint/L_elbow_joint/L_forarm_joint/L_wrist_joint/L_hand_joint/L_point_joint_1/L_point_joint_2/L_point_joint_3
-        weight: 0
+        weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/neck_joint
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/neck_joint/head_joint
@@ -142,7 +158,7 @@ ModelImporter:
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/neck_joint/head_joint/Hat_joint
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/neck_joint/head_joint/jaw_joint
-        weight: 0
+        weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/neck_joint/head_joint/L_eye_joint
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/neck_joint/head_joint/R_eye_joint
@@ -164,19 +180,19 @@ ModelImporter:
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/R_collor_joint/R_shoulder_joint/R_elbow_joint/R_forarm_joint/R_wrist_joint/R_hand_joint/R_little_joint_1/R_little_joint_2
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/R_collor_joint/R_shoulder_joint/R_elbow_joint/R_forarm_joint/R_wrist_joint/R_hand_joint/R_little_joint_1/R_little_joint_2/R_little_joint_3
-        weight: 0
+        weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/R_collor_joint/R_shoulder_joint/R_elbow_joint/R_forarm_joint/R_wrist_joint/R_hand_joint/R_mid_1
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/R_collor_joint/R_shoulder_joint/R_elbow_joint/R_forarm_joint/R_wrist_joint/R_hand_joint/R_mid_1/R_mid_2
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/R_collor_joint/R_shoulder_joint/R_elbow_joint/R_forarm_joint/R_wrist_joint/R_hand_joint/R_mid_1/R_mid_2/R_mid_3
-        weight: 0
+        weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/R_collor_joint/R_shoulder_joint/R_elbow_joint/R_forarm_joint/R_wrist_joint/R_hand_joint/R_point_joint_1
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/R_collor_joint/R_shoulder_joint/R_elbow_joint/R_forarm_joint/R_wrist_joint/R_hand_joint/R_point_joint_1/R_point_joint_2
         weight: 1
       - path: Frog_Root_joint/Pelvis_joint/spine_joint_1/spine_joint_2/spine_joint_3/spine_joint_4/spine_joint_5/R_collor_joint/R_shoulder_joint/R_elbow_joint/R_forarm_joint/R_wrist_joint/R_hand_joint/R_point_joint_1/R_point_joint_2/R_point_joint_3
-        weight: 0
+        weight: 1
       maskType: 0
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0.9
