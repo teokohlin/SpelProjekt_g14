@@ -21,6 +21,7 @@ public class BlackScreenManager : MonoBehaviour
    public void Fade(bool isBlack, float delay = 0)
    {
       this.delay = delay;
+      StopCoroutine(FadeBlackScreen());
       StartCoroutine(FadeBlackScreen(isBlack));
       this.isBlack = isBlack;
    }
