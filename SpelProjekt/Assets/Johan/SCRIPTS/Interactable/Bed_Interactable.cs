@@ -28,7 +28,7 @@ public class Bed_Interactable : Interactable
         pc.gameObject.transform.position = tpTransform.position;
         pc.gameObject.transform.rotation = tpTransform.rotation;
         //screen.Fade(true);
-        StopCoroutine(ChangeDay());
+        StopCoroutine(ChangeDay(pc));
         StartCoroutine(ChangeDay(pc));
     }
 
