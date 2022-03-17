@@ -30986,7 +30986,7 @@ MonoBehaviour:
         sentence: Today.
       - picture: {fileID: 0}
         sentence: "You can now control the monster by right clicking on him and choosing
-          \u201Csow seeds\u201D."
+          \u201Cwork\u201D and \"sow\"."
 --- !u!65 &884562819
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -47606,10 +47606,10 @@ MonoBehaviour:
   - dialogue:
     - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
       sentence: Looks like there aren't any plowed fields for me to sow my seeds
-        in
+        in.
   - dialogue:
     - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-      sentence: Come back when there are plown fields for me to work with
+      sentence: Come back when there are plown fields for me to work with.
   dialogueIndex: 0
   loop: 1
 --- !u!64 &1299285015
@@ -49202,7 +49202,7 @@ MonoBehaviour:
   goodCatchMessage: Got sum catch for ya mate. Ya welcome.
   perfectCatchMessage: Innit the biggest fish ya seen. An ugley one too.
   fishCatchString: I managed to catch
-  fishCatchString2: today
+  fishCatchString2: today.
 --- !u!114 &1345820395
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49307,6 +49307,8 @@ MonoBehaviour:
         sentence: Where should I look?
       - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
         sentence: "I don\u2019 know, I wouldn\u2019 ask ya if I knew it me self."
+      - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
+        sentence: I prolly forgot it near a river or somthin.
     - dialogue:
       - picture: {fileID: 21300000, guid: f4bc97326228a2f44afd997fc4bec872, type: 3}
         sentence: Have ya found me rod yet?
@@ -79735,7 +79737,7 @@ MonoBehaviour:
         sentence: Of course it does. Now do the same with my home.
     - dialogue:
       - picture: {fileID: 0}
-        sentence: 'Right click on the dam and click on the "repair dam"-button. '
+        sentence: 'Right click on the dam and click on the "repair house"-button. '
     - dialogue:
       - picture: {fileID: 21300000, guid: dddc2d8f33763504eab1b806058701a0, type: 3}
         sentence: It looks marvelous.
