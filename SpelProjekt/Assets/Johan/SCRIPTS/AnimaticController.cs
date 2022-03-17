@@ -19,7 +19,8 @@ public class AnimaticController : MonoBehaviour
 
     public string[] strings;
     public BlackScreenManager blackScreen;
-
+    public MusicManager musicManager;
+    
     [Space] 
     public GameObject textBox;
     public TextMeshProUGUI text;
@@ -82,8 +83,12 @@ public class AnimaticController : MonoBehaviour
 
     IEnumerator NextImage()
     {
+
         blackScreen.Fade(true);
         yield return new WaitForSeconds(1 / blackScreen.fadeSpeed);
+        
+        
+        
         
         image.sprite = sprites[index];
         text.text = strings[index];
