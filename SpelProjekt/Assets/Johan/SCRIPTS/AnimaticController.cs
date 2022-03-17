@@ -12,6 +12,8 @@ public class AnimaticController : MonoBehaviour
     public float timeUntilText = 3f;
 
     public float minimumWaitTime = 2f;
+
+    public float textFadeMultiplier = 2;
     [Space] 
     public Sprite[] sprites;
 
@@ -29,14 +31,14 @@ public class AnimaticController : MonoBehaviour
     private void Start()
     {
         justSwapped = true;
-        
-        
+
+        StartCoroutine(FirstImage());
         //StartCoroutine(NextImage());
     }
 
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.anyKey)
         {
             if (justSwapped)
             {
@@ -62,19 +64,21 @@ public class AnimaticController : MonoBehaviour
         }
     }
 
+    /*
     private void NextImageVoid()
     {
         image.sprite = sprites[index];
-        text.text = strings
+        text.text = strings[index];
 
 
 
 
-        StopAllCoroutines();
         StartCoroutine(Delay());
         
 
     } 
+    
+    */
 
     IEnumerator NextImage()
     {
@@ -83,21 +87,63 @@ public class AnimaticController : MonoBehaviour
         
         image.sprite = sprites[index];
         text.text = strings[index];
-        textBox.SetActive(false);
+        //textBox.SetActive(false);
+        textBox.GetComponent<Image>().color = new Color(1, 1, 1, 0);
+        text.color = new Color(0, 0, 0, 0);
         index++;
 
 
         yield return new WaitForSeconds(timeUntilText);
-        textBox.SetActive(true);
+        //textBox.SetActive(true);
+        StartCoroutine(FadeText());
 
         
-        StopCoroutine(Delay());
-        StartCoroutine(Delay());
+    }
+
+    IEnumerator FirstImage()
+    {
+        image.sprite = sprites[index];
+        text.text = strings[index];
+        //textBox.SetActive(false);
+        textBox.GetComponent<Image>().color = new Color(1, 1, 1, 0);
+        text.color = new Color(0, 0, 0, 0);
+        index++;
+        
+        yield return new WaitForSeconds(timeUntilText);
+        //textBox.SetActive(true);
+        StartCoroutine(FadeText());
+        
+
     }
 
     IEnumerator Delay()
     {
         yield return new WaitForSeconds(minimumWaitTime);
         justSwapped = false;
+    }
+
+    IEnumerator FadeText()
+    {
+        Image txtBoxImage = textBox.GetComponent<Image>();
+
+        while (txtBoxImage.color.a < 1)
+        {
+            //Bilden
+            float a = txtBoxImage.color.a;
+            a += Time.deltaTime * textFadeMultiplier;
+            txtBoxImage.color = new Color(1, 1, 1, a);
+
+            //Texten
+            float ta = text.color.a;
+            ta += Time.deltaTime * textFadeMultiplier;
+            text.color = new Color(0, 0, 0, ta);
+            
+            
+            yield return new WaitForEndOfFrame();
+
+        }
+        
+        StopCoroutine(Delay());
+        StartCoroutine(Delay());
     }
 }
