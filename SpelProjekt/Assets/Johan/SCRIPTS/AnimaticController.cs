@@ -25,7 +25,7 @@ public class AnimaticController : MonoBehaviour
     public GameObject textBox;
     public TextMeshProUGUI text;
     public Image image;
-    
+    [SerializeField]
     private int index = 0;
     private bool justSwapped = false;
 
@@ -59,6 +59,7 @@ public class AnimaticController : MonoBehaviour
             {
                 return;
             }
+            musicManager.ProgressIntro(index);
             StartCoroutine(NextImage());
 
 

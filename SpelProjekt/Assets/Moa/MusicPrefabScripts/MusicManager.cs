@@ -115,7 +115,7 @@ public class MusicManager : MonoBehaviour
         RuntimeManager.StudioSystem.setParameterByName(timeOfDayParam, timeOfDay);
     }
 
-    public void ProgressIntro(float stage)
+    public void ProgressIntro(int stage)
     {
         RuntimeManager.StudioSystem.setParameterByName(progress, stage);
     }
