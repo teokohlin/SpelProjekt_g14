@@ -81,6 +81,7 @@ public class ToolSwitch : MonoBehaviour
 
     public void ChangeTool(int num)
     {
+        index = num;
         //seed = false;
         
         animator.SetTrigger("Change Tool");
