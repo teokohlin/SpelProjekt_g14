@@ -41,6 +41,7 @@ public class Bed_Interactable : Interactable
         dnc.Invoke();
         pc.player.RefillEnergy();
         yield return new WaitForSeconds(1 / screen.fadeSpeed);
+        yield return new WaitForSeconds(1);
         pc.SetLockMovement(false);
     }
 }
