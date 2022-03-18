@@ -8,7 +8,7 @@ public class RepairQuest_Interractable : Interactable
     private bool canvasOpen;
     //public bool questCompleted;
     private PlayerController pc;
-    [Header("Objektet som ska aktiveras n‰r denna avaktiveras")]
+    [Header("Objektet som ska aktiveras n√§r denna avaktiveras")]
     public GameObject repairObject;
     [Header("Objektet som ska replaceas, t.ex. gamla brunnen")]
     public GameObject removeObject;
@@ -16,6 +16,7 @@ public class RepairQuest_Interractable : Interactable
     [HideInInspector]
     public QuestGiver questGiver;
     public RepairCosts[] RepairCost;
+    public Interactable interactable;
     [System.Serializable]
     public struct RepairCosts
     {
@@ -28,19 +29,24 @@ public class RepairQuest_Interractable : Interactable
     {
         if (enabled == false)
         {
+            if (interactable != null)
+            {
+                interactable.InteractWith(pc);
+            }
+            
             return;
         }
 
         base.InteractWith(pc);
 
-        if (GetComponent<QuestGiver>() != null) //Ifall man vill att objektet sj‰lv ska starta questet
+        if (GetComponent<QuestGiver>() != null) //Ifall man vill att objektet sj√§lv ska starta questet
         {
             GetComponent<QuestGiver>().TriggerDialogue();
             GetComponent<QuestGiver>().TryStartQuest();
             GetComponent<QuestGiver>().InterractedWith();
 
         }
-        //else if (isQuest) //om det startas av nÂgon annan. denna blir dock den som spelas efter fˆrsta interraktionen
+        //else if (isQuest) //om det startas av n√•gon annan. denna blir dock den som spelas efter f√∂rsta interraktionen
         //{
 
         //} 
