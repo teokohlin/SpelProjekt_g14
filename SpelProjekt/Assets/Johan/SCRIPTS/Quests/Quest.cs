@@ -133,7 +133,8 @@ public class Quest
         switch (rewardKind)
         {
         case RewardType.Resource:
-            RewardPlayer();
+            Object.FindObjectOfType<DialogueManager>().dialogueEnd += RewardPlayer;
+            //RewardPlayer();
             break;
         case RewardType.Story:
             break;
@@ -157,7 +158,10 @@ public class Quest
 
     public void RewardPlayer()
     {
+        
+        
         Object.FindObjectOfType<Player>().AddResource(rewardAmount, rewardType);
+        Object.FindObjectOfType<DialogueManager>().dialogueEnd -= RewardPlayer;
 
         //switch (rewardType)
         //{
