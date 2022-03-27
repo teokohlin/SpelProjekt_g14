@@ -10,9 +10,10 @@ public class KNapp : MonoBehaviour
     {
         isOpen = false;
     }
+
+    //Toggles build menu when button is pressed
     public void KnappKlickad()
     {
-        Debug.Log("klick");
         isOpen = !isOpen;
         background.SetActive(isOpen);
     }
@@ -20,9 +21,12 @@ public class KNapp : MonoBehaviour
     {
         Application.Quit();
     }
-
+    //Checks if e is pressed and toggles build menu if it is
     public void Update()
     {
-
+        if (Input.GetKeyDown("e"))
+        {
+            KnappKlickad();
+        }
     }
 }
