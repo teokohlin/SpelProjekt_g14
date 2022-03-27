@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8289544644174245186}
   - component: {fileID: 4045477548554849763}
   - component: {fileID: 2432733202141576924}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Vines
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   - component: {fileID: 5304035115602361897}
   - component: {fileID: 88301055211334487}
   - component: {fileID: 6800162415720304504}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Vines.001
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 7398524463091677541}
   - component: {fileID: 1064019877925854706}
   - component: {fileID: 5679246608679523479}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Roe_Deer_lp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -254,8 +254,9 @@ GameObject:
   - component: {fileID: 3350277802743240872}
   - component: {fileID: 3023088066188181375}
   - component: {fileID: 3023088066188181374}
-  - component: {fileID: 3023088066188181373}
-  m_Layer: 0
+  - component: {fileID: 4524715482360766190}
+  - component: {fileID: 5479792258159570288}
+  m_Layer: 10
   m_Name: Helka-Monster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5052,8 +5053,8 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!65 &3023088066188181373
-BoxCollider:
+--- !u!64 &4524715482360766190
+MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -5062,9 +5063,22 @@ BoxCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.42, y: 1.42, z: 25.920076}
-  m_Center: {x: 0, y: 0, z: 12.649671}
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 0}
+--- !u!114 &5479792258159570288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2681123119515779602}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43cc87dee8a5813428181e223f9e245c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5219022397072979384
 GameObject:
   m_ObjectHideFlags: 0
@@ -5076,7 +5090,7 @@ GameObject:
   - component: {fileID: 8862329463009241060}
   - component: {fileID: 7165425757301462587}
   - component: {fileID: 4549303202094045887}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Leaves
   m_TagString: Untagged
   m_Icon: {fileID: 0}
