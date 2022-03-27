@@ -13,10 +13,16 @@ public class KNapp : MonoBehaviour
     public void KnappKlickad()
     {
         Debug.Log("klick");
+        isOpen = !isOpen;
         background.SetActive(isOpen);
     }
     public void Exit()
     {
         Application.Quit();
+    }
+
+    public void Update()
+    {
+
     }
 }
