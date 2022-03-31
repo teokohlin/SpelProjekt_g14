@@ -24,6 +24,51 @@ public class AudioManager : MonoBehaviour
         public string treeEvent;
         [EventRef]
         public string pickupEvent;
+        [EventRef]
+        public string seedsEvent;
+        [EventRef]
+        public string useWaterEvent;
+        [EventRef]
+        public string waterRefillEvent;
+        [EventRef]
+        public string pickBerriesEvent;
+        [EventRef]
+        public string hoeEvent;
+        [EventRef]
+        public string schytheEvent;
+        [EventRef]
+        public string sleepEvent;
+
+
+        public void SleepAudio(GameObject sleepObject)
+        {
+            RuntimeManager.PlayOneShotAttached(sleepEvent.ToString(), sleepObject);
+        }
+        public void useSchytheAudio(GameObject schytheObject)
+        {
+            RuntimeManager.PlayOneShotAttached(schytheEvent.ToString(), schytheObject);
+        }
+        public void useHoeAudio(GameObject hoeObject)
+        {
+            RuntimeManager.PlayOneShotAttached(hoeEvent.ToString(), hoeObject);
+        }
+        public void PickBerriesAudio(GameObject berriesObject)
+        {
+            RuntimeManager.PlayOneShotAttached(pickBerriesEvent.ToString(), berriesObject);
+        }
+        public void WaterRefillAudio(GameObject waterObject)
+        {
+            RuntimeManager.PlayOneShotAttached(waterRefillEvent.ToString(), waterObject);
+        }
+        public void UseWaterAudio(GameObject waterObject)
+        {
+            RuntimeManager.PlayOneShotAttached(useWaterEvent.ToString(), waterObject);
+        }
+        public void SeedsAudio(GameObject seedsObject)
+        {
+            RuntimeManager.PlayOneShotAttached(seedsEvent.ToString(), seedsObject);
+        }
+
 
 
 
