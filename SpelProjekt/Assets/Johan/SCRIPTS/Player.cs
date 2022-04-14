@@ -189,4 +189,14 @@ public class Player : MonoBehaviour
         }
         
     }
+
+    public int getCurrentEnergy()
+    {
+        return energy;
+    }
+
+    public int getMaxEnergy()
+    {
+        return maxEnergy;
+    }
 }
