@@ -25,5 +25,7 @@ public class energyCounter : MonoBehaviour
 
         Debug.Log("current energy: " + currentEnergy);
         Debug.Log("max energy: " + energyCap);
+
+        energyCount.text = currentEnergy.ToString() + "/" + energyCap.ToString();
     }
 }
