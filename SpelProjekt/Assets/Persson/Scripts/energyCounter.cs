@@ -18,13 +18,12 @@ public class energyCounter : MonoBehaviour
     }
 
     // Update is called once per frame
+
+    // Gets current and max energy from the player component and returns a current energy / max energy string to print show on screen
     void Update()
     {
         currentEnergy = player.GetComponent<Player>().getCurrentEnergy();
         energyCap = player.GetComponent<Player>().getMaxEnergy();
-
-        Debug.Log("current energy: " + currentEnergy);
-        Debug.Log("max energy: " + energyCap);
 
         energyCount.text = currentEnergy.ToString() + "/" + energyCap.ToString();
     }

@@ -19,16 +19,14 @@ public class energyBarScript : MonoBehaviour, IPointerEnterHandler, IPointerExit
     {
         
     }
-
+    // Changes alpha of the text when cursor is on the energy bar
     public void OnPointerEnter(PointerEventData eventData)
     {
         energyCount.color = new Color32(207, 193, 56, 255);
-        Debug.Log("hover");
     }
-
+    // Changes back when cursor moves off the energy bar
     public void OnPointerExit(PointerEventData eventData)
     {
         energyCount.color = new Color32(207, 193, 56, 0);
-        Debug.Log("pointer exit");
     }
 }
