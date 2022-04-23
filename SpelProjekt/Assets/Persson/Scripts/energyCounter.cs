@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.EventSystems;
 
-public class energyCounter : MonoBehaviour
+public class energyCounter : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     private Player player;
     private int currentEnergy;
@@ -27,5 +28,17 @@ public class energyCounter : MonoBehaviour
         Debug.Log("max energy: " + energyCap);
 
         energyCount.text = currentEnergy.ToString() + "/" + energyCap.ToString();
+    }
+
+    public void OnPointerEnter(PointerEventData eventData)
+    {
+        energyCount.color = new Color32(207, 193, 56, 255);
+        Debug.Log("hover");
+    }
+
+    public void OnPointerExit(PointerEventData eventData)
+    {
+        energyCount.color = new Color32(207, 193, 56, 0);
+        Debug.Log("pointer exit");
     }
 }
