@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1433204081}
-  m_IndirectSpecularColor: {r: 0.4366756, g: 0.48427194, b: 0.5645252, a: 1}
+  m_IndirectSpecularColor: {r: 0.43667555, g: 0.48427182, b: 0.56452405, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -3617,9 +3617,9 @@ MonoBehaviour:
   TriggerOnce: 0
   Preload: 0
   Params: []
-  OverrideAttenuation: 1
-  OverrideMinDistance: 17.89986
-  OverrideMaxDistance: 53.659676
+  OverrideAttenuation: 0
+  OverrideMinDistance: 1
+  OverrideMaxDistance: 20
 --- !u!4 &113530433
 Transform:
   m_ObjectHideFlags: 0
@@ -71415,8 +71415,20 @@ PrefabInstance:
       value: AudioManager
       objectReference: {fileID: 0}
     - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
+      propertyPath: interactablesAudio.hoeEvent
+      value: event:/Schythe_Bush
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
       propertyPath: interactablesAudio.treeEvent
       value: event:/WoD
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
+      propertyPath: interactablesAudio.seedsEvent
+      value: event:/Seeds_Take
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
+      propertyPath: interactablesAudio.sleepEvent
+      value: event:/Yawn
       objectReference: {fileID: 0}
     - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
       propertyPath: interactablesAudio.stoneEvent
@@ -71427,12 +71439,28 @@ PrefabInstance:
       value: event:/Pickup
       objectReference: {fileID: 0}
     - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
+      propertyPath: interactablesAudio.schytheEvent
+      value: event:/Schythe_Place
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
       propertyPath: playerAudio.playerFootstepEvent
       value: event:/Player Footsteps
       objectReference: {fileID: 0}
     - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
       propertyPath: interactablesAudio.doorOpenEvent
       value: event:/Door Open
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
+      propertyPath: interactablesAudio.useWaterEvent
+      value: event:/Vattna
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
+      propertyPath: interactablesAudio.pickBerriesEvent
+      value: event:/Berry_Bush
+      objectReference: {fileID: 0}
+    - target: {fileID: 8035526568102551662, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
+      propertyPath: interactablesAudio.waterRefillEvent
+      value: event:/Water_Take
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c73912d44432a244e8ab1770b54779f1, type: 3}
