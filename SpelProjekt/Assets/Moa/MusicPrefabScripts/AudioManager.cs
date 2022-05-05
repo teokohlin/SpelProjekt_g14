@@ -38,6 +38,9 @@ public class AudioManager : MonoBehaviour
         public string schytheEvent;
         [EventRef]
         public string sleepEvent;
+        [EventRef]
+        public string schytheBushEvent;
+
 
 
         public void SleepAudio(GameObject sleepObject)
@@ -68,6 +71,12 @@ public class AudioManager : MonoBehaviour
         {
             RuntimeManager.PlayOneShotAttached(seedsEvent.ToString(), seedsObject);
         }
+        public void useSchytheBushAudio(GameObject schytheBushObject)
+        {
+            RuntimeManager.PlayOneShotAttached(schytheBushEvent.ToString(), schytheBushObject);
+        }
+
+
 
 
 
