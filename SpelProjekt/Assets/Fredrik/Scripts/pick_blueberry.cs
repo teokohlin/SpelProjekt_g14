@@ -15,6 +15,9 @@ public class pick_blueberry : Interactable
 
     public GameObject berries;
     private bool berrysActive = true;
+
+    private AudioManager audioManager;
+   
     public override void InteractWith(PlayerController pc)
     {
         //här är allt som ska hända när man högerklickar

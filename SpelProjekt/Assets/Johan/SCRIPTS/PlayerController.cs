@@ -29,6 +29,7 @@ public class PlayerController : MonoBehaviour
     private ToolSwitch toolScript;
     private CursorScript cursor;
 
+    private AudioManager audioManager;
 
     float nextChopTime = 0f;
     [HideInInspector]
@@ -58,6 +59,7 @@ public class PlayerController : MonoBehaviour
          akc = GetComponent<AdditionalKeyControl>();
          as3 = GetComponent<AS3CharacterMovement>();
          cursor = GetComponent<CursorScript>();
+         audioManager = FindObjectOfType<AudioManager>();
 
          //blackscreen = FindObjectOfType<BlackScreenManager>();
     }
@@ -137,6 +139,9 @@ public class PlayerController : MonoBehaviour
                 {
                     player.noEnergyActivated?.Invoke();
                     akc.SetAnimationTrigger("Tired");
+
+                    //spela "yawn"
+
                     return;
                 }
 
@@ -157,11 +162,13 @@ public class PlayerController : MonoBehaviour
                         break;
                     case 2: //PLOG
                         akc.SetAnimationTrigger(hoeUseTriggername);
+                        audioManager.interactablesAudio.useHoeAudio(this.gameObject);
                         StartCoroutine(FarmTowardsMouse());
                         break;
                     case 3: //FRÖN
                         Particle_effect_seeds.Play();
                         akc.SetAnimationTrigger(seedsUseTriggername);
+                        audioManager.interactablesAudio.SeedsAudio(this.gameObject);
                         StartCoroutine(FarmTowardsMouse());
                         break;
                     case 4: //VATTENKANNA
@@ -172,10 +179,12 @@ public class PlayerController : MonoBehaviour
                         Particle_effect_water.Play();
                         player.DepleteWater();
                         akc.SetAnimationTrigger(watercanUseTriggername);
+                        audioManager.interactablesAudio.UseWaterAudio(this.gameObject);
                         StartCoroutine(FarmTowardsMouse());
                         break;
                     case 5: //LIE
                         akc.SetAnimationTrigger(scytheUseTriggername);
+                        audioManager.interactablesAudio.useSchytheAudio(this.gameObject);
                         StartCoroutine(FarmTowardsMouse());
                         break;
                     default:
