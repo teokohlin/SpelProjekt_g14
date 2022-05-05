@@ -162,14 +162,14 @@ public class PlayerController : MonoBehaviour
                         break;
                     case 2: //PLOG
                         akc.SetAnimationTrigger(hoeUseTriggername);
-                        audioManager.interactablesAudio.useHoeAudio(this.gameObject);
-                        StartCoroutine(FarmTowardsMouse());
+                        //audioManager.interactablesAudio.useHoeAudio(this.gameObject);
+                        StartCoroutine(FarmTowardsMouse("hoe"));
                         break;
                     case 3: //FRÖN
                         Particle_effect_seeds.Play();
                         akc.SetAnimationTrigger(seedsUseTriggername);
-                        audioManager.interactablesAudio.SeedsAudio(this.gameObject);
-                        StartCoroutine(FarmTowardsMouse());
+                        //audioManager.interactablesAudio.SeedsAudio(this.gameObject);
+                        StartCoroutine(FarmTowardsMouse("seeds"));
                         break;
                     case 4: //VATTENKANNA
                         if (player.waterAmount == 0)
@@ -179,13 +179,13 @@ public class PlayerController : MonoBehaviour
                         Particle_effect_water.Play();
                         player.DepleteWater();
                         akc.SetAnimationTrigger(watercanUseTriggername);
-                        audioManager.interactablesAudio.UseWaterAudio(this.gameObject);
-                        StartCoroutine(FarmTowardsMouse());
+                        //audioManager.interactablesAudio.UseWaterAudio(this.gameObject);
+                        StartCoroutine(FarmTowardsMouse("water"));
                         break;
                     case 5: //LIE
                         akc.SetAnimationTrigger(scytheUseTriggername);
-                        audioManager.interactablesAudio.useSchytheAudio(this.gameObject);
-                        StartCoroutine(FarmTowardsMouse());
+                        //audioManager.interactablesAudio.useSchytheAudio(this.gameObject);
+                        StartCoroutine(FarmTowardsMouse("scythe"));
                         break;
                     default:
                         break;
@@ -262,7 +262,7 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator FarmTowardsMouse()
+    IEnumerator FarmTowardsMouse(string tool)
     {
         GameObject clickedObject = null;
 
@@ -297,6 +297,18 @@ public class PlayerController : MonoBehaviour
 
         if (hitChoppables.Length < 1)
         {
+            switch (tool)
+            {   
+                case "seeds": audioManager.interactablesAudio.SeedsAudio(this.gameObject);
+                    break;
+                case "water": audioManager.interactablesAudio.UseWaterAudio(this.gameObject);
+                    break;
+                case "scythe": audioManager.interactablesAudio.useSchytheAudio(this.gameObject);
+                    break;
+                default:
+                    break;
+            }
+
             yield break; //return; i en vanlig funktion
         }
 
@@ -356,6 +368,34 @@ public class PlayerController : MonoBehaviour
                 player.UseEnergy(1);
                 yield return new WaitForSeconds(timeTilDamage);
                 fieldScript.ChangeFarmstate();
+
+                switch (tool)
+                {   case "hoe": audioManager.interactablesAudio.useHoeAudio(this.gameObject);
+                        break;
+                    case "seeds": audioManager.interactablesAudio.SeedsAudio(this.gameObject);
+                        break;
+                    case "water": audioManager.interactablesAudio.UseWaterAudio(this.gameObject);
+                        break;
+                    case "scythe": audioManager.interactablesAudio.useSchytheBushAudio(this.gameObject);
+                        break;
+                    default:
+                        break;
+                }
+
+            }
+            else
+            {
+                switch (tool)
+                {   
+                    case "seeds": audioManager.interactablesAudio.SeedsAudio(this.gameObject);
+                        break;
+                    case "water": audioManager.interactablesAudio.UseWaterAudio(this.gameObject);
+                        break;
+                    case "scythe": audioManager.interactablesAudio.useSchytheAudio(this.gameObject);
+                        break;
+                    default:
+                        break;
+                }
             }
             
 
