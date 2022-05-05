@@ -7,11 +7,18 @@ public class WaterHole : MonoBehaviour
 {
     private bool inSideTrigger = false;
     public Player player;
+    private AudioManager audioManager;
+
+    private void Start()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+    }
     private void Update()
     {
         if (Input.GetMouseButtonDown(1) && inSideTrigger)
         {
             player.FillWater();
+            audioManager.interactablesAudio.WaterRefillAudio(player.gameObject);
         }
     }
 

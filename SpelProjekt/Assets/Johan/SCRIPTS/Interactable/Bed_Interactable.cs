@@ -10,11 +10,13 @@ public class Bed_Interactable : Interactable
     public DayNightCycle dnc;
     [SerializeField]
     private Transform tpTransform;
+    private AudioManager audioManager;
     private void Start()
     {
         screen = FindObjectOfType<BlackScreenManager>();
         dayManager = FindObjectOfType<DayManager>();
         dnc = FindObjectOfType<DayNightCycle>();
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     public override void InteractWith(PlayerController pc)
@@ -27,6 +29,7 @@ public class Bed_Interactable : Interactable
         pc.SetLockMovement(true);
         pc.gameObject.transform.position = tpTransform.position;
         pc.gameObject.transform.rotation = tpTransform.rotation;
+        audioManager.interactablesAudio.SleepAudio(this.gameObject);
         //screen.Fade(true);
         StopCoroutine(ChangeDay(pc));
         StartCoroutine(ChangeDay(pc));

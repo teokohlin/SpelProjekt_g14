@@ -27,6 +27,7 @@ public class pick_blueberry : Interactable
         if (berrysActive == true)
         {
             pc.player.AddResource(berryAmount, dType.food);
+            audioManager.interactablesAudio.PickBerriesAudio(this.gameObject);
             berries.SetActive(false);
             berrysActive = false;
 
@@ -42,7 +43,7 @@ public class pick_blueberry : Interactable
         dnc.DayPast += Check_Day;
 
         ps = GetComponentInChildren<ParticleSystem>();
-
+        audioManager = FindObjectOfType<AudioManager>();
         counter = daysUntilGrowth;
     }
     public void Check_Day()
