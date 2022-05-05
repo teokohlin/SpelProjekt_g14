@@ -24088,6 +24088,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 6053906140791606053, guid: 3ce3932043303154babecd6055cf6325, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6865767473287844255, guid: 3ce3932043303154babecd6055cf6325, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -49339,7 +49343,8 @@ MonoBehaviour:
     rewardType: 0
     completed: 0
     questStartScripts: []
-    questEndScripts: []
+    questEndScripts:
+    - {fileID: 1619427663}
     justStarted: 1
     goals:
     - goalType: 2
@@ -49440,34 +49445,13 @@ MonoBehaviour:
   - dials:
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Terrible news Mackan.
-      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
-        sentence: What happened?
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: "It\u2019s not me but my friend, Billy."
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: His house got destroyed last night.
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Could you be able to help him?
-      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
-        sentence: Sure, where can I find him?
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: He lives upstream from the lake.
+        sentence: boi
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Have you talked to Billy yet?
+        sentence: brrrooo
     - dialogue:
       - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Was he alright?
-      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
-        sentence: He is okay but his home got burnt down.
-      - picture: {fileID: 21300000, guid: 980d40c316c886e41b308e73d3f60d13, type: 3}
-        sentence: He just wanted me to come and tell you that he is good, despite
-          the circumstances.
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: Thank you Mackan.
-      - picture: {fileID: 21300000, guid: c7ebadf55a3b74947869d573dd30f4ac, type: 3}
-        sentence: I gave you some wood as a thank you for the help.
+        sentence: ait
 --- !u!114 &1299285013
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -62756,7 +62740,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1619427661}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1ace45504b1264b4498b9efee03e77ca, type: 3}
   m_Name: 
@@ -62778,7 +62762,7 @@ MonoBehaviour:
     questEndScripts: []
     justStarted: 0
     goals:
-    - goalType: 0
+    - goalType: 1
       completed: 0
       currentAmount: 0
       requiredAmount: 5
@@ -62792,6 +62776,18 @@ MonoBehaviour:
   questIndex: 0
   questProgress: 0
   dialogues: []
+--- !u!114 &1619427663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619427661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb4551d680edc5e4b9fc47db1cfaa971, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1619884677
 PrefabInstance:
   m_ObjectHideFlags: 0
