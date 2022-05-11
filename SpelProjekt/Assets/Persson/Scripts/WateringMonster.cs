@@ -33,7 +33,7 @@ public class WateringMonster : MonoBehaviour
 
         targets = 10;
 
-        done = false;
+        done = false; 
 
         maxEnergy = 3;
         currentEnergy = 3;
@@ -60,7 +60,7 @@ public class WateringMonster : MonoBehaviour
         {
             done = true;
 
-            agent.SetDestination(homePosition.position);
+            //agent.SetDestination(homePosition.position);
         }
     }
 
