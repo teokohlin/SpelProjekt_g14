@@ -7,7 +7,7 @@ using UnityEngine.UI;
 using System.Linq;
 using UnityEngine.AI;
 
-public class WateringMonster : MonoBehaviour
+public class WateringMonster : Worker
 {
     public List<GameObject> fields = new List<GameObject>();
 
@@ -78,13 +78,24 @@ public class WateringMonster : MonoBehaviour
                 fields.Add(field);
             }
         }
-
-
     }
-    //Waters a field
-    void waterField(GameObject field)
+
+    private void SortByDistance()
     {
-        
+        foreach (GameObject field in fields)
+        {
+            fields = fields.OrderBy((field) => (field.transform.position - transform.position).sqrMagnitude).ToList();
+        }
+    }
+
+    //Waters a field
+    private void waterField(GameObject field)
+    {
+        FieldScript fs = fields[0].GetComponent<FieldScript>();
+
+        fs.ChangeFarmstateSpecific(3);
+
+        fields.Remove(field.gameObject);
     }
 
 }
