@@ -10,9 +10,10 @@ using UnityEngine.AI;
 public class WateringMonster : MonoBehaviour
 {
     public List<GameObject> fields = new List<GameObject>();
-    
-    public int waterCapacity;
-    public int currentWater;
+
+    public int targets;
+
+    bool done;
     
     public float happiness;
     private int maxHappiness;
@@ -30,8 +31,9 @@ public class WateringMonster : MonoBehaviour
     {
         isActivated = false;
 
-        waterCapacity = 5;
-        currentWater = 5;
+        targets = 10;
+
+        done = false;
 
         maxEnergy = 3;
         currentEnergy = 3;
@@ -85,8 +87,4 @@ public class WateringMonster : MonoBehaviour
         
     }
 
-    void refillWater()
-    {
-        currentWater = waterCapacity;
-    }
 }
