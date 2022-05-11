@@ -9,22 +9,22 @@ using UnityEngine.AI;
 
 public class WateringMonster : Worker
 {
-    public List<GameObject> fields = new List<GameObject>();
+    private List<GameObject> fields = new List<GameObject>();
 
-    public int targets;
+    private int targets;
 
-    bool done;
+    private bool done;
     
-    public float happiness;
+    private float happiness;
     private int maxHappiness;
 
     public int maxEnergy;
-    public int currentEnergy;
+    private int currentEnergy;
 
     private NavMeshAgent agent;
     public GameObject homePosition;
 
-    public bool isActivated;
+    private bool isActivated;
 
     // Start is called before the first frame update
     void Start()
