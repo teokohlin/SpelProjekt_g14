@@ -10590,68 +10590,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1545625727323291469, guid: 91bde726f5916f441985cc1a4007db6e, type: 3}
   m_PrefabInstance: {fileID: 302725064}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &303429889
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 1024307252}
-    m_Modifications:
-    - target: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_RootOrder
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 6.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.35
-      objectReference: {fileID: 0}
-    - target: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -34
-      objectReference: {fileID: 0}
-    - target: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1830160255476712340, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-      propertyPath: m_Name
-      value: Helka-Monster
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
---- !u!4 &303429890 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1309942360184592686, guid: 40cf31207200efe40b292c0924ea2806, type: 3}
-  m_PrefabInstance: {fileID: 303429889}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &304022886
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12058,7 +11996,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1024307252}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &348729561
 PrefabInstance:
@@ -22144,7 +22082,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1024307252}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &637841689
 PrefabInstance:
@@ -38354,10 +38292,10 @@ Transform:
   - {fileID: 1183389332}
   - {fileID: 1345820391}
   - {fileID: 2136332756}
-  - {fileID: 303429890}
   - {fileID: 348311534}
   - {fileID: 1415977014}
   - {fileID: 637708918}
+  - {fileID: 1429226585}
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -54550,7 +54488,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1024307252}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1417073642
 PrefabInstance:
@@ -55001,6 +54939,100 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 1182264327912675745, guid: c026ef4ba4fb60147859a834013f43a4, type: 3}
   m_PrefabInstance: {fileID: 1428556162}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1429226584
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1024307252}
+    m_Modifications:
+    - target: {fileID: 2681123119515779602, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_Name
+      value: Helka-Monster
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 6.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -34
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479792258159570288, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: Name
+      value: Helka
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479792258159570288, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: targets
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479792258159570288, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: Happiness
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479792258159570288, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: MaxEnergy
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479792258159570288, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: happiness
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479792258159570288, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: maxEnergy
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5479792258159570288, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: homePosition
+      value: 
+      objectReference: {fileID: 637708917}
+    - target: {fileID: 5479792258159570288, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+      propertyPath: currentEnergy
+      value: 3
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+--- !u!4 &1429226585 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3350277802743240872, guid: bcae5271e138ef545b00ce90f57df3b5, type: 3}
+  m_PrefabInstance: {fileID: 1429226584}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1429329193 stripped
 MonoBehaviour:
